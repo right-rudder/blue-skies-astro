@@ -1,6 +1,7 @@
 ---
 import ImageComp from "@/components/utils/ImageComp.astro";
 import partnerImg1 from "@/images/product-image-1.avif"
+import { parentPort } from "worker_threads";
 
 // Define props from Astro
 const { title, subTitle, partners } = Astro.props;
@@ -9,6 +10,8 @@ interface Partner {
   icon: any;
   name?: string;
   href?: string;
+  imagePath?: string;
+  imageAlt?: string;
 }
 
 // Define TypeScript interface for props
@@ -44,10 +47,10 @@ interface Props {
     {
       partners.map((partner) => (
         <a href={partner.href} target="_blank" rel="noopener noreferrer">
-              <div set:html={partner.icon} />
+              {/* <div set:html={partner.icon} /> */}
               <ImageComp
-                imagePath="/src/images/product-image-1.avif"
-                imageAlt=""
+                imagePath={partner.imagePath}
+                imageAlt={partner.imageAlt}
                 quality = {60}
                 styles = ""
                 loading = "lazy"
