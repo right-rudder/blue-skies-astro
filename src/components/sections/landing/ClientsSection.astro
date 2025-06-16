@@ -1,4 +1,7 @@
 ---
+import ImageComp from "@/components/utils/ImageComp.astro";
+import partnerImg1 from "@/images/product-image-1.avif"
+
 // Define props from Astro
 const { title, subTitle, partners } = Astro.props;
 
@@ -42,6 +45,13 @@ interface Props {
       partners.map((partner) => (
         <a href={partner.href} target="_blank" rel="noopener noreferrer">
               <div set:html={partner.icon} />
+              <ImageComp
+                imagePath="/src/images/product-image-1.avif"
+                imageAlt=""
+                quality = {60}
+                styles = ""
+                loading = "lazy"
+              />
         </a>
       ))
     }

@@ -3,6 +3,7 @@
 import { Image } from "astro:assets";
 import IconBlock from "@components/ui/blocks/IconBlock.astro";
 import Icon from "@components/ui/icons/Icon.astro";
+import YoutubeVideo from "@/components/YoutubeVideo.astro";
 
 interface Feature {
   heading: string;
@@ -26,7 +27,7 @@ const { title, subTitle, src, alt, features } = Astro.props;
 >
   <!-- Block to display the feature image -->
   <div class="relative mb-6 overflow-hidden md:mb-8">
-    {
+    <!-- {
       src && alt && (
         <Image
           src={src}
@@ -37,7 +38,8 @@ const { title, subTitle, src, alt, features } = Astro.props;
           loading={"eager"}
         />
       )
-    }
+    } -->
+    <YoutubeVideo class="w-full h-full flex align-center justify-center items-center " />
   </div>
 
   <!-- Displaying the main content consisting of title, subtitle, and several `IconBlock` components -->

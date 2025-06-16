@@ -10,7 +10,7 @@ import TestimonialsSection from "@components/sections/testimonials/TestimonialsS
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import privatePilotPass from "@images/blue-skies-private-pilot-checkride-pass-600.webp"
+import privatePilotPass from "@images/blue-skies-private-pilot-checkride-pass-600.webp";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
@@ -36,7 +36,8 @@ const avatarSrcs: Array<string> = [
   /> -->
 
   <HeroSection
-    title=`Your <br> <span class="text-picton-blue-500 dark:text-picton-blue-400">Pilot Training</span> Academy`
+    title=`
+    Efficient training to become an <span class="text-picton-blue-500 dark:text-picton-blue-400">Airline Pilot</span> in Albert airline area`
     subTitle="Flight school between Alabama and Georgia Nestled in the heart of Lanett, Alabama Lanett Municipal Airport 7A3"
     primaryBtn="Enroll now"
     primaryBtnURL="/enroll-at-blue-skies"
@@ -52,16 +53,16 @@ const avatarSrcs: Array<string> = [
   />
 
   <ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
+    title="Dedicated to flight training"
+    subTitle="Blue Skies Above is a proud partner of these aviation associations and companies"
     partners={partnersData}
   />
 
   <FeaturesGeneral
-    title="Meeting Industry Demands"
-    subTitle="At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
+    title="Preparing future pilots to launch their aviation careers"
+    subTitle="Discover why aspiring pilots in Auburn and throughout the Alabama area trust Blue Skies Above to turn their aviation dreams into reality. With experienced instructors and comprehensive programs, we help students build the skills and confidence needed for a successful aviation career."
     src={featureImage}
-    alt="ScrewFast products in floating boxes"
+    alt=""
     features={features}
   />
 
