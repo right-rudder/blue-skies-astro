@@ -1,0 +1,16 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
+import pageDataTemplate from "@data/pages/pageDataTemplate";
+
+const { data } = pageDataTemplate;
+---
+
+<MainLayout>
+ <HeroSectionAlt 
+    title="BLUE SKIES ABOVE"
+    subTitle="We are the flight training experts in Lanett, AL"
+    url="#"
+    btnTitle="Meet our team"
+ />
+</MainLayout>

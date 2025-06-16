@@ -14,10 +14,13 @@ import privatePilotPass from "@images/blue-skies-private-pilot-checkride-pass-60
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
-import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
+
+// Images
+import featureImage from "@images/blue-skies-private-pilot-checkride-pass-600.webp";
+import tools from "src/assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
+import construction from "src/assets/images/blue-skies-over-auburn.webp";
+import dashboard from "src/assets/images/blue-skies-auburn-university-student-pilot-programs.webp";
+
 import { partnersData } from "@/data_files/constants";
 
 const avatarSrcs: Array<string> = [
@@ -36,8 +39,7 @@ const avatarSrcs: Array<string> = [
   />
 
   <HeroSection
-    title=`
-    Efficient training to become an <span class="text-picton-blue-500 dark:text-picton-blue-400">Airline Pilot</span> in Albert airline area`
+    title=`Efficient training to become an <span class="text-picton-blue-500 dark:text-picton-blue-400">Airline Pilot</span> in Albert airline area`
     subTitle="Flight school between Alabama and Georgia Nestled in the heart of Lanett, Alabama Lanett Municipal Airport 7A3"
     primaryBtn="Enroll now"
     primaryBtnURL="/enroll-at-blue-skies"
@@ -67,31 +69,28 @@ const avatarSrcs: Array<string> = [
   />
 
   <FeaturesNavs
-    title=`Customize <span class="text-picton-blue-500 dark:text-picton-blue-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
+    title=`The best time to <span class="text-picton-blue-500 dark:text-picton-blue-400">start flying</span> is now `
     tabs={[
       {
-        heading: "Cutting-Edge Tools",
-        content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
-        svg: "tools",
+        heading: "Start a Conversation",
+        content: "The first step in pilot training is reaching out to a flight school. Blue Skies Above welcomes you to the world of aviation.",
+        svg: "envelopeOpen",
         src: tools,
-        alt: "picton-blue and black heavy equipment on brown grass field",
+        alt: "A graphic representation of an envelope open ",
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
-        content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
-        svg: "dashboard",
+        heading: "Take Your First Flight Lesson",
+        content: "Also known as a discovery flight, take the controls of the aircraft and fly the plane. See if becoming a pilot is right for you.",
+        svg: "rocket",
         src: dashboard,
         alt: "A screenshot or graphic representation of the intuitive dashboard",
         second: true,
       },
       {
-        heading: "Robust Features",
-        content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
-        svg: "house",
+        heading: "Start Training",
+        content: "You've got the best flight school in Lanett, AL supporting you every step of the way. We're experts in flight training.",
+        svg: "plane",
         src: construction,
         alt: "Gray metal building frame near tower crane during daytime",
       },
@@ -140,8 +139,9 @@ const avatarSrcs: Array<string> = [
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
-    url="https://github.com/mearashadowfax/ScrewFast"
+    title="Fly now with Blue Skies Above"
+    subTitle="Schedule a Discovery Flight and explore the clouds!"
+    btnTitle="Get Started"
+    url="/discovery-flights"
   />
 </MainLayout>
