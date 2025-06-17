@@ -10,8 +10,10 @@ import BrandLogo from "@components/BrandLogo.astro";
 import LanguagePicker from "@components/ui/LanguagePicker.astro";
 
 // Select the correct translation based on the page's lang prop:
-const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
-const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
+// const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
+// const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
+const strings = enStrings;
+const homeUrl = "/";
 ---
 
 <!-- Main header component -->
@@ -92,7 +94,7 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
             if (link.name === "Services") {
               return <MegaMenuLink />;
             } else {
-              return <NavLink url={link.url} name={link.name} />;
+              return <NavLink url={link.link} name={link.name} />;
             }
           })
         }

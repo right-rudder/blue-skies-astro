@@ -91,7 +91,7 @@ const homeUrl = "/";
         <!-- Navigation links and Authentication component -->
         {strings.navBarLinks.map(link => (
           <div class="relative group">
-            <NavLink url={link.url} name={link.name} />
+            <NavLink url={link.link} name={link.name} />
             {link.submenu && (
               <ul
                 class="absolute left-0 z-50 pt-6 mt-2 hidden min-w-[180px] flex-col rounded-lg border-picton-blue-100/90 bg-picton-blue-50/90 p-4 shadow-lg group-hover:flex dark:border-neutral-700/60 dark:bg-neutral-800/90 backdrop-blur-3xl dark:backdrop-blur-3xl md:px-4 md:py-2 lg:px-8"

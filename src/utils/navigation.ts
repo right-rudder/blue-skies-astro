@@ -1,6 +1,6 @@
 // An array of links for navigation bar
 const navBarLinks = [
-  { name: "New to Flight Training?", url: "/", submenu: [
+  { name: "New to Flight Training?", link: "/", submenu: [
       {
         name: "Why Become a Pilot?",
         link: "/should-i-become-a-pilot",
@@ -27,7 +27,7 @@ const navBarLinks = [
       },
     ],
   },
-  { name: "Training Programs", url: "/products", submenu: [
+  { name: "Training Programs", link: "/products", submenu: [
       {
         name: "Private Pilot",
         link: "/private-pilot-certificate-ppl",
@@ -91,7 +91,7 @@ const navBarLinks = [
       
     ],
   },
-  { name: "About us", url: "/about-us", submenu: [
+  { name: "About us", link: "/about-us", submenu: [
       {
         name: "Our Team",
         link: "/about-us",
@@ -136,9 +136,9 @@ const navBarLinks = [
       },
     ],
    },
-  { name: "Visit School", url: "/visit-school" },
-  { name: "Discovery Flight", url: "/discovery-flights" },
-  { name: "Contact us", url: "/contact-us" },
+  { name: "Visit School", link: "/visit-school" },
+  { name: "Discovery Flight", link: "/discovery-flights" },
+  { name: "Contact us", link: "/contact-us" },
 ];
 // An array of links for footer
 const footerLinks = [
@@ -147,7 +147,6 @@ const footerLinks = [
       {
         name: "Why Become a Pilot?",
         link: "/should-i-become-a-pilot",
-
       },
       {
         name: "Pilot Training Process",
@@ -241,9 +240,9 @@ const footerLinks = [
    },
   {
     section: "Quick Links", links: [
-      { name: "Discovery Flight", url: "/discovery-flight" },
-      { name: "Contact us", url: "/contact" },
-      { name: "Visit School", url: "/visit-flight-school" },
+      { name: "Discovery Flight", link: "/discovery-flight" },
+      { name: "Contact us", link: "/contact" },
+      { name: "Visit School", link: "/visit-flight-school" },
     ],
   },
 ];
