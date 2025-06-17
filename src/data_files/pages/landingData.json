@@ -1,0 +1,239 @@
+{
+  "title": "Blue Skies Above Flight School",
+  "description": "Professional pilot training academy at Lanett Municipal Airport (7A3) serving Alabama and Georgia",
+  "contact": {
+    "phone": "1-334-449-7600",
+    "address": "4445 51st Ave SW, Lanett, Alabama 36863",
+    "email": "connect@flytheblueskies.com"
+  },
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "headline": "Your Pilot Training Academy",
+      "subhead": "Flight school between Alabama and Georgia",
+      "description": "Nestled in the heart of Lanett, Alabama. Lanett Municipal Airport 7A3",
+      "cta": {
+        "primary": {
+          "text": "Enroll Today",
+          "link": "/enroll-at-blue-skies"
+        },
+        "secondary": {
+          "text": "Our Programs",
+          "link": "/pilot-training-programs-and-courses"
+        }
+      },
+      "image": "/assets/blue-skies-private-pilot-checkride-pass-600-f12ded86b116cfa7edf5dd32b1837f4832e488aca83e8054d641772fe78c6765.webp"
+    },
+    "banner": {
+      "type": "banner",
+      "content": "Are you considering a professional flight program at a university?",
+      "cta": {
+        "text": "Click to Learn More",
+        "link": "/professional-flight-program"
+      }
+    },
+    "video": {
+      "type": "video_feature",
+      "heading": "Preparing future pilots to launch their aviation careers",
+      "description": "Discover why aspiring pilots in Auburn and throughout the Alabama area trust Blue Skies Above to turn their aviation dreams into reality.",
+      "video_url": "https://tube.rvere.com/embed?v=9oI-zvCBU4Y",
+      "video_title": "Flying in a Plane Above Auburn Alabama as a Private Pilot"
+    },
+    "partners":{
+      "type": "partners",
+      "heading": "Dedicated to flight training",
+      "subheading": "Blue Skies Above is a proud partner of these aviation associations and companies",
+      "logos": [
+        {
+          "name": "FAA Safety Team",
+          "url": "https://www.faasafety.gov/",
+          "image": "/assets/blue-skies-faasteam-063c0409684073ec0d93d9e073857d22688001a76115b8f89fc5a40009d51341.webp"
+        },
+        {
+          "name": "Gleim",
+          "url": "https://www.gleimaviation.com/",
+          "image": "/assets/blue-skies-gleim-c5b1807594089e2626f4e44f96a319a8f7540c49643ab131b9db3b455cf9b34a.webp"
+        },
+        {
+          "name": "National Association of Flight Instructors",
+          "url": "https://www.nafinet.org",
+          "image": "/assets/blue-skies-nafi-logo-8d953d8784d7111d67e8159564970a024fbaf8c782780e8d7634066e49e8b16d.webp"
+        },
+        {
+          "name": "Flight School Association of North America",
+          "url": "https://fsana.com/",
+          "image": "/assets/blue-skies-fsana-logo-37cd3c086ee6a42c29e968b2987442297c2566171b45162ec296994fdb154044.webp"
+        },
+        {
+          "name": "Flight Training Finance",
+          "url": "https://www.flighttrainingfinancellc.com/",
+          "image": "/assets/flight-training-finance-logo-48b15a676fb5811ead7fc806c942dabe8703f2364ddb02b7665919ba67ee5d25.webp"
+        }
+      ]
+    },
+    "steps": {
+      "type": "steps",
+      "heading": "The best time to start flying is now",
+      "steps": [
+        {
+          "icon": "chat",
+          "title": "Start a Conversation",
+          "description": "The first step in pilot training is reaching out to a flight school.",
+          "cta": {
+            "text": "Contact Us",
+            "link": "/contact"
+          }
+        },
+        {
+          "icon": "calendar",
+          "title": "Take Your First Flight Lesson",
+          "description": "Also known as a discovery flight, take the controls of the aircraft and fly the plane.",
+          "cta": {
+            "text": "Schedule Lesson",
+            "link": "/discovery-flight"
+          }
+        },
+        {
+          "icon": "training",
+          "title": "Start Training",
+          "description": "You've got the best flight school in Lanett, AL supporting you every step of the way.",
+          "cta": {
+            "text": "Our Programs",
+            "link": "/pilot-training-programs-and-courses"
+          }
+        }
+      ]
+    },
+    "gallery": {
+      "type": "gallery",
+      "heading": "Your Opportunity",
+      "description": "The time to become a pilot is now. With demand at an all time high and the world more than ever needing more pilots, this is your chance.",
+      "images": [
+        "/assets/blue-skies-flying-over-opelika-sunset-6ce0dc76540b281684e2b25086859b0b3936ead6cdac930186d71e862a940761.webp",
+        "/assets/blue-skies-student-pilot-after-first-solo-58e9558855e85634b7e492e8402af58308bcede791aec84cf373e4eb1ca93dcc.webp",
+        "/assets/blue-skies-auburn-university-student-pilot-e1104cb87126441fe94940ae8befe54d0254ce447ea11b45d45b75608dfc263c.webp",
+        "/assets/blue-skies-pilots-smiling-while-flying-ef6c9e92e0ea71c68a7d4de2af1ad8c63f9dd4c5ca198e577fa8d74c6dafaf77.webp"
+      ]
+    },
+    "process_steps": {
+      "type": "process_steps",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Contact Blue Skies Above",
+          "description": "Reaching out to a flight school to understand how the pilot training process works is the first step in your pilot training journey.",
+          "image": "/assets/blue-skies-cessna-on-ramp-450ba008d58604a8934602a58cf14c4d069590c9fe093bcaa8585226983ec1be.webp",
+          "cta": {
+            "text": "Contact Us",
+            "link": "/contact"
+          }
+        },
+        {
+          "step": 2,
+          "title": "Take a Discovery Flight",
+          "description": "Also known as an introductory flight, a discovery flight is your first flight lesson. Pair up with a certified flight instructor and you fly the plane.",
+          "image": "/assets/blue-skies-discovery-flight-a83c4b65f7542d5ee4053c02176c166a0080a3864ae521b3217d376ffbff9dbc.webp",
+          "cta": {
+            "text": "Schedule Flight",
+            "link": "/discovery-flight"
+          }
+        },
+        {
+          "step": 3,
+          "title": "Start Flight Training",
+          "description": "You'll pair up and work with a CFI (Certified Flight Instructor) to start flight training. Gain the necessary skills and knowledge to pass your written and practical exams.",
+          "image": "/assets/blue-skies-flying-over-atlanta-katl-airport-e8483e6bfae912f3e91cd9651e13e44af8842758642adb2506991f181649d8ab.webp",
+          "cta": {
+            "text": "Enroll Today",
+            "link": "/enroll-at-blue-skies"
+          }
+        }
+      ]
+    },
+    "cta": {
+      "type": "cta",
+      "heading": "Next Steps",
+      "subheading": "Visit Blue Skies Above Professional Flight Instruction",
+      "description": "Visit our flight school, start pilot training and join the family, like & follow us on social media.",
+      "cta_buttons": [
+        {
+          "text": "Visit School",
+          "link": "/visit-flight-school"
+        },
+        {
+          "text": "Our Programs",
+          "link": "/pilot-training-programs-and-courses"
+        }
+      ]
+    },
+    "free_resource": {
+      "type": "free_resource",
+      "heading": "Get Your FREE Pilot Training Guide Book!",
+      "description": "We have a free booklet which explains everything you need to know for your pilot certificate.",
+      "image": "/assets/blue-skies-book-mock-up-dccc45f7a28f5071a68415fd2060c6177d7df24a28c1b73d333a2ea5229c9ea4.webp",
+      "form_action": "/book_downloads"
+    },
+    "video_feature": {
+      "type": "video_feature",
+      "heading": "Blue Skies Above is a fun, welcoming place to begin your journey as a pilot",
+      "description": "Our team is committed to providing expert guidance, personalized training, and unwavering support as you work toward your aviation goals.",
+      "video_url": "https://tube.rvere.com/embed?v=E8drM2gQJqU",
+      "video_title": "How to Perform a Walk Around Inspection of a Cessna 172"
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "heading": "WHAT OUR STUDENTS ARE SAYING?",
+      "quotes": [
+        {
+          "text": "Matthew is an excellent flight instructor with a vast knowledge and aptitude for flying...",
+          "author": "Stuart Peters",
+          "rating": 5
+        },
+        {
+          "text": "Awesome flight school in Lanett, Alabama... Matthew is a professional instructor...",
+          "author": "Tim Jedrek",
+          "rating": 5
+        },
+        {
+          "text": "I can't say enough great things about blue skies above! Joe provides professional instruction...",
+          "author": "Paul Prim",
+          "rating": 5
+        },
+        {
+          "text": "Got my PPL here. Best flight school experience I've had...",
+          "author": "Mallorie Moffett",
+          "rating": 5
+        }
+      ]
+    }
+  },
+  "social_media": {
+    "facebook": "https://www.facebook.com/flytheblueskies",
+    "instagram": "https://www.instagram.com/flybsa/",
+    "twitter": "https://twitter.com/flybsa",
+    "linkedin": "https://www.linkedin.com/company/blue-skies-above/"
+  },
+  "training_programs": [
+    "Private Pilot",
+    "Instrument Rating",
+    "Commercial Pilot",
+    "Multi-Engine Rating",
+    "Multi-Engine Instructor (MEI)",
+    "CFI",
+    "CFII",
+    "CFI Spin Endorsement"
+  ],
+  "footer": {
+    "copyright": "© 2025 Blue Skies Above. All rights reserved.",
+    "links": [
+      {
+        "text": "Privacy Policy Terms of Service",
+        "link": "/privacy-policy-terms-of-service"
+      },
+      {
+        "text": "Website Designed and Developed by Right Rudder Marketing",
+        "link": "https://rightruddermarketing.com"
+      }
+    ]
+  }
+}

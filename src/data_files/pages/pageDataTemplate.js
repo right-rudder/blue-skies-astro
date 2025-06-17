@@ -1,55 +1,44 @@
+import { partnersData } from "../constants";
+import features from "@data/features.json";
+
 const homePage = {
   data: {
     //SEO Header Stuff
-    pageTitle: "XYZ Flight School in Rudderville, RRM",
-    pageDescription: "meta description goes here",
-    pageKeywords: "add keywords here.  take a look at the consts.ts file for more guidance on keywords",
+    pageTitle: " | ",
+    pageDescription: "",
+    pageKeywords: "",
 
     //top header
-    headerImagePath: "",
-    headerImageAlt: "",
-    headerH1: "",
-    headerH2: "",
+    header: {
+      stars: true,
+      imagePath: "/src/assets/images/.jpg",
+      imageAlt: "",
+      headerH1: `Efficient training to become an <span class="text-picton-blue-500 dark:text-picton-blue-400">Airline Pilot</span> in Albert airline area`,
+      paragraph: "Flight school between Alabama and Georgia Nestled in the heart of Lanett, Alabama Lanett Municipal Airport 7A3",
+      buttons: [
+        {
+          name: "Enroll Now",
+          link: "/enroll-now",
+          primary: false,
+        },
+      ],
+    },
 
-    //contentOne
-    contentOneImage: "",
-    contentOneImageAlt: "",
-    contentOneImageCaption: "",
-    contentOneH3: "",
-    contentOneParagraphs: ["", ""],
-    contentOneButtonText: "",
-    contentOneButtonLink: "",
+    clientSection: {
+      title: "",
+      subtitle: "",
+      imagePath: "",
+      imageAlt: "",
+      partnersData: partnersData,
+    },
 
-    //contentTwo
-    contentTwoImage: "",
-    contentTwoImageAlt: "",
-    contentTwoImageCaption: "",
-    contentTwoH3: "",
-    contentTwoParagraphs: ["", ""],
-    contentTwoButtonText: "",
-    contentTwoButtonLink: "",
-
-    //contentThree
-    contentThreeImage: "",
-    contentThreeImageAlt: "",
-    contentThreeImageCaption: "",
-    contentThreeH3: "",
-    contentThreeParagraphs: ["", ""],
-    contentThreeButtonText: "",
-    contentThreeButtonLink: "",
-
-    //Bottom CTAOne
-    CTAOneH2: "",
-    CTAOneH3: "",
-    CTAOneButtonText: "",
-    CTAOneButtonLink: "",
-
-    //Bottom CTATwo
-    CTATwoH2: "",
-    CTATwoH3: "",
-    CTATwoButtonText: "",
-    CTATwoButtonLink: "",
-  }
-}
-
-export default homePage
+    featuresGeneral:{
+      title:"Preparing future pilots to launch their aviation careers",
+      subTitle:"Discover why aspiring pilots in Auburn and throughout the Alabama area trust Blue Skies Above to turn their aviation dreams into reality. With experienced instructors and comprehensive programs, we help students build the skills and confidence needed for a successful aviation career.",
+      imagePath:"",
+      imageAlt:"",
+      features: features,
+    }
+  },
+};
+export default homePage;
