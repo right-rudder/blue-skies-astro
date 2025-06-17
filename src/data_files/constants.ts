@@ -6,12 +6,12 @@ import imgPartner4 from "@images/parner-eaa-logo.webp";
 import imgPartner5 from "@images/parner-eaa-logo.webp";
 
 export const SITE = {
-  title: "ScrewFast",
-  tagline: "Top-quality Hardware Tools",
-  description: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
-  description_short: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
-  url: "https://screwfast.uk",
-  author: "Emil Gulamov",
+  title: "Blue Skies Above | Lanett, Alabama",
+  tagline: "",
+  description: "",
+  description_short: "",
+  url: "https://flytheblueskies.com",
+  author: "",
 };
 
 export const SEO = {
