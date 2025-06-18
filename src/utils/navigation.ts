@@ -27,7 +27,7 @@ const navBarLinks = [
       },
     ],
   },
-  { name: "Training Programs", link: "/products", submenu: [
+  { name: "Training Programs", link: "/flight-training-programs", submenu: [
       {
         name: "Private Pilot",
         link: "/private-pilot-certificate-ppl",
