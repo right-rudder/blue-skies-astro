@@ -1,0 +1,373 @@
+{
+  "header": {
+    "phone": "1-334-449-7600",
+    "tagline": "Becoming a pilot is one call away",
+    "social_links": {
+      "facebook": "https://www.facebook.com/flytheblueskies",
+      "instagram": "https://www.instagram.com/flybsa/",
+      "twitter": "https://twitter.com/flybsa",
+      "linkedin": "https://www.linkedin.com/company/blue-skies-above/"
+    }
+  },
+  "navigation": {
+    "main_menu": [
+      {
+        "title": "New to Flying?",
+        "submenu": [
+          {
+            "title": "Why Become a Pilot?",
+            "url": "/should-i-become-a-pilot",
+            "description": "Now is the best time to become a pilot"
+          },
+          {
+            "title": "Pilot Training Process",
+            "url": "/pilot-training-programs-and-courses",
+            "description": "Learn how to become a pilot"
+          },
+          {
+            "title": "Considering a university for pilot training?",
+            "url": "/professional-flight-program",
+            "description": "Learn more about our Part 61 program"
+          },
+          {
+            "title": "Discovery Flight",
+            "url": "/discovery-flight",
+            "description": "Your first flight lesson. You fly the plane"
+          }
+        ]
+      },
+      {
+        "title": "Training Programs",
+        "submenu": [
+          {
+            "title": "Private Pilot",
+            "url": "/private-pilot-certificate-ppl",
+            "description": "Start your aviation journey here"
+          },
+          {
+            "title": "Instrument Rating",
+            "url": "/instrument-rating-ifr",
+            "description": "Advance your navigation abilities and opportunities"
+          },
+          {
+            "title": "Commercial Pilot",
+            "url": "/commercial-pilot-certificate-cpl",
+            "description": "Make flying your career"
+          },
+          {
+            "title": "Multi-Engine Rating",
+            "url": "/multi-engine-rating",
+            "description": "Fly aircraft with more than one engine"
+          },
+          {
+            "title": "Multi-Engine Instructor (MEI)",
+            "url": "/multi-engine-instructor-mei",
+            "description": "Learn how to instruct in multi-engine aircraft"
+          },
+          {
+            "title": "CFI",
+            "url": "/certified-flight-instructor-cfi",
+            "description": "Teach what you know to the next class of pilots"
+          },
+          {
+            "title": "CFII",
+            "url": "/flight-instructor-instrument-cfii",
+            "description": "Bring student pilots to the next level with an Instrument Rating"
+          },
+          {
+            "title": "CFI Spin Endorsement",
+            "url": "/spin-endorsement",
+            "description": "Specialize in spin training for CFI candidates"
+          }
+        ]
+      },
+      {
+        "title": "About Us",
+        "submenu": [
+          {
+            "title": "Our Team",
+            "url": "/about-us",
+            "description": "Meet the team at Blue Skies Above"
+          },
+          {
+            "title": "Our Fleet",
+            "url": "/our-fleet",
+            "description": "Meet the fleet at Blue Skies Above"
+          },
+          {
+            "title": "Why Blue Skies Above?",
+            "url": "/why-choose-blue-skies-above",
+            "description": "The only local flight school with a Cessna fleet. When you're here, you're family"
+          },
+          {
+            "title": "Join the team",
+            "url": "/join-team",
+            "description": "Are you a CFI looking to teach the next generation of aviators? Apply today!"
+          },
+          {
+            "title": "Blog",
+            "url": "/blog",
+            "description": "Check out the latest news, articles, and events at 7A3 Lanett Municipal Airport"
+          },
+          {
+            "title": "Financing",
+            "url": "/financing",
+            "description": "Learn about financing options for your flight training at Blue Skies Above"
+          },
+          {
+            "title": "Leaseback Program",
+            "url": "/leaseback-program",
+            "description": "Earn money while you're not flying your aircraft. Learn more about our leaseback program"
+          }
+        ]
+      },
+      {
+        "title": "Visit School",
+        "url": "/visit-flight-school"
+      },
+      {
+        "title": "Discovery Flight",
+        "url": "/discovery-flight"
+      },
+      {
+        "title": "Contact Us",
+        "url": "/contact"
+      }
+    ]
+  },
+  "content": {
+    "our_story": {
+      "title": "Our Story",
+      "description": "Blue Skies Above is a flight school born out of the mind of Chief Flight Instructor and Founder Matthew Bourguignon. Named after a catchphrase used in the past by his own flight instructor, Matthew chose to continue the tradition in his flight school. \"Blue Skies\" was a phrase used at the end of almost any conversation or call during his flight instruction and reminds Matthew of his former CFI, the biggest influence in Matthew's attraction to aviation.",
+      "image": "/assets/blue-skies-matt-800-aa1fa59ebc4fe62f9e32886c9572d63ff1db6350a06a047cc4d64f68b1614905.webp"
+    },
+    "leadership_team": {
+      "title": "Leadership Team",
+      "description": "Our leadership team is comprised of experienced aviation professionals who are passionate about aviation and committed to providing the highest level of training and support to our students.",
+      "members": [
+        {
+          "name": "Matthew Bourguignon",
+          "title": "CFII | Founder",
+          "description": "Matthew is an aviation enthusiast driven by a childhood dream inspired by his model airplane-flying grandfather from Long Island. Despite initially aiming for aviation college, concerns about student debt led him to the tech industry after graduating in 2011. The 2020 pandemic reignited Matthew's passion for flight, and he embarked on training to become a commercial pilot, discovering a deep love for general aviation. Now as a Certified Flight Instructor Instrument (CFII), Matthew finds great satisfaction in helping others succeed. In February 2023, he founded Blue Skies Above, quickly growing with a dedicated team to fulfill his dream of growing a community of pilots.",
+          "image": "/assets/blue-skies-matt-600-a3fd4ed4047ccd0f977f5827f6392ec6d9ac6d2bc94136a4e9c0561071d31729.webp"
+        },
+        {
+          "name": "Kate Roberts",
+          "title": "Operations Supervisor",
+          "description": "Kate is a Knoxville Tennessee Native who grew up passionate about aviation. Kate's father was a navigator on KC-135s, which sparked her interest in flying. She is planning to graduate from Auburn University with a degree in Aviation Management in December 2024. Kate is currently an instrument rated private pilot finishing her commercial at Blue Skies Above. In her free time she enjoys riding motorcycles, being outdoors, and hanging out with her dog \"Goose\".",
+          "image": "/assets/kate-roberts-84467e3474ac08b1235d5e824ef4b76e10b9870cf610d756eae902662c3230b6.webp"
+        },
+        {
+          "name": "A.J. Dorizas",
+          "title": "Training Coordinator",
+          "description": "A.J. is currently serving as a training coordinator at Blue Skies Above. His journey in aviation began at Auburn University, where he majored in aviation management. Over the past three years, AJ has worked as a firefighter, cultivating his leadership skills and deepening his commitment to serving his community. Additionally, as the founder and president of \"Fit for Flight,\" he inspires fellow aviation students to prioritize their physical health and mental well-being. AJ's dedication to fostering a healthier future for aspiring aviators reflects his desire to make a meaningful impact in the aviation world.",
+          "image": "/assets/aj_dorizas-a893bc802aee133d20f37c7531be27d16bc87cbe8c3e18a409fa1fbc21b1e8ce.webp"
+        }
+      ]
+    },
+    "instructors": {
+      "title": "Our Instructors",
+      "description": "Our experienced instructors at Blue Skies Above are committed to providing the highest quality flight training to students. With a passion for aviation and extensive knowledge, they create a supportive and safe learning environment for students to achieve their goals and become skilled pilots.",
+      "members": [
+        {
+          "name": "Matthew",
+          "title": "Fixed Wing CFI, CFII",
+          "image": "/assets/blue-skies-matt-300-1d5413da5af279ba3d538857de623211ac3c4ad593433ce87dc1eca6af24e331.webp"
+        },
+        {
+          "name": "Joe",
+          "title": "Lead Instructor\nFixed Wing CFI, CFII, MEI",
+          "image": "/assets/blue-skies-joe-0240e0097fad343162a59fd6f13936c09200be2dcab2de407e16b7f61263c59a.webp"
+        },
+        {
+          "name": "Paul",
+          "title": "Fixed Wing CFI",
+          "image": "/assets/blue-skies-paul-f81a63e70df3254aacfbe27a2e3a3755133a76bceb5162d631d006e55383036b.webp"
+        },
+        {
+          "name": "Allison",
+          "title": "Fixed Wing CFI",
+          "image": "/assets/cfi-allison-0cae3d8befd8a5e8478e800576dae8e0bd471827d52f2466be93d0d1fa98ca44.webp"
+        },
+        {
+          "name": "Bailey",
+          "title": "Fixed Wing CFI",
+          "image": "/assets/cfi-bailey-f3c61d09fbc6f18def5a008e70e7bf617cd6c7f36eba589cb8a993aa5d8ab7a5.webp"
+        },
+        {
+          "name": "Travasha",
+          "title": "Fixed Wing CFI",
+          "image": "/assets/cfi-travasha-e02233e4cedb021004b98f924ad1d4565b9a030b328e5acf6ee2d7c0396c0a2a.webp"
+        },
+        {
+          "name": "Lyle",
+          "title": "Fixed Wing CFI",
+          "image": "/assets/cfi-lyle-f597b76efc3b41770b2964458f1a669652e7dfc1de9bff9cc31039fb859c28a1.webp"
+        },
+        {
+          "name": "Jaymes",
+          "title": "Fixed Wing CFI, CFII",
+          "image": "/assets/cfi-jaymes-7f645e52e6e1112ba6eecd324089b75f3a88e5544c959912bfae4014aa7f8bd9.webp"
+        },
+        {
+          "name": "Connor",
+          "title": "Fixed Wing CFI",
+          "image": "/assets/cfi-connor-2f616d9c7cf38250ac4f4bb4c4990ebb2ab4c7309d6d71761394399eb56c659a.webp"
+        }
+      ]
+    },
+    "maintenance_staff": {
+      "title": "Our Maintenance Staff",
+      "description": "Our dedicated maintenance staff at Blue Skies Above are committed to ensuring the highest standards of safety and reliability for our aircraft. With a passion for precision and extensive expertise, they work diligently to maintain and service our fleet, supporting a safe and seamless aviation experience for all.",
+      "members": [
+        {
+          "name": "Sammy",
+          "title": "A&P",
+          "image": "/assets/a&p-sammy-57d9ab237eb521c216334adb5465235b47e46ebba7ed82c43859325467f33b51.webp"
+        },
+        {
+          "name": "Lola",
+          "title": "A&P Apprentice",
+          "image": "/assets/lola-f861a064e62bfac065c949ffcf8a0c9842c29f47e5bf689712287bb2ec3937c1.webp"
+        }
+      ]
+    },
+    "video_section": {
+      "title": "Blue Skies Above: Your Guide to Starting Your Journey",
+      "description": "Your aviation journey begins with a discovery flight in Lanett or Auburn, the first step toward reaching your goals in the skies. Whether you dream of flying for fun or pursuing a professional career, understanding the process is essential. Blue Skies Above will walk you through the different paths available, from local flight training options to certifications, helping you navigate each step with confidence.",
+      "video_url": "https://tube.rvere.com/embed?v=fUu8kFy5jgE&amp;rel=0"
+    },
+    "cta_section": {
+      "title": "We are the <span class=\"text-sky-500\">flight training experts</span> in Lanett, AL",
+      "subtitle": "Providing pilot training to the Auburn, Columbus, Opelika, LaGrange, Montgomery areas in Alabama and Georgia",
+      "description": "As the only independent flight school with a Cessna fleet in the area, we pride ourselves in training safe and highly proficient pilots. Come see what everyone's talking about! Visit Blue Skies Above and begin flight training today.",
+      "cta_button": {
+        "text": "VISIT BLUE SKIES ABOVE",
+        "url": "/visit-flight-school"
+      }
+    }
+  },
+  "footer": {
+    "logo": "/assets/blue-skies-logo-black-600-8dcd0347ad037d906592dd16f7d48dc447fdb314b5ee14c1e572774dfb3d7fff.webp",
+    "address": {
+      "airport": "Lanett Regional Airport 7A3",
+      "street": "4445 51st Ave SW",
+      "city": "Lanett, Alabama 36863",
+      "phone": "1-334-449-7600"
+    },
+    "menu_sections": [
+      {
+        "title": "New to Flying?",
+        "links": [
+          {
+            "text": "Why Become a pilot?",
+            "url": "/should-i-become-a-pilot"
+          },
+          {
+            "text": "Pilot Training Process",
+            "url": "/pilot-training-programs-and-courses"
+          },
+          {
+            "text": "First Flight Lesson",
+            "url": "/discovery-flight"
+          }
+        ]
+      },
+      {
+        "title": "Training Programs",
+        "links": [
+          {
+            "text": "Private Pilot",
+            "url": "/private-pilot-certificate-ppl"
+          },
+          {
+            "text": "Instrument Rating",
+            "url": "/instrument-rating-ifr"
+          },
+          {
+            "text": "Commercial Pilot",
+            "url": "/commercial-pilot-certificate-cpl"
+          },
+          {
+            "text": "Multi-Engine Rating",
+            "url": "/multi-engine-rating"
+          },
+          {
+            "text": "Multi-Engine Instructor",
+            "url": "/multi-engine-instructor-mei"
+          },
+          {
+            "text": "Flight Instructor",
+            "url": "/certified-flight-instructor-cfi"
+          },
+          {
+            "text": "CFI Spin Endorsement",
+            "url": "/spin-endorsement"
+          }
+        ]
+      },
+      {
+        "title": "About",
+        "links": [
+          {
+            "text": "Our Team",
+            "url": "/about-us"
+          },
+          {
+            "text": "Our Fleet",
+            "url": "/our-fleet"
+          },
+          {
+            "text": "Why Blue Skies Above?",
+            "url": "/why-choose-blue-skies-above"
+          },
+          {
+            "text": "Join the Team",
+            "url": "/join-team"
+          },
+          {
+            "text": "Blog",
+            "url": "/blog"
+          },
+          {
+            "text": "Financing",
+            "url": "/financing"
+          },
+          {
+            "text": "Leaseback Program",
+            "url": "/leaseback-program"
+          }
+        ]
+      },
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "text": "Visit School",
+            "url": "/visit-flight-school"
+          },
+          {
+            "text": "Discovery Flight",
+            "url": "/discovery-flight"
+          },
+          {
+            "text": "Contact Us",
+            "url": "/contact"
+          }
+        ]
+      }
+    ],
+    "social_links": {
+      "facebook": "https://www.facebook.com/flytheblueskies",
+      "instagram": "https://www.instagram.com/flybsa/",
+      "twitter": "https://twitter.com/flybsa",
+      "linkedin": "https://www.linkedin.com/company/blue-skies-above/"
+    },
+    "copyright": "© 2025 Blue Skies Above. All rights reserved.",
+    "privacy_policy": {
+      "text": "Privacy Policy Terms of Service",
+      "url": "/privacy-policy-terms-of-service"
+    },
+    "credits": "Blue Skies Above Flight School Website Designed and Developed by Right Rudder Marketing"
+  }
+}

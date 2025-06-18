@@ -1,0 +1,524 @@
+{
+  "page": {
+    "header": {
+      "contact": {
+        "phone": "1-334-449-7600",
+        "message": "Becoming a pilot is one call away"
+      },
+      "social_media": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/flytheblueskies",
+          "icon": "facebook"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/flybsa/",
+          "icon": "instagram"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/flybsa",
+          "icon": "twitter"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/company/blue-skies-above/",
+          "icon": "linkedin"
+        }
+      ],
+      "navigation": {
+        "main_menu": [
+          {
+            "title": "New to Flying?",
+            "submenu": [
+              {
+                "title": "Why Become a Pilot?",
+                "description": "Now is the best time to become a pilot",
+                "url": "/should-i-become-a-pilot"
+              },
+              {
+                "title": "Pilot Training Process",
+                "description": "Learn how to become a pilot",
+                "url": "/pilot-training-programs-and-courses"
+              },
+              {
+                "title": "Considering a university for pilot training?",
+                "description": "Learn more about our Part 61 program",
+                "url": "/professional-flight-program"
+              },
+              {
+                "title": "Discovery Flight",
+                "description": "Your first flight lesson. You fly the plane",
+                "url": "/discovery-flight"
+              }
+            ],
+            "actions": [
+              {
+                "title": "Schedule Visit",
+                "url": "/visit-flight-school",
+                "icon": "calendar"
+              },
+              {
+                "title": "Contact Us",
+                "url": "/contact",
+                "icon": "phone"
+              }
+            ]
+          },
+          {
+            "title": "Training Programs",
+            "submenu": [
+              {
+                "title": "Private Pilot",
+                "description": "Start your aviation journey here",
+                "url": "/private-pilot-certificate-ppl"
+              },
+              {
+                "title": "Instrument Rating",
+                "description": "Advance your navigation abilities and opportunities",
+                "url": "/instrument-rating-ifr"
+              },
+              {
+                "title": "Commercial Pilot",
+                "description": "Make flying your career",
+                "url": "/commercial-pilot-certificate-cpl"
+              },
+              {
+                "title": "Multi-Engine Rating",
+                "description": "Fly aircraft with more than one engine",
+                "url": "/multi-engine-rating"
+              },
+              {
+                "title": "Multi-Engine Instructor (MEI)",
+                "description": "Learn how to instruct in multi-engine aircraft",
+                "url": "/multi-engine-instructor-mei"
+              },
+              {
+                "title": "CFI",
+                "description": "Teach what you know to the next class of pilots",
+                "url": "/certified-flight-instructor-cfi"
+              },
+              {
+                "title": "CFII",
+                "description": "Bring student pilots to the next level with an Instrument Rating",
+                "url": "/flight-instructor-instrument-cfii"
+              },
+              {
+                "title": "CFI Spin Endorsement",
+                "description": "Specialize in spin training for CFI candidates",
+                "url": "/spin-endorsement"
+              }
+            ],
+            "actions": [
+              {
+                "title": "Schedule Visit",
+                "url": "/visit-flight-school",
+                "icon": "calendar"
+              },
+              {
+                "title": "Contact Us",
+                "url": "/contact",
+                "icon": "phone"
+              }
+            ]
+          },
+          {
+            "title": "About Us",
+            "submenu": [
+              {
+                "title": "Our Team",
+                "description": "Meet the team at Blue Skies Above",
+                "url": "/about-us"
+              },
+              {
+                "title": "Our Fleet",
+                "description": "Meet the fleet at Blue Skies Above",
+                "url": "/our-fleet"
+              },
+              {
+                "title": "Why Blue Skies Above?",
+                "description": "The only local flight school with a Cessna fleet. When you're here, you're family",
+                "url": "/why-choose-blue-skies-above"
+              },
+              {
+                "title": "Join the team",
+                "description": "Are you a CFI looking to teach the next generation of aviators? Apply today!",
+                "url": "/join-team"
+              },
+              {
+                "title": "Blog",
+                "description": "Check out the latest news, articles, and events at 7A3 Lanett Municipal Airport",
+                "url": "/blog"
+              },
+              {
+                "title": "Financing",
+                "description": "Learn about financing options for your flight training at Blue Skies Above",
+                "url": "/financing"
+              },
+              {
+                "title": "Leaseback Program",
+                "description": "Earn money while you're not flying your aircraft. Learn more about our leaseback program",
+                "url": "/leaseback-program"
+              }
+            ],
+            "actions": [
+              {
+                "title": "Schedule Visit",
+                "url": "/visit-flight-school",
+                "icon": "calendar"
+              },
+              {
+                "title": "Contact Us",
+                "url": "/contact",
+                "icon": "phone"
+              }
+            ]
+          }
+        ],
+        "quick_links": [
+          {
+            "title": "VISIT SCHOOL",
+            "url": "/visit-flight-school"
+          },
+          {
+            "title": "DISCOVERY FLIGHT",
+            "url": "/discovery-flight"
+          },
+          {
+            "title": "CONTACT US",
+            "url": "/contact"
+          }
+        ]
+      },
+      "logo": {
+        "src": "/assets/blue-skies-reverse-logo-b14c1e678e43e29515379780efd2f18eb807f3e150b799f7163e964bf55bc9eb.webp",
+        "alt": "Blue Skies Above logo"
+      }
+    },
+    "hero": {
+      "title": "How to get your instrument rating",
+      "subtitle": "Get your instrument rating in Lanett, Alabama",
+      "buttons": [
+        {
+          "text": "Enroll Today",
+          "url": "/enroll-at-blue-skies"
+        },
+        {
+          "text": "Visit School",
+          "url": "/visit-flight-school"
+        }
+      ],
+      "background_image": "bg-ifr"
+    },
+    "intro_section": {
+      "title": "Instrument Rating",
+      "subtitle": "An Instrument Rating is a rating that grants you the privileges to fly in IFR (Instrument Flight Rules) weather.",
+      "highlight": "Become an instrument rated pilot"
+    },
+    "why_section": {
+      "title": "Why You Need an Instrument Rating",
+      "description": "An instrument rating enhances your flying skills, increases safety in low-visibility conditions, and opens doors to advanced certifications and career opportunities. Gain the confidence and expertise needed to navigate complex airspace and unpredictable weather with precision.",
+      "video": {
+        "title": "Why You Need An Instrument Rating | Flight Training in Auburn, Alabama",
+        "url": "https://tube.rvere.com/embed?v=63KJeE25V5g"
+      }
+    },
+    "what_is_section": {
+      "title": "What is an Instrument Rating?",
+      "content": [
+        "When you start flying, you learn about different weather conditions and the challenges weather entails including visibility, cloud coverage, and thunderstorms. As a private pilot, you're limited to flying in good weather. Sometimes, weather conditions make flying visually unsafe, and that's where the instrument rating comes in.",
+        "Getting an instrument rating is the next step in your training. It allows you to handle more challenging weather with proper training. Essentially, you'll learn to fly by focusing only on your flight instruments, without relying on the ground or horizon. This skill is crucial for flying in less than ideal weather conditions.",
+        "During the process, you'll understand the rules, procedures, and the published minimums to fly safely in such conditions. It's about expanding your skills and flying confidently in more complex weather situations."
+      ],
+      "key_points": [
+        {
+          "icon": "check",
+          "title": "Complete Your Private Pilot",
+          "description": "You must have finished your private pilot in order to start training for your instrument rating."
+        },
+        {
+          "icon": "document",
+          "title": "Pass Your Instrument Written Exam",
+          "description": "Study and solidify core instrument rating concepts. Be able to reach approach plates and IFR charts. Understand the US Air Traffic Control System and your role as a pilot in the system."
+        },
+        {
+          "icon": "clock",
+          "title": "Meet Minimum Requirements",
+          "description": "You'll need to complete 50 hours of cross country time and at least 40 hours under the hood. You'll also need to fly an IFR cross country and complete training with an instructor."
+        },
+        {
+          "icon": "flight",
+          "title": "Fly With an Examiner",
+          "description": "You'll fly with a FAA Designated Pilot Examiner (DPE) and demonstrate you have the skills to fly IFR and meet the requirements of the Airmen Certification Standards (ACS)."
+        }
+      ],
+      "image": {
+        "src": "/assets/blue-skies-flying-over-few-clouds-opelika-85e00c6fb1f750b3494cf22fe3813d80fc5ddd7f6ea589aeefcb5fba1120ad6a.webp",
+        "alt": "flying cessna over clouds Opelika, Alabama"
+      },
+      "conclusion": "Blue Skies Above will prepare you for all of the required exams with the necessary materials and education. Give us a call and schedule a discovery flight to get started.",
+      "cta": {
+        "text": "Visit School",
+        "url": "/visit-flight-school"
+      }
+    },
+    "faq_section": {
+      "title": "Frequently Asked",
+      "subtitle": "Why Get an Instrument Rating?",
+      "introduction": "Are you a pilot wondering if getting an instrument rating is worth it? If so, you're not alone. Many pilots ask themselves the same question, and it's a decision that requires careful consideration. But before we get into the benefits of an instrument rating, it's important to understand exactly what are the requirements.",
+      "requirements": {
+        "title": "Part 61 Instrument Rating Requirements",
+        "items": [
+          "Hold at least a private pilot certificate",
+          "Be able to read, speak, write, and understand the English language",
+          "Pass a written exam on the subject of instrument flying",
+          "Accumulate a minimum of 50 hours of cross-country flight time as a pilot",
+          "Accumulate a minimum of 40 hours of instrument flight time, including at least 15 hours of instrument flight training from a certificated flight instructor",
+          "Pass a practical test, also known as a checkride, with a DPE"
+        ]
+      },
+      "reasons": {
+        "title": "4 Reasons to Get an Instrument Rating",
+        "items": [
+          {
+            "title": "Improved safety",
+            "description": "One of the most compelling reasons to get an instrument rating is the improvement in safety it provides. By learning to fly in instrument meteorological conditions (IMC), you'll be better equipped to handle unexpected weather events and other challenges that may arise during flight. With an instrument rating, you'll be able to fly with greater confidence and proficiency, knowing that you have the skills and knowledge to handle a wider range of situations."
+          },
+          {
+            "title": "Enhanced career opportunities",
+            "description": "An instrument rating can also strengthen your career prospects as a pilot. Many airlines and other aviation employers prefer to hire pilots with instrument ratings, as they demonstrate a higher level of skill and professionalism. Additionally, an instrument rating may be required for certain types of flying, such as flying for an airline or chartering aircraft."
+          },
+          {
+            "title": "Improved situational awareness",
+            "description": "Another benefit of an instrument rating is the improvement in situational awareness it provides. By learning to fly using instruments, you'll develop a heightened sense of awareness and attention to detail that can translate to all aspects of flying. This increased awareness can help you make better decisions and react more quickly to changing conditions, leading to safer, more efficient flights."
+          },
+          {
+            "title": "Increased enjoyment",
+            "description": "Finally, many pilots find that getting an instrument rating enhances their enjoyment of flying. With an instrument rating, you'll have the skills and confidence to fly in a wider range of conditions and environments, allowing you to experience the thrill of flight in a whole new way."
+          }
+        ]
+      },
+      "images": [
+        {
+          "src": "/assets/blue-skies-instrument-training-foggles-a83b6bebb634f687771f8fec102ff77dfcf67908635a0a80f74a01edb5416364.webp",
+          "alt": "Student pilot wearing foggles during instrument training above Columbus Georgia Atlanta - Blue Skies Above Professional Flight Instruction",
+          "caption": "Student pilot wearing foggles during instrument training Blue Skies Above Lanett, Alabama"
+        },
+        {
+          "src": "/assets/blue-skies-imc-above-clouds-atlanta-columbus-georgia-cedf3de228db225a97b30baa41fade07cd5da05ccf47ee8fca174f759ed41d34.webp",
+          "alt": "Flight above clouds in IMC above Columbus Georgia Atlanta - Blue Skies Above Professional Flight Instruction",
+          "caption": "IFR Flight Training Blue Skies Above Lanett, Alabama"
+        }
+      ],
+      "conclusion": "Blue Skies Above Professional Flight Instruction is here to help you achieve your goals. Our structured training programs ensure that you receive top notch instruction. Whether you're aiming to enhance safety, open doors to exciting career opportunities, or simply enjoy the thrill of flying like never before, obtaining an instrument rating is a journey worth embarking on. Contact us today and get started."
+    },
+    "full_width_image": {
+      "src": "/assets/blue-skies-auburn-university-flying-imc-instrument-rating-cca6333819917113f4b7f6a1c5839980c7e4c017da8f084c6b098af0207c1b39.webp",
+      "alt": "Cessna 172 flying IMC instrument rating above Auburn, Alabama. university, flight school, pilot training near me, instrument rating course, instrument flight school"
+    },
+    "pricing_section": {
+      "title": "Pricing",
+      "subtitle": "Learn More About Our Training Packages",
+      "packages": [
+        {
+          "title": "Instrument Rating",
+          "description": "Take your pilot skills to the next level with Instrument Rating",
+          "duration": "27 weeks to complete (approximately)",
+          "price": "$12,050",
+          "monthly_price": "$388/month",
+          "features": [
+            "3 lessons per week",
+            "40 hours of flight time",
+            "40 hours of flight instruction",
+            "30 hours of ground instruction",
+            "Ground school kit included",
+            "Pay up front or incrementally"
+          ],
+          "note": "Note: FAA requires 50 flight hours of cross country time to meet requirements. Additional time building may be required.",
+          "cta": {
+            "text": "Enroll Today",
+            "url": "/enroll-at-blue-skies"
+          }
+        }
+      ],
+      "financing_link": {
+        "text": "See financing options",
+        "url": "/financing"
+      },
+      "hourly_rates_note": "You can complete your training and pay by the hour instead of through a package. To see our hourly rates, please click here.",
+      "hourly_rates_link": {
+        "text": "click here",
+        "url": "/pricing"
+      }
+    },
+    "testimonial_section": {
+      "title": "We are the flight training experts in Lanett, AL",
+      "highlight": "flight training experts",
+      "subtitle": "Providing pilot training to the Auburn, Columbus, Opelika, LaGrange, Montgomery areas in Alabama and Georgia",
+      "description": "As the only independent flight school with a Cessna fleet in the area, we pride ourselves in training safe and highly proficient pilots. Come see what everyone's talking about! Visit Blue Skies Above and begin flight training today.",
+      "cta": {
+        "text": "VISIT BLUE SKIES ABOVE",
+        "url": "/visit-flight-school"
+      },
+      "background_image": "bg-sunset-flight"
+    },
+    "cta_section": {
+      "title": "Next Steps\nVisit Blue Skies Above\nProfessional Flight Instruction",
+      "description": "Visit our flight school, start pilot training and join the family, like & follow us on social media. We're excited to partner with you and be a part of your aviation journey. Let's go flying together!",
+      "buttons": [
+        {
+          "text": "Visit School",
+          "url": "/visit-flight-school"
+        },
+        {
+          "text": "Our Programs",
+          "url": "/pilot-training-programs-and-courses"
+        }
+      ]
+    },
+    "footer": {
+      "logo": {
+        "src": "/assets/blue-skies-logo-black-600-8dcd0347ad037d906592dd16f7d48dc447fdb314b5ee14c1e572774dfb3d7fff.webp",
+        "alt": "Blue Skies Above logo"
+      },
+      "contact_info": {
+        "address": "Lanett Regional Airport 7A3\n4445 51st Ave SW\nLanett, Alabama 36863",
+        "phone": "1-334-449-7600"
+      },
+      "menu_sections": [
+        {
+          "title": "New to Flying?",
+          "links": [
+            {
+              "title": "Why Become a pilot?",
+              "url": "/should-i-become-a-pilot"
+            },
+            {
+              "title": "Pilot Training Process",
+              "url": "/pilot-training-programs-and-courses"
+            },
+            {
+              "title": "First Flight Lesson",
+              "url": "/discovery-flight"
+            }
+          ]
+        },
+        {
+          "title": "Training Programs",
+          "links": [
+            {
+              "title": "Private Pilot",
+              "url": "/private-pilot-certificate-ppl"
+            },
+            {
+              "title": "Instrument Rating",
+              "url": "/instrument-rating-ifr"
+            },
+            {
+              "title": "Commercial Pilot",
+              "url": "/commercial-pilot-certificate-cpl"
+            },
+            {
+              "title": "Multi-Engine Rating",
+              "url": "/multi-engine-rating"
+            },
+            {
+              "title": "Multi-Engine Instructor",
+              "url": "/multi-engine-instructor-mei"
+            },
+            {
+              "title": "Flight Instructor",
+              "url": "/certified-flight-instructor-cfi"
+            },
+            {
+              "title": "CFI Spin Endorsement",
+              "url": "/spin-endorsement"
+            }
+          ]
+        },
+        {
+          "title": "About",
+          "links": [
+            {
+              "title": "Our Team",
+              "url": "/about-us"
+            },
+            {
+              "title": "Our Fleet",
+              "url": "/our-fleet"
+            },
+            {
+              "title": "Why Blue Skies Above?",
+              "url": "/why-choose-blue-skies-above"
+            },
+            {
+              "title": "Join the Team",
+              "url": "/join-team"
+            },
+            {
+              "title": "Blog",
+              "url": "/blog"
+            },
+            {
+              "title": "Financing",
+              "url": "/financing"
+            },
+            {
+              "title": "Leaseback Program",
+              "url": "/leaseback-program"
+            }
+          ]
+        },
+        {
+          "title": "Quick Links",
+          "links": [
+            {
+              "title": "Visit School",
+              "url": "/visit-flight-school"
+            },
+            {
+              "title": "Discovery Flight",
+              "url": "/discovery-flight"
+            },
+            {
+              "title": "Contact Us",
+              "url": "/contact"
+            }
+          ]
+        }
+      ],
+      "social_media": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/flytheblueskies",
+          "icon": "facebook"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/flybsa/",
+          "icon": "instagram"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/flybsa",
+          "icon": "twitter"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/company/blue-skies-above/",
+          "icon": "linkedin"
+        }
+      ],
+      "copyright": "© 2025 Blue Skies Above. All rights reserved.",
+      "legal_links": [
+        {
+          "title": "Privacy Policy Terms of Service",
+          "url": "/privacy-policy-terms-of-service"
+        }
+      ],
+      "credit": "Blue Skies Above Flight School Website Designed and Developed by Right Rudder Marketing",
+      "credit_url": "https://rightruddermarketing.com"
+    }
+  }
+}
