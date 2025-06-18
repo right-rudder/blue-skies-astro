@@ -1,0 +1,259 @@
+{
+  "header": {
+    "phone": "1-334-449-7600",
+    "tagline": "Becoming a pilot is one call away",
+    "social_media": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/flytheblueskies"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/flybsa/"
+      },
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/flybsa"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/blue-skies-above/"
+      }
+    ]
+  },
+  "navigation": {
+    "main_menu": [
+      {
+        "title": "New to Flying?",
+        "submenu": [
+          {
+            "title": "Why Become a Pilot?",
+            "description": "Now is the best time to become a pilot",
+            "url": "/should-i-become-a-pilot"
+          },
+          {
+            "title": "Pilot Training Process",
+            "description": "Learn how to become a pilot",
+            "url": "/pilot-training-programs-and-courses"
+          },
+          {
+            "title": "Considering a university for pilot training?",
+            "description": "Learn more about our Part 61 program",
+            "url": "/professional-flight-program"
+          },
+          {
+            "title": "Discovery Flight",
+            "description": "Your first flight lesson. You fly the plane",
+            "url": "/discovery-flight"
+          }
+        ]
+      },
+      {
+        "title": "Training Programs",
+        "submenu": [
+          {
+            "title": "Private Pilot",
+            "description": "Start your aviation journey here",
+            "url": "/private-pilot-certificate-ppl"
+          },
+          {
+            "title": "Instrument Rating",
+            "description": "Advance your navigation abilities and opportunities",
+            "url": "/instrument-rating-ifr"
+          },
+          {
+            "title": "Commercial Pilot",
+            "description": "Make flying your career",
+            "url": "/commercial-pilot-certificate-cpl"
+          },
+          {
+            "title": "Multi-Engine Rating",
+            "description": "Fly aircraft with more than one engine",
+            "url": "/multi-engine-rating"
+          },
+          {
+            "title": "Multi-Engine Instructor (MEI)",
+            "description": "Learn how to instruct in multi-engine aircraft",
+            "url": "/multi-engine-instructor-mei"
+          },
+          {
+            "title": "CFI",
+            "description": "Teach what you know to the next class of pilots",
+            "url": "/certified-flight-instructor-cfi"
+          },
+          {
+            "title": "CFII",
+            "description": "Bring student pilots to the next level with an Instrument Rating",
+            "url": "/flight-instructor-instrument-cfii"
+          },
+          {
+            "title": "CFI Spin Endorsement",
+            "description": "Specialize in spin training for CFI candidates",
+            "url": "/spin-endorsement"
+          }
+        ]
+      },
+      {
+        "title": "About Us",
+        "submenu": [
+          {
+            "title": "Our Team",
+            "description": "Meet the team at Blue Skies Above",
+            "url": "/about-us"
+          },
+          {
+            "title": "Our Fleet",
+            "description": "Meet the fleet at Blue Skies Above",
+            "url": "/our-fleet"
+          },
+          {
+            "title": "Why Blue Skies Above?",
+            "description": "The only local flight school with a Cessna fleet. When you're here, you're family",
+            "url": "/why-choose-blue-skies-above"
+          },
+          {
+            "title": "Join the team",
+            "description": "Are you a CFI looking to teach the next generation of aviators? Apply today!",
+            "url": "/join-team"
+          },
+          {
+            "title": "Blog",
+            "description": "Check out the latest news, articles, and events at 7A3 Lanett Municipal Airport",
+            "url": "/blog"
+          },
+          {
+            "title": "Financing",
+            "description": "Learn about financing options for your flight training at Blue Skies Above",
+            "url": "/financing"
+          },
+          {
+            "title": "Leaseback Program",
+            "description": "Earn money while you're not flying your aircraft. Learn more about our leaseback program",
+            "url": "/leaseback-program"
+          }
+        ]
+      }
+    ],
+    "cta_links": [
+      {
+        "title": "Visit School",
+        "url": "/visit-flight-school"
+      },
+      {
+        "title": "Discovery Flight",
+        "url": "/discovery-flight"
+      },
+      {
+        "title": "Contact Us",
+        "url": "/contact"
+      }
+    ]
+  },
+  "hero_section": {
+    "title": "CFI Spin Endorsement Training",
+    "subtitle": "Master Spin Recovery and Become a Certified Flight Instructor",
+    "cta_buttons": [
+      {
+        "text": "Visit School",
+        "url": "/visit-flight-school"
+      },
+      {
+        "text": "Discovery Flight",
+        "url": "/discovery-flight"
+      }
+    ]
+  },
+  "content_sections": [
+    {
+      "title": "Why get the CFI Spin Endorsement?",
+      "content": "The CFI spin endorsement certifies that you have the necessary skills to teach spin recovery techniques, an essential part of flight training."
+    },
+    {
+      "title": "Why Become a Certified Flight Instructor?",
+      "content": "Becoming a Certified Flight Instructor opens doors to valuable experience, career advancement, and the opportunity to inspire the next generation of pilots. It strengthens your skills, builds flight hours, and positions you for success in the aviation industry.",
+      "video": "https://tube.rvere.com/embed?v=5MhGt_28Ifc"
+    },
+    {
+      "title": "Steps to Obtain Your CFI Spin Endorsement",
+      "content": "As part of your journey to become a Certified Flight Instructor, you must demonstrate proficiency in spin recovery techniques. Our program prepares you to handle spins confidently and safely, ensuring you meet all FAA requirements.",
+      "steps": [
+        {
+          "title": "Ground School",
+          "description": "Learn the theory behind spins, including the aerodynamics and regulations involved. Understand the common causes of spins and the proper recovery techniques."
+        },
+        {
+          "title": "Flight Training",
+          "description": "Conduct flights with an experienced instructor to practice spin entries, spins, and spin recoveries. Demonstrate your ability to recover from a spin safely."
+        }
+      ]
+    },
+    {
+      "title": "CFI Spin Endorsement Requirements",
+      "content": "According to FAR 61.183(i), to be eligible for a flight instructor certificate or rating, a person must receive a logbook endorsement indicating competence in stall awareness, spin entry, spins, and spin recovery procedures.",
+      "requirements": [
+        "Receive ground training in stall awareness, spin entry, spins, and spin recovery procedures",
+        "Fly with a CFI and practice entering spins and applying spin recovery procedures",
+        "Receive spin endorsement from a qualified flight instructor"
+      ]
+    },
+    {
+      "type": "pricing",
+      "title": "CFI Spin Endorsement",
+      "description": "Uses 180hp 172. *1 day to complete",
+      "price": "$399",
+      "includes": [
+        "Up to 2 hours of flight time",
+        "Ground and flight instruction included"
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "We are the flight training experts in Lanett, AL",
+      "content": "Providing pilot training to the Auburn, Columbus, Opelika, LaGrange, Montgomery areas in Alabama and Georgia. As the only independent flight school with a Cessna fleet in the area, we pride ourselves in training safe and highly proficient pilots.",
+      "button": {
+        "text": "VISIT BLUE SKIES ABOVE",
+        "url": "/visit-flight-school"
+      }
+    }
+  ],
+  "footer": {
+    "address": {
+      "airport": "Lanett Regional Airport 7A3",
+      "street": "4445 51st Ave SW",
+      "city": "Lanett, Alabama 36863",
+      "phone": "1-334-449-7600"
+    },
+    "links": {
+      "new_to_flying": [
+        {"title": "Why Become a pilot?", "url": "/should-i-become-a-pilot"},
+        {"title": "Pilot Training Process", "url": "/pilot-training-programs-and-courses"},
+        {"title": "First Flight Lesson", "url": "/discovery-flight"}
+      ],
+      "training_programs": [
+        {"title": "Private Pilot", "url": "/private-pilot-certificate-ppl"},
+        {"title": "Instrument Rating", "url": "/instrument-rating-ifr"},
+        {"title": "Commercial Pilot", "url": "/commercial-pilot-certificate-cpl"},
+        {"title": "Multi-Engine Rating", "url": "/multi-engine-rating"},
+        {"title": "Multi-Engine Instructor", "url": "/multi-engine-instructor-mei"},
+        {"title": "Flight Instructor", "url": "/certified-flight-instructor-cfi"},
+        {"title": "CFI Spin Endorsement", "url": "/spin-endorsement"}
+      ],
+      "about": [
+        {"title": "Our Team", "url": "/about-us"},
+        {"title": "Our Fleet", "url": "/our-fleet"},
+        {"title": "Why Blue Skies Above?", "url": "/why-choose-blue-skies-above"},
+        {"title": "Join the Team", "url": "/join-team"},
+        {"title": "Blog", "url": "/blog"},
+        {"title": "Financing", "url": "/financing"},
+        {"title": "Leaseback Program", "url": "/leaseback-program"}
+      ],
+      "quick_links": [
+        {"title": "Visit School", "url": "/visit-flight-school"},
+        {"title": "Discovery Flight", "url": "/discovery-flight"},
+        {"title": "Contact Us", "url": "/contact"}
+      ]
+    },
+    "copyright": "© 2025 Blue Skies Above. All rights reserved.",
+    "privacy_policy": "/privacy-policy-terms-of-service"
+  }
+}

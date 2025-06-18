@@ -1,0 +1,433 @@
+{
+  "page": {
+    "title": "Certified Flight Instructor",
+    "description": "Train the next generation of aviators at Blue Skies Above Flight School in Lanett, AL",
+    "sections": [
+      {
+        "type": "header",
+        "content": {
+          "phone": "1-334-449-7600",
+          "tagline": "Becoming a pilot is one call away",
+          "social_media": [
+            {
+              "platform": "Facebook",
+              "url": "https://www.facebook.com/flytheblueskies"
+            },
+            {
+              "platform": "Instagram",
+              "url": "https://www.instagram.com/flybsa/"
+            },
+            {
+              "platform": "Twitter",
+              "url": "https://twitter.com/flybsa"
+            },
+            {
+              "platform": "LinkedIn",
+              "url": "https://www.linkedin.com/company/blue-skies-above/"
+            }
+          ]
+        }
+      },
+      {
+        "type": "navigation",
+        "content": {
+          "menu_items": [
+            {
+              "title": "New to Flying?",
+              "submenu": [
+                {
+                  "title": "Why Become a Pilot?",
+                  "url": "/should-i-become-a-pilot",
+                  "description": "Now is the best time to become a pilot"
+                },
+                {
+                  "title": "Pilot Training Process",
+                  "url": "/pilot-training-programs-and-courses",
+                  "description": "Learn how to become a pilot"
+                },
+                {
+                  "title": "Considering a university for pilot training?",
+                  "url": "/professional-flight-program",
+                  "description": "Learn more about our Part 61 program"
+                },
+                {
+                  "title": "Discovery Flight",
+                  "url": "/discovery-flight",
+                  "description": "Your first flight lesson. You fly the plane"
+                }
+              ]
+            },
+            {
+              "title": "Training Programs",
+              "submenu": [
+                {
+                  "title": "Private Pilot",
+                  "url": "/private-pilot-certificate-ppl",
+                  "description": "Start your aviation journey here"
+                },
+                {
+                  "title": "Instrument Rating",
+                  "url": "/instrument-rating-ifr",
+                  "description": "Advance your navigation abilities and opportunities"
+                },
+                {
+                  "title": "Commercial Pilot",
+                  "url": "/commercial-pilot-certificate-cpl",
+                  "description": "Make flying your career"
+                },
+                {
+                  "title": "Multi-Engine Rating",
+                  "url": "/multi-engine-rating",
+                  "description": "Fly aircraft with more than one engine"
+                },
+                {
+                  "title": "Multi-Engine Instructor (MEI)",
+                  "url": "/multi-engine-instructor-mei",
+                  "description": "Learn how to instruct in multi-engine aircraft"
+                },
+                {
+                  "title": "CFI",
+                  "url": "/certified-flight-instructor-cfi",
+                  "description": "Teach what you know to the next class of pilots"
+                },
+                {
+                  "title": "CFII",
+                  "url": "/flight-instructor-instrument-cfii",
+                  "description": "Bring student pilots to the next level with an Instrument Rating"
+                },
+                {
+                  "title": "CFI Spin Endorsement",
+                  "url": "/spin-endorsement",
+                  "description": "Specialize in spin training for CFI candidates"
+                }
+              ]
+            },
+            {
+              "title": "About Us",
+              "submenu": [
+                {
+                  "title": "Our Team",
+                  "url": "/about-us",
+                  "description": "Meet the team at Blue Skies Above"
+                },
+                {
+                  "title": "Our Fleet",
+                  "url": "/our-fleet",
+                  "description": "Meet the fleet at Blue Skies Above"
+                },
+                {
+                  "title": "Why Blue Skies Above?",
+                  "url": "/why-choose-blue-skies-above",
+                  "description": "The only local flight school with a Cessna fleet. When you're here, you're family"
+                },
+                {
+                  "title": "Join the team",
+                  "url": "/join-team",
+                  "description": "Are you a CFI looking to teach the next generation of aviators? Apply today!"
+                },
+                {
+                  "title": "Blog",
+                  "url": "/blog",
+                  "description": "Check out the latest news, articles, and events at 7A3 Lanett Municipal Airport"
+                },
+                {
+                  "title": "Financing",
+                  "url": "/financing",
+                  "description": "Learn about financing options for your flight training at Blue Skies Above"
+                },
+                {
+                  "title": "Leaseback Program",
+                  "url": "/leaseback-program",
+                  "description": "Earn money while you're not flying your aircraft. Learn more about our leaseback program"
+                }
+              ]
+            },
+            {
+              "title": "Visit School",
+              "url": "/visit-flight-school"
+            },
+            {
+              "title": "Discovery Flight",
+              "url": "/discovery-flight"
+            },
+            {
+              "title": "Contact Us",
+              "url": "/contact"
+            }
+          ]
+        }
+      },
+      {
+        "type": "hero",
+        "content": {
+          "title": "Certified Flight Instructor",
+          "subtitle": "Train the next generation of aviators",
+          "buttons": [
+            {
+              "text": "Enroll Today",
+              "url": "/enroll-at-blue-skies"
+            },
+            {
+              "text": "Visit School",
+              "url": "/visit-flight-school"
+            }
+          ]
+        }
+      },
+      {
+        "type": "intro",
+        "content": {
+          "title": "Certified Flight Instructor",
+          "description": "A CFI is a mentor and coach for their student pilots and teaches them how to fly."
+        }
+      },
+      {
+        "type": "video_section",
+        "content": {
+          "title": "Why Become a Certified Flight Instructor?",
+          "description": "Becoming a Certified Flight Instructor opens doors to valuable experience, career advancement, and the opportunity to inspire the next generation of pilots. It strengthens your skills, builds flight hours, and positions you for success in the aviation industry.",
+          "video_url": "https://tube.rvere.com/embed?v=5MhGt_28Ifc"
+        }
+      },
+      {
+        "type": "content_section",
+        "content": {
+          "title": "CFI training at Lanett Municipal Airport 7A3",
+          "description": "Many pilots on their way to the airlines or other careers in aviation spend a few years instructing to gain experience and flight hours. Some pilots enjoy flight instructing and choose to make it a long term career.",
+          "details": [
+            {
+              "title": "Be 18 years old and speak English",
+              "description": "A minimum requirement that should have been met if you've gotten your private, instrument, and commercial already."
+            },
+            {
+              "title": "Pass your knowledge test",
+              "description": "To become a CFI you will need to understand the fundamentals of instructing and meet the requirements of the PTS (practical test standards)."
+            },
+            {
+              "title": "Hold a commercial pilot certificate",
+              "description": "You'll need have flown a minimum of 250 flight hours and hold a commercial pilot certificate to qualify to be a flight instructor."
+            },
+            {
+              "title": "Receive logbook endorsement from an authorized instructor",
+              "description": "You'll need to have met and trained with an authorized instructor and that instructor will need to sign you off stating that they feel you are ready to take the practical flight exam."
+            },
+            {
+              "title": "Fly with an examiner",
+              "description": "You'll fly with a FAA Designated Pilot Examiner (DPE) and demonstrate you have the skills to fly as a commercial pilot and meet the requirements of the Pratical Test Standards (PTS)."
+            }
+          ],
+          "additional_info": "Blue Skies Above will prepare you for all of the required exams with the necessary materials and education. Give us a call and schedule a time to fly with a CFI to get started.",
+          "button": {
+            "text": "Visit School",
+            "url": "/visit-flight-school"
+          }
+        }
+      },
+      {
+        "type": "faq",
+        "content": {
+          "title": "Is becoming a CFI right for me?",
+          "description": "Are you a pilot getting to close to 250 hours and wondering what's next after you complete your commercial pilot training? The thought of instructing has probably crossed your mind a few times during your pilot training journey. Depending on what your career goals are, the answer can vary drastically.",
+          "questions": [
+            {
+              "question": "Do you enjoy teaching others?",
+              "answer": "If you find joy in sharing your knowledge and skills with others, becoming a CFI could be a perfect fit. Instructing allows you to play a pivotal role in shaping the next generation of aviators. At Blue Skies Above, we believe that effective teaching is not just about imparting information but fostering a passion for flight and instilling the highest standards of safety and professionalism."
+            },
+            {
+              "question": "Do you have a passion for aviation and safety?",
+              "answer": "As a CFI, you'll be at the forefront of promoting safety and precision in aviation. If you have a keen eye for detail and a commitment to instilling best practices in your students, the role of a CFI aligns seamlessly with your values. Blue Skies Above's CFI training program ensures that you are well equipped to pass down these principles in your future students."
+            }
+          ],
+          "conclusion": "Whether you're considering pilot opportunities in Auburn, Columbus, Opelika, Atlanta, Columbus, Georgia, Alabama; Blue Skies Above is here to support your aviation journey. Explore the diverse opportunities and aviation needs of the region while gaining the experience and flight hours needed for your chosen career path."
+        }
+      },
+      {
+        "type": "pricing",
+        "content": {
+          "title": "Learn More About Our Training Packages",
+          "plans": [
+            {
+              "name": "Certified Flight Instructor",
+              "price": "$9,330",
+              "duration": "5 weeks to complete (approximately)",
+              "description": "FAA Minimums",
+              "monthly_payment": "$257/month",
+              "features": [
+                "3 lessons per week",
+                "25 hours of flight time",
+                "22 hours of flight instruction",
+                "50 hours of ground instruction",
+                "Ground school kit included",
+                "Pay up front or incrementally"
+              ],
+              "button": {
+                "text": "Enroll Today",
+                "url": "/enroll-at-blue-skies"
+              }
+            }
+          ],
+          "financing_link": {
+            "text": "See financing options",
+            "url": "/financing"
+          },
+          "hourly_rates_link": {
+            "text": "click here",
+            "url": "/pricing"
+          }
+        }
+      },
+      {
+        "type": "cta",
+        "content": {
+          "title": "We are the flight training experts in Lanett, AL",
+          "subtitle": "Providing pilot training to the Auburn, Columbus, Opelika, LaGrange, Montgomery areas in Alabama and Georgia",
+          "description": "As the only independent flight school with a Cessna fleet in the area, we pride ourselves in training safe and highly proficient pilots. Come see what everyone's talking about! Visit Blue Skies Above and begin flight training today.",
+          "button": {
+            "text": "VISIT BLUE SKIES ABOVE",
+            "url": "/visit-flight-school"
+          }
+        }
+      },
+      {
+        "type": "footer",
+        "content": {
+          "address": {
+            "location": "Lanett Regional Airport 7A3",
+            "street": "4445 51st Ave SW",
+            "city": "Lanett, Alabama 36863",
+            "phone": "1-334-449-7600"
+          },
+          "links": [
+            {
+              "section": "New to Flying?",
+              "items": [
+                {
+                  "text": "Why Become a pilot?",
+                  "url": "/should-i-become-a-pilot"
+                },
+                {
+                  "text": "Pilot Training Process",
+                  "url": "/pilot-training-programs-and-courses"
+                },
+                {
+                  "text": "First Flight Lesson",
+                  "url": "/discovery-flight"
+                }
+              ]
+            },
+            {
+              "section": "Training Programs",
+              "items": [
+                {
+                  "text": "Private Pilot",
+                  "url": "/private-pilot-certificate-ppl"
+                },
+                {
+                  "text": "Instrument Rating",
+                  "url": "/instrument-rating-ifr"
+                },
+                {
+                  "text": "Commercial Pilot",
+                  "url": "/commercial-pilot-certificate-cpl"
+                },
+                {
+                  "text": "Multi-Engine Rating",
+                  "url": "/multi-engine-rating"
+                },
+                {
+                  "text": "Multi-Engine Instructor",
+                  "url": "/multi-engine-instructor-mei"
+                },
+                {
+                  "text": "Flight Instructor",
+                  "url": "/certified-flight-instructor-cfi"
+                },
+                {
+                  "text": "CFI Spin Endorsement",
+                  "url": "/spin-endorsement"
+                }
+              ]
+            },
+            {
+              "section": "About",
+              "items": [
+                {
+                  "text": "Our Team",
+                  "url": "/about-us"
+                },
+                {
+                  "text": "Our Fleet",
+                  "url": "/our-fleet"
+                },
+                {
+                  "text": "Why Blue Skies Above?",
+                  "url": "/why-choose-blue-skies-above"
+                },
+                {
+                  "text": "Join the Team",
+                  "url": "/join-team"
+                },
+                {
+                  "text": "Blog",
+                  "url": "/blog"
+                },
+                {
+                  "text": "Financing",
+                  "url": "/financing"
+                },
+                {
+                  "text": "Leaseback Program",
+                  "url": "/leaseback-program"
+                }
+              ]
+            },
+            {
+              "section": "Quick Links",
+              "items": [
+                {
+                  "text": "Visit School",
+                  "url": "/visit-flight-school"
+                },
+                {
+                  "text": "Discovery Flight",
+                  "url": "/discovery-flight"
+                },
+                {
+                  "text": "Contact Us",
+                  "url": "/contact"
+                }
+              ]
+            }
+          ],
+          "social_media": [
+            {
+              "platform": "Facebook",
+              "url": "https://www.facebook.com/flytheblueskies"
+            },
+            {
+              "platform": "Instagram",
+              "url": "https://www.instagram.com/flybsa/"
+            },
+            {
+              "platform": "Twitter",
+              "url": "https://twitter.com/flybsa"
+            },
+            {
+              "platform": "LinkedIn",
+              "url": "https://www.linkedin.com/company/blue-skies-above/"
+            }
+          ],
+          "copyright": "© 2025 Blue Skies Above. All rights reserved.",
+          "privacy_policy": {
+            "text": "Privacy Policy Terms of Service",
+            "url": "/privacy-policy-terms-of-service"
+          },
+          "credits": {
+            "text": "Blue Skies Above Flight School Website Designed and Developed by Right Rudder Marketing",
+            "url": "https://rightruddermarketing.com"
+          }
+        }
+      }
+    ]
+  }
+}
