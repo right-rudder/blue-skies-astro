@@ -3,8 +3,10 @@
 import ThemeIcon from "@components/ThemeIcon.astro";
 import NavLink from "@components/ui/links/NavLink.astro";
 import enStrings from "@utils/navigation.ts";
-//  import frStrings from "@utils/fr/navigation.ts";
+import Icon from "@components/ui/icons/Icon.astro";
 import BrandLogo from "@components/BrandLogo.astro";
+
+//  import frStrings from "@utils/fr/navigation.ts";
 // import Authentication from "../misc/Authentication.astro";
 // import LanguagePicker from "@components/ui/LanguagePicker.astro";
 
@@ -94,14 +96,15 @@ const homeUrl = "/";
             <NavLink url={link.link} name={link.name} />
             {link.submenu && (
               <ul
-                class="absolute left-0 z-50 pt-6 mt-2 hidden min-w-[180px] flex-col rounded-lg border-picton-blue-100/90 bg-picton-blue-50/90 p-4 shadow-lg group-hover:flex dark:border-neutral-700/60 dark:bg-neutral-800/90 backdrop-blur-3xl dark:backdrop-blur-3xl md:px-4 md:py-2 lg:px-8"
+                class="absolute left-0 z-50 pt-6 mt-2 hidden min-w-[400px] flex-col rounded-lg border-picton-blue-100/90 bg-picton-blue-50/90 p-4 shadow-lg group-hover:flex dark:border-neutral-700/60 dark:bg-neutral-800/90 backdrop-blur-3xl dark:backdrop-blur-3xl md:px-4 md:py-2 lg:px-8"
               >
                 {link.submenu.map(item => (
                   <li>
                     <a
                       href={item.link}
-                      class="block px-4 py-2 text-sm text-neutral-800 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
+                      class="flex items-center gap-4 px-4 py-2 text-sm text-neutral-800 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
                     >
+                      <Icon name={item.icon} />
                       {item.name}
                     </a>
                   </li>
