@@ -1,0 +1,117 @@
+---
+import LeadershipMembers from "@/components/sections/teams/LeadershipMembers.astro";
+import TeamMembers from "@/components/sections/teams/TeamMembers.astro";
+import MainLayout from "@/layouts/MainLayout.astro";
+import { SITE } from "@data/constants";
+
+// Import Necessary imagesImages
+import matthewB from "../assets/images/blue-skies-matt-800.webp";
+import kateR from "../assets/images/kate-roberts.webp";
+import ajD from "../assets/images/aj_dorizas.webp";
+import Joe from "../assets/images/blue-skies-joe.webp";
+import Paul from "../assets/images/blue-skies-paul.webp";
+import Allison from "../assets/images/cfi-allison.webp";
+import Bailey from "../assets/images/cfi-bailey.webp";
+import Travasha from "../assets/images/cfi-travasha.webp";
+import Lyle from "../assets/images/cfi-lyle.webp";
+import Jaymes from "../assets/images/cfi-jaymes.webp";
+import Connor from "../assets/images/cfi-connor.webp";
+import Sammy from "../assets/images/a&p-sammy.webp";
+import Lola from "../assets/images/lola.webp";
+
+
+const pageTitle: string = `Our Team | ${SITE.title}`;
+const metaDescription = "Meet the dedicated team of instructors and staff at Blue Skies Above Flight School in Lanett, Alabama.";
+const ogTitle = "Our Team | Blue Skies Above Flight School";
+
+const leadershipMembers = {
+  title: "Leadership Members",
+  description: `Our leadership team is comprised of experienced aviation professionals who are passionate about aviation and committed to providing the highest level of training and support to our students.`,
+  team: [
+    {
+      name: "Matthew Bourguignon",
+      role: "CFII | Founder",
+      description: `Matthew is an aviation enthusiast driven by a childhood dream inspired by his model airplane-flying grandfather from Long Island. Despite initially aiming for aviation college, concerns about student debt led him to the tech industry after graduating in 2011. The 2020 pandemic reignited Matthew's passion for flight, and he embarked on training to become a commercial pilot, discovering a deep love for general aviation. Now as a Certified Flight Instructor Instrument (CFII), Matthew finds great satisfaction in helping others succeed. In February 2023, he founded Blue Skies Above, quickly growing with a dedicated team to fulfill his dream of growing a community of pilots.`,
+      imagePath: matthewB.src,
+      imageAlt: "",
+    },
+    {
+      name: "Kate Roberts",
+      role: "Operations Supervisor",
+      description: `Kate is a Knoxville Tennessee Native who grew up passionate about aviation. Kate's father was a navigator on KC-135s, which sparked her interest in flying. She is planning to graduate from Auburn University with a degree in Aviation Management in December 2024. Kate is currently an instrument rated private pilot finishing her commercial at Blue Skies Above. In her free time she enjoys riding motorcycles, being outdoors, and hanging out with her dog "Goose".`,
+      imagePath: kateR.src,
+      imageAlt: "",
+    },
+    {
+      name: "A.J. Dorizas",
+      role: "Training Coordinator",
+      description: `A.J. is currently serving as a training coordinator at Blue Skies Above. His journey in aviation began at Auburn University, where he majored in aviation management. Over the past three years, AJ has worked as a firefighter, cultivating his leadership skills and deepening his commitment to serving his community. Additionally, as the founder and president of "Fit for Flight," he inspires fellow aviation students to prioritize their physical health and mental well-being. AJ's dedication to fostering a healthier future for aspiring aviators reflects his desire to make a meaningful impact in the aviation world.`,
+      imagePath: ajD.src,
+      imageAlt: "",
+    },
+  ],
+};
+
+const teamMembers = {
+  title: "Our Instructors",
+  description: "Our experienced instructors at Blue Skies Above are committed to providing the highest quality flight training to students. With a passion for aviation and extensive knowledge, they create a supportive and safe learning environment for students to achieve their goals and become skilled pilots.",
+  team: [
+    { name: "Matthew", role: "Fixed Wing CFI, CFII", imagePath: matthewB.src, imageAlt: "", },
+    { name: "Joe", role: "Lead Instructor - Fixed Wing CFI, CFII, MEI", imagePath: Joe.src, imageAlt: "",  },
+    { name: "Paul", role: "Fixed Wing CFI", imagePath: Paul.src, imageAlt: "", },
+    { name: "Allison", role: "Fixed Wing CFI", imagePath: Allison.src, imageAlt: "", },
+    { name: "Bailey", role: "Fixed Wing CFI", imagePath: Bailey.src, imageAlt: "", },
+    { name: "Travasha", role: "Fixed Wing CFI", imagePath: Travasha.src, imageAlt: "", },
+    { name: "Lyle", role: "Fixed Wing CFI", imagePath: Lyle.src, imageAlt: "", },
+    { name: "Jaymes", role: "Fixed Wing CFI, CFII", imagePath: Jaymes.src, imageAlt: "", },
+    { name: "Connor", role: "Fixed Wing CFI", imagePath: Connor.src, imageAlt: "", },
+  ],
+};
+
+const maintenanceMembers = {
+  title: "Maintenance Staff",
+  description: `Our dedicated maintenance staff at Blue Skies Above are committed to ensuring the highest standards of safety and reliability for our aircraft. With a passion for precision and extensive expertise, they work diligently to maintain and service our fleet, supporting a safe and seamless aviation experience for all.`,
+  team: [
+    {
+      name: "Sammy",
+      role: "A&P",
+      imagePath: Sammy.src,
+      imageAlt: "",
+    },
+    {
+      name: "Lola",
+      role: "A&P Apprentice",
+      imagePath: Lola.src,
+      imageAlt: "",
+    },
+  ],
+};
+
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "",
+    url: "",
+    name: "About Blue Skies Above",
+    description: metaDescription,
+    isPartOf: {
+      "@type": "WebSite",
+      url: "",
+      name: SITE.title,
+      description: metaDescription,
+    },
+    inLanguage: "en-US",
+  }}
+> 
+
+    <LeadershipMembers content={leadershipMembers} />
+    <TeamMembers content={teamMembers} />
+    <TeamMembers content={maintenanceMembers} />
+
+</MainLayout>

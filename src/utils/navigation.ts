@@ -88,7 +88,7 @@ const navBarLinks = [
   { name: "About us", link: "/about-us", submenu: [
       {
         name: "Our Team",
-        link: "/about-us",
+        link: "/our-team",
         description: "Meet the Blue Skies Above team",
         icon: "house",
       },
