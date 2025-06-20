@@ -1,0 +1,230 @@
+{
+  "page": {
+    "title": "Discover Our Leaseback Program",
+    "description": "Blue Skies Above’s Leaseback Program offers a unique investment opportunity, allowing you to own an aircraft while generating rental income.",
+    "sections": [
+      {
+        "type": "header",
+        "content": {
+          "phone": "1-334-449-7600",
+          "tagline": "Becoming a pilot is one call away",
+          "social_media": [
+            {
+              "name": "Facebook",
+              "url": "https://www.facebook.com/flytheblueskies"
+            },
+            {
+              "name": "Instagram",
+              "url": "https://www.instagram.com/flybsa/"
+            },
+            {
+              "name": "Twitter",
+              "url": "https://twitter.com/flybsa"
+            },
+            {
+              "name": "LinkedIn",
+              "url": "https://www.linkedin.com/company/blue-skies-above/"
+            }
+          ],
+          "navigation": {
+            "new_to_flying": [
+              {
+                "title": "Why Become a Pilot?",
+                "url": "/should-i-become-a-pilot",
+                "description": "Now is the best time to become a pilot"
+              },
+              {
+                "title": "Pilot Training Process",
+                "url": "/pilot-training-programs-and-courses",
+                "description": "Learn how to become a pilot"
+              },
+              {
+                "title": "Considering a university for pilot training?",
+                "url": "/professional-flight-program",
+                "description": "Learn more about our Part 61 program"
+              },
+              {
+                "title": "Discovery Flight",
+                "url": "/discovery-flight",
+                "description": "Your first flight lesson. You fly the plane"
+              }
+            ],
+            "training_programs": [
+              {
+                "title": "Private Pilot",
+                "url": "/private-pilot-certificate-ppl",
+                "description": "Start your aviation journey here"
+              },
+              {
+                "title": "Instrument Rating",
+                "url": "/instrument-rating-ifr",
+                "description": "Advance your navigation abilities and opportunities"
+              },
+              {
+                "title": "Commercial Pilot",
+                "url": "/commercial-pilot-certificate-cpl",
+                "description": "Make flying your career"
+              },
+              {
+                "title": "Multi-Engine Rating",
+                "url": "/multi-engine-rating",
+                "description": "Fly aircraft with more than one engine"
+              },
+              {
+                "title": "Multi-Engine Instructor (MEI)",
+                "url": "/multi-engine-instructor-mei",
+                "description": "Learn how to instruct in multi-engine aircraft"
+              },
+              {
+                "title": "CFI",
+                "url": "/certified-flight-instructor-cfi",
+                "description": "Teach what you know to the next class of pilots"
+              },
+              {
+                "title": "CFII",
+                "url": "/flight-instructor-instrument-cfii",
+                "description": "Bring student pilots to the next level with an Instrument Rating"
+              },
+              {
+                "title": "CFI Spin Endorsement",
+                "url": "/spin-endorsement",
+                "description": "Specialize in spin training for CFI candidates"
+              }
+            ],
+            "about": [
+              {
+                "title": "Our Team",
+                "url": "/about-us",
+                "description": "Meet the team at Blue Skies Above"
+              },
+              {
+                "title": "Our Fleet",
+                "url": "/our-fleet",
+                "description": "Meet the fleet at Blue Skies Above"
+              },
+              {
+                "title": "Why Blue Skies Above?",
+                "url": "/why-choose-blue-skies-above",
+                "description": "The only local flight school with a Cessna fleet. When you're here, you're family"
+              },
+              {
+                "title": "Join the team",
+                "url": "/join-team",
+                "description": "Are you a CFI looking to teach the next generation of aviators? Apply today!"
+              },
+              {
+                "title": "Blog",
+                "url": "/blog",
+                "description": "Check out the latest news, articles, and events at 7A3 Lanett Municipal Airport"
+              },
+              {
+                "title": "Financing",
+                "url": "/financing",
+                "description": "Learn about financing options for your flight training at Blue Skies Above"
+              },
+              {
+                "title": "Leaseback Program",
+                "url": "/leaseback-program",
+                "description": "Earn money while you're not flying your aircraft. Learn more about our leaseback program"
+              }
+            ],
+            "quick_links": [
+              {
+                "title": "Visit School",
+                "url": "/visit-flight-school"
+              },
+              {
+                "title": "Discovery Flight",
+                "url": "/discovery-flight"
+              },
+              {
+                "title": "Contact Us",
+                "url": "/contact"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "hero",
+        "content": {
+          "title": "Discover Our Leaseback Program",
+          "subtitle": "Invest in an Aircraft and Earn Income",
+          "description": "Blue Skies Above's Leaseback Program offers a unique investment opportunity, allowing you to own an aircraft while generating rental income. Based at Lanett Regional Airport, our program provides the chance to offset ownership costs while contributing to the training of future pilots.",
+          "additional_description": "By partnering with Blue Skies Above, you can enjoy the benefits of aircraft ownership with the added advantage of rental revenue. We offer flexible options and professional support for managing your aircraft within our training fleet at Lanett Regional Airport."
+        }
+      },
+      {
+        "type": "form_section",
+        "content": {
+          "title": "Join the Blue Skies Above Leaseback Program",
+          "form_fields": [
+            {
+              "label": "Name",
+              "name": "leaseback_program[name]",
+              "type": "text"
+            },
+            {
+              "label": "Email",
+              "name": "leaseback_program[email]",
+              "type": "text"
+            },
+            {
+              "label": "Phone",
+              "name": "leaseback_program[phone]",
+              "type": "text"
+            },
+            {
+              "label": "Aircraft manufacturer",
+              "name": "leaseback_program[aircraft_manufacturer]",
+              "type": "text"
+            },
+            {
+              "label": "Aircraft model",
+              "name": "leaseback_program[aircraft_model]",
+              "type": "text"
+            },
+            {
+              "label": "Aircraft year",
+              "name": "leaseback_program[aircraft_year]",
+              "type": "text"
+            },
+            {
+              "label": "Message",
+              "name": "leaseback_program[message]",
+              "type": "textarea"
+            }
+          ],
+          "submit_button": {
+            "text": "APPLY",
+            "class": "btn-primary mb-10 lg:mb-0"
+          },
+          "image": {
+            "src": "/assets/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport-703a833c6990267b90afec2db093629990da2ae9fbcb37c8eb9b3e631f179309.webp",
+            "alt": "Blue Skies Pair of Cessnas at Lannet Municipal Airport"
+          }
+        }
+      },
+      {
+        "type": "footer",
+        "content": {
+          "address": {
+            "airport": "Lanett Regional Airport 7A3",
+            "street": "4445 51st Ave SW",
+            "city_state": "Lanett, Alabama 36863",
+            "phone": "1-334-449-7600"
+          },
+          "copyright": "© 2025 Blue Skies Above. All rights reserved.",
+          "privacy_policy": {
+            "text": "Privacy Policy Terms of Service",
+            "url": "/privacy-policy-terms-of-service"
+          },
+          "credits": {
+            "text": "Blue Skies Above Flight School Website Designed and Developed by Right Rudder Marketing",
+            "url": "https://rightruddermarketing.com"
+          }
+        }
+      }
+    ]
+  }
+}

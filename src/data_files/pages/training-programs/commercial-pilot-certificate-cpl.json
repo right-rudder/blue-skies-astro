@@ -1,0 +1,485 @@
+{
+  "topBar": {
+    "phone": "1-334-449-7600",
+    "tagline": "Becoming a pilot is one call away",
+    "socialMedia": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/flytheblueskies",
+        "icon": "facebook.svg"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/flybsa/",
+        "icon": "instagram.svg"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/flybsa",
+        "icon": "twitter.svg"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/company/blue-skies-above/",
+        "icon": "linkedin.svg"
+      }
+    ]
+  },
+  "navigation": {
+    "mainMenu": [
+      {
+        "title": "New to Flying?",
+        "items": [
+          {
+            "title": "Why Become a Pilot?",
+            "description": "Now is the best time to become a pilot",
+            "url": "/should-i-become-a-pilot"
+          },
+          {
+            "title": "Pilot Training Process",
+            "description": "Learn how to become a pilot",
+            "url": "/pilot-training-programs-and-courses"
+          },
+          {
+            "title": "Considering a university for pilot training?",
+            "description": "Learn more about our Part 61 program",
+            "url": "/professional-flight-program"
+          },
+          {
+            "title": "Discovery Flight",
+            "description": "Your first flight lesson. You fly the plane",
+            "url": "/discovery-flight"
+          }
+        ]
+      },
+      {
+        "title": "Training Programs",
+        "items": [
+          {
+            "title": "Private Pilot",
+            "description": "Start your aviation journey here",
+            "url": "/private-pilot-certificate-ppl"
+          },
+          {
+            "title": "Instrument Rating",
+            "description": "Advance your navigation abilities and opportunities",
+            "url": "/instrument-rating-ifr"
+          },
+          {
+            "title": "Commercial Pilot",
+            "description": "Make flying your career",
+            "url": "/commercial-pilot-certificate-cpl"
+          },
+          {
+            "title": "Multi-Engine Rating",
+            "description": "Fly aircraft with more than one engine",
+            "url": "/multi-engine-rating"
+          },
+          {
+            "title": "Multi-Engine Instructor (MEI)",
+            "description": "Learn how to instruct in multi-engine aircraft",
+            "url": "/multi-engine-instructor-mei"
+          },
+          {
+            "title": "CFI",
+            "description": "Teach what you know to the next class of pilots",
+            "url": "/certified-flight-instructor-cfi"
+          },
+          {
+            "title": "CFII",
+            "description": "Bring student pilots to the next level with an Instrument Rating",
+            "url": "/flight-instructor-instrument-cfii"
+          },
+          {
+            "title": "CFI Spin Endorsement",
+            "description": "Specialize in spin training for CFI candidates",
+            "url": "/spin-endorsement"
+          }
+        ]
+      },
+      {
+        "title": "About Us",
+        "items": [
+          {
+            "title": "Our Team",
+            "description": "Meet the team at Blue Skies Above",
+            "url": "/about-us"
+          },
+          {
+            "title": "Our Fleet",
+            "description": "Meet the fleet at Blue Skies Above",
+            "url": "/our-fleet"
+          },
+          {
+            "title": "Why Blue Skies Above?",
+            "description": "The only local flight school with a Cessna fleet. When you're here, you're family",
+            "url": "/why-choose-blue-skies-above"
+          },
+          {
+            "title": "Join the team",
+            "description": "Are you a CFI looking to teach the next generation of aviators? Apply today!",
+            "url": "/join-team"
+          },
+          {
+            "title": "Blog",
+            "description": "Check out the latest news, articles, and events at 7A3 Lanett Municipal Airport",
+            "url": "/blog"
+          },
+          {
+            "title": "Financing",
+            "description": "Learn about financing options for your flight training at Blue Skies Above",
+            "url": "/financing"
+          },
+          {
+            "title": "Leaseback Program",
+            "description": "Earn money while you're not flying your aircraft. Learn more about our leaseback program",
+            "url": "/leaseback-program"
+          }
+        ]
+      }
+    ],
+    "quickLinks": [
+      {
+        "title": "Visit School",
+        "url": "/visit-flight-school"
+      },
+      {
+        "title": "Discovery Flight",
+        "url": "/discovery-flight"
+      },
+      {
+        "title": "Contact Us",
+        "url": "/contact"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Earn Your Commercial Pilot Certificate",
+    "subtitle": "Start your pilot career with your commercial pilot certificate",
+    "buttons": [
+      {
+        "text": "Enroll Today",
+        "url": "/enroll-at-blue-skies"
+      },
+      {
+        "text": "Visit School",
+        "url": "/visit-flight-school"
+      }
+    ]
+  },
+  "intro": {
+    "title": "Become a Commercial Pilot",
+    "description": "A commercial pilot certificate allows you to fly for compensation or hire."
+  },
+  "definition": {
+    "title": "What is a Commercial Pilot Certificate?",
+    "content": [
+      "A Commercial Pilot Certificate allows you to fly for compensation or hire, opening doors to various aviation careers such as flight instructing, surveying, skydiving operations, and more. At Blue Skies Above, we provide structured training programs that prepare you for these opportunities.",
+      "When you start commercial pilot training, you'll deepen your understanding of aviation regulations, including the requirements for different parts of the FAR, and learn to fly with greater precision.",
+      "Although not mandatory, completing your Instrument Rating alongside your Commercial Pilot Certificate expands the types of flying you can do for compensation, such as under Part 135 operations."
+    ]
+  },
+  "prerequisites": [
+    {
+      "title": "Complete Your Instrument Rating",
+      "description": "While not technically a requirement, not having an instrument rating when completing you commercial pilot certificate limits you in the type of flying you can do for compensation.",
+      "link": {
+        "text": "Instrument Rating",
+        "url": "/instrument-rating-ifr"
+      }
+    },
+    {
+      "title": "Log Flight Hours",
+      "description": "You need 250 total flight hours to get your commercial pilot certificate. 110 of these hours are normally logged when getting your PPL and IR, but the other 140 will be logged via time building.",
+      "link": {
+        "text": "Time Building Package",
+        "url": "#pricing"
+      }
+    },
+    {
+      "title": "Meet Minimum Requirements",
+      "description": "Once you're approaching 250 total flight hours, there are different types of cross-country trips that you are required to complete to meet the minimum requirements to take the commercial pilot practical exam.",
+      "link": {
+        "text": "Finish-Up",
+        "url": "#pricing"
+      }
+    },
+    {
+      "title": "Fly With an Examiner",
+      "description": "You'll fly with an FAA Designated Pilot Examiner (DPE) and demonstrate you have the skills to fly as a commercial pilot in a TAA aircraft and meet the requirements of the Airmen Certification Standards (ACS).",
+      "link": {
+        "text": "Your TAA Plane",
+        "url": "https://flytheblueskies.com/posts/blue-skies-above-acquires-a-new-taa-plane"
+      }
+    }
+  ],
+  "video": {
+    "title": "Can you use a TAA aircraft for commercial pilot requirements?",
+    "description": "Discover how our new Cessna 172N model, equipped as a Technically Advanced Aircraft (TAA), can help you efficiently build flight hours while meeting the necessary requirements for your commercial pilot certificate.",
+    "embedUrl": "https://tube.rvere.com/embed?v=WREHKs4juIM"
+  },
+  "trainingExpectations": {
+    "title": "What to Expect During Training",
+    "description": "Prepare to fly at a higher standard, where precision is key. The ACS standards for commercial pilots are stricter compared to private pilots, ensuring you develop the skills needed to fly professionally.",
+    "image": "/assets/taa-cessna-blue-skies-above-lanett-municipal-airport-7000fe857a41ce79aef64e2d5dc24ab7e2c9375cf41a83e10245269337b886b8.webp",
+    "button": {
+      "text": "Our TAA Cessna",
+      "url": "https://flytheblueskies.com/posts/blue-skies-above-acquires-a-new-taa-plane"
+    }
+  },
+  "pricing": {
+    "title": "Learn More About Our Training Packages",
+    "description": "Choose the best package that fits your aviation goals.",
+    "packages": [
+      {
+        "name": "Commercial Pilot Certificate With Time Building",
+        "description": "Make flying your career with Commercial Pilot Certificate",
+        "duration": "35 weeks to complete (approximately)",
+        "price": "$25,150",
+        "monthlyPayment": "$600/month",
+        "features": [
+          "3 lessons per week",
+          "88 hours of syllabus flights",
+          "17 hours of added time-building",
+          "55 hours of flight instruction",
+          "30 hours of ground instruction",
+          "Ground school kit included",
+          "Pay up front or incrementally"
+        ],
+        "buttons": [
+          {
+            "text": "Enroll Today",
+            "url": "/enroll-at-blue-skies"
+          },
+          {
+            "text": "Learn More",
+            "url": "/time-building-package"
+          }
+        ]
+      },
+      {
+        "name": "Finish-Up or Added Rating",
+        "description": "Complete or obtain additional qualifications. Make flying your career.",
+        "duration": "2 weeks to complete (approximately)",
+        "price": "$4,419",
+        "monthlyPayment": "$125/month",
+        "features": [
+          "3 lessons per week",
+          "15 hours of flight time",
+          "15 hours of flight instruction",
+          "10 hours of ground instruction",
+          "Ground school kit included",
+          "Pay up front or incrementally"
+        ],
+        "buttons": [
+          {
+            "text": "Enroll Today",
+            "url": "/enroll-at-blue-skies"
+          },
+          {
+            "text": "Learn More",
+            "url": "/finish-up-package"
+          }
+        ]
+      }
+    ],
+    "financingLink": "/financing",
+    "hourlyRatesLink": "/pricing"
+  },
+  "careerPaths": {
+    "title": "What Careers are Available to Commercial Pilots?",
+    "description": "Once you complete your commercial pilot training, various aviation roles become accessible, allowing you to build flight time and gain experience while getting paid to fly.",
+    "paths": [
+      {
+        "title": "Certified Flight Instructor (CFI)",
+        "description": "Teach aspiring pilots, enhance your skills, and build flight hours."
+      },
+      {
+        "title": "Survey Pilot",
+        "description": "Conduct aerial surveys for mapping, environmental monitoring, or infrastructure assessments."
+      },
+      {
+        "title": "Skydive Pilot",
+        "description": "Provide smooth and safe ascents for skydivers, contributing to their thrilling experiences."
+      },
+      {
+        "title": "Charter Pilot",
+        "description": "Offer personalized flight services, transporting business executives, leisure travelers, or cargo."
+      },
+      {
+        "title": "Agricultural Pilot",
+        "description": "Apply fertilizers and insecticides on crops, flying close to the ground."
+      },
+      {
+        "title": "Missionary Pilot",
+        "description": "Serve remote communities by transporting humanitarian aid, medical supplies, or personnel."
+      },
+      {
+        "title": "Airline Pilot",
+        "description": "Pilots with their ATP and 1500 hours can join the airlines and fly for regional, major, and legacy carriers."
+      }
+    ],
+    "ctaButton": {
+      "text": "Enroll Now",
+      "url": "/enroll-at-blue-skies"
+    }
+  },
+  "callToAction": {
+    "title": "We are the flight training experts in Lanett, AL",
+    "subtitle": "Providing pilot training to the Auburn, Columbus, Opelika, LaGrange, Montgomery areas in Alabama and Georgia",
+    "description": "As the only independent flight school with a Cessna fleet in the area, we pride ourselves in training safe and highly proficient pilots. Come see what everyone's talking about! Visit Blue Skies Above and begin flight training today.",
+    "button": {
+      "text": "VISIT BLUE SKIES ABOVE",
+      "url": "/visit-flight-school"
+    }
+  },
+  "nextSteps": {
+    "title": "Next Steps Visit Blue Skies Above Professional Flight Instruction",
+    "description": "Visit our flight school, start pilot training and join the family, like & follow us on social media. We're excited to partner with you and be a part of your aviation journey. Let's go flying together!",
+    "buttons": [
+      {
+        "text": "Visit School",
+        "url": "/visit-flight-school"
+      },
+      {
+        "text": "Our Programs",
+        "url": "/pilot-training-programs-and-courses"
+      }
+    ]
+  },
+  "footer": {
+    "contact": {
+      "logo": "/assets/blue-skies-logo-black-600-8dcd0347ad037d906592dd16f7d48dc447fdb314b5ee14c1e572774dfb3d7fff.webp",
+      "address": [
+        "Lanett Regional Airport 7A3",
+        "4445 51st Ave SW",
+        "Lanett, Alabama 36863"
+      ],
+      "phone": "1-334-449-7600"
+    },
+    "sections": [
+      {
+        "title": "New to Flying?",
+        "links": [
+          {
+            "text": "Why Become a pilot?",
+            "url": "/should-i-become-a-pilot"
+          },
+          {
+            "text": "Pilot Training Process",
+            "url": "/pilot-training-programs-and-courses"
+          },
+          {
+            "text": "First Flight Lesson",
+            "url": "/discovery-flight"
+          }
+        ]
+      },
+      {
+        "title": "Training Programs",
+        "links": [
+          {
+            "text": "Private Pilot",
+            "url": "/private-pilot-certificate-ppl"
+          },
+          {
+            "text": "Instrument Rating",
+            "url": "/instrument-rating-ifr"
+          },
+          {
+            "text": "Commercial Pilot",
+            "url": "/commercial-pilot-certificate-cpl"
+          },
+          {
+            "text": "Multi-Engine Rating",
+            "url": "/multi-engine-rating"
+          },
+          {
+            "text": "Multi-Engine Instructor",
+            "url": "/multi-engine-instructor-mei"
+          },
+          {
+            "text": "Flight Instructor",
+            "url": "/certified-flight-instructor-cfi"
+          },
+          {
+            "text": "CFI Spin Endorsement",
+            "url": "/spin-endorsement"
+          }
+        ]
+      },
+      {
+        "title": "About",
+        "links": [
+          {
+            "text": "Our Team",
+            "url": "/about-us"
+          },
+          {
+            "text": "Our Fleet",
+            "url": "/our-fleet"
+          },
+          {
+            "text": "Why Blue Skies Above?",
+            "url": "/why-choose-blue-skies-above"
+          },
+          {
+            "text": "Join the Team",
+            "url": "/join-team"
+          },
+          {
+            "text": "Blog",
+            "url": "/blog"
+          },
+          {
+            "text": "Financing",
+            "url": "/financing"
+          },
+          {
+            "text": "Leaseback Program",
+            "url": "/leaseback-program"
+          }
+        ]
+      },
+      {
+        "title": "Quick Links",
+        "links": [
+          {
+            "text": "Visit School",
+            "url": "/visit-flight-school"
+          },
+          {
+            "text": "Discovery Flight",
+            "url": "/discovery-flight"
+          },
+          {
+            "text": "Contact Us",
+            "url": "/contact"
+          }
+        ]
+      }
+    ],
+    "socialMedia": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/flytheblueskies"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/flybsa/"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/flybsa"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/company/blue-skies-above/"
+      }
+    ],
+    "copyright": "© 2025 Blue Skies Above. All rights reserved.",
+    "legal": {
+      "privacyPolicy": "/privacy-policy-terms-of-service"
+    }
+  }
+}

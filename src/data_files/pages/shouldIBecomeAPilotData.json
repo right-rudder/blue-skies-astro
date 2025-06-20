@@ -1,0 +1,239 @@
+{
+  "page_title": "Why Become a Pilot?",
+  "sections": {
+    "top_banner": {
+      "phone": "1-334-449-7600",
+      "tagline": "Becoming a pilot is one call away",
+      "social_links": [
+        {
+          "platform": "Facebook",
+          "url": "https://www.facebook.com/flytheblueskies"
+        },
+        {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/flybsa/"
+        },
+        {
+          "platform": "Twitter",
+          "url": "https://twitter.com/flybsa"
+        },
+        {
+          "platform": "LinkedIn",
+          "url": "https://www.linkedin.com/company/blue-skies-above/"
+        }
+      ]
+    },
+    "navigation": {
+      "menu_items": [
+        {
+          "title": "New to Flying?",
+          "subitems": [
+            "Why Become a Pilot?",
+            "Pilot Training Process",
+            "Considering a university for pilot training?",
+            "Discovery Flight"
+          ]
+        },
+        {
+          "title": "Training Programs",
+          "subitems": [
+            "Private Pilot",
+            "Instrument Rating",
+            "Commercial Pilot",
+            "Multi-Engine Rating",
+            "Multi-Engine Instructor (MEI)",
+            "CFI",
+            "CFII",
+            "CFI Spin Endorsement"
+          ]
+        },
+        {
+          "title": "About Us",
+          "subitems": [
+            "Our Team",
+            "Our Fleet",
+            "Why Blue Skies Above?",
+            "Join the team",
+            "Blog",
+            "Financing",
+            "Leaseback Program"
+          ]
+        }
+      ],
+      "quick_links": [
+        "Visit School",
+        "Discovery Flight",
+        "Contact Us"
+      ]
+    },
+    "hero": {
+      "title": "Why Become a Pilot?",
+      "description": "A combination of factors such as mandatory retirement ages, COVID-induced early retirements, and the surging demand for pilots, indicates a pilot supply challenge in the aviation industry.",
+      "stats": [
+        {
+          "label": "Pilots needed in the next 10 years",
+          "value": "280,000"
+        },
+        {
+          "label": "Pilots over 50 years old",
+          "value": "38%"
+        },
+        {
+          "label": "Pilots retiring in the next 10 years",
+          "value": "45,000"
+        },
+        {
+          "label": "Growth in pilot demand",
+          "value": "39%"
+        }
+      ],
+      "source": "2023 CAE Aviation Talent Forecast"
+    },
+    "video_section": {
+      "title": "Why I chose aviation as a career",
+      "description": "Learn what inspired Kate Roberts to pursue a career in aviation, and the passion that drives her journey.",
+      "video_url": "https://tube.rvere.com/embed?v=CYIcdKHQAUw"
+    },
+    "features": {
+      "title": "Start Training Today",
+      "description": "Contrary to popular belief, training to become a pilot is easier than ever. All it takes commitment, dedication, and a strong passion to study and gain the necessary skills.",
+      "points": [
+        {
+          "title": "Fly for fun.",
+          "description": "Earning your wings let's you see the world in a new perspective. It's fun and the views are breathtaking."
+        },
+        {
+          "title": "Develop your skills.",
+          "description": "Training to a pilot means developing and strengthening your critical thinking skills and aeronautical decision making."
+        },
+        {
+          "title": "Fly for a career.",
+          "description": "As pilot demand goes up, so does pilot salaries making becoming a pilot a lucrative career choice."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What are the requirements to start flying?",
+          "answer": "Be at least 16 years old to get a student pilot certificate. Be able to read, speak, write, and understand the English language. You do not need an FAA medical certificate from an Aviation Medical Examiner (AME) for the first few lessons, but you will need get your medical certificate prior to soloing."
+        },
+        {
+          "question": "What is a Discovery Flight?",
+          "answer": "A short introductory flight for anyone interested in learning about flying or taking the first step toward earning their pilot's license."
+        },
+        {
+          "question": "What should I bring to training?",
+          "answer": "You've completed a Discovery Flight and are ready for your first lesson. A couple of basic things to have when starting flight training are: A headset and extra batteries (because you never know when your batteries can fail), a logbook, and a pen and paper for notes."
+        },
+        {
+          "question": "What is a typical lesson like?",
+          "answer": "For the minimum time of 2 hours, if you and the instructor go flying, you will have a short ground lesson and flight lesson brief, then fly and debrief at the end."
+        },
+        {
+          "question": "What is ground school?",
+          "answer": "Classroom learning. You will study aviation related topics such as aerodynamics, airport rules, aircraft instruments, and weather."
+        },
+        {
+          "question": "How many hours does it take to get my private pilot license?",
+          "answer": "That matters on your availability and how often you can fly. The FAA minimum for the private license is 40 hours but the national average is just over 65 hours."
+        }
+      ]
+    },
+    "visit": {
+      "title": "Visit Blue Skies Above Today",
+      "description": "We extend a warm invitation to you to visit Blue Skies Above and start a conversation with our knowledgeable team members.",
+      "location": {
+        "name": "7A3 - Lanett Municipal Airport",
+        "address": "4445 51st Ave SW, Lanett, Alabama 36863",
+        "phone": "(334) 449-7600"
+      }
+    },
+    "steps": {
+      "title": "Become a pilot at Blue Skies Above",
+      "description": "Our flight school welcomes aviators to Lanett, Alabama. The process is simple and only takes 3 steps to get started.",
+      "items": [
+        {
+          "step": "1",
+          "title": "Meet The Team",
+          "description": "Get in touch with a Blue Skies Team member. We'll learn what your aviation goals are and discuss how we can help reach those goals."
+        },
+        {
+          "step": "2",
+          "title": "Visit Blue Skies Above",
+          "description": "Visit our flight school and see our planes. Fly with one of our CFIs to start training and flying planes at Blue Skies Above."
+        },
+        {
+          "step": "3",
+          "title": "Start Flying",
+          "description": "Whether you're flying for a career or flying for fun, Blue Skies Above will help you acquire the skills and knowledge to become a safe proficient pilot."
+        }
+      ]
+    },
+    "cta": {
+      "title": "We are the flight training experts in Lanett, AL",
+      "highlighted_text": "flight training experts",
+      "description": "As the only independent flight school with a Cessna fleet in the area, we pride ourselves in training safe and highly proficient pilots.",
+      "button_text": "VISIT BLUE SKIES ABOVE"
+    },
+    "footer": {
+      "logo": "/assets/blue-skies-logo-black-600-8dcd0347ad037d906592dd16f7d48dc447fdb314b5ee14c1e572774dfb3d7fff.webp",
+      "contact": {
+        "location": "Lanett Regional Airport 7A3",
+        "address": "4445 51st Ave SW, Lanett, Alabama 36863",
+        "phone": "1-334-449-7600"
+      },
+      "menu_sections": [
+        {
+          "title": "New to Flying?",
+          "items": [
+            "Why Become a pilot?",
+            "Pilot Training Process",
+            "First Flight Lesson"
+          ]
+        },
+        {
+          "title": "Training Programs",
+          "items": [
+            "Private Pilot",
+            "Instrument Rating",
+            "Commercial Pilot",
+            "Multi-Engine Rating",
+            "Multi-Engine Instructor",
+            "Flight Instructor",
+            "CFI Spin Endorsement"
+          ]
+        },
+        {
+          "title": "About",
+          "items": [
+            "Our Team",
+            "Our Fleet",
+            "Why Blue Skies Above?",
+            "Join the Team",
+            "Blog",
+            "Financing",
+            "Leaseback Program"
+          ]
+        },
+        {
+          "title": "Quick Links",
+          "items": [
+            "Visit School",
+            "Discovery Flight",
+            "Contact Us"
+          ]
+        }
+      ],
+      "social_links": [
+        "Facebook",
+        "Instagram",
+        "Twitter",
+        "LinkedIn"
+      ],
+      "copyright": "© 2025 Blue Skies Above. All rights reserved.",
+      "policy_link": "Privacy Policy Terms of Service"
+    }
+  }
+}

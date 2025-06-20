@@ -1,28 +1,242 @@
 // An array of links for navigation bar
 const navBarLinks = [
-  { name: "Home", url: "/" },
-  { name: "Products", url: "/products" },
-  { name: "Services", url: "/services" },
-  { name: "Blog", url: "/blog" },
-  { name: "Contact", url: "/contact" },
+  { name: "New to Flight Training?", link: "/", submenu: [
+      {
+        name: "Why Become a Pilot?",
+        link: "/should-i-become-a-pilot",
+        description: "Now is the best time to become a pilot",
+        icon: "earth",
+      },
+      {
+        name: "Pilot Training Process",
+        link: "/pilot-training-programs-and-courses",
+        description: "Learn how to become a pilot",
+        icon: "plane",
+      },
+      {
+        name: "Considering a university for pilot training?",
+        link: "/professional-flight-program",
+        description: "Learn about our Part 61 program",
+        icon: "community",
+      },
+      {
+        name: "Discovery Flight",
+        link: "/discovery-flights",
+        description: "Your first flight lesson. You fly the plane",
+        icon: "plane",
+      },
+    ],
+  },
+  { name: "Training Programs", link: "/flight-training-programs", submenu: [
+      {
+        name: "Private Pilot",
+        link: "/products/private-pilot-certificate-ppl",
+        description: "Start you aviation journey here",
+        icon: "plane",
+      },
+      {
+        name: "Instrument Rating",
+        link: "/products/instrument-rating-ifr",
+        description: "Advance your navigation abilities and opportunities",
+        icon: "puzzle",
+      },
+      {
+        name: "Commercial Pilot",
+        link: "/products/commercial-pilot-certificate-cpl",
+        description: "Make flying your career",
+        icon: "share",
+      },
+      {
+        name: "Multi Engine Rating",
+        link: "/products/multi-engine-rating",
+        description: "Fly aircraft with more then one engine",
+        icon: "dashboard",
+      },
+      {
+        name: "Multi Engine Instructor (MEI)",
+        link: "/products/multi-engine-instructor-mei",
+        description: "Learn how to instruct in multi-engine aircraft",
+        icon: "books",
+      },
+      {
+        name: "Multi Engine Instructor (MEI)",
+        link: "/products/multi-engine-rating",
+        description: "Learn how to instruct in multi-engine aircraft",
+        icon: "books",
+      },
+      {
+        name: "CFI",
+        link: "/products/certified-flight-instructor-cfi",
+        description: "Teach what you know to the next class of pilots",
+        icon: "groups",
+      },
+      {
+        name: "CFII",
+        link: "/products/certified-flight-instructor-cfii",
+        description: "Bring student pilots to the next level with instrument rating",
+        icon: "dashboard",
+      },
+      {
+        name: "CFI Spin Endorsement",
+        link: "/products/spin-endorsement",
+        description: "Specialize in spin for CFI candidates",
+        icon: "arrowUp",
+      },
+      
+    ],
+  },
+  { name: "About us", link: "/about-us", submenu: [
+      {
+        name: "Our Team",
+        link: "/our-team",
+        description: "Meet the Blue Skies Above team",
+        icon: "house",
+      },
+      {
+        name: "Our Fleet",
+        link: "/our-fleet",
+        description: "Meet the fleet at Blue Skies Above",
+        icon: "plane",
+      },
+      {
+        name: "Why Blue Skies Above?",
+        link: "/about-us",
+        description: "The only local flight school with a Cesna fleet. When you're here, you're family",
+        icon: "checkCircle",
+      },
+      {
+        name: "Join the team",
+        link: "/join-team",
+        description: "Are you a CFI looking to teach the next generation of aviators? Apply today!",
+        icon: "groups",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
+        description: "Check out the latest news, articles, and events at 743 Lannet Municipal Airport",
+        icon: "books",
+      },
+      {
+        name: "Financing",
+        link: "/financing",
+        description: "Learn about financing options for your flight training at Blue Skies Above",
+        icon: "arrowUp",
+      },
+      {
+        name: "Leaseback Program",
+        link: "/leaseback-program",
+        description: "Earn money while you're not flying your aircraft. Learn more about our leaseback program",
+        icon: "question",
+      },
+    ],
+   },
+  { name: "Visit School", link: "/visit-school" },
+  { name: "Discovery Flight", link: "/discovery-flights" },
+  { name: "Contact us", link: "/contact-us" },
 ];
 // An array of links for footer
 const footerLinks = [
-  {
-    section: "Ecosystem",
-    links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+  { section: "New to Flight Training?",
+     links: [
+      {
+        name: "Why Become a Pilot?",
+        link: "/should-i-become-a-pilot",
+      },
+      {
+        name: "Pilot Training Process",
+        link: "/pilot-training-programs-and-courses",
+      },
+      {
+        name: "Considering a university for pilot training?",
+        link: "/professional-flight-program",
+      },
+      {
+        name: "Discovery Flight",
+        link: "/discovery-flights",
+      },
     ],
   },
+  { section: "Training Programs", links: [
+      {
+        name: "Private Pilot",
+        link: "/private-pilot-certificate-ppl",
+      },
+      {
+        name: "Instrument Rating",
+        link: "/instrument-rating-ifr",
+      },
+      {
+        name: "Commercial Pilot",
+        link: "/commercial-pilot-certificate-cpl",
+      },
+      {
+        name: "Multi Engine Rating",
+        link: "/multi-engine-rating",
+      },
+      {
+        name: "Multi Engine Instructor (MEI)",
+        link: "/multi-engine-instructor-mei",
+      },
+      {
+        name: "CFI",
+        link: "/certified-flight-instructor-cfi",
+      },
+      {
+        name: "Multi Engine Instructor (MEI)",
+        link: "/multi-engine-rating",
+      },
+      {
+        name: "CFI",
+        link: "/certified-flight-instructor-cfi",
+      },
+      {
+        name: "CFII",
+        link: "/certified-flight-instructor-cfii",
+      },
+      {
+        name: "CFI Spin Endorsement",
+        link: "/spin-endorsement",
+      },
+      
+    ],
+  },
+  
+  { section: "About us", links: [
+      {
+        name: "Our Team",
+        link: "/about-us",
+      },
+      {
+        name: "Our Fleet",
+        link: "/our-fleet",
+      },
+      {
+        name: "Why Blue Skies Above?",
+        link: "/why-choose-blue-skies-above",
+      },
+      {
+        name: "Join the team",
+        link: "/join-team",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
+      },
+      {
+        name: "Financing",
+        link: "/financing",
+      },
+      {
+        name: "Leaseback Program",
+        link: "/leaseback-program",
+      },
+    ],
+   },
   {
-    section: "Company",
-    links: [
-      { name: "About us", url: "#" },
-      { name: "Blog", url: "/blog" },
-      { name: "Careers", url: "#" },
-      { name: "Customers", url: "#" },
+    section: "Quick Links", links: [
+      { name: "Discovery Flight", link: "/discovery-flight" },
+      { name: "Contact us", link: "/contact" },
+      { name: "Visit School", link: "/visit-flight-school" },
     ],
   },
 ];

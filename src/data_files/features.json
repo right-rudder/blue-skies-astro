@@ -1,22 +1,22 @@
 [
   {
-    "heading": "Dedicated Teams",
-    "content": "Benefit from our committed teams who ensure your success is personal. Count on expert guidance and exceptional results throughout your project journey.",
+    "heading": "Fly With Confidence from Day One",
+    "content": "Blue Skies Above offers expert-led training that prioritizes safety, confidence, and real-world readiness. Our experienced instructors ensure you receive hands-on, tailored instruction that helps you progress efficiently toward your pilot goals.",
+    "svg": "plane"
+  },
+  {
+    "heading": "Efficient Training in Uncongested Airspace",
+    "content": "Located at Lanett Municipal Airport, our school benefits from low air traffic, allowing students to spend more time flying and less time waiting. This means more value per flight hour, faster training progress, and an ideal learning environment.",
+    "svg": "rocket"
+  },
+  {
+    "heading": "A Fleet That Fits Your Goals",
+    "content": "Our fleet includes multiple Cessna 172s and a Cherokee 140, ideal for mastering both basic and advanced skills. Whether you're working toward a private license or pursuing commercial and instructor ratings, we have the right aircraft and instructors to get you there.",
+    "svg": "checkCircle"
+  },
+  {
+    "heading": "Community-Driven & Fun-Focused",
+    "content": "We believe that flight training should be challenging—but also enjoyable. Our team brings energy and enthusiasm to every lesson, and we host engaging community events like discovery flights, holiday flyovers, and youth aviation days. Learning to fly here feels like joining a family.",
     "svg": "groups"
-  },
-  {
-    "heading": "Simplicity and Affordability",
-    "content": "Find easy-to-use, affordable solutions with ScrewFast's line of tools and equipment. Our products make procurement simple and keep projects within budget.",
-    "svg": "verified"
-  },
-  {
-    "heading": "Comprehensive Documentation",
-    "content": "Integrate with ease using ScrewFast's exhaustive guides and libraries. Achieve seamless product adoption with our full suite of documentation designed for your success.",
-    "svg": "books"
-  },
-  {
-    "heading": "User-Centric Design",
-    "content": "Experience the difference with ScrewFast's user-focused design — where functionality meets practicality for an enhanced work experience.",
-    "svg": "frame"
   }
 ]

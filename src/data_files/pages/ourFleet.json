@@ -1,0 +1,74 @@
+{
+  "page_title": "Our Fleet",
+  "description": "We have a variety of aircraft to meet your training and rental needs. Our fleet is well maintained and ready to fly.",
+  "aircraft": [
+    {
+      "tail_number": "N717G",
+      "power": "160HP",
+      "model": "Cessna 172N",
+      "features": "Dual G5 / G530 Nav System",
+      "image_url": "/assets/cessna-n717g-39a83a31a98fba8fa7e499dbe2bbf8aae1416cac3324049121a3d1d0742d4065.webp",
+      "call_to_action": {
+        "text": "Like this plane? Come fly it!",
+        "link": "/visit-flight-school"
+      }
+    },
+    {
+      "tail_number": "N5378D",
+      "power": "180HP",
+      "model": "Cessna 172N",
+      "features": "Dual G5 / G430 Nav System",
+      "image_url": "/assets/cessna-n5378d-58825a7404bf034c1f1c8706e7550fcdf036b9bb32e7e3413217133e9396e5ef.webp",
+      "call_to_action": {
+        "text": "Like this plane? Come fly it!",
+        "link": "/visit-flight-school"
+      }
+    },
+    {
+      "tail_number": "N5225D",
+      "power": "180HP",
+      "model": "Cessna 172N",
+      "features": "Dual G5 / G430 Nav System",
+      "image_url": "/assets/cessna-n5225d-c647c3a33ccae76cd79f47c0cc0bffc4c49635207dd0ff28e7e6da7d2282cf9e.webp",
+      "call_to_action": {
+        "text": "Like this plane? Come fly it!",
+        "link": "/visit-flight-school"
+      }
+    },
+    {
+      "tail_number": "N738SR",
+      "power": "160HP",
+      "model": "Cessna 172N",
+      "features": "Dynon Skyview / G530 Nav System",
+      "image_url": "/assets/cessna-n738sr-c43f0abf4b33b68d126dcae9a818caafc0a0b45d46e1545d463b9fcc000926f4.webp",
+      "call_to_action": {
+        "text": "Like this plane? Come fly it!",
+        "link": "/visit-flight-school"
+      }
+    },
+    {
+      "tail_number": "N246SP",
+      "power": "180HP",
+      "model": "Cessna 172N",
+      "features": "Dual Dynon Skyview / GTN 650 Touch Screen",
+      "image_url": "/assets/cessna-n246sp-f14556778f37b9c868e2f8e8bbce8b4b42cd34c0e1866b8ad8f11e758c6698c4.webp",
+      "call_to_action": {
+        "text": "Like this plane? Come fly it!",
+        "link": "/visit-flight-school"
+      }
+    }
+  ],
+  "call_to_action": {
+    "title": "We are the flight training experts in Lanett, AL",
+    "subtitle": "Providing pilot training to the Auburn, Columbus, Opelika, LaGrange, Montgomery areas in Alabama and Georgia",
+    "description": "As the only independent flight school with a Cessna fleet in the area, we pride ourselves in training safe and highly proficient pilots. Come see what everyone's talking about! Visit Blue Skies Above and begin flight training today.",
+    "button": {
+      "text": "VISIT BLUE SKIES ABOVE",
+      "link": "/visit-flight-school"
+    }
+  },
+  "contact_info": {
+    "phone": "1-334-449-7600",
+    "address": "Lanett Regional Airport 7A3, 4445 51st Ave SW, Lanett, Alabama 36863"
+  }
+}

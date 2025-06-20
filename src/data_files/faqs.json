@@ -1,29 +1,29 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "Learn to fly with expert instructors at Blue Skies Above, a premier flight training school based in Lanett, Alabama.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "Where is Blue Skies Above located?",
+      "answer": "Blue Skies Above operates out of Lanett Municipal Airport (7A3) in Lanett, Alabama, near the Alabama–Georgia border, just 30 minutes from Auburn and one hour from Columbus."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "What flight training programs are offered?",
+      "answer": "They offer a wide range of programs including private pilot, instrument rating, commercial pilot, multi-engine rating, CFI/CFII, and spin training."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "Who leads the school?",
+      "answer": "The school is led by founder and chief flight instructor Matthew Bourguignon, a certified ATP, CFI, CFII, and MEI with extensive experience since 2020."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "What aircraft are used for training?",
+      "answer": "Their fleet includes multiple Cessna 172s and a Cherokee 140, ideal for primary and advanced flight training."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "What makes this school unique?",
+      "answer": "Blue Skies Above is known for its small-town hospitality, low-traffic airspace, strong safety culture, experienced instructors, and active community events like youth flight days and holiday flyovers."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "Are discovery flights available?",
+      "answer": "Yes! They offer discovery flights where prospective students or aviation enthusiasts can experience flying firsthand with a certified instructor."
     }
   ]
 }
