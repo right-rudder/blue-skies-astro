@@ -1,0 +1,35 @@
+---
+const { content } = Astro.props;
+
+---
+
+
+<section>
+    <div class="container px-6 py-10 mx-auto">
+        <p class="text-picton-blue-600 uppercase">{content.upperheading && content.upperheading}</p>
+        <h2 class="text-3xl font-semibold text-center text-slate-900 capitalize lg:text-3xl dark:text-white">{content.title}</h1>
+
+        <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+            {content.description && content.description}
+        </p>
+
+        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-3 xl:grid-cols-3">
+            {content.team && content.team.map((teamMember: { name: unknown; role: unknown; description: unknown; imagePath: string; imageAlt: string; }) => (
+                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-picton-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                    <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                        <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src={teamMember.imagePath} alt={teamMember.imageAlt}>
+
+                        <div class="mt-4 sm:mx-4 sm:mt-0">
+                            <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">{teamMember.name}</h1>
+
+                            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">{teamMember.role}</p>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">{teamMember.description}</p>
+                </div>
+                ))
+            };
+        </div>
+    </div>
+</section>
