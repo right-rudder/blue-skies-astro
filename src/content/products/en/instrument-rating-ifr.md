@@ -9,8 +9,8 @@ main:
   id: 1
   content: |
     Blue Skies Above is the premier flight school in East Alabama and West Georgia, offering efficient, fun, and personalized instrument rating training. Whether you're advancing your skills or pursuing a professional pilot career, our team will help you master instrument flying.
-  imgCard: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  imgMain: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  imgCard: "src/assets/images/airplane-cockpit.webp"
+  imgMain: "src/assets/images/airplane-cockpit.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
 
 tabs:

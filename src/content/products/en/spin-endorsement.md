@@ -9,8 +9,8 @@ main:
   id: 1
   content: |
     Our CFI Spin Endorsement program prepares flight instructor candidates to safely teach spin recovery techniques, meeting FAA requirements for CFI certification.
-  imgCard: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  imgMain: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  imgCard: "src/assets/images/blue-skies-above-student-pilot-passing-cfi-checkride.webp"
+  imgMain: "src/assets/images/blue-skies-above-student-pilot-passing-cfi-checkride.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
 
 tabs:
