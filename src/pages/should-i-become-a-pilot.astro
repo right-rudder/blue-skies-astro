@@ -3,6 +3,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import { SITE } from "@data/constants";
 import Header from "@/components/Header.astro";
 import HeaderAlt from "@components/HeaderAlt.astro";
+import WhyBecomePilot from "@/components/WhyBecomePilot.astro";
 import headerImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-training.webp";
 import FAQ from "@/components/sections/misc/FAQ.astro";
 import faqs from "@data/faqs-why-become-a-pilot.json";
@@ -80,6 +81,7 @@ const videoWhyBecomePilot = {
     </div>
     <CTA content={ctaEnroll} />
     <!-- Add Why -->
+    <WhyBecomePilot />
     <!-- Add courses -->
     <FAQ title="Frequently<br>asked questions" faqs={faqs} />
     <CTA content={ctaDiscovery} />
