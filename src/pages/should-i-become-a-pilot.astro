@@ -1,0 +1,54 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { SITE } from "@data/constants";
+import Header from "@/components/Header.astro";
+import HeaderAlt from "@components/HeaderAlt.astro";
+import headerImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-training.webp";
+import FAQ from "@/components/sections/misc/FAQ.astro";
+import faqs from "@data/faqs-why-become-a-pilot.json";
+
+const pageTitle: string = `Our Team | ${SITE.title}`;
+const metaDescription = "Meet the dedicated team of instructors and staff at Blue Skies Above Flight School in Lanett, Alabama.";
+const ogTitle = "Our Team | Blue Skies Above Flight School";
+
+const headerData = {
+    imagePath: "/src/assets/images/blue-skies-above-clouds-instrument-cfii-training.webp",
+    imageAlt: "",
+    headerH1: "Header H1",
+    headerH2: "Header H2",
+    paragraph: "Paragraph",
+    buttons:[
+        {
+            name:"Enroll now",
+            link:"/enroll-at-blue-skies",
+            primary: false,
+        },
+    ],
+};
+---
+
+<MainLayout 
+    title={pageTitle}
+    customDescription={metaDescription}
+    customOgTitle={ogTitle}
+    structuredData={{
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "",
+        url: "",
+        name: "About Blue Skies Above",
+        description: metaDescription,
+        isPartOf: {
+        "@type": "WebSite",
+        url: "",
+        name: SITE.title,
+        description: metaDescription,
+        },
+        inLanguage: "en-US",
+    }}
+> 
+    <!-- <Header data={headerData}/> -->
+     <HeaderAlt />
+     
+    <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+</MainLayout>

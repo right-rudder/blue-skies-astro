@@ -1,0 +1,29 @@
+{
+  "subTitle": "Learn everything you need to know before beginning your flight training journey.",
+  "faqs": [
+    {
+      "question": "What are the requirements to start flying?",
+      "answer": "Be at least 16 years old to get a student pilot certificate. Be able to read, speak, write, and understand the English language. You do not need an FAA medical certificate from an Aviation Medical Examiner (AME) for the first few lessons, but you will need to get your medical certificate prior to soloing."
+    },
+    {
+      "question": "What is a Discovery Flight?",
+      "answer": "A short introductory flight for anyone interested in learning about flying or taking the first step toward earning their pilot's license."
+    },
+    {
+      "question": "What should I bring to training?",
+      "answer": "A headset and extra batteries, a logbook, and a pen and paper for notes. Rentals are available for headsets. As you progress, you'll build your own flight bag with necessary tools for the rating you're working on."
+    },
+    {
+      "question": "What is a typical lesson like?",
+      "answer": "A typical lesson includes a short ground lesson and flight lesson brief, followed by the flight, and then a debrief. Your instructor will also help ensure your documents are uploaded and the aircraft is ready. Some lessons may consist solely of ground instruction depending on syllabus progress and weather."
+    },
+    {
+      "question": "What is ground school?",
+      "answer": "Ground school is classroom learning focused on topics like aerodynamics, airport rules, aircraft instruments, and weather. It can be one-on-one with your instructor or offered as a group class if there are enough students."
+    },
+    {
+      "question": "How many hours does it take to get my private pilot license?",
+      "answer": "It depends on your availability and flight frequency. The FAA minimum is 40 hours, but the national average is just over 65 hours."
+    }
+  ]
+}
