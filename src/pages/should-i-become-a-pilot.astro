@@ -12,7 +12,19 @@ const pageTitle: string = `Why become a pilot | ${SITE.title}`;
 const metaDescription = "With a global pilot shortage, there's never been a better time to fly. Learn why becoming a pilot is a great career choice at Blue Skies Above Flight School.";
 const ogTitle = "Why become a pilot | Blue Skies Above Flight School";
 
-const cta = {
+const ctaEnroll = {
+    isRightSection: false,
+    title: "Your Aviation Career is Cleared for Takeoff",
+    subTitle: "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
+    single: true,
+    img: headerImg,
+    imgAlt: "Flight training syllabus materials",
+    btnExists: true,
+    btnTitle: "Enroll Now",
+    btnURL: "/enroll-at-blue-skies",
+}
+
+const ctaDiscovery = {
     isRightSection: true,
     title: "Ready to Take the Controls?",
     subTitle: "Book a Discovery Flight and experience the thrill of flying firsthand. You'll take the controls with an expert instructor and see the world from a whole new perspective.",
@@ -66,9 +78,9 @@ const videoWhyBecomePilot = {
             </div>
         </div>
     </div>
-    <!-- Add CTA -->
+    <CTA content={ctaEnroll} />
     <!-- Add Why -->
     <!-- Add courses -->
     <FAQ title="Frequently<br>asked questions" faqs={faqs} />
-    <CTA content={cta} />
+    <CTA content={ctaDiscovery} />
 </MainLayout>
