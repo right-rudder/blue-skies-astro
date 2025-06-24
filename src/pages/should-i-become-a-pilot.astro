@@ -6,24 +6,24 @@ import HeaderAlt from "@components/HeaderAlt.astro";
 import headerImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-training.webp";
 import FAQ from "@/components/sections/misc/FAQ.astro";
 import faqs from "@data/faqs-why-become-a-pilot.json";
+import CTA from "@/components/sections/misc/CTA.astro";
 
-const pageTitle: string = `Our Team | ${SITE.title}`;
-const metaDescription = "Meet the dedicated team of instructors and staff at Blue Skies Above Flight School in Lanett, Alabama.";
-const ogTitle = "Our Team | Blue Skies Above Flight School";
+const pageTitle: string = `Why become a pilot | ${SITE.title}`;
+const metaDescription = "With a global pilot shortage, there's never been a better time to fly. Learn why becoming a pilot is a great career choice at Blue Skies Above Flight School.";
+const ogTitle = "Why become a pilot | Blue Skies Above Flight School";
 
-const headerData = {
-    imagePath: "/src/assets/images/blue-skies-above-clouds-instrument-cfii-training.webp",
-    imageAlt: "",
-    headerH1: "Header H1",
-    headerH2: "Header H2",
-    paragraph: "Paragraph",
-    buttons:[
-        {
-            name:"Enroll now",
-            link:"/enroll-at-blue-skies",
-            primary: false,
-        },
-    ],
+const cta = {
+    isRightSection: true,
+    title: "Ready to Take the Controls?",
+    subTitle: "Book a Discovery Flight and experience the thrill of flying firsthand. You'll take the controls with an expert instructor and see the world from a whole new perspective.",
+    single: true,
+    imgOne: headerImg,
+    imgOneAlt: "Flight training syllabus materials",
+    imgTwo: headerImg,
+    imgTwoAlt: "Instructor with student at planning table",
+    btnExists: true,
+    btnTitle: "Book Now",
+    btnURL: "/discovery-flight",
 };
 ---
 
@@ -47,8 +47,11 @@ const headerData = {
         inLanguage: "en-US",
     }}
 > 
-    <!-- <Header data={headerData}/> -->
-     <HeaderAlt />
-     
+    <HeaderAlt />
+    <!-- Add Video -->
+    <!-- Add CTA -->
+    <!-- Add Why -->
+    <!-- Add courses -->
     <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+    <CTA content={cta} />
 </MainLayout>
