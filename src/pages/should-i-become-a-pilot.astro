@@ -25,6 +25,11 @@ const cta = {
     btnTitle: "Book Now",
     btnURL: "/discovery-flight",
 };
+
+const videoWhyBecomePilot = {
+    title: "Why I chose aviation as a career",
+    description: "Learn what inspired Kate Roberts to pursue a career in aviation, and the passion that drives her journey. Discover how her experiences shaped her path and why she chose to turn her love for flying into a lifelong profession.",
+}
 ---
 
 <MainLayout 
@@ -49,9 +54,21 @@ const cta = {
 > 
     <HeaderAlt />
     <!-- Add Video -->
+    <div>
+        <div class="mx-auto flex gap-10 text-picton-blue-500 py-10 max-w-7xl px-6 lg:px-8 items-center lg:flex-row flex-col w-full">
+            <div class="lg:flex-1 flex flex-col gap-5 text-center lg:text-left">
+            <h3 class="font-bold text-3xl lg:text-5xl">{videoWhyBecomePilot.title}</h3>
+            <h4 class="lg:text-xl text-black">{videoWhyBecomePilot.description}</h4>
+            </div>
+            <div class="lg:flex-1 lg:aspect-w-full lg:aspect-h-full h-full lg:h-60">
+                <iframe src="https://tube.rvere.com/embed?v=CYIcdKHQAUw" class="w-full h-full rounded-xl" title="Why I Chose Aviation as a Career" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+            </iframe>
+            </div>
+        </div>
+    </div>
     <!-- Add CTA -->
     <!-- Add Why -->
     <!-- Add courses -->
-    <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+    <FAQ title="Frequently<br>asked questions" faqs={faqs} />
     <CTA content={cta} />
 </MainLayout>
