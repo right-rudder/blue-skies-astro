@@ -5,7 +5,8 @@ import headerImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-
 import CTA from "@/components/sections/misc/CTA.astro";
 import FeaturesStarting from "@/components/sections/features/FeaturesStarting.astro";
 import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
- 
+import Courses from "@components/Courses.astro";
+
 const pageTitle: string = `Pilot Training Programs & Courses | ${SITE.title}`;
 const metaDescription = "Explore comprehensive pilot training programs and courses at Blue Skies Above Flight School. From Private Pilot to Commercial and beyond, start your aviation journey with us.";
 const ogTitle = "Pilot Training Programs & Courses | Blue Skies Above Flight School";
@@ -69,5 +70,6 @@ const videoWhyBecomePilot = {
         url="/discovery-flights"
     />
     <FeaturesStarting />
+    <Courses />
     <CTA content={ctaDiscovery} />
 </MainLayout>
