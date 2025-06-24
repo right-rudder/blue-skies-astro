@@ -66,7 +66,7 @@ export const partnersData = [
     </svg>`,
         name: "first",
         href: "",
-        imagePath: "/src/images/parnter-faast-federal-aviaiton-administration-safety-team.webp",
+        imagePath: "/src/assets/images/parnter-faast-federal-aviaiton-administration-safety-team.webp",
         imageAlt: "",
     },
     {
@@ -99,7 +99,7 @@ export const partnersData = [
     </svg>`,
         name: "Second",
         href: "#",
-        imagePath: "/src/images/partner-blue-skies-gleim.webp",
+        imagePath: "/src/assets/images/partner-blue-skies-gleim.webp",
         imageAlt: "",
     },
     {
@@ -142,7 +142,7 @@ export const partnersData = [
     </svg>`,
         name: "Third",
         href: "#",
-        imagePath: "/src/images/partner-blue-skies-nafi-logo.webp",
+        imagePath: "/src/assets/images/partner-blue-skies-nafi-logo.webp",
         imageAlt: "",
     },
 
@@ -169,7 +169,7 @@ export const partnersData = [
     </svg>`,
         name: "Fourth",
         href: "#",
-        imagePath: "/src/images/parner-flight-training-finance-logo.webp",
+        imagePath: "/src/assets/images/parner-flight-training-finance-logo.webp",
         imageAlt: "",
     },
     {
@@ -195,7 +195,7 @@ export const partnersData = [
     </svg>`,
         name: "Fourth",
         href: "#",
-        imagePath: "/src/images/partner-blue-skies-fsana-logo.webp",
+        imagePath: "/src/assets/images/partner-blue-skies-fsana-logo.webp",
         imageAlt: "",
     },
 ]
