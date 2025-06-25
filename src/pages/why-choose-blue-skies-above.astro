@@ -1,0 +1,32 @@
+---
+import { SITE } from "@data/constants";
+import MainLayout from "@/layouts/MainLayout.astro";
+
+
+const pageTitle: string = `Page Title | ${SITE.title}`;
+const metaDescription = "Page Description";
+const ogTitle = "Page Title | Blue Skies Above Flight School";
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "",
+    url: "",
+    name: "About Blue Skies Above",
+    description: metaDescription,
+    isPartOf: {
+      "@type": "WebSite",
+      url: "",
+      name: SITE.title,
+      description: metaDescription,
+    },
+    inLanguage: "en-US",
+  }}
+>
+
+</MainLayout>
