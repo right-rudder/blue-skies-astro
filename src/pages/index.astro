@@ -53,21 +53,6 @@ const avatarSrcs: Array<string> = [
     src={privatePilotPass}
     alt="Private Pilot receiving Checkride Pass certificate"
   />
-
-  <ClientsSection
-    title="Dedicated to flight training"
-    subTitle="Blue Skies Above is a proud partner of these aviation associations and companies"
-    partners={partnersData}
-  />
-
-  <FeaturesGeneral
-    title="Preparing future pilots to launch their aviation careers"
-    subTitle="Discover why aspiring pilots in Auburn and throughout the Alabama area trust Blue Skies Above to turn their aviation dreams into reality. With experienced instructors and comprehensive programs, we help students build the skills and confidence needed for a successful aviation career."
-    src={featureImage}
-    alt=""
-    features={features}
-  />
-
   <FeaturesNavs
     title=`The best time to <span class="text-picton-blue-500 dark:text-picton-blue-400">start flying</span> is now `
     tabs={[
@@ -96,6 +81,21 @@ const avatarSrcs: Array<string> = [
       },
     ]}
   />
+
+  <FeaturesGeneral
+    title="Preparing future pilots to launch their aviation careers"
+    subTitle="Discover why aspiring pilots in Auburn and throughout the Alabama area trust Blue Skies Above to turn their aviation dreams into reality. With experienced instructors and comprehensive programs, we help students build the skills and confidence needed for a successful aviation career."
+    src={featureImage}
+    alt=""
+    features={features}
+  />
+
+  <ClientsSection
+    title="Dedicated to flight training"
+    subTitle="Blue Skies Above is a proud partner of these aviation associations and companies"
+    partners={partnersData}
+  />
+
 
 <TestimonialsSection
   title="Take Off With Confidence"

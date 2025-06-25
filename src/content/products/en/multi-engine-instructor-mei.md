@@ -9,8 +9,8 @@ main:
   id: 1
   content: |
     Blue Skies Above is launching a comprehensive Multi-Engine Instructor (MEI) program in 2025, offering CFIs the opportunity to specialize in twin-engine instruction. Join our waitlist today to secure your spot in this exclusive training opportunity.
-  imgCard: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  imgMain: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  imgCard: "src/assets/images/blue-skies-sunset-from-cockpit.webp"
+  imgMain: "src/assets/images/blue-skies-sunset-from-cockpit.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
 
 tabs:

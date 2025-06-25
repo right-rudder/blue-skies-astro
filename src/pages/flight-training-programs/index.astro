@@ -11,6 +11,7 @@ import TestimonialsSectionAlt from "@components/sections/testimonials/Testimonia
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
+import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
 
 // Fetching all the product related content and sorting it by main.id
 const product: CollectionEntry<"products">[] = (
@@ -85,6 +86,13 @@ const ogTitle = "Pilot Training | Blue Skies Above";
     inLanguage: "en-US",
   }}
 >
+
+  <HeroSectionAlt  
+    title="Your Dream of Flying Starts Here"
+    subTitle={subTitle}
+    url="/enroll-at-blue-skies"
+    btnTitle="Enroll now"
+  />
   <div
     class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
   >
@@ -95,19 +103,12 @@ const ogTitle = "Pilot Training | Blue Skies Above";
         >
           {title}
         </h1>
-        {
-          subTitle && (
-            <p class="hidden max-w-(--breakpoint-sm) text-pretty text-neutral-600 md:block dark:text-neutral-400">
-              {subTitle}
-            </p>
-          )
-        }
       </div>
       <PrimaryCTA title="Customer Stories" url="#testimonials" noArrow={true} />
     </div>
     {/* Displaying products in alternating styles. Alternative product gets different card styling.
     Maps through all product entries and displays them with either CardSmall or CardWide based on their position. */}
-    <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+    <section id="programs" class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
       {
         product.map((product, index) => {
           const position = index % 4;

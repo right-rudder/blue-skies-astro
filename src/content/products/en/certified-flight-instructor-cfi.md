@@ -9,8 +9,8 @@ main:
   id: 1
   content: |
     Blue Skies Above offers comprehensive CFI training to help commercial pilots transition into instructors. Our program prepares you to teach with confidence while building valuable flight experience.
-  imgCard: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  imgMain: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  imgCard: "src/assets/images/blue-skies-over-auburn.webp"
+  imgMain: "src/assets/images/blue-skies-over-auburn.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
 
 tabs:

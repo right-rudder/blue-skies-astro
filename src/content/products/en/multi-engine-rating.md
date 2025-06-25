@@ -9,8 +9,8 @@ main:
   id: 1
   content: |
     Blue Skies Above is launching an exciting new Multi-Engine Rating program in 2025, bringing twin-engine training to East Alabama and West Georgia. Join our waitlist today to be among the first to experience this advanced training opportunity.
-  imgCard: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  imgMain: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  imgCard: "src/assets/images/multi-engine-plane.webp"
+  imgMain: "src/assets/images/multi-engine-plane.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
 
 tabs:
