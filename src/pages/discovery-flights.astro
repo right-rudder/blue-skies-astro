@@ -1,7 +1,7 @@
 ---
 import { SITE } from "@data/constants";
 import MainLayout from "@/layouts/MainLayout.astro";
-
+import DiscoveryFlightForm from "@/components/forms/DiscoveryFlightForm.astro";
 
 const pageTitle: string = `Page Title | ${SITE.title}`;
 const metaDescription = "Page Description";
@@ -28,5 +28,5 @@ const ogTitle = "Page Title | Blue Skies Above Flight School";
     inLanguage: "en-US",
   }}
 >
-
+  <DiscoveryFlightForm />
 </MainLayout>
