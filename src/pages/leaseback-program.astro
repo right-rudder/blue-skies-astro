@@ -1,6 +1,7 @@
 ---
 import { SITE } from "@data/constants";
 import MainLayout from "@/layouts/MainLayout.astro";
+import LeasebackProgramComponent from "@/components/sections/LeasebackProgram.astro";
 
 
 const pageTitle: string = `Page Title | ${SITE.title}`;
@@ -28,5 +29,5 @@ const ogTitle = "Page Title | Blue Skies Above Flight School";
     inLanguage: "en-US",
   }}
 >
-
+  <LeasebackProgramComponent />
 </MainLayout>
