@@ -45,13 +45,9 @@ specificationsLeft:
   - title: Develop Skills & Confidence
     subTitle: Each lesson builds on the last with increasing complexity. You'll practice handling in-flight scenarios, improve your decision-making, and gain confidence in the cockpit. Staying consistent, studying regularly, and asking questions are the keys to your success.
 tableData:
-  - feature: ["What's included"]
+  - feature: ["Prerequisites", ""]
     description:
-      - ["3 lessons per week"]
-      - ["40 hours of flight time"]
-      - ["30 hours of flight instruction"]
-      - ["30 hours of ground instruction"]
-      - ["Ground school kit"]
+      - ["Minimum age", "At least 17 years old"]
 blueprints:
   first: "@/images/blue-skies-ppl-private-pilot-checkride-pass.webp"
   second: "@/images/blue-skies-flying-over-atlanta-katl-airport.webp"

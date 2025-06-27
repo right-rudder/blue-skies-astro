@@ -1,74 +1,75 @@
 ---
-title: Commercial Pilot Certificate CPL
-
-description: Commercial Pilot Certificate CPL
-
-# Launch your professional aviation career with our Commercial Pilot Certificate training in Lanett, Alabama - the gateway to getting paid to fly.
+title: Commercial Pilot Certificate
+description: CPL
 
 main:
   id: 1
   content: |
-    Blue Skies Above offers comprehensive commercial pilot training in East Alabama and West Georgia, preparing you for a rewarding aviation career. Our structured program combines expert instruction with modern TAA aircraft to help you meet the FAA's rigorous commercial pilot standards.
-  imgCard: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  imgMain: "src/assets/images/blue-skies-cessna-n7102w.webp"
+    Launch your professional aviation career with our Commercial Pilot Certificate training in Lanett, Alabama - the gateway to getting paid to fly.
+  imgCard: "@/images/blue-skies-commercial-pilot-pass-checkride-auburn-columbus.webp"
+  imgMain: "@/images/blue-skies-commercial-pilot-pass-checkride-auburn-columbus.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
 
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
-    title: "Commercial Pilot Certificate"
+    title: "Description"
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
-    title: "Specifications"
+    title: "How to obtain?"
   - id: "tabs-with-card-item-3"
     dataTab: "#tabs-with-card-3"
-    title: "Blueprints"
+    title: "Gallery"
 
 longDescription:
   title: Start Your Professional Flying Career
   subTitle: |
-    From private pilot to commercial certificate, we'll guide you through every requirement.
-  btnTitle: Schedule a Consultation
-  btnURL: /contact
+    If flying is your passion, why not make it your profession? A Commercial Pilot Certificate is your gateway to turning your flight experience into a rewarding career. Whether you're aiming to become a flight instructor, charter pilot, or pursue specialized aviation roles, this certificate is the next major milestone on your journey. At Blue Skies Above, we guide you through advanced training designed to refine your precision, decision-making, and professionalism in the cockpit. Ready to fly for a living? Enroll today and take the next step toward your career in aviation.
+  btnTitle: Enroll Today
+  btnURL: /enrollment
 descriptionList:
-  - title: Career-Focused Training
-    subTitle: Structured program designed specifically for professional aviation paths.
-  - title: TAA Aircraft Advantage
-    subTitle: Train in our modern Technically Advanced Aircraft to meet all requirements.
-  - title: Flexible Financing
-    subTitle: Affordable packages and payment plans to fit your budget.
+  - title: Fly for Hire
+    subTitle: Earning your Commercial Pilot Certificate means you can finally get paid to fly. This opens up exciting aviation career paths such as flight instructing, aerial surveying, skydiving operations, banner towing, and more. It’s your next big step toward making aviation your profession.
+  - title: Structured, Career-Focused Training
+    subTitle: Our program is designed to not only help you pass the test but prepare you for a career in aviation. With a proven syllabus, experienced instructors, and dedicated career support, we’ll guide you every step of the way—whether you're pursuing a job as a CFI or working toward the airlines
+  - title: Sharpen Your Precision
+    subTitle: Commercial training is all about flying with accuracy and control. You'll master advanced maneuvers, refine your stick-and-rudder skills, and build confidence flying to strict FAA standards. We’ll help you develop the professionalism and decision-making ability that employers look for.
+  - title: Fly Technically Advanced Aircraft
+    subTitle: Get hands-on experience flying our Technically Advanced Aircraft (TAA), like the Cessna 172 with G1000 avionics. Training in these modern aircraft ensures you're familiar with the systems and procedures you'll encounter in real-world commercial flying and Part 135 operations.
 
 specificationsLeft:
-  - title: Requirements
-    subTitle: Private Pilot Certificate, 250 total flight hours, instrument rating recommended
-  - title: Training Includes
-    subTitle: 88 syllabus hours, 17 time-building hours, 55 instruction hours
-  - title: Location Advantage
-    subTitle: Train at Lanett Regional (7A3) with diverse airspace experience
-  - title: Pricing Options
-    subTitle: $25,150 full package or $4,419 finish-up option available
+  - title: Complete Your Instrument Rating
+    subTitle: While not technically a requirement, not having an instrument rating when completing you commercial pilot certificate limits you in the type of flying you can do for compensation.
+  - title: Log Flight Hours
+    subTitle: You need 250 total flight hours to get your commercial pilot certificate. 110 of these hours are normally logged when getting your PPL and IR, but the other 140 will be logged via time building.
+  - title: Meet Minimum Requirements
+    subTitle: Once you’re approaching 250 total flight hours, there are different types of cross-country trips that you are required to complete to meet the minimum requirements to take the commercial pilot practical exam.
+  - title: Fly With an Examiner
+    subTitle: You'll fly with an FAA Designated Pilot Examiner (DPE) and demonstrate you have the skills to fly as a commercial pilot in a TAA aircraft and meet the requirements of the Airmen Certification Standards (ACS).
 
 tableData:
-  - feature: ["Prerequisites", "Details"]
+  - feature: ["Prerequisites", ""]
     description:
-      - ["Private Pilot Certificate"]
-      - ["250 total flight hours required"]
-  - feature: ["Training Duration"]
-    description:
-      - ["35 weeks average completion"]
-      - ["3 lessons per week"]
-  - feature: ["Aircraft"]
-    description:
-      - ["TAA Cessna 172"]
-      - ["Meets all commercial training requirements"]
-  - feature: ["Career Preparation"]
-    description:
-      - ["Includes interview preparation"]
-      - ["Professional development guidance"]
+      - [
+          "Private Pilot Certificate",
+          "Already obtained from BSA or another certified training school",
+        ]
+      - [
+          "Instrument Rating",
+          "Must hold an Instrument Rating to ensure proficiency in navigating under IFR",
+        ]
+      - [
+          "Flight Hours",
+          "Logged flight hours including pilot-in-command time under VFR and IFR conditions.",
+        ]
+      - [
+          "Medical Certificate",
+          "Medical certificate from an FAA-certified aviation medical examiner.",
+        ]
 
 blueprints:
-  first: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  first: "@/images/blue-skies-cessna-in-clouds.webp"
+  second: "@/images/blue-skies-pilots-smiling-while-flying.webp"
 pricing1:
   title: Commercial Pilot Certificate With Time Building
   subTitle: Make flying your career with Commercial Pilot Certificate

@@ -1,14 +1,11 @@
 ---
-title: Multi-Engine Instructor (MEI)
-
-description: Multi-Engine Instructor (MEI)
-
-# Become a certified Multi-Engine Instructor and teach the next generation of twin-engine pilots with our new MEI program launching in 2025.
+title: Multi-Engine Instructor
+description: MEI
 
 main:
   id: 1
   content: |
-    Blue Skies Above is launching a comprehensive Multi-Engine Instructor (MEI) program in 2025, offering CFIs the opportunity to specialize in twin-engine instruction. Join our waitlist today to secure your spot in this exclusive training opportunity.
+    Become a certified Multi-Engine Instructor and teach the next generation of twin-engine pilots with our new MEI program launching in 2025.
   imgCard: "src/assets/images/blue-skies-sunset-from-cockpit.webp"
   imgMain: "src/assets/images/blue-skies-sunset-from-cockpit.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
@@ -16,59 +13,44 @@ main:
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
-    title: "MEI Program"
+    title: "Description"
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
-    title: "Curriculum"
+    title: "How to obtain?"
   - id: "tabs-with-card-item-3"
     dataTab: "#tabs-with-card-3"
-    title: "Join Waitlist"
+    title: "Gallery"
 
 longDescription:
   title: Elevate Your Instruction Career
   subTitle: |
-    Specialize in multi-engine instruction with our new MEI program
+    If you're ready to lead from the right seat and stand out in the flight training world, becoming a Multi-Engine Instructor (MEI) is your next big move. This advanced certification allows you to teach complex twin-engine operations, opening new doors for both professional growth and earning potential. At Blue Skies Above, our MEI Training Program—launching in 2025—is built to help you master the intricacies of multi-engine instruction with confidence and precision. Spaces will be limited, so join the waitlist today and take the next step toward becoming a high-demand aviation educator.
   btnTitle: Join Waitlist Now
-  btnURL: "#multi-engine-form"
+  btnURL: "/multi-engine-form"
 descriptionList:
-  - title: Career Advancement
-    subTitle: Open doors to higher-paying instruction opportunities
-  - title: Exclusive Training
-    subTitle: Limited spots available for our inaugural 2025 class
-  - title: Expert Mentorship
-    subTitle: Learn from experienced MEIs with airline backgrounds
+  - title: Stand Out in the Job Market
+    subTitle: MEIs are in high demand at flight schools and collegiate programs. Adding this certification gives you a competitive edge and unlocks more advanced teaching opportunities.
+  - title: Boost Your Earning Potential
+    subTitle: Multi-engine instruction typically commands higher pay rates than single-engine training, allowing you to build hours while earning more.
+  - title: Refine Your Skills as a Pilot and Instructor
+    subTitle: Teaching in multi-engine aircraft sharpens your own flying skills, from emergency procedures to energy management and advanced systems knowledge.
 
 specificationsLeft:
-  - title: Program Launch
-    subTitle: New MEI training program beginning 2025
-  - title: Prerequisites
-    subTitle: CFI certificate and multi-engine rating required
-  - title: Training Focus
-    subTitle: Advanced instruction techniques for twin-engine aircraft
-  - title: Location Advantage
-    subTitle: Train at Lanett Regional (7A3) with uncrowded airspace
+  - title: Hold a Commercial Multi-Engine Certificate
+    subTitle: You must already hold a Commercial Pilot Certificate with a Multi-Engine Rating. Many candidates pursue this after becoming a Certified Flight Instructor (CFI).
+  - title: Complete MEI-Specific Flight Training
+    subTitle: Work with an experienced MEI instructor to learn how to safely and effectively teach multi-engine flight, including VMC demos, engine-out procedures, and instructional techniques.
+  - title: Pass the MEI Checkride
+    subTitle: Successfully complete an FAA practical exam (checkride) that includes both an oral test and a flight test, where you’ll demonstrate your ability to instruct in a twin-engine aircraft.
 
 tableData:
-  - feature: ["Requirements", "Details"]
+  - feature: ["What's included"]
     description:
-      - ["Current CFI Certificate"]
-      - ["Multi-Engine Rating"]
-  - feature: ["Program Duration"]
-    description:
-      - ["Intensive 2-week course"]
-      - ["Flexible scheduling available"]
-  - feature: ["Career Outcomes"]
-    description:
-      - ["Higher earning potential"]
-      - ["Airline pathway opportunities"]
-  - feature: ["Waitlist Benefits"]
-    description:
-      - ["Priority scheduling"]
-      - ["Early enrollment discounts"]
+      - ["TBA"]
 
 blueprints:
-  first: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  first: "@/images/blue-skies-commercial-pilot-over-1000-hours.webp"
+  second: "@/images/stock-multi-engine.jpg"
 ---
 
 ## Why Become a Multi-Engine Instructor?

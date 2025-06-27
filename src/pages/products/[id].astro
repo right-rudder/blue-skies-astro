@@ -215,7 +215,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
                                     {/* Iterate through each cell value in the row's description array */}
                                     {rowData.map((cellValue) => (
                                       // Render each cell value in its own <td> element
-                                      <td class="px-6 py-4 text-sm font-medium whitespace-nowrap text-neutral-600 dark:text-neutral-400">
+                                      <td class="px-6 py-4 text-sm font-medium text-neutral-600 dark:text-neutral-400">
                                         {cellValue}
                                       </td>
                                     ))}
@@ -240,7 +240,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
   <div id="tabs-with-card-3" class="hidden" role="tabpanel">
     <div class="mx-auto mb-20 flex w-full md:mb-28 2xl:w-4/5">
       <div
-        class="relative top-12 left-12 z-10 overflow-hidden rounded-xl shadow-lg md:top-16 md:left-12 md:-ml-12 lg:ml-0"
+        class="relative top-12 left-12 z-10 flex-1 overflow-hidden rounded-xl shadow-lg md:top-16 md:left-12 md:-ml-12 lg:ml-0"
       >
         {
           product.data.blueprints.first && (
@@ -254,7 +254,9 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
         }
       </div>
 
-      <div class="relative right-12 overflow-hidden rounded-xl shadow-xl">
+      <div
+        class="relative right-12 flex-1 overflow-hidden rounded-xl shadow-xl"
+      >
         {
           product.data.blueprints.second && (
             <Image
@@ -262,6 +264,8 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
               class="h-full w-full object-cover object-center"
               alt="Blueprint Illustration"
               format={"avif"}
+              widths={[240, 540, 720, 1080, 1440, 1980]}
+              sizes={`(max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px`}
             />
           )
         }

@@ -1,74 +1,69 @@
 ---
 title: CFI Spin Endorsement
-
-description: CFI Spin Endorsement
-
-# Master spin recovery techniques and earn your CFI Spin Endorsement at Blue Skies Above in Lanett, Alabama - essential training for flight instructors.
+description: Spin Endorsement
 
 main:
   id: 1
   content: |
     Our CFI Spin Endorsement program prepares flight instructor candidates to safely teach spin recovery techniques, meeting FAA requirements for CFI certification.
-  imgCard: "src/assets/images/blue-skies-above-student-pilot-passing-cfi-checkride.webp"
-  imgMain: "src/assets/images/blue-skies-above-student-pilot-passing-cfi-checkride.webp"
+  imgCard: "@/images/blue-skies-cessna-n5378d.webp"
+  imgMain: "@/images/blue-skies-cessna-n5378d.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
 
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
-    title: "Spin Endorsement"
+    title: "Description"
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
-    title: "Requirements"
+    title: "How to obtain?"
   - id: "tabs-with-card-item-3"
     dataTab: "#tabs-with-card-3"
-    title: "Pricing"
+    title: "Gallery"
 
 longDescription:
   title: Essential Training for CFI Candidates
   subTitle: |
-    Master spin recovery techniques to meet FAA CFI requirements
-  btnTitle: Schedule Training
+    Before you can take your checkride and earn your Certified Flight Instructor certificate, you’ll need a spin endorsement in your logbook—proof that you’re trained, competent, and confident in handling one of aviation’s most dynamic flight maneuvers. At Blue Skies Above, we make the process straightforward and stress-free with focused ground instruction and in-air practice in our 180hp Cessna 172. Whether you're preparing for your CFI or just want to strengthen your spin recovery skills, our experienced instructors will guide you every step of the way. Enroll today and earn your spin endorsement in as little as one day.
+  btnTitle: Enroll Today
   btnURL: "/contact"
 descriptionList:
-  - title: FAA Requirement
-    subTitle: Mandatory endorsement for all CFI candidates
-  - title: Safety Focused
-    subTitle: Learn proper spin recognition and recovery
-  - title: Expert Instruction
-    subTitle: Train with experienced spin instructors
+  - title: FAA Requirement for CFI Certification
+    subTitle: You must receive a spin endorsement to be eligible for the Certified Flight Instructor checkride, as outlined in FAR 61.183(i).
+  - title: Develop Confidence and Safety in Flight
+    subTitle: Gain firsthand experience with spin entry and recovery, helping you stay calm and in control when teaching stall and spin awareness to your future students.
+  - title: Learn from Expert Instructors
+    subTitle: Train with experienced CFIs in aircraft certified for spins, using structured lessons that prioritize safety, clarity, and hands-on learning.
 
 specificationsLeft:
-  - title: Aircraft
-    subTitle: 180hp Cessna 172 - ideal for spin training
-  - title: Duration
-    subTitle: Typically completed in 1 day
-  - title: Location
-    subTitle: Lanett Regional Airport (7A3)
-  - title: Included
-    subTitle: Ground and flight instruction
+  - title: Complete Ground Instruction
+    subTitle: Learn the aerodynamics of spins, stall progression, causes of unintentional spins, and FAA requirements for spin training.
+  - title: Fly With a Qualified Instructor
+    subTitle: Conduct spin training flights with a certified instructor in a spin-approved aircraft—practicing safe entry, sustained spins, and proper recovery techniques.
+  - title: Demonstrate Spin Recovery Proficiency
+    subTitle: You must clearly demonstrate safe, consistent recovery from spins and an understanding of how to teach spin awareness to others.
+  - title: Receive Your Logbook Endorsement
+    subTitle: Once you've met FAA training standards, your instructor will endorse your logbook confirming you’re proficient in spins and eligible to take your CFI checkride.
 
 tableData:
-  - feature: ["Requirements", "Details"]
+  - feature: ["Prerequisites", ""]
     description:
-      - ["Current Student Pilot Certificate"]
-      - ["Medical Certificate"]
-  - feature: ["Training Content"]
-    description:
-      - ["Spin aerodynamics"]
-      - ["Recovery techniques"]
-  - feature: ["FAA Standards"]
-    description:
-      - ["FAR 61.183(i) compliance"]
-      - ["Logbook endorsement"]
-  - feature: ["Outcome"]
-    description:
-      - ["Ready for CFI checkride"]
-      - ["Confident in spin instruction"]
+      - [
+          "Student Pilot Certificate or Higher",
+          "Must hold at least a Student Pilot Certificate to receive spin training endorsement.",
+        ]
+      - [
+          "Logbook Endorsement",
+          "Must receive a logbook endorsement from a certified flight instructor authorizing spin training.",
+        ]
+      - [
+          "Medical Certificate",
+          "Valid medical certificate appropriate to the pilot certificate held.",
+        ]
 
 blueprints:
-  first: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  first: "@/images/four-phases-of-a-spin.webp"
+  second: "@/images/n5378d-flying-ver-auburn-alabama.jpg"
 pricing:
   subTitle: Uses 180hp 172
   duration: 1 day

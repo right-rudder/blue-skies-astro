@@ -65,12 +65,6 @@ const navBarLinks = [
         icon: "plane",
       },
       {
-        name: "Multi Engine Instructor (MEI)",
-        link: "/products/multi-engine-rating",
-        description: "Learn how to instruct in multi-engine aircraft",
-        icon: "plane",
-      },
-      {
         name: "CFI",
         link: "/products/certified-flight-instructor-cfi",
         description: "Teach what you know to the next class of pilots",

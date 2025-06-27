@@ -1,74 +1,71 @@
 ---
-title: Instrument Rating IFR
-
-description: Instrument Rating IFR
-
-# Gain the skills to fly in instrument meteorological conditions (IMC) and expand your flying capabilities with our professional instrument rating training in Lanett, Alabama.
+title: Instrument Rating
+description: IR
 
 main:
   id: 1
   content: |
-    Blue Skies Above is the premier flight school in East Alabama and West Georgia, offering efficient, fun, and personalized instrument rating training. Whether you're advancing your skills or pursuing a professional pilot career, our team will help you master instrument flying.
-  imgCard: "src/assets/images/airplane-cockpit.webp"
-  imgMain: "src/assets/images/airplane-cockpit.webp"
+    Gain the skills to fly in instrument meteorological conditions (IMC) and expand your flying capabilities with our professional instrument rating training in Lanett, Alabama.
+  imgCard: "@/images/airplane-cockpit.webp"
+  imgMain: "@/images/airplane-cockpit.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
 
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
-    title: "Instrument Rating IFR"
+    title: "Description"
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
-    title: "Specifications"
+    title: "How to obtain?"
   - id: "tabs-with-card-item-3"
     dataTab: "#tabs-with-card-3"
-    title: "Blueprints"
+    title: "Gallery"
 
 longDescription:
   title: Master Instrument Flying
   subTitle: |
-    From basic instrument skills to complex IFR procedures, we guide you every step of the way.
-  btnTitle: Schedule a Discovery Flight
-  btnURL: /discovery-flight
+    Flying through clear skies is only part of the journey—true skill shines when the weather turns. An Instrument Rating takes you beyond the limits of fair-weather flying and prepares you to navigate safely through clouds, low visibility, and complex airspace using only your instruments. It’s a vital step in becoming a more capable, confident, and career-ready pilot. Whether you're aiming to fly more reliably or take the next step toward commercial aviation, this training sharpens your precision and opens new possibilities. Ready to level up your flying? Enroll today and start your instrument training with Blue Skies Above.
+  btnTitle: Enroll Today
+  btnURL: /enrollment
 descriptionList:
-  - title: Enhanced Safety
-    subTitle: Gain confidence to handle unexpected weather and challenging conditions.
-  - title: Career Advancement
-    subTitle: Open doors to professional flying opportunities with an instrument rating.
-  - title: Efficient Training
-    subTitle: Our structured program maximizes your learning with minimal wasted time.
+  - title: Improved safety
+    subTitle: One of the most compelling reasons to get an instrument rating is the improvement in safety it provides. By learning to fly in instrument meteorological conditions (IMC), you'll be better equipped to handle unexpected weather events and other challenges that may arise during flight. With an instrument rating, you'll be able to fly with greater confidence and proficiency, knowing that you have the skills and knowledge to handle a wider range of situations.
+  - title: Enhanced career opportunities
+    subTitle: An instrument rating can also strengthen your career prospects as a pilot. Many airlines and other aviation employers prefer to hire pilots with instrument ratings, as they demonstrate a higher level of skill and professionalism. Additionally, an instrument rating may be required for certain types of flying, such as flying for an airline or chartering aircraft.
+  - title: Improved situational awareness
+    subTitle: Another benefit of an instrument rating is the improvement in situational awareness it provides. By learning to fly using instruments, you'll develop a heightened sense of awareness and attention to detail that can translate to all aspects of flying. This increased awareness can help you make better decisions and react more quickly to changing conditions, leading to safer, more efficient flights.
+  - title: Increased enjoyment
+    subTitle: Finally, many pilots find that getting an instrument rating enhances their enjoyment of flying. With an instrument rating, you'll have the skills and confidence to fly in a wider range of conditions and environments, allowing you to experience the thrill of flight in a whole new way.
 
 specificationsLeft:
-  - title: Requirements
-    subTitle: Private Pilot Certificate, 50 hours cross-country, 40 hours instrument time
-  - title: Training Includes
-    subTitle: 40 flight hours, 40 instruction hours, 30 ground school hours
-  - title: Location Advantage
-    subTitle: Train at Lanett Regional (7A3) with access to multiple approach procedures
-  - title: Pricing & Financing
-    subTitle: $12,050 package or flexible hourly rates with financing options
+  - title: Complete Your Private Pilot
+    subTitle: You must have finished your private pilot in order to start training for your instrument rating.
+  - title: Pass Your Instrument Written Exam
+    subTitle: Study and solidify core instrument rating concepts. Be able to reach approach plates and IFR charts. Understand the US Air Traffic Control System and your role as a pilot in the system.
+  - title: Meet Minimum Requirements
+    subTitle: You'll need to complete 50 hours of cross country time and at least 40 hours under the hood. You'll also need to fly an IFR cross country and complete training with an instructor.
+  - title: Fly With an Examiner
+    subTitle: You'll fly with a FAA Designated Pilot Examiner (DPE) and demonstrate you have the skills to fly IFR and meet the requirements of the Airmen Certification Standards (ACS).
 
 tableData:
-  - feature: ["Discovery Flight", "Value"]
+  - feature: ["Prerequisites", ""]
     description:
-      - ["Introductory instrument lesson"]
-      - ["Experience flying with reference only to instruments"]
-  - feature: ["Flight Hours"]
-    description:
-      - ["40-hour instrument training minimum"]
-      - ["Typically completed in 27 weeks"]
-  - feature: ["Ground School"]
-    description:
-      - ["30 hours included"]
-      - ["Covers IFR procedures, charts, and systems"]
-  - feature: ["Equipment Provided"]
-    description:
-      - ["Includes foggles and training materials"]
-      - ["Aircraft with full IFR capability"]
+      - [
+          "Private Pilot Certificate",
+          "Already obtained from BSA or another certified training school",
+        ]
+      - [
+          "Flight Hours",
+          "Must have recorded sufficient flight hours under VFR conditions",
+        ]
+      - [
+          "Medical Certificate",
+          "Medical certificate from an FAA-certified aviation medical examiner",
+        ]
 
 blueprints:
-  first: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  first: "@/images/blue-skies-instrument-training-foggles.webp"
+  second: "@/images/blue-skies-flying-ifr-columbus-georgia.webp"
 pricing:
   subTitle: Take your pilot skills to the next level with Instrument Rating
   duration: 27 weeks

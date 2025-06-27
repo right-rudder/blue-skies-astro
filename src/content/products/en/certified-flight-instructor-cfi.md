@@ -1,75 +1,69 @@
 ---
-title: Certified Flight Instructor CFI
-
-description: Certified Flight Instructor CFI
-
-# Become a Certified Flight Instructor and launch your aviation teaching career at Blue Skies Above in Lanett, Alabama - training the next generation of pilots.
+title: Certified Flight Instructor
+description: CFI
 
 main:
   id: 1
   content: |
-    Blue Skies Above offers comprehensive CFI training to help commercial pilots transition into instructors. Our program prepares you to teach with confidence while building valuable flight experience.
-  imgCard: "src/assets/images/blue-skies-over-auburn.webp"
-  imgMain: "src/assets/images/blue-skies-over-auburn.webp"
+    Become a Certified Flight Instructor and launch your aviation teaching career at Blue Skies Above in Lanett, Alabama - training the next generation of pilots.
+  imgCard: "@/images/blue-skies-ifr-training-opelika.webp"
+  imgMain: "@/images/blue-skies-ifr-training-opelika.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
 
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
-    title: "CFI Program"
+    title: "Description"
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
-    title: "Requirements"
+    title: "How to obtain?"
   - id: "tabs-with-card-item-3"
     dataTab: "#tabs-with-card-3"
-    title: "Pricing"
+    title: "Gallery"
 
 longDescription:
   title: Launch Your Instruction Career
   subTitle: |
-    From commercial pilot to certified instructor - we guide you through every step
+    If you’re passionate about aviation and ready to share that passion with others, becoming a Certified Flight Instructor is one of the most rewarding steps you can take. Whether you're building hours toward the airlines or pursuing a long-term career in aviation education, earning your CFI allows you to make a lasting impact on the next generation of pilots. At Blue Skies Above, we don’t just train instructors—we shape mentors, leaders, and safety-first aviators. With personalized guidance, expert instructors, and a supportive training environment at Lanett Municipal Airport, you’ll gain the skills, confidence, and experience to thrive. Take the next step in your aviation journey—enroll today and start your CFI training with Blue Skies Above.
   btnTitle: Enroll Today
   btnURL: "/enroll-at-blue-skies"
 descriptionList:
-  - title: Build Flight Hours
-    subTitle: Earn while you build valuable experience toward airline minimums
-  - title: Teaching Skills
-    subTitle: Develop effective instruction techniques for all pilot levels
-  - title: Career Opportunities
-    subTitle: Open doors to professional aviation positions
+  - title: Build Experience While Making a Difference
+    subTitle: Becoming a CFI isn’t just a way to log flight hours—it’s an opportunity to guide and inspire the next generation of pilots. You'll gain hands-on teaching experience, sharpen your own flying skills, and play a key role in shaping safer, more confident aviators. It’s a fulfilling path that combines personal growth with professional progress.
+  - title: Professional-Grade Training Environment
+    subTitle: At Blue Skies Above, you’ll train at Lanett Municipal Airport (7A3) with access to a fleet of Cessna aircraft, dedicated instructors, and a proven curriculum. Our structured program emphasizes real-world instructional techniques, deep knowledge of FAA standards, and strong mentorship to ensure you’re fully prepared for your checkride and your future students.
+  - title: Launchpad for Your Aviation Career
+    subTitle: Whether you're working toward airline minimums or envisioning a future in aviation education, earning your CFI opens the door to countless opportunities. It’s one of the fastest and most respected ways to build time, increase your marketability, and gain a solid foundation for any aviation career path you choose.
 
 specificationsLeft:
-  - title: Prerequisites
-    subTitle: Commercial Pilot Certificate, 250 total flight hours
-  - title: Program Duration
-    subTitle: Approximately 5 weeks (3 lessons per week)
-  - title: Training Includes
-    subTitle: 25 flight hours, 22 instruction hours, 50 ground hours
-  - title: Financing Available
-    subTitle: Flexible payment plans to fit your budget
+  - title: Hold a Commercial Pilot Certificate
+    subTitle: To begin CFI training, you must already hold a Commercial Pilot Certificate, which means you’ve logged at least 250 flight hours and demonstrated advanced proficiency in flight operations.
+  - title: Pass the FAA Knowledge Exams
+    subTitle: "You’ll need to complete two written tests: the Fundamentals of Instructing (FOI) and the Flight Instructor Airplane (FIA) exam. These ensure you understand how to teach effectively and possess in-depth aeronautical knowledge."
+  - title: Receive Ground and Flight Endorsements
+    subTitle: Train with a qualified instructor who will prepare you for both the instructional and flying aspects of the role. They’ll sign your logbook once you’ve demonstrated the skills required to teach safely and confidently.
+  - title: Pass the FAA Practical Exam (Checkride)
+    subTitle: The final step is passing the CFI checkride with a Designated Pilot Examiner (DPE), which includes a rigorous oral exam and a flight test where you’ll be evaluated on your ability to instruct and perform maneuvers to FAA standards.
 
 tableData:
-  - feature: ["Requirements", "Details"]
+  - feature: ["Prerequisites", ""]
     description:
-      - ["18+ years old"]
-      - ["Fluent English"]
-      - ["Commercial Pilot Certificate"]
-  - feature: ["Knowledge Tests"]
-    description:
-      - ["Fundamentals of Instructing"]
-      - ["Flight Instructor - Airplane"]
-  - feature: ["Flight Training"]
-    description:
-      - ["Teaching techniques"]
-      - ["Student evaluation methods"]
-  - feature: ["Career Benefits"]
-    description:
-      - ["Build flight hours"]
-      - ["Enhance flying skills"]
+      - [
+          "Commercial Pilot Certificate",
+          "Must hold a Commercial Pilot Certificate with appropriate category and class ratings.",
+        ]
+      - [
+          "Medical Certificate",
+          "Valid medical certificate issued by an FAA-certified aviation medical examiner.",
+        ]
+      - [
+          "Knowledge Tests",
+          "Must pass the Fundamentals of Instructing (FOI) and Flight Instructor Airplane (FIA) knowledge exams.",
+        ]
 
 blueprints:
-  first: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  first: "@/images/blue-skies-team-of-cfis-and-commercial-pilots.webp"
+  second: "@/images/blue-skies-above-student-pilot-passing-cfi-checkride.webp"
 pricing:
   subTitle: FAA Minimums
   duration: 5 weeks

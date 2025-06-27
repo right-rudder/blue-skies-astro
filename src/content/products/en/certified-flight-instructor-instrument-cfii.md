@@ -1,75 +1,70 @@
 ---
-title: Certified Flight Instructor CFI
-
-description: Certified Flight Instructor CFI
-
-# Become a Certified Flight Instructor and launch your aviation teaching career at Blue Skies Above in Lanett, Alabama - training the next generation of pilots.
+title: Certified Flight Instructor - Instrument
+description: CFII
 
 main:
   id: 1
   content: |
-    Blue Skies Above offers comprehensive CFI training to help commercial pilots transition into instructors. Our program prepares you to teach with confidence while building valuable flight experience.
-  imgCard: "src/assets/images/blue-skies-over-auburn.webp"
-  imgMain: "src/assets/images/blue-skies-over-auburn.webp"
+    Become an Instrument Flight Instructor at Blue Skies Above - train the next generation of instrument-rated pilots in Lanett, Alabama.
+  imgCard: "@/images/blue-skies-fly-sunset-dark.webp"
+  imgMain: "@/images/blue-skies-fly-sunset-dark.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
 
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
-    title: "CFI Program"
+    title: "Description"
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
-    title: "Requirements"
+    title: "How to obtain?"
   - id: "tabs-with-card-item-3"
     dataTab: "#tabs-with-card-3"
-    title: "Pricing"
+    title: "Gallery"
 
 longDescription:
-  title: Launch Your Instruction Career
+  title: Advance Your Instruction Career
   subTitle: |
-    From commercial pilot to certified instructor - we guide you through every step
+    Take your instructional career to new heights by becoming a Certified Flight Instructor – Instrument (CFII). This advanced rating empowers you to teach instrument flying, helping pilots master flight in low visibility and high workload environments. At Blue Skies Above, our CFII program at Lanett Municipal Airport (7A3) is built for passionate instructors who want to deepen their knowledge, sharpen their skills, and guide others to become safe, competent IFR pilots. Whether you're growing your career or looking to make a lasting impact in aviation, this is your next step. Enroll today and start your CFII journey with Blue Skies Above.
   btnTitle: Enroll Today
   btnURL: "/enroll-at-blue-skies"
 descriptionList:
-  - title: Build Flight Hours
-    subTitle: Earn while you build valuable experience toward airline minimums
-  - title: Teaching Skills
-    subTitle: Develop effective instruction techniques for all pilot levels
-  - title: Career Opportunities
-    subTitle: Open doors to professional aviation positions
+  - title: Teach Instrument Flying with Confidence
+    subTitle: Gain the authority and expertise to teach pilots how to safely operate in IFR conditions, helping them develop advanced navigation and decision-making skills.
+  - title: Advance Your Aviation Career
+    subTitle: Adding a CFII rating not only enhances your resume but also makes you more versatile and valuable as a flight instructor, opening doors at flight schools and in professional aviation training.
+  - title: Sharpen Your Own Skills
+    subTitle: Teaching instrument flight reinforces your understanding of complex procedures, strengthens your own IFR flying, and keeps you sharp in the cockpit.
 
 specificationsLeft:
-  - title: Prerequisites
-    subTitle: Commercial Pilot Certificate, 250 total flight hours
-  - title: Program Duration
-    subTitle: Approximately 5 weeks (3 lessons per week)
-  - title: Training Includes
-    subTitle: 25 flight hours, 22 instruction hours, 50 ground hours
-  - title: Financing Available
-    subTitle: Flexible payment plans to fit your budget
+  - title: Hold a Valid CFI Certificate
+    subTitle: Before you can begin CFII training, you must already be a Certified Flight Instructor (CFI). This foundational certification ensures you have the necessary instructional background and flight experience to effectively teach others.
+  - title: Hold an Instrument Rating on Your Pilot Certificate
+    subTitle: You must possess an instrument rating on your Commercial or Airline Transport Pilot (ATP) certificate. This proves that you are qualified to fly in instrument meteorological conditions (IMC) and understand the procedures you'll be teaching.
+  - title: Pass the FAA Instrument Instructor Knowledge Exam
+    subTitle: You'll need to complete and pass the Instrument Flight Instructor (FII) written test. This exam covers in-depth topics such as IFR regulations, instrument approach procedures, airspace structure, and teaching methodologies specific to instrument flight.
+  - title: Complete Flight & Ground Training with a CFII
+    subTitle: Work with a Certified Flight Instructor – Instrument to receive the training required to teach instrument students. You’ll focus on instructional techniques, safety protocols, instrument maneuvers, and checkride prep. Once you're ready, your instructor will provide a logbook endorsement that qualifies you for the FAA checkride with a Designated Pilot Examiner (DPE).
 
 tableData:
-  - feature: ["Requirements", "Details"]
+  - feature: ["Prerequisites", ""]
     description:
-      - ["18+ years old"]
-      - ["Fluent English"]
-      - ["Commercial Pilot Certificate"]
-  - feature: ["Knowledge Tests"]
-    description:
-      - ["Fundamentals of Instructing"]
-      - ["Flight Instructor - Airplane"]
-  - feature: ["Flight Training"]
-    description:
-      - ["Teaching techniques"]
-      - ["Student evaluation methods"]
-  - feature: ["Career Benefits"]
-    description:
-      - ["Build flight hours"]
-      - ["Enhance flying skills"]
+      - [
+          "Certified Flight Instructor (CFI) Certificate",
+          "Must hold a valid CFI certificate before applying for the CFII rating.",
+        ]
+      - ["Instrument Rating", "Must hold a current Instrument Rating."]
+      - [
+          "Medical Certificate",
+          "Valid medical certificate issued by an FAA-certified aviation medical examiner.",
+        ]
+      - [
+          "Knowledge Test",
+          "Must pass the Instrument Instructor Airplane knowledge exam.",
+        ]
 
 blueprints:
-  first: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  first: "@/images/blue-skies-private-pilot-checkride-pass-600.webp"
+  second: "@/images/blue-skies-above-clouds-instrument-cfii-training.webp"
 ---
 
 ## Why Become a Certified Flight Instructor?

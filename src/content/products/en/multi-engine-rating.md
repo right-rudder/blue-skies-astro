@@ -1,14 +1,11 @@
 ---
 title: Multi-Engine Rating
-
-description: Multi-Engine Rating
-
-# Expand your flying capabilities with our upcoming Multi-Engine Rating program in Lanett, Alabama - opening new career opportunities in 2025.
+description: ME
 
 main:
   id: 1
   content: |
-    Blue Skies Above is launching an exciting new Multi-Engine Rating program in 2025, bringing twin-engine training to East Alabama and West Georgia. Join our waitlist today to be among the first to experience this advanced training opportunity.
+    Expand your flying capabilities with our upcoming Multi-Engine Rating program in Lanett, Alabama - opening new career opportunities in 2025.
   imgCard: "src/assets/images/multi-engine-plane.webp"
   imgMain: "src/assets/images/multi-engine-plane.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
@@ -16,59 +13,57 @@ main:
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
-    title: "Multi-Engine Rating"
+    title: "Description"
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
-    title: "Program Details"
+    title: "How to obtain?"
   - id: "tabs-with-card-item-3"
     dataTab: "#tabs-with-card-3"
-    title: "Join Waitlist"
+    title: "Gallery"
 
 longDescription:
   title: Prepare for Advanced Aircraft Operations
   subTitle: |
-    Be among the first to train in our new twin-engine aircraft coming in 2025
+    Ready to take your training to the next level? A Multi-Engine Rating expands your capabilities and sets you apart in the world of aviation. It unlocks the opportunity to fly faster, higher-performance aircraft and is a key milestone for pilots pursuing careers in corporate, charter, or airline operations. At Blue Skies Above, our all-new multi-engine program launching in 2025 is built to deliver real-world experience in complex aircraft, guided by expert instructors and supported by state-of-the-art equipment. Spots are limited—join the waitlist today to reserve your place in this elite program.
   btnTitle: Join Waitlist Now
-  btnURL: "#multi-engine-form"
+  btnURL: "/multi-engine-form"
 descriptionList:
-  - title: Career Advancement
-    subTitle: Essential rating for corporate, airline, and advanced commercial flying
-  - title: Expert Instruction
-    subTitle: Learn from experienced multi-engine instructors
-  - title: Limited Availability
-    subTitle: First spots reserved for waitlist members
+  - title: Fly More Powerful Aircraft
+    subTitle: Learn to operate high-performance twin-engine airplanes, gaining the skills and confidence to handle complex systems, faster speeds, and increased payload capabilities—essential for advancing in commercial and corporate aviation.
+  - title: Master Critical Emergency Skills
+    subTitle: Multi-engine training prepares you for real-world scenarios like engine failures, asymmetric thrust, and single-engine performance. You’ll develop advanced decision-making and control techniques that are crucial for safety and professionalism.
+  - title: Launchpad for Career Pilots
+    subTitle: Whether you're aiming for the airlines, corporate jets, or charter operations, a multi-engine rating is a must-have. Our 2025 program is built for career-focused pilots who want to stand out in a competitive industry.
 
 specificationsLeft:
-  - title: New Fleet Addition
-    subTitle: Brand-new twin-engine aircraft arriving 2025
-  - title: Program Includes
-    subTitle: MEI training and multi-engine time building options
-  - title: Location Advantage
-    subTitle: Train at Lanett Regional (7A3) with uncrowded airspace
-  - title: Early Enrollment
-    subTitle: Priority scheduling for waitlist members
+  - title: Hold a Private or Commercial Certificate
+    subTitle: Before beginning your multi-engine training, you’ll need a valid Private Pilot or Commercial Pilot Certificate. The rating will be added onto your existing certificate.
+  - title: Complete Ground Instruction
+    subTitle: You'll start with ground training covering multi-engine aerodynamics, system operations, performance calculations, and emergency procedures—everything you need to understand how twin-engine aircraft operate.
+  - title: Fly with a Qualified Multi-Engine Instructor
+    subTitle: You'll complete several hours of dual instruction in a twin-engine aircraft, focusing on normal operations, engine-out procedures, VMC demonstrations, and emergency scenarios to build confidence and competence.
+  - title: Pass the Checkride
+    subTitle: Once training is complete, you'll take a practical test with an FAA examiner, which includes an oral exam and a flight test to demonstrate your ability to safely operate multi-engine aircraft.
 
 tableData:
-  - feature: ["Prerequisites", "Requirements"]
+  - feature: ["Prerequisites", ""]
     description:
-      - ["Private Pilot Certificate"]
-      - ["Instrument Rating recommended"]
-  - feature: ["Training Focus"]
-    description:
-      - ["Engine-out procedures"]
-      - ["Advanced systems management"]
-  - feature: ["Career Paths"]
-    description:
-      - ["Corporate flying"]
-      - ["Airline transport"]
-  - feature: ["Program Launch"]
-    description:
-      - ["Limited spots available"]
-      - ["Join waitlist for early access"]
+      - [
+          "Private Pilot Certificate",
+          "Must hold a Private Pilot Certificate or higher before beginning multi-engine training.",
+        ]
+      - [
+          "Instrument Rating",
+          "Required to have an Instrument Rating to ensure proficiency in IFR operations during multi-engine flight.",
+        ]
+      - [
+          "Medical Certificate",
+          "Valid medical certificate issued by an FAA-certified aviation medical examiner.",
+        ]
 
 blueprints:
-  first: "src/assets/images/blue-skies-cessna-n7102w.webp"
-  second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  first: "@/images/blue-skies-commercial-pilot-over-1000-hours.webp"
+  second: "@/images/stock-multi-engine.jpg"
 ---
 
 ## What is a Multi-Engine Rating?
