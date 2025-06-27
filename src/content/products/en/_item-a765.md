@@ -1,6 +1,6 @@
 ---
 title: "SF-AB A765"
-description: "Assorted Screw Set" 
+description: "Assorted Screw Set"
 main:
   id: 2
   content: |
@@ -51,4 +51,19 @@ tableData:
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
+pricing:
+  subTitle: FAA Minimums
+  duration: 13 weeks
+  fullPrice: "11,400"
+  monthlyPrice: "309"
+  details:
+    [
+      "3 lessons per week",
+      "40 hours of flight time",
+      "30 hours of flight instruction",
+      "30 hours of ground instruction",
+      "Ground school kit included",
+      "Pay up front or incrementally",
+    ]
+  note: Price is based on FAA minimums.
 ---

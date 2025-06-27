@@ -26,7 +26,7 @@ tabs:
 
 longDescription:
   title: Essential Training for CFI Candidates
-  subTitle: | 
+  subTitle: |
     Master spin recovery techniques to meet FAA CFI requirements
   btnTitle: Schedule Training
   btnURL: "/contact"
@@ -69,6 +69,13 @@ tableData:
 blueprints:
   first: "src/assets/images/blue-skies-cessna-n7102w.webp"
   second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+pricing:
+  subTitle: Uses 180hp 172
+  duration: 1 day
+  fullPrice: "399"
+  details:
+    ["Up to 2 hours of flight time", "Ground and flight instruction included"]
+  note: Spin Endorsement
 ---
 
 ## Why Get Your Spin Endorsement?
@@ -86,6 +93,7 @@ The CFI Spin Endorsement is required by the FAA (FAR 61.183(i)) for all flight i
 Our Spin Endorsement program includes:
 
 ### Ground Instruction (2 hours)
+
 - Spin aerodynamics theory
 - FAA regulations and requirements
 - Recognition and prevention techniques
@@ -93,6 +101,7 @@ Our Spin Endorsement program includes:
 - Instructional methods for teaching spins
 
 ### Flight Training (2 hours)
+
 - Spin entry techniques
 - Developed spin recognition
 - Proper recovery procedures
@@ -104,12 +113,14 @@ Our Spin Endorsement program includes:
 To earn your spin endorsement, you must:
 
 1. Receive ground training in:
+
    - Stall awareness
    - Spin entry
    - Spins
    - Spin recovery procedures
 
 2. Complete flight training demonstrating:
+
    - Proper spin entry
    - Maintaining spins
    - Correct recovery techniques
@@ -125,19 +136,21 @@ Our program uses a 180hp Cessna 172 specifically equipped for spin training:
 - **Hands-on Practice**: You'll perform spins under supervision
 - **Debrief**: Review and logbook endorsement
 
-*"The spin training at Blue Skies Above gave me the confidence to teach these important safety techniques to my future students."*  
+_"The spin training at Blue Skies Above gave me the confidence to teach these important safety techniques to my future students."_
+
 - Sarah M., CFI Candidate
 
 ## Pricing
 
 **CFI Spin Endorsement - $399**
+
 - Completed in 1 day
 - Up to 2 hours of flight time
 - Ground instruction included
 - Flight instruction included
 - Logbook endorsement
 
-*All training conducted in our 180hp Cessna 172 specifically approved for spin training.*
+_All training conducted in our 180hp Cessna 172 specifically approved for spin training._
 
 ## Ready to Earn Your Spin Endorsement?
 

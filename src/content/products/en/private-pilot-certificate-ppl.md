@@ -5,8 +5,8 @@ main:
   id: 1
   content: |
     A Private Pilot Certificate, also known as a Private Pilot License (PPL), allows for you to be pilot in command (PIC) and carry passengers
-  imgCard: "src/assets/images/blue-skies-commercial-pilot-over-1000-hours.webp"
-  imgMain: "src/assets/images/blue-skies-commercial-pilot-over-1000-hours.webp"
+  imgCard: "@/images/blue-skies-over-auburn.webp"
+  imgMain: "@/images/blue-skies-over-auburn.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
 
 tabs:
@@ -18,12 +18,12 @@ tabs:
     title: "What to expect?"
   - id: "tabs-with-card-item-3"
     dataTab: "#tabs-with-card-3"
-    title: "Pricing"
+    title: "Gallery"
 
 longDescription:
   title: Start Your Flight Training Journey
   subTitle: |
-    The time required to obtain a Private Pilot Certificate typically ranges between a few months to a year, contingent upon factors such as frequency of lessons, individual aptitude, and weather conditions affecting training. It involves flying for a minimum of 40 hours which includes both solo and instructor guided flights with Blue Skies Above expert CFIs. On average, students need around 60 hours to be ready for the checkride. Additionally, candidates must pass a written exam, a flight test demonstrating their flying skills, and meet medical requirements set by the Federal Aviation Administration (FAA).
+    If you've ever looked up and wondered what it feels like to take the controls and navigate through the open sky, the Private Pilot Program at Blue Skies Above is your chance to turn that dream into reality. This program is designed for aspiring aviators who want the freedom to fly for personal travel or pure adventure. With our supportive team, experienced Certified Flight Instructors (CFIs), and a proven training structure, you'll be equipped with the skills and knowledge to become a confident, capable pilot. Whether your goal is weekend getaways or building a future in aviation, it all starts with one unforgettable step—schedule your discovery flight today and experience what it’s like to fly an aircraft for yourself.
   btnTitle: Start with your Discovery Flight
   btnURL: /discovery-flight
 descriptionList:
@@ -51,8 +51,23 @@ tableData:
       - ["40 hours of flight time"]
       - ["30 hours of flight instruction"]
       - ["30 hours of ground instruction"]
-      - ["Ground school kit included"]
-      - ["Pay up front or incrementally"]
+      - ["Ground school kit"]
 blueprints:
-  first: "src/assets/images/blue-skies-cessna-n7102w.webp"
+  first: "@/images/blue-skies-ppl-private-pilot-checkride-pass.webp"
+  second: "@/images/blue-skies-flying-over-atlanta-katl-airport.webp"
+pricing:
+  subTitle: FAA Minimums
+  duration: 13 weeks
+  fullPrice: "11,400"
+  monthlyPrice: "309"
+  details:
+    [
+      "3 lessons per week",
+      "40 hours of flight time",
+      "30 hours of flight instruction",
+      "30 hours of ground instruction",
+      "Ground school kit included",
+      "Pay up front or incrementally",
+    ]
+  note: Price is based on FAA minimums.
 ---

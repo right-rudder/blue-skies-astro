@@ -26,7 +26,7 @@ tabs:
 
 longDescription:
   title: Start Your Professional Flying Career
-  subTitle: | 
+  subTitle: |
     From private pilot to commercial certificate, we'll guide you through every requirement.
   btnTitle: Schedule a Consultation
   btnURL: /contact
@@ -69,6 +69,39 @@ tableData:
 blueprints:
   first: "src/assets/images/blue-skies-cessna-n7102w.webp"
   second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+pricing1:
+  title: Commercial Pilot Certificate With Time Building
+  subTitle: Make flying your career with Commercial Pilot Certificate
+  duration: 35 weeks
+  fullPrice: "25,150"
+  monthlyPrice: "600"
+  details:
+    [
+      "3 lessons per week",
+      "88 hours of syllabus flights",
+      "17 hours of added time-building",
+      "55 hours of flight instruction",
+      "30 hours of ground instruction",
+      "Ground school kit included",
+      "Pay up front or incrementally",
+    ]
+  note: Price is based on FAA minimums.
+pricing2:
+  title: Finish-Up or Added Rating
+  subTitle: Complete or obtain additional qualifications. Make flying your career.
+  duration: 2 weeks
+  fullPrice: "4,419"
+  monthlyPrice: "125"
+  details:
+    [
+      "3 lessons per week",
+      "15 hours of flight time",
+      "15 hours of flight instruction",
+      "10 hours of ground instruction",
+      "Ground school kit included",
+      "Pay up front or incrementally",
+    ]
+  note: Price is based on FAA minimums.
 ---
 
 ## What is a Commercial Pilot Certificate?
@@ -94,6 +127,7 @@ Although not mandatory, completing your Instrument Rating alongside your Commerc
 Prepare to fly at a higher standard, where precision is key. The ACS standards for commercial pilots are stricter compared to private pilots, ensuring you develop the skills needed to fly professionally.
 
 Our training focuses on:
+
 - Advanced maneuvers with commercial-level precision
 - Complex aircraft operations
 - Professional decision-making
@@ -115,6 +149,7 @@ Once you complete your commercial pilot training, various aviation roles become 
 ## Pricing Packages
 
 ### Commercial Pilot Certificate With Time Building - $25,150 ($600/month)
+
 - 35 weeks average completion
 - 3 lessons per week
 - 88 hours of syllabus flights
@@ -124,10 +159,11 @@ Once you complete your commercial pilot training, various aviation roles become 
 - Ground school kit included
 
 ### Finish-Up or Added Rating - $4,419 ($125/month)
+
 - 2 weeks average completion
 - 3 lessons per week
 - 15 hours of flight time
 - 15 hours of flight instruction
 - 10 hours of ground instruction
 
-*Flexible financing options available to help make your aviation career dreams achievable.* 
+_Flexible financing options available to help make your aviation career dreams achievable._

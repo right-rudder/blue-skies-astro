@@ -26,7 +26,7 @@ tabs:
 
 longDescription:
   title: Master Instrument Flying
-  subTitle: | 
+  subTitle: |
     From basic instrument skills to complex IFR procedures, we guide you every step of the way.
   btnTitle: Schedule a Discovery Flight
   btnURL: /discovery-flight
@@ -69,6 +69,21 @@ tableData:
 blueprints:
   first: "src/assets/images/blue-skies-cessna-n7102w.webp"
   second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+pricing:
+  subTitle: Take your pilot skills to the next level with Instrument Rating
+  duration: 27 weeks
+  fullPrice: "12,050"
+  monthlyPrice: "388"
+  details:
+    [
+      "3 lessons per week",
+      "40 hours of flight time",
+      "40 hours of flight instruction",
+      "30 hours of ground instruction",
+      "Ground school kit included",
+      "Pay up front or incrementally",
+    ]
+  note: FAA requires 50 flight hours of cross country time to meet requirements. Additional time building may be required.
 ---
 
 ## What is an Instrument Rating?
@@ -94,20 +109,25 @@ Blue Skies Above will prepare you for all of the required exams with the necessa
 ## Why Get an Instrument Rating?
 
 ### Improved Safety
+
 One of the most compelling reasons to get an instrument rating is the improvement in safety it provides. By learning to fly in instrument meteorological conditions (IMC), you'll be better equipped to handle unexpected weather events and other challenges that may arise during flight.
 
 ### Enhanced Career Opportunities
+
 An instrument rating can also strengthen your career prospects as a pilot. Many airlines and other aviation employers prefer to hire pilots with instrument ratings, as they demonstrate a higher level of skill and professionalism.
 
 ### Improved Situational Awareness
+
 By learning to fly using instruments, you'll develop a heightened sense of awareness and attention to detail that can translate to all aspects of flying.
 
 ### Increased Enjoyment
+
 Many pilots find that getting an instrument rating enhances their enjoyment of flying. With an instrument rating, you'll have the skills and confidence to fly in a wider range of conditions.
 
 ## Pricing Package
 
 **Instrument Rating Package - $12,050** ($388/month)
+
 - 3 lessons per week
 - 40 hours of flight time
 - 40 hours of flight instruction
@@ -115,4 +135,4 @@ Many pilots find that getting an instrument rating enhances their enjoyment of f
 - Ground school kit included
 - Pay up front or incrementally
 
-*Note: FAA requires 50 flight hours of cross country time to meet requirements. Additional time building may be required.*
+_Note: FAA requires 50 flight hours of cross country time to meet requirements. Additional time building may be required._

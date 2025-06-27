@@ -26,7 +26,7 @@ tabs:
 
 longDescription:
   title: Prepare for Advanced Aircraft Operations
-  subTitle: | 
+  subTitle: |
     Be among the first to train in our new twin-engine aircraft coming in 2025
   btnTitle: Join Waitlist Now
   btnURL: "#multi-engine-form"
@@ -76,6 +76,7 @@ blueprints:
 Adding a Multi-Engine Rating to your credentials elevates your piloting skills and qualifies you to operate more complex, twin-engine aircraft. At Blue Skies Above, our specialized training program provides you with the expertise and confidence needed to navigate the unique challenges of multi-engine flight, preparing you for advanced roles in aviation.
 
 In multi-engine training, you'll learn critical skills such as:
+
 - Handling engine failures and emergencies
 - Managing asymmetric thrust
 - Advanced weight and balance calculations
@@ -96,13 +97,16 @@ Spots are limited, so we recommend joining our waitlist today to secure your pla
 ## Training Curriculum
 
 Our Multi-Engine Rating program covers:
+
 1. **Ground School**:
+
    - Multi-engine aerodynamics
    - Systems knowledge
    - Performance calculations
    - Emergency procedures
 
 2. **Flight Training**:
+
    - Normal operations
    - Engine-out procedures
    - VMC demonstration
@@ -117,6 +121,7 @@ Our Multi-Engine Rating program covers:
 ## Who Should Get a Multi-Engine Rating?
 
 This rating is essential for pilots pursuing:
+
 - Airline transport careers
 - Corporate/charter operations
 - Advanced commercial flying
@@ -136,15 +141,15 @@ Be among the first to experience our new Multi-Engine Rating program when it lau
 <form id="multi-engine-form">
   <div class="form-group">
     <label for="name">Name</label>
-    <input type="text" id="name" name="multi_engine_rating[name]" required>
+    <input type="text" id="name" name="multi_engine_rating[name]" required />
   </div>
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" id="email" name="multi_engine_rating[email]" required>
+    <input type="email" id="email" name="multi_engine_rating[email]" required />
   </div>
   <div class="form-group">
     <label for="phone">Phone</label>
-    <input type="tel" id="phone" name="multi_engine_rating[phone]">
+    <input type="tel" id="phone" name="multi_engine_rating[phone]" />
   </div>
   <div class="form-group">
     <label for="message">Message (Optional)</label>
@@ -152,3 +157,4 @@ Be among the first to experience our new Multi-Engine Rating program when it lau
   </div>
   <button type="submit" class="btn-primary">Join The Waitlist</button>
 </form>
+```

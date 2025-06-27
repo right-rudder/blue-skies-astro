@@ -26,7 +26,7 @@ tabs:
 
 longDescription:
   title: Elevate Your Instruction Career
-  subTitle: | 
+  subTitle: |
     Specialize in multi-engine instruction with our new MEI program
   btnTitle: Join Waitlist Now
   btnURL: "#multi-engine-form"
@@ -76,6 +76,7 @@ blueprints:
 As a Multi-Engine Instructor, you'll be equipped to teach the next generation of pilots how to operate complex, twin-engine aircraft. Our MEI Training Program focuses on the skills you need to provide top-notch instruction and help students succeed in their aviation goals.
 
 Key benefits of becoming an MEI:
+
 - **Higher earning potential** - MEIs command premium rates for instruction
 - **Career advancement** - Valuable experience for airline applications
 - **Specialized skills** - Master advanced twin-engine operations
@@ -86,6 +87,7 @@ Key benefits of becoming an MEI:
 Our new Multi-Engine Instructor Training Program launching in 2025 is designed for certified flight instructors looking to specialize in twin-engine operations. The program includes:
 
 ### Ground Instruction
+
 - Advanced aerodynamics of multi-engine aircraft
 - Systems knowledge and limitations
 - Effective teaching methodologies
@@ -93,6 +95,7 @@ Our new Multi-Engine Instructor Training Program launching in 2025 is designed f
 - Scenario-based training techniques
 
 ### Flight Instruction
+
 - Normal and emergency operations
 - Single-engine procedures
 - Performance maneuvers
@@ -100,6 +103,7 @@ Our new Multi-Engine Instructor Training Program launching in 2025 is designed f
 - Student evaluation techniques
 
 ### Professional Development
+
 - Building your instructor reputation
 - Marketing your MEI services
 - Career pathway guidance
@@ -108,6 +112,7 @@ Our new Multi-Engine Instructor Training Program launching in 2025 is designed f
 ## Program Requirements
 
 To enroll in our MEI program, you must:
+
 1. Hold a current CFI certificate
 2. Possess a multi-engine rating
 3. Have at least 50 hours of multi-engine time (recommended)
@@ -126,19 +131,19 @@ With limited spots available for our inaugural 2025 class, we recommend joining 
 <form id="multi-engine-form">
   <div class="form-group">
     <label for="name">Name</label>
-    <input type="text" id="name" name="multi_engine_rating[name]" required>
+    <input type="text" id="name" name="multi_engine_rating[name]" required />
   </div>
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" id="email" name="multi_engine_rating[email]" required>
+    <input type="email" id="email" name="multi_engine_rating[email]" required />
   </div>
   <div class="form-group">
     <label for="phone">Phone</label>
-    <input type="tel" id="phone" name="multi_engine_rating[phone]">
+    <input type="tel" id="phone" name="multi_engine_rating[phone]" />
   </div>
   <div class="form-group">
     <label for="cfi-number">CFI Certificate Number</label>
-    <input type="text" id="cfi-number" name="multi_engine_rating[cfi_number]">
+    <input type="text" id="cfi-number" name="multi_engine_rating[cfi_number]" />
   </div>
   <div class="form-group">
     <label for="message">Your Aviation Background (Optional)</label>
@@ -146,3 +151,4 @@ With limited spots available for our inaugural 2025 class, we recommend joining 
   </div>
   <button type="submit" class="btn-primary">Join The Waitlist</button>
 </form>
+```

@@ -1,6 +1,9 @@
 // An array of links for navigation bar
 const navBarLinks = [
-  { name: "New to Flight Training?", link: "/", submenu: [
+  {
+    name: "New to Flight Training?",
+    link: "/",
+    submenu: [
       {
         name: "Why Become a Pilot?",
         link: "/should-i-become-a-pilot",
@@ -27,7 +30,10 @@ const navBarLinks = [
       },
     ],
   },
-  { name: "Training Programs", link: "/flight-training-programs", submenu: [
+  {
+    name: "Training Programs",
+    link: "/flight-training-programs",
+    submenu: [
       {
         name: "Private Pilot",
         link: "/products/private-pilot-certificate-ppl",
@@ -72,8 +78,9 @@ const navBarLinks = [
       },
       {
         name: "CFII",
-        link: "/products/certified-flight-instructor-cfii",
-        description: "Bring student pilots to the next level with instrument rating",
+        link: "/products/certified-flight-instructor-instrument-cfii",
+        description:
+          "Bring student pilots to the next level with instrument rating",
         icon: "puzzle",
       },
       {
@@ -82,10 +89,12 @@ const navBarLinks = [
         description: "Specialize in spin for CFI candidates",
         icon: "plane",
       },
-      
     ],
   },
-  { name: "About us", link: "/about-us", submenu: [
+  {
+    name: "About us",
+    link: "/about-us",
+    submenu: [
       {
         name: "Our Team",
         link: "/our-team",
@@ -101,43 +110,49 @@ const navBarLinks = [
       {
         name: "Why Blue Skies Above?",
         link: "/about-us",
-        description: "The only local flight school with a Cesna fleet. When you're here, you're family",
+        description:
+          "The only local flight school with a Cesna fleet. When you're here, you're family",
         icon: "community",
       },
       {
         name: "Join the team",
         link: "/join-team",
-        description: "Are you a CFI looking to teach the next generation of aviators? Apply today!",
+        description:
+          "Are you a CFI looking to teach the next generation of aviators? Apply today!",
         icon: "community",
       },
       {
         name: "Blog",
         link: "/blog",
-        description: "Check out the latest news, articles, and events at 743 Lannet Municipal Airport",
+        description:
+          "Check out the latest news, articles, and events at 743 Lannet Municipal Airport",
         icon: "earth",
       },
       {
         name: "Financing",
         link: "/financing",
-        description: "Learn about financing options for your flight training at Blue Skies Above",
+        description:
+          "Learn about financing options for your flight training at Blue Skies Above",
         icon: "arrowUp",
       },
       {
         name: "Leaseback Program",
         link: "/leaseback-program",
-        description: "Earn money while you're not flying your aircraft. Learn more about our leaseback program",
+        description:
+          "Earn money while you're not flying your aircraft. Learn more about our leaseback program",
         icon: "question",
       },
     ],
-   },
+  },
   // { name: "Visit School", link: "/visit-school" },
   // { name: "Discovery Flight", link: "/discovery-flights" },
   { name: "Contact us", link: "/contact-us" },
 ];
 // An array of links for footer
 const footerLinks = [
-  { section: "New to Flight Training?",
-     links: [
+  {
+    section: "New to Flight Training?",
+    links: [
       {
         name: "Why Become a Pilot?",
         link: "/should-i-become-a-pilot",
@@ -156,7 +171,9 @@ const footerLinks = [
       },
     ],
   },
-  { section: "Training Programs", links: [
+  {
+    section: "Training Programs",
+    links: [
       {
         name: "Private Pilot",
         link: "/private-pilot-certificate-ppl",
@@ -197,11 +214,12 @@ const footerLinks = [
         name: "CFI Spin Endorsement",
         link: "/spin-endorsement",
       },
-      
     ],
   },
-  
-  { section: "About us", links: [
+
+  {
+    section: "About us",
+    links: [
       {
         name: "Our Team",
         link: "/about-us",
@@ -231,9 +249,10 @@ const footerLinks = [
         link: "/leaseback-program",
       },
     ],
-   },
+  },
   {
-    section: "Quick Links", links: [
+    section: "Quick Links",
+    links: [
       { name: "Discovery Flight", link: "/discovery-flight" },
       { name: "Contact us", link: "/contact" },
       { name: "Visit School", link: "/visit-flight-school" },

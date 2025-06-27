@@ -24,20 +24,20 @@ const homeUrl = "/";
 >
   <!-- Navigation container -->
   <nav
-    class="relative mx-2 w-full rounded-[36px] border border-picton-blue-100/40 bg-picton-blue-50/60 px-4 py-3 backdrop-blur-md dark:border-neutral-700/40 dark:bg-neutral-800/80 dark:backdrop-blur-md md:flex md:items-center md:justify-between md:px-6 md:py-0 lg:px-8 xl:mx-auto"
+    class="border-picton-blue-100/40 bg-picton-blue-50/60 relative mx-2 w-full rounded-[36px] border px-4 py-3 backdrop-blur-md md:flex md:items-center md:justify-between md:px-6 md:py-0 lg:px-8 xl:mx-auto dark:border-neutral-700/40 dark:bg-neutral-800/80 dark:backdrop-blur-md"
     aria-label="Global"
   >
     <div class="flex items-center justify-between">
       <!-- Brand logo -->
       <a
-        class="flex-none rounded-lg text-xl font-bold outline-hidden ring-zinc-500 focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden"
+        class="flex-none rounded-lg text-xl font-bold ring-zinc-500 outline-hidden focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden"
         href={homeUrl}
         aria-label="Brand"
       >
         <BrandLogo class="h-auto w-24" />
       </a>
       <!-- Collapse toggle for smaller screens -->
-      <div class="ml-auto mr-5 md:hidden">
+      <div class="mr-5 ml-auto md:hidden">
         <button
           type="button"
           class="hs-collapse-toggle flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-neutral-600 transition duration-300 hover:bg-neutral-200 disabled:pointer-events-none disabled:opacity-50 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:outline-hidden"
@@ -46,7 +46,7 @@ const homeUrl = "/";
           aria-label="Toggle navigation"
         >
           <svg
-            class="h-[1.25rem] w-[1.25rem] shrink-0 hs-collapse-open:hidden"
+            class="hs-collapse-open:hidden h-[1.25rem] w-[1.25rem] shrink-0"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -61,7 +61,7 @@ const homeUrl = "/";
             <line x1="3" x2="21" y1="18" y2="18"></line>
           </svg>
           <svg
-            class="hidden h-[1.25rem] w-[1.25rem] shrink-0 hs-collapse-open:block"
+            class="hs-collapse-open:block hidden h-[1.25rem] w-[1.25rem] shrink-0"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -88,51 +88,48 @@ const homeUrl = "/";
     >
       <!-- Navigation links container -->
       <div
-        class="relative flex flex-col gap-x-0 gap-y-3 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-x-4 lg:gap-x-7 md:gap-y-0 md:ps-7"
+        class="relative flex flex-col gap-x-0 gap-y-3 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-x-4 md:gap-y-0 md:ps-7 lg:gap-x-7"
       >
         <!-- Navigation links and Authentication component -->
-        {strings.navBarLinks.map(link => (
-          <div class="relative group">
-            <NavLink url={link.link} name={link.name} />
-            {link.submenu && (
-              <ul
-                class="absolute left-0 z-50 pt-6 mt-2 hidden min-w-[450px] flex-col rounded-lg border-picton-blue-100/90 bg-picton-blue-50/90 p-4 shadow-lg group-hover:flex dark:border-neutral-700/60 dark:bg-neutral-800/90 backdrop-blur-3xl dark:backdrop-blur-3xl md:px-4 md:py-2 lg:px-8"
-              >
-                {link.submenu.map(item => (
-                  <li>
-                    <a
-                      href={item.link}
-                      class="flex w-full items-center text-start justify-start gap-4 px-4 py-2 text-sm text-neutral-700 hover:bg-picton-blue-400 hover:text-white hover:rounded-2xl dark:text-neutral-200 dark:hover:bg-neutral-700"
-                    >
-                      <Icon name={item.icon} />
-                      <div class="flex flex-col gap-2">
-                        <span class="font-xl font-bold">
-                          {item.name}
-                        </span>
-                        <span class="font-sm text-neutral-400 w-full">
-                          {item.description}
-                        </span>
-                      </div>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
+        {
+          strings.navBarLinks.map((link) => (
+            <div class="group relative">
+              <NavLink url={link.link} name={link.name} />
+              {link.submenu && (
+                <ul class="border-picton-blue-100/90 bg-picton-blue-50/90 absolute left-0 z-50 mt-2 hidden min-w-[450px] flex-col rounded-lg p-4 pt-6 shadow-lg backdrop-blur-3xl group-hover:flex md:px-4 md:py-2 lg:px-4 dark:border-neutral-700/60 dark:bg-neutral-800/90 dark:backdrop-blur-3xl">
+                  {link.submenu.map((item) => (
+                    <li>
+                      <a
+                        href={item.link}
+                        class="hover:bg-picton-blue-400 flex w-full items-center justify-start gap-4 px-4 py-2 text-start text-sm text-neutral-700 hover:rounded-2xl hover:text-white dark:text-neutral-200 dark:hover:bg-neutral-700"
+                      >
+                        <Icon name={item.icon} />
+                        <div class="flex flex-col gap-2">
+                          <span class="font-xl font-bold">{item.name}</span>
+                          <span class="font-sm w-full text-neutral-400">
+                            {item.description}
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))
+        }
         <span class="hidden md:inline-block">
           <ThemeIcon />
         </span>
       </div>
 
-        <!-- <Authentication /> -->
-        <!-- <LanguagePicker /> -->
-        <!-- ThemeIcon component specifically for larger screens -->
-        
-      </div>
+      <!-- <Authentication /> -->
+      <!-- <LanguagePicker /> -->
+      <!-- ThemeIcon component specifically for larger screens -->
     </div>
   </nav>
 </header>
+
 <!-- Theme Appearance script to manage light/dark modes -->
 <script is:inline>
   const HSThemeAppearance = {

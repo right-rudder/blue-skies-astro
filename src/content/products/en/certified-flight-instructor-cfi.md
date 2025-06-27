@@ -26,7 +26,7 @@ tabs:
 
 longDescription:
   title: Launch Your Instruction Career
-  subTitle: | 
+  subTitle: |
     From commercial pilot to certified instructor - we guide you through every step
   btnTitle: Enroll Today
   btnURL: "/enroll-at-blue-skies"
@@ -70,6 +70,21 @@ tableData:
 blueprints:
   first: "src/assets/images/blue-skies-cessna-n7102w.webp"
   second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+pricing:
+  subTitle: FAA Minimums
+  duration: 5 weeks
+  fullPrice: "9,330"
+  monthlyPrice: "257"
+  details:
+    [
+      "3 lessons per week",
+      "25 hours of flight time",
+      "22 hours of flight instruction",
+      "50 hours of ground instruction",
+      "Ground school kit included",
+      "Pay up front or incrementally",
+    ]
+  note: Price is based on FAA minimums.
 ---
 
 ## Why Become a Certified Flight Instructor?
@@ -109,6 +124,7 @@ To earn your CFI certificate at Blue Skies Above, you must:
 Our CFI candidates experience:
 
 - **Ground Instruction** (50 hours):
+
   - Teaching methods and techniques
   - Lesson planning and presentation
   - FAA regulations and procedures
@@ -123,14 +139,17 @@ Our CFI candidates experience:
 ## Is CFI Training Right For You?
 
 ### Do you enjoy teaching others?
+
 If you find joy in sharing your knowledge and skills with others, becoming a CFI could be a perfect fit. Instructing allows you to play a pivotal role in shaping the next generation of aviators.
 
 ### Do you have a passion for aviation and safety?
+
 As a CFI, you'll be at the forefront of promoting safety and precision in aviation. If you have a keen eye for detail and a commitment to best practices, the role of a CFI aligns with these values.
 
 ## Pricing Package
 
 **Certified Flight Instructor Program - $9,330** ($257/month)
+
 - 5 weeks average completion time
 - 3 lessons per week
 - 25 hours of flight time
@@ -138,4 +157,4 @@ As a CFI, you'll be at the forefront of promoting safety and precision in aviati
 - 50 hours of ground instruction
 - Ground school kit included
 
-*Flexible financing options available to help launch your instruction career.*
+_Flexible financing options available to help launch your instruction career._

@@ -26,7 +26,7 @@ tabs:
 
 longDescription:
   title: Advance Your Instruction Career
-  subTitle: | 
+  subTitle: |
     Specialize in instrument instruction and expand your teaching capabilities
   btnTitle: Enroll Today
   btnURL: "/enroll-at-blue-skies"
@@ -70,6 +70,21 @@ tableData:
 blueprints:
   first: "src/assets/images/blue-skies-cessna-n7102w.webp"
   second: "src/assets/images/blue-skies-cessna-n7102w.webp"
+pricing:
+  subTitle: FAA Minimums
+  duration: 13 weeks
+  fullPrice: "11,400"
+  monthlyPrice: "309"
+  details:
+    [
+      "3 lessons per week",
+      "40 hours of flight time",
+      "30 hours of flight instruction",
+      "30 hours of ground instruction",
+      "Ground school kit included",
+      "Pay up front or incrementally",
+    ]
+  note: Price is based on FAA minimums.
 ---
 
 ## Why Become a CFII?
@@ -112,6 +127,7 @@ To earn your CFII certificate at Blue Skies Above, you must:
 Our CFII candidates receive comprehensive training in:
 
 ### Ground Instruction
+
 - IFR teaching methodologies
 - Approach plate instruction
 - IFR regulations and procedures
@@ -119,6 +135,7 @@ Our CFII candidates receive comprehensive training in:
 - Student evaluation techniques
 
 ### Flight Instruction
+
 - Teaching instrument scans and procedures
 - Approach instruction (ILS, VOR, RNAV, etc.)
 - Holding pattern instruction
@@ -128,24 +145,29 @@ Our CFII candidates receive comprehensive training in:
 ## Is CFII Training Right For You?
 
 ### Do you enjoy teaching complex concepts?
+
 Instrument flying requires precise instruction. If you excel at breaking down complex topics, CFII training lets you specialize in this rewarding area.
 
 ### Want to expand your instruction services?
+
 Adding CFII to your credentials allows you to offer complete training from private through instrument rating.
 
 ### Building hours for airlines?
+
 CFII instruction provides valuable experience in the IFR environment airlines operate in.
 
 ## Career Benefits
 
 As a CFII, you'll:
+
 - Qualify for more teaching opportunities
 - Command higher instruction rates
 - Gain experience relevant to airline operations
 - Maintain your own instrument proficiency
 - Help create safer instrument-rated pilots
 
-*"The CFII rating transformed my instruction business - I can now guide students from first flight through instrument rating."*  
+_"The CFII rating transformed my instruction business - I can now guide students from first flight through instrument rating."_
+
 - John D., Blue Skies Above CFII Graduate
 
 ## Ready to Become a CFII?
