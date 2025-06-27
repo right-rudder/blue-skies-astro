@@ -11,9 +11,8 @@ import ContactUsForm from "@/components/forms/ContactUsForm.astro";
 
 // Define the variables that will be used in this component
 const title: string = "Contact us";
-const subTitle: string =
-  "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.";
-const formTitle: string = "Fill in the form below";
+const subTitle: string = "Have questions about our flight training programs, or just want to say hello? Reach out and we'll be happy to help you on your aviation journey.";
+const formTitle: string = "Send us a message";
 const formSubTitle: string = "We'll get back to you in 1-2 business days.";
 ---
 
@@ -22,7 +21,7 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
   <div class="mx-auto max-w-2xl lg:max-w-5xl">
     <div class="text-center">
       <h1
-        class="text-balance text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"
+        class="lg:py-6 text-balance text-2xl lg:text-5xl font-bold tracking-tight text-picton-blue-600 dark:text-picton-blue-400 md:text-4xl md:leading-tight"
       >
         {title}
       </h1>
@@ -82,8 +81,8 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
           heading="Knowledgebase"
           content="Browse through all of our knowledgebase articles."
           isLinkVisible={true}
-          linkTitle="Visit guides & tutorials"
-          linkURL="#"
+          linkTitle="Visit our blog"
+          linkURL="/blog"
           isArrowVisible={true}
           ><Icon name="question" />
         </ContactIconBlock>
@@ -93,16 +92,16 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
           content="Explore our FAQ for quick, clear answers to common queries."
           isLinkVisible={true}
           linkTitle="Visit FAQ"
-          linkURL="#"
+          linkURL="/#faq"
           isArrowVisible={true}
           ><Icon name="chatBubble" />
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Visit our office"
-          content="UK ScrewFast"
+          heading="Visit Blue Skies Above Today"
+          content="7A3 - Lanett Municipal Airport"
           isAddressVisible={true}
-          addressContent="72 Union Terrace, E10 4PE London"
+          addressContent="4445 51st Ave SW, Lanett, Alabama 36863"
           ><Icon name="mapPin" />
         </ContactIconBlock>
 
@@ -110,7 +109,7 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
           heading="Contact us by email"
           content="Prefer the written word? Drop us an email at"
           isLinkVisible={true}
-          linkTitle="support@screwfast.uk"
+          linkTitle="connect@flytheblueskies.com"
           linkURL="#"
           ><Icon name="envelopeOpen" />
         </ContactIconBlock>
