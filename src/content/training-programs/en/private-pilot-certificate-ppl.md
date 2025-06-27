@@ -66,4 +66,8 @@ pricing:
       "Pay up front or incrementally",
     ]
   note: Price is based on FAA minimums.
+video:
+  title: "How to Become a Pilot: Steps to Earning Your Private Pilot Certificate in Auburn, AL"
+  subTitle: Blue Skies Above's founder Matthew Bourguignon gives a quick overview of the steps needed to become a pilot and start your career with Blue Skies Above.
+  videoId: j9QiMqIahD4
 ---

@@ -103,6 +103,10 @@ pricing2:
       "Pay up front or incrementally",
     ]
   note: Price is based on FAA minimums.
+video:
+  title: Can you use a TAA aircraft for commercial pilot requirements?
+  subTitle: Discover how our new Cessna 172N model, equipped as a Technically Advanced Aircraft (TAA), can help you efficiently build flight hours while meeting the necessary requirements for your commercial pilot certificate. Watch the video to learn more!
+  videoId: WREHKs4juIM
 ---
 
 ## What is a Commercial Pilot Certificate?

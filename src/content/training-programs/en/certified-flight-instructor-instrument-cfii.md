@@ -65,6 +65,10 @@ tableData:
 blueprints:
   first: "@/images/blue-skies-private-pilot-checkride-pass-600.webp"
   second: "@/images/blue-skies-above-clouds-instrument-cfii-training.webp"
+video:
+  title: Why Become a Certified Flight Instructor?
+  subTitle: Becoming a Certified Flight Instructor opens doors to valuable experience, career advancement, and the opportunity to inspire the next generation of pilots. It strengthens your skills, builds flight hours, and positions you for success in the aviation industry.
+  videoId: 5MhGt_28Ifc
 ---
 
 ## Why Become a Certified Flight Instructor?

@@ -97,6 +97,13 @@ const trainingProgramsCollection = defineCollection({
           note: z.string(),
         })
         .optional(),
+      video: z
+        .object({
+          title: z.string(),
+          subTitle: z.string(),
+          videoId: z.string(),
+        })
+        .optional(),
     }),
 });
 

@@ -81,6 +81,10 @@ pricing:
       "Pay up front or incrementally",
     ]
   note: FAA requires 50 flight hours of cross country time to meet requirements. Additional time building may be required.
+video:
+  title: Why You Need an Instrument Rating
+  subTitle: An instrument rating enhances your flying skills, increases safety in low-visibility conditions, and opens doors to advanced certifications and career opportunities. Gain the confidence and expertise needed to navigate complex airspace and unpredictable weather with precision.
+  videoId: 63KJeE25V5g
 ---
 
 ## What is an Instrument Rating?
