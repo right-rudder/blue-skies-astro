@@ -6,6 +6,9 @@ import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import { SITE } from "@data/constants";
+import HorizontalPricing from "@/components/HorizontalPricing.astro";
+import VerticalPricing from "@/components/VerticalPricing.astro";
+import VideoSection from "@components/ui/blocks/VideoSection.astro";
 
 // Global declaration for gsap animation library
 declare global {
@@ -14,26 +17,26 @@ declare global {
   }
 }
 
-// This gets the static paths for all the unique products
+// This gets the static paths for all the unique programs
 
 export async function getStaticPaths() {
-  const productEntries = await getCollection("products", ({ id }) =>
-    id.startsWith("en/")
+  const programEntries = await getCollection("trainingPrograms", ({ id }) =>
+    id.startsWith("en/"),
   );
-  return productEntries.map((product) => {
-    const idWithoutLang = product.id.replace(/^en\//, ""); // Remove the "en/" prefix
+  return programEntries.map((program) => {
+    const idWithoutLang = program.id.replace(/^en\//, ""); // Remove the "en/" prefix
     return {
       params: { id: idWithoutLang },
-      props: { product },
+      props: { program },
     };
   });
 }
 
-const { product } = Astro.props;
+const { program } = Astro.props;
 
-const pageTitle: string = `${product.data.title} | ${SITE.title}`;
-const metaDescription = product.data.description;
-const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
+const pageTitle: string = `${program.data.title} | ${SITE.title}`;
+const metaDescription = program.data.description;
+const ogTitle = `${program.data.title} | Hardware Tools | ScrewFast`;
 ---
 
 <MainLayout
@@ -43,9 +46,9 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
   structuredData={{
     "@context": "https://schema.org",
     "@type": "Product",
-    "@id": `https://screwfast.uk/products/${product.data.title.toLowerCase().replace(/\s+/g, "-")}`,
-    name: product.data.title,
-    description: product.data.description,
+    "@id": `https://screwfast.uk/programs/${program.data.title.toLowerCase().replace(/\s+/g, "-")}`,
+    name: program.data.title,
+    description: program.data.description,
     brand: {
       "@type": "Brand",
       name: "ScrewFast",
@@ -63,30 +66,32 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
         id="fadeText"
         class="mb-8 max-w-prose font-light text-pretty text-neutral-700 sm:text-xl dark:text-neutral-300"
       >
-        {product.data.main.content}
+        {program.data.main.content}
       </p>
     </div>
     <div
-      class="flex flex-col items-center justify-between space-y-4 sm:flex-row sm:space-y-0"
+      class="flex flex-col items-center justify-between space-y-4 gap-x-10 sm:flex-row sm:space-y-0"
     >
-      <div id="fadeInUp">
+      <div id="fadeInUp" class="self-start sm:self-auto">
         <h1
           class="block text-4xl font-bold tracking-tighter text-neutral-800 sm:text-5xl md:text-6xl lg:text-7xl dark:text-neutral-200"
         >
-          {product.data.title}
+          {program.data.title}
         </h1>
         <p class="text-lg text-neutral-600 dark:text-neutral-400">
-          {product.data.description}
+          {program.data.description}
         </p>
       </div>
       <div>
         <Image
           id="fadeInMoveRight"
-          src={product.data.main.imgMain}
+          src={program.data.main.imgMain}
           class="w-[600px]"
-          alt={product.data.main.imgAlt}
+          alt={program.data.main.imgAlt}
           format={"avif"}
           loading={"eager"}
+          widths={[240, 540, 720, 1080, 1440, 1980]}
+          sizes={`(max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px`}
         />
       </div>
     </div>
@@ -99,7 +104,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
       role="tablist"
     >
       {
-        product.data.tabs.map((tab, index) => (
+        program.data.tabs.map((tab, index) => (
           <ProductTabBtn
             title={tab.title}
             id={tab.id}
@@ -118,24 +123,24 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
               <h2
                 class="text-3xl font-bold tracking-tight text-balance text-neutral-800 md:leading-tight lg:text-4xl dark:text-neutral-200"
               >
-                {product.data.longDescription.title}
+                {program.data.longDescription.title}
               </h2>
               <p
                 class="mt-3 text-pretty text-neutral-600 dark:text-neutral-400"
               >
-                {product.data.longDescription.subTitle}
+                {program.data.longDescription.subTitle}
               </p>
               <p class="mt-5">
                 <PrimaryCTA
-                  title={product.data.longDescription.btnTitle}
-                  url={product.data.longDescription.btnURL}
+                  title={program.data.longDescription.btnTitle}
+                  url={program.data.longDescription.btnURL}
                 />
               </p>
             </div>
 
             <div class="space-y-6 lg:space-y-10">
               {
-                product.data.descriptionList.map((list) => (
+                program.data.descriptionList.map((list) => (
                   <div class="flex">
                     <div>
                       <h3 class="text-base font-bold text-neutral-800 sm:text-lg dark:text-neutral-200">
@@ -158,7 +163,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
           <div class="grid w-full grid-cols-1 gap-x-16 md:grid-cols-2">
             <div class="max-w-md space-y-6">
               {
-                product.data.specificationsLeft.map((spec) => (
+                program.data.specificationsLeft.map((spec) => (
                   <div>
                     <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
                       {spec.title}
@@ -171,9 +176,9 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
               }
             </div>
             {
-              product.data.specificationsRight ? (
+              program.data.specificationsRight ? (
                 <div class="mt-6 max-w-md space-y-6 md:mt-0 md:ml-auto">
-                  {product.data.specificationsRight?.map((spec) => (
+                  {program.data.specificationsRight?.map((spec) => (
                     <div>
                       <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
                         {spec.title}
@@ -184,7 +189,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
                     </div>
                   ))}
                 </div>
-              ) : product.data.tableData ? (
+              ) : program.data.tableData ? (
                 <div class="mt-6 space-y-6 md:mt-0 md:ml-auto">
                   <div class="flex flex-col">
                     <div class="-m-1.5 overflow-x-auto">
@@ -193,7 +198,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
                           <table class="min-w-full divide-y divide-neutral-300 dark:divide-neutral-700">
                             <thead>
                               <tr>
-                                {product.data.tableData?.[0].feature?.map(
+                                {program.data.tableData?.[0].feature?.map(
                                   (header) => (
                                     <th
                                       scope="col"
@@ -201,24 +206,24 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
                                     >
                                       {header}
                                     </th>
-                                  )
+                                  ),
                                 )}
                               </tr>
                             </thead>
                             <tbody class="divide-y divide-neutral-300 dark:divide-neutral-700">
-                              {product.data.tableData?.map((row) =>
+                              {program.data.tableData?.map((row) =>
                                 // Wrap each row's content in a separate <tr> element
                                 row.description.map((rowData) => (
                                   <tr>
                                     {/* Iterate through each cell value in the row's description array */}
                                     {rowData.map((cellValue) => (
                                       // Render each cell value in its own <td> element
-                                      <td class="px-6 py-4 text-sm font-medium whitespace-nowrap text-neutral-600 dark:text-neutral-400">
+                                      <td class="px-6 py-4 text-sm font-medium text-neutral-600 dark:text-neutral-400">
                                         {cellValue}
                                       </td>
                                     ))}
                                   </tr>
-                                ))
+                                )),
                               )}
                             </tbody>
                           </table>
@@ -238,12 +243,12 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
   <div id="tabs-with-card-3" class="hidden" role="tabpanel">
     <div class="mx-auto mb-20 flex w-full md:mb-28 2xl:w-4/5">
       <div
-        class="relative top-12 left-12 z-10 overflow-hidden rounded-xl shadow-lg md:top-16 md:left-12 md:-ml-12 lg:ml-0"
+        class="relative top-12 left-12 z-10 flex-1 overflow-hidden rounded-xl shadow-lg md:top-16 md:left-12 md:-ml-12 lg:ml-0"
       >
         {
-          product.data.blueprints.first && (
+          program.data.blueprints.first && (
             <Image
-              src={product.data.blueprints.first}
+              src={program.data.blueprints.first}
               class="h-full w-full object-cover object-center"
               alt="Blueprint Illustration"
               format={"avif"}
@@ -252,20 +257,35 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
         }
       </div>
 
-      <div class="relative right-12 overflow-hidden rounded-xl shadow-xl">
+      <div
+        class="relative right-12 flex-1 overflow-hidden rounded-xl shadow-xl"
+      >
         {
-          product.data.blueprints.second && (
+          program.data.blueprints.second && (
             <Image
-              src={product.data.blueprints.second}
+              src={program.data.blueprints.second}
               class="h-full w-full object-cover object-center"
               alt="Blueprint Illustration"
               format={"avif"}
+              widths={[240, 540, 720, 1080, 1440, 1980]}
+              sizes={`(max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px`}
             />
           )
         }
       </div>
     </div>
   </div>
+  {
+    program.data.video && (
+      <VideoSection
+        title={program.data.video.title}
+        subTitle={program.data.video.subTitle}
+        videoId={program.data.video.videoId}
+      />
+    )
+  }
+  {program.data.pricing && <HorizontalPricing data={program.data} />}
+  {program.data.pricing1 && <VerticalPricing data={program.data} />}
 </MainLayout>
 
 <script>
@@ -280,7 +300,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
 
   function setElementAnimationDefaults(
     id: string,
-    settings: AnimationSettings
+    settings: AnimationSettings,
   ) {
     gsap.set(id, settings);
   }
@@ -316,13 +336,13 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
   timeline.to(
     "#fadeInUp",
     { duration: 1.5, autoAlpha: 1, y: 0, ease: "power2.out" },
-    "-=1.2"
+    "-=1.2",
   );
 
   timeline.to(
     "#fadeInMoveRight",
     { duration: 1.5, autoAlpha: 1, x: 0, ease: "power2.inOut" },
-    "-=1.4"
+    "-=1.4",
   );
 
   timeline.to("#overlay", { duration: 1, autoAlpha: 0, delay: 0.2 });
@@ -335,7 +355,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
           "active",
           "bg-neutral-100",
           "hover:border-transparent",
-          "dark:bg-white/[.05]"
+          "dark:bg-white/[.05]",
         );
 
         const tabId = btn.getAttribute("data-target");
@@ -349,7 +369,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
         changeHeadingStyle(
           btn,
           ["text-neutral-800", "dark:text-neutral-200"],
-          ["text-sky-400", "dark:text-sky-300"]
+          ["text-sky-400", "dark:text-sky-300"],
         );
       }
     }
@@ -359,7 +379,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
         "active",
         "bg-neutral-100",
         ",hover:border-transparent",
-        "dark:bg-white/[.05]"
+        "dark:bg-white/[.05]",
       );
 
       const tabId = button.getAttribute("data-target");
@@ -373,14 +393,14 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
       changeHeadingStyle(
         button,
         ["text-sky-400", "dark:text-sky-300"],
-        ["text-neutral-800", "dark:text-neutral-200"]
+        ["text-neutral-800", "dark:text-neutral-200"],
       );
     }
 
     function changeHeadingStyle(
       button: any,
       addClasses: any,
-      removeClasses: any
+      removeClasses: any,
     ) {
       let heading = button.querySelector("span");
       if (heading) {
@@ -395,7 +415,7 @@ const ogTitle = `${product.data.title} | Hardware Tools | ScrewFast`;
       changeHeadingStyle(
         tabButtons[0],
         ["text-sky-400", "dark:text-sky-300"],
-        []
+        [],
       );
     }
 
