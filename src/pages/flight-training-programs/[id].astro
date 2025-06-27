@@ -58,7 +58,7 @@ const ogTitle = `${program.data.title} | Hardware Tools | ScrewFast`;
   </div>
 
   <section
-    class="mx-auto flex max-w-[85rem] flex-col px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+    class="mx-auto flex max-w-[85rem] flex-col overflow-x-hidden px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
   >
     <div>
       <p
@@ -89,6 +89,8 @@ const ogTitle = `${program.data.title} | Hardware Tools | ScrewFast`;
           alt={program.data.main.imgAlt}
           format={"avif"}
           loading={"eager"}
+          widths={[240, 540, 720, 1080, 1440, 1980]}
+          sizes={`(max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px`}
         />
       </div>
     </div>
