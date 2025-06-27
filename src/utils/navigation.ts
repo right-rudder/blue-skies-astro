@@ -36,50 +36,50 @@ const navBarLinks = [
     submenu: [
       {
         name: "Private Pilot",
-        link: "/products/private-pilot-certificate-ppl",
+        link: "/flight-training-programs/private-pilot-certificate-ppl",
         description: "Start you aviation journey here",
         icon: "plane",
       },
       {
         name: "Instrument Rating",
-        link: "/products/instrument-rating-ifr",
+        link: "/flight-training-programs/instrument-rating-ifr",
         description: "Advance your navigation abilities and opportunities",
         icon: "puzzle",
       },
       {
         name: "Commercial Pilot",
-        link: "/products/commercial-pilot-certificate-cpl",
+        link: "/flight-training-programs/commercial-pilot-certificate-cpl",
         description: "Make flying your career",
         icon: "plane",
       },
       {
         name: "Multi Engine Rating",
-        link: "/products/multi-engine-rating",
+        link: "/flight-training-programs/multi-engine-rating",
         description: "Fly aircraft with more then one engine",
         icon: "puzzle",
       },
       {
         name: "Multi Engine Instructor (MEI)",
-        link: "/products/multi-engine-instructor-mei",
+        link: "/flight-training-programs/multi-engine-instructor-mei",
         description: "Learn how to instruct in multi-engine aircraft",
         icon: "plane",
       },
       {
         name: "CFI",
-        link: "/products/certified-flight-instructor-cfi",
+        link: "/flight-training-programs/certified-flight-instructor-cfi",
         description: "Teach what you know to the next class of pilots",
         icon: "plane",
       },
       {
         name: "CFII",
-        link: "/products/certified-flight-instructor-instrument-cfii",
+        link: "/flight-training-programs/certified-flight-instructor-instrument-cfii",
         description:
           "Bring student pilots to the next level with instrument rating",
         icon: "puzzle",
       },
       {
         name: "CFI Spin Endorsement",
-        link: "/products/spin-endorsement",
+        link: "/flight-training-programs/spin-endorsement",
         description: "Specialize in spin for CFI candidates",
         icon: "plane",
       },

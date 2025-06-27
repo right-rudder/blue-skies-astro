@@ -44,9 +44,20 @@ specificationsLeft:
     subTitle: Successfully complete an FAA practical exam (checkride) that includes both an oral test and a flight test, where you’ll demonstrate your ability to instruct in a twin-engine aircraft.
 
 tableData:
-  - feature: ["What's included"]
+  - feature: ["Prerequisites", ""]
     description:
-      - ["TBA"]
+      - [
+          "Commercial Multi-Engine Pilot Certificate",
+          "Must hold a Commercial Pilot Certificate with a Multi-Engine Rating.",
+        ]
+      - [
+          "Certified Flight Instructor (CFI) Certificate",
+          "Must already hold a valid CFI certificate before pursuing the MEI rating.",
+        ]
+      - [
+          "Medical Certificate",
+          "Valid medical certificate issued by an FAA-certified aviation medical examiner.",
+        ]
 
 blueprints:
   first: "@/images/blue-skies-commercial-pilot-over-1000-hours.webp"
