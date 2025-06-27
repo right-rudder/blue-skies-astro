@@ -4,14 +4,12 @@ import StarlightHead from "@astrojs/starlight/components/Head.astro";
 import VtbotStarlight from "astro-vtbot/components/starlight/Base.astro";
 ---
 
-<VtbotStarlight {...Astro.props} viewTransitionsFallback="animate">
+<!-- <VtbotStarlight {...Astro.props} viewTransitionsFallback="animate">
   <StarlightHead {...Astro.props}><slot /></StarlightHead>
   <script>
     import "@scripts/lenisSmoothScroll.js";
   </script>
-</VtbotStarlight>
-
-<style is:global>
+</VtbotStarlight> --><!-- <style is:global>
   /* Slow down Chrome's default animation */
   ::view-transition-group(root) {
     animation-duration: 250ms;
@@ -21,9 +19,7 @@ import VtbotStarlight from "astro-vtbot/components/starlight/Base.astro";
   ::view-transition-group(*) {
     overflow: hidden;
   }
-</style>
-
-<script>
+</style> --><!-- <script>
   document.addEventListener("DOMContentLoaded", () => {
     const siteSearch = document.querySelector(
       "site-search"
@@ -32,4 +28,4 @@ import VtbotStarlight from "astro-vtbot/components/starlight/Base.astro";
       siteSearch.setAttribute("data-lenis-prevent", "");
     }
   });
-</script>
+</script> -->
