@@ -13,24 +13,27 @@ import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
 import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
 
-// Fetching all the product related content and sorting it by main.id
-const product: CollectionEntry<"products">[] = (
-  await getCollection("products", ({ id }) => {
+// Fetching all the program related content and sorting it by main.id
+const program: CollectionEntry<"trainingPrograms">[] = (
+  await getCollection("trainingPrograms", ({ id }) => {
     return id.startsWith("en/");
   })
 ).sort(
-  (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
-    a.data.main.id - b.data.main.id
+  (
+    a: CollectionEntry<"trainingPrograms">,
+    b: CollectionEntry<"trainingPrograms">,
+  ) => a.data.main.id - b.data.main.id,
 );
 
 const title: string = "Flight Training Programs";
-const subTitle: string = "Explore the rewarding journey of becoming a pilot with Blue Skies Above. Whether you're flying for fun or starting your career in aviation, our programs are designed to get you in the sky quickly, safely, and confidently.";
+const subTitle: string =
+  "Explore the rewarding journey of becoming a pilot with Blue Skies Above. Whether you're flying for fun or starting your career in aviation, our programs are designed to get you in the sky quickly, safely, and confidently.";
 
 // Testimonial data that will be rendered in the component
 const testimonials = [
   {
     content:
-      "\"Training at Blue Skies Above has been a dream. The instructors are incredibly supportive, and I felt confident and prepared for every step of the process. My Discovery Flight was unforgettable!\"",
+      '"Training at Blue Skies Above has been a dream. The instructors are incredibly supportive, and I felt confident and prepared for every step of the process. My Discovery Flight was unforgettable!"',
     author: "Emily Sanders",
     role: "Student Pilot | Blue Skies Above",
     avatarSrc:
@@ -39,7 +42,7 @@ const testimonials = [
   },
   {
     content:
-      "\"The location is perfect — quiet airspace meant more flying and less waiting. Every lesson felt like real progress, and they made the whole experience enjoyable and efficient.\"",
+      '"The location is perfect — quiet airspace meant more flying and less waiting. Every lesson felt like real progress, and they made the whole experience enjoyable and efficient."',
     author: "Marcus Grant",
     role: "Private Pilot Graduate | Blue Skies Above",
     avatarSrc:
@@ -48,7 +51,7 @@ const testimonials = [
   },
   {
     content:
-      "\"After comparing several schools, Blue Skies Above stood out because of the Cessna fleet and personalized training. From ground school to checkride, they prepared me for success.\"",
+      '"After comparing several schools, Blue Skies Above stood out because of the Cessna fleet and personalized training. From ground school to checkride, they prepared me for success."',
     author: "Jenna Morales",
     role: "Commercial Pilot Candidate | Blue Skies Above",
     avatarSrc:
@@ -61,7 +64,6 @@ const pageTitle: string = `Programs | Blue Skies Above`;
 const metaDescription =
   "Discover flight training programs at Blue Skies Above, from Private Pilot to CFI. Learn with experienced instructors and efficient scheduling.";
 const ogTitle = "Pilot Training | Blue Skies Above";
-
 ---
 
 <MainLayout
@@ -71,8 +73,8 @@ const ogTitle = "Pilot Training | Blue Skies Above";
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/products",
-    url: "https://screwfast.uk/products",
+    "@id": "https://screwfast.uk/programs",
+    url: "https://screwfast.uk/programs",
     name: "Hardware Tools | ScrewFast",
     description:
       "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts.",
@@ -86,8 +88,7 @@ const ogTitle = "Pilot Training | Blue Skies Above";
     inLanguage: "en-US",
   }}
 >
-
-  <HeroSectionAlt  
+  <HeroSectionAlt
     title="Your Dream of Flying Starts Here"
     subTitle={subTitle}
     url="/enroll-at-blue-skies"
@@ -106,16 +107,21 @@ const ogTitle = "Pilot Training | Blue Skies Above";
       </div>
       <PrimaryCTA title="Customer Stories" url="#testimonials" noArrow={true} />
     </div>
-    {/* Displaying products in alternating styles. Alternative product gets different card styling.
-    Maps through all product entries and displays them with either CardSmall or CardWide based on their position. */}
-    <section id="programs" class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+    {
+      /* Displaying programs in alternating styles. Alternative program gets different card styling.
+    Maps through all program entries and displays them with either CardSmall or CardWide based on their position. */
+    }
+    <section
+      id="programs"
+      class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8"
+    >
       {
-        product.map((product, index) => {
+        program.map((program, index) => {
           const position = index % 4;
           if (position === 0 || position === 3) {
-            return <CardSmall product={product} />;
+            return <CardSmall program={program} />;
           } else {
-            return <CardWide product={product} />;
+            return <CardWide program={program} />;
           }
         })
       }
@@ -126,12 +132,12 @@ const ogTitle = "Pilot Training | Blue Skies Above";
     title="Why Choose Blue Skies Above?"
     subTitle="Whether you're dreaming of taking flight for the first time or aiming for a professional aviation career, Blue Skies Above gives you the tools, training, and confidence to soar."
     benefits={[
-        "Efficient training in low-traffic airspace for faster learning.",
-        "Experienced and passionate instructors who make training fun and personal.",
-        "Diverse fleet including Cessna 172s and Cherokee 140 for tailored instruction.",
-        "Flexible programs for private, commercial, instrument, and instructor ratings.",
-        "Community-driven with events like youth flights, fly-ins, and holiday flyovers.",
-        "Transparent pricing and personalized flight plans to match your goals."
+      "Efficient training in low-traffic airspace for faster learning.",
+      "Experienced and passionate instructors who make training fun and personal.",
+      "Diverse fleet including Cessna 172s and Cherokee 140 for tailored instruction.",
+      "Flexible programs for private, commercial, instrument, and instructor ratings.",
+      "Community-driven with events like youth flights, fly-ins, and holiday flyovers.",
+      "Transparent pricing and personalized flight plans to match your goals.",
     ]}
   />
 
