@@ -8,6 +8,7 @@ import headerImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-
 import FAQ from "@/components/sections/misc/FAQ.astro";
 import faqs from "@data/faqs-why-become-a-pilot.json";
 import CTA from "@/components/sections/misc/CTA.astro";
+import AOSInit from "@/components/utils/AOSInit.astro";
 
 const pageTitle: string = `Why become a pilot | ${SITE.title}`;
 const metaDescription = "With a global pilot shortage, there's never been a better time to fly. Learn why becoming a pilot is a great career choice at Blue Skies Above Flight School.";
@@ -64,16 +65,16 @@ const videoWhyBecomePilot = {
         },
         inLanguage: "en-US",
     }}
-> 
+>   <AOSInit />
     <HeaderAlt />
     <!-- Video -->
     <div>
         <div class="mx-auto flex gap-10 text-picton-blue-500 py-10 max-w-7xl px-6 lg:px-8 items-center lg:flex-row flex-col w-full">
             <div class="lg:flex-1 flex flex-col gap-5 text-center lg:text-left">
-            <h3 class="font-bold text-3xl lg:text-5xl">{videoWhyBecomePilot.title}</h3>
-            <h4 class="lg:text-xl text-black dark:text-white">{videoWhyBecomePilot.description}</h4>
+            <h3 class="font-bold text-3xl lg:text-5xl" data-aos="fade-left" data-aos-delay={300}>{videoWhyBecomePilot.title}</h3>
+            <h4 class="lg:text-xl text-black dark:text-white" data-aos="fade-left" data-aos-delay={500}>{videoWhyBecomePilot.description}</h4>
             </div>
-            <div class="lg:flex-1 lg:aspect-w-full lg:aspect-h-full h-full lg:h-60">
+            <div class="lg:flex-1 lg:aspect-w-full lg:aspect-h-full h-full lg:h-60" data-aos="fade-right" data-aos-delay={500}>
                 <iframe src="https://tube.rvere.com/embed?v=CYIcdKHQAUw" class="w-full h-full rounded-xl" title="Why I Chose Aviation as a Career" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
             </iframe>
             </div>

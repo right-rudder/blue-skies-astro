@@ -4,6 +4,7 @@ import { SITE } from "@data/constants";
 import headerImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-training.webp";
 import CTA from "@/components/sections/misc/CTA.astro";
 import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
+import AOSInit from "@/components/utils/AOSInit.astro";
 
 const pageTitle: string = `Professional Flight Program vs. University | ${SITE.title}`;
 const metaDescription = "Discover the advantages of a Part 61 flight school like Blue Skies Above over a university pro flight program. Save time, money, and expand your career options.";
@@ -65,6 +66,7 @@ const benefits = [
         inLanguage: "en-US",
     }}
 > 
+    <AOSInit />
     <HeroSectionAlt
         title="Considering a University Professional Flight Program?"
         subTitle="Explore the benefits of completing your flight training at a Part 61 school like Blue Skies Above instead. Take control of your future, your timeline, and your budget."
@@ -75,7 +77,7 @@ const benefits = [
     <div class="py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:text-center">
-                <p class="text-base font-semibold leading-7 text-accent-300 uppercase">A Smarter Path to the Cockpit</p>
+                <p class="text-base font-semibold leading-7 text-accent-300 uppercase text-picton-blue-500">A Smarter Path to the Cockpit</p>
                 <h2 class="mt-2 text-3xl font-bold tracking-tight text-muted-700 sm:text-4xl">
                     Is a University Pro Flight Program Right for You?
                 </h2>
