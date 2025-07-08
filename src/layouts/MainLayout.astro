@@ -6,6 +6,7 @@ import FooterSection from "@components/sections/navbar&footer/FooterSection.astr
 import { SITE } from "@data/constants";
 import "@styles/global.css";
 import ChatWidget from "@/components/forms/ChatWidget.astro";
+import Banner from "@/components/sections/navbar&footer/Banner.astro";
 
 // Setting expected props
 const {
@@ -64,6 +65,7 @@ interface Props {
     The Navbar is placed at the top, with a slot for the main content and FooterSection at the bottom.
     */
     }
+    <Banner />
     <div class="mx-auto max-w-(--breakpoint-2xl) px-4 sm:px-6 lg:px-8">
       <Navbar />
       <main>
