@@ -4,7 +4,7 @@ import { SITE } from "@data/constants";
 import headerImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-training.webp";
 import CTA from "@/components/sections/misc/CTA.astro";
 import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
-import AOSInit from "@/components/utils/AOSInit.astro";
+// import AOSInit from "@/components/utils/AOSInit.astro";
 import FormProfessionalFlight from "@components/forms/FormProfessionalFlight.astro";
 import ProfessionalFlightProgramComponent from "@components/sections/misc/ProfessionalFlightProgram.astro"
 
@@ -68,7 +68,7 @@ const benefits = [
         inLanguage: "en-US",
     }}
 > 
-    <AOSInit />
+  <!-- <AOSInit is:client="load" /> -->
     <HeroSectionAlt
         title="Considering a University Professional Flight Program?"
         subTitle="Explore the benefits of completing your flight training at a Part 61 school like Blue Skies Above instead. Take control of your future, your timeline, and your budget."

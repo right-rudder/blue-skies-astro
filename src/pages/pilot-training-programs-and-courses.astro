@@ -6,7 +6,7 @@ import CTA from "@/components/sections/misc/CTA.astro";
 import FeaturesStarting from "@/components/sections/features/FeaturesStarting.astro";
 import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
 import Courses from "@components/Courses.astro";
-import AOSInit from "@/components/utils/AOSInit.astro";
+import AOSInit from '@/components/utils/AOSInit.jsx';
 
 const pageTitle: string = `Pilot Training Programs & Courses | ${SITE.title}`;
 const metaDescription = "Explore comprehensive pilot training programs and courses at Blue Skies Above Flight School. From Private Pilot to Commercial and beyond, start your aviation journey with us.";
@@ -64,7 +64,7 @@ const videoWhyBecomePilot = {
         inLanguage: "en-US",
     }}
 > 
-    <AOSInit />
+  <!-- <AOSInit is:client="load" /> -->
     <HeroSectionAlt
         title="How to become a pilot"
         subTitle="No matter your experience level Blue Skies Above has a pilot program for you"

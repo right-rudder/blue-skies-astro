@@ -5,7 +5,7 @@ import MainSection from "@components/ui/blocks/MainSection.astro";
 import LeftSection from "@components/ui/blocks/LeftSection.astro";
 import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
-import AOSInit from "@/components/utils/AOSInit.astro";
+import AOSInit from '@/components/utils/AOSInit.jsx';
 import CTA from "@/components/sections/misc/CTA.astro";
 
 // Import necessary images
@@ -133,7 +133,7 @@ const ctaDiscovery = {
     inLanguage: "en-US",
   }}
 >
-  <AOSInit client:load />
+  <!-- <AOSInit is:client="load" /> -->
   <MainSection
     title="Welcome to Blue Skies Above"
     subTitle="Where aspiring pilots take flight — through efficient training, supportive mentorship, and a vibrant aviation community."

@@ -8,7 +8,7 @@ import headerImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-
 import FAQ from "@/components/sections/misc/FAQ.astro";
 import faqs from "@data/faqs-why-become-a-pilot.json";
 import CTA from "@/components/sections/misc/CTA.astro";
-import AOSInit from "@/components/utils/AOSInit.astro";
+// import AOSInit from "@/components/utils/AOSInit.astro";
 
 const pageTitle: string = `Why become a pilot | ${SITE.title}`;
 const metaDescription = "With a global pilot shortage, there's never been a better time to fly. Learn why becoming a pilot is a great career choice at Blue Skies Above Flight School.";
@@ -65,7 +65,7 @@ const videoWhyBecomePilot = {
         },
         inLanguage: "en-US",
     }}
->   <AOSInit />
+> <!-- <AOSInit is:client="load" /> -->
     <HeaderAlt />
     <!-- Video -->
     <div>
