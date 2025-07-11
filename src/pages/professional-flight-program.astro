@@ -6,7 +6,7 @@ import CTA from "@/components/sections/misc/CTA.astro";
 import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
 import AOSInit from "@/components/utils/AOSInit.astro";
 import FormProfessionalFlight from "@components/forms/FormProfessionalFlight.astro";
-import ProfessionalFlightProgram from "@components/sections/misc/ProfessionalFlightProgram.astro"
+import ProfessionalFlightProgramComponent from "@components/sections/misc/ProfessionalFlightProgram.astro"
 
 const pageTitle: string = `Professional Flight Program vs. University | ${SITE.title}`;
 const metaDescription = "Discover the advantages of a Part 61 flight school like Blue Skies Above over a university pro flight program. Save time, money, and expand your career options.";
@@ -104,6 +104,6 @@ const benefits = [
             </div>
         </div>
     </div>
-    <ProfessionalFlightProgram />
+    <ProfessionalFlightProgramComponent />
     <CTA content={ctaEnroll} />
 </MainLayout>
