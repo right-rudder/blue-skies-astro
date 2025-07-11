@@ -1,0 +1,40 @@
+---
+const MESSAGES_CFI_URL = import.meta.env.MESSAGES_CFI_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
+---
+
+<div class="mx-10 lg:px-16 lg:w-1/2">
+      <form class="" action="/messages" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="lzyiaNh6PvNBSwlRApiNM6OWNyxMbqapRyHMgcNrArxnQsQI1iqcCz8BxHXVtmA-OFyaZQXIP07OAQkINq8_Iw" autocomplete="off">
+
+  <div class="my-5">
+    <label class="" for="message_name">Name</label>
+    <input class="block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" type="text" name="message[name]" id="message_name">
+  </div>
+
+  <div class="my-5">
+    <label class="" for="message_email">Email</label>
+    <input class="block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" type="email" name="message[email]" id="message_email">
+  </div>
+
+  <div class="confirm_email_1752243669"><style media="screen">.confirm_email_1752243669 {position:absolute!important;top:-9999px;left:-9999px;}</style><label for="message_confirm_email">If you are a human, ignore this field</label><input type="text" name="message[confirm_email]" id="message_confirm_email" autocomplete="off" tabindex="-1"><input type="hidden" name="spinner" value="278a4436f0e55b061f43a1564dd5960b" autocomplete="off"></div>
+
+  <div class="my-5">
+    <label class="" for="message_phone">Phone</label>
+    <input placeholder="###-###-####" class="placeholder:text-slate-300 block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" type="text" name="message[phone]" id="message_phone">
+  </div>
+
+  <div class="my-5">
+      <span class="">Tell us about yourself and why you want to be a join the Blue Skies Above team</span>
+    <textarea rows="4" class="block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" name="message[body]" id="message_body"></textarea>
+  </div>
+
+    <input value="cfi" autocomplete="off" type="hidden" name="message[page]" id="message_page">
+
+    <!--<div class="mb-10"></div>-->
+
+  <div class="inline">
+    <input type="submit" name="commit" value="SEND MESSAGE" class="btn-primary mb-10" data-disable-with="SEND MESSAGE">
+  </div>
+</form>      
+    </div>

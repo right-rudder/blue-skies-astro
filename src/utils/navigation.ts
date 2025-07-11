@@ -140,7 +140,7 @@ const navBarLinks = [
   },
   // { name: "Visit School", link: "/visit-school" },
   // { name: "Discovery Flight", link: "/discovery-flights" },
-  { name: "Contact us", link: "/contact-us" },
+  { name: "Contact us", link: "/contact" },
 ];
 // An array of links for footer
 const footerLinks = [

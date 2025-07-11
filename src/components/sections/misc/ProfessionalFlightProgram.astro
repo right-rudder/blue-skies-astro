@@ -1,0 +1,43 @@
+---
+import FormProfessionalFlight from "@/components/forms/FormProfessionalFlight.astro"
+
+interface Props {
+  programTitle?: string;
+}
+
+const { programTitle } = Astro.props;
+
+const content = {
+    multiEngineRating: {
+        upperHeading: "Prepare to Take Flight!",
+        title: "Launching in 2025",
+        description: "Our new Multi-Engine Instructor Training Program is designed for certified flight instructors looking to specialize in twin-engine operations. With limited spots available, secure your place today and be among the first to train in our advanced program.",
+    },
+    multiEngineInstructor: {
+        upperHeading: "We’re Taking Off Soon!",
+        title: "Our Multi-Engine Program is Starting Soon",
+        description: "We’re adding a brand-new twin-engine airplane to our fleet in 2025, ready to be used for your multi-engine rating, MEI training, and time building. Spots are limited, so make sure to sign up today to join the waitlist and be among the first to take flight in this exciting new program.",
+    },
+};
+
+
+---
+
+<section class="">
+  <div class="lg:flex lg:flex-row items-center">
+
+    <div class="mx-0 lg:w-1/2">
+      <div class="px-6 py-24 sm:py-12 lg:px-8">
+        <div class="mx-auto max-w-5xl">
+          <p class="text-lg font-semibold leading-7 text-sky-600 dark:text-sky-400">Fly with us</p>
+          <h2 class="mt-2 max-w-3xl text-4xl font-bold tracking-wide text-gray-900 dark:text-white sm:text-6xl">Register now!</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-white">If you aim to complete your Private Pilot Certificate by the spring semester, we recommend starting at least six months in advance, regardless of prior experience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-10 lg:px-16 lg:w-1/2" id="multi-engine-form">
+        <FormProfessionalFlight />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,301 @@
+---
+
+---
+<!-- Schedule Visit confirmation -->
+<div class="my-3">
+        <div class="text-slate-700 font-semibold text-base mb-2">Would you like to schedule a visit to Blue Skies Above?</div>
+        <div class="flex gap-10">
+        <input type="submit" name="commit" value="NO" class="btn-primary" data-disable-with="NO">
+        <input type="button" class="btn-primary" value="YES">
+        </div>
+</div>
+
+<!-- Select primary Date -->
+<div class="hidden"> 
+  <!-- Select Date -->
+  <div class="flex flex-col flex-wrap">
+    <label class="font-semibold text-base text-slate-700" for="enrollment_Select a day to come by">Select a day to come by</label>
+    <input
+      type="date"
+      id="start"
+      name="trip-start"
+      value="2018-07-22"
+      min="2018-01-01"
+      max="2018-12-31" />
+      
+  </div>
+  <!-- Availability -->
+  <div class="mt-2.5">
+      <label
+        for="enrollment_previous_training"
+        class="block mb-0 font-semibold text-base text-slate-700 py-2"
+      >
+        Select availability
+      </label>
+      <select
+        required
+        id="enrollment_previous_training"
+        name="enrollment_previous_training"
+        class="block font-extralight w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+      >
+          <option value="Never piloted an aircraft before">7 to 10 AM</option>
+          <option value="I've flown flight simulators or drones">10 AM to 1 PM</option>
+          <option value="A few hours but never soloed">1 PM to 4 PM</option>
+          <option value="I'm working on a checkride">4 PM to 7PM</option>
+      </select>
+  </div>
+</div>
+
+<!-- Select alternate Date -->
+<div class="hidden"> 
+  <!-- Select Date -->
+  <div class="flex flex-col flex-wrap">
+    <label class="font-semibold text-base text-slate-700" for="enrollment_Select a day to come by">Select a day to come by</label>
+    <input
+      type="date"
+      id="start"
+      name="trip-start"
+      value="2018-07-22"
+      min="2018-01-01"
+      max="2018-12-31" />
+      
+  </div>
+  <!-- Availability -->
+  <div class="mt-2.5">
+      <label
+        for="enrollment_previous_training"
+        class="block mb-0 font-semibold text-base text-slate-700 py-2"
+      >
+        Select availability
+      </label>
+      <select
+        required
+        id="enrollment_previous_training"
+        name="enrollment_previous_training"
+        class="block font-extralight w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+      >
+          <option value="Never piloted an aircraft before">7 to 10 AM</option>
+          <option value="I've flown flight simulators or drones">10 AM to 1 PM</option>
+          <option value="A few hours but never soloed">1 PM to 4 PM</option>
+          <option value="I'm working on a checkride">4 PM to 7PM</option>
+      </select>
+  </div>
+</div>
+
+<!-- <div x-show="currentPage === 3" class="flex flex-col justify-between">
+        <div class="my-5" x-data="{ selectedDate: '' }">
+        <label class="font-semibold text-base text-slate-700" for="enrollment_Select a day to come by">Select a day to come by</label>
+        <div class="grid grid-cols-3 pt-5">
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-10" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-10">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-10' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-10', 'text-white': selectedDate == '2025-07-10' }">Jul 10</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-10'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-11" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-11">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-11' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-11', 'text-white': selectedDate == '2025-07-11' }">Jul 11</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-11'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-12" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-12">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-12' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-12', 'text-white': selectedDate == '2025-07-12' }">Jul 12</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-12'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-13" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-13">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-13' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-13', 'text-white': selectedDate == '2025-07-13' }">Jul 13</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-13'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-14" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-14">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-14' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-14', 'text-white': selectedDate == '2025-07-14' }">Jul 14</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-14'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-15" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-15">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-15' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-15', 'text-white': selectedDate == '2025-07-15' }">Jul 15</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-15'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-16" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-16">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-16' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-16', 'text-white': selectedDate == '2025-07-16' }">Jul 16</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-16'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-17" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-17">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-17' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-17', 'text-white': selectedDate == '2025-07-17' }">Jul 17</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-17'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-18" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-18">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-18' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-18', 'text-white': selectedDate == '2025-07-18' }">Jul 18</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-18'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-19" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-19">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-19' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-19', 'text-white': selectedDate == '2025-07-19' }">Jul 19</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-19'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-20" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-20">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-20' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-20', 'text-white': selectedDate == '2025-07-20' }">Jul 20</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-20'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-21" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-21">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-21' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-21', 'text-white': selectedDate == '2025-07-21' }">Jul 21</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-21'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-22" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-22" data-gtm-form-interact-field-id="0">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-22' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-22', 'text-white': selectedDate == '2025-07-22' }">Jul 22</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-22'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-23" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-23">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-23' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-23', 'text-white': selectedDate == '2025-07-23' }">Jul 23</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-23'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-24" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-24">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-24' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-24', 'text-white': selectedDate == '2025-07-24' }">Jul 24</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-24'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-25" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-25">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-25' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-25', 'text-white': selectedDate == '2025-07-25' }">Jul 25</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-25'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-26" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-26">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-26' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-26', 'text-white': selectedDate == '2025-07-26' }">Jul 26</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-26'"></span>
+              </span>
+            </label>
+            <label class="inline-flex items-center pb-5">
+              <input class="hidden" data-x-model="selectedDate" type="radio" value="2025-07-27" name="enrollment[preferred_date]" id="enrollment_preferred_date_2025-07-27">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center bg-slate-50 border  border-slate-300 rounded-md cursor-pointer hover:border-slate-400" :class="{ 'bg-sky-500 text-white': selectedDate == '2025-07-27' }">
+                  <span class="px-4 py-2 text-sm text-slate-700" :class="{ 'text-slate-700': selectedDate != '2025-07-27', 'text-white': selectedDate == '2025-07-27' }">Jul 27</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedDate = '2025-07-27'"></span>
+              </span>
+            </label>
+        </div>
+      </div>
+
+
+      <div class="my-5" x-data="{ selectedAvailability: '' }">
+        <span class="text-slate-700 font-semibold text-base">Select availability</span>
+        <div class="grid grid-cols-2 mt-5 gap-3">
+            <label class="">
+              <input class="hidden" data-x-model="selectedAvailability" type="radio" value="7 AM to 10 AM" name="enrollment[preferred_availability]" id="enrollment_preferred_availability_7_am_to_10_am">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center text-slate-700 border border-slate-300 rounded-md bg-slate-50 " :class="{ 'bg-sky-500': selectedAvailability == '7 AM to 10 AM' }">
+                  <span class="px-4 py-2  text-sm text-slate-800" :class="{ 'text-slate-50': selectedAvailability == '7 AM to 10 AM' }">7 AM to 10 AM</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedAvailability = '7 AM to 10 AM'"></span>
+              </span>
+            </label>
+            <label class="">
+              <input class="hidden" data-x-model="selectedAvailability" type="radio" value="10 AM to 1 PM" name="enrollment[preferred_availability]" id="enrollment_preferred_availability_10_am_to_1_pm">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center text-slate-700 border border-slate-300 rounded-md bg-slate-50 " :class="{ 'bg-sky-500': selectedAvailability == '10 AM to 1 PM' }">
+                  <span class="px-4 py-2  text-sm text-slate-800" :class="{ 'text-slate-50': selectedAvailability == '10 AM to 1 PM' }">10 AM to 1 PM</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedAvailability = '10 AM to 1 PM'"></span>
+              </span>
+            </label>
+            <label class="">
+              <input class="hidden" data-x-model="selectedAvailability" type="radio" value="1 PM to 4 PM" name="enrollment[preferred_availability]" id="enrollment_preferred_availability_1_pm_to_4_pm">
+              <span class="relative">
+                <span class="inline-flex items-center justify-center text-slate-700 border border-slate-300 rounded-md bg-slate-50 " :class="{ 'bg-sky-500': selectedAvailability == '1 PM to 4 PM' }">
+                  <span class="px-4 py-2  text-sm text-slate-800" :class="{ 'text-slate-50': selectedAvailability == '1 PM to 4 PM' }">1 PM to 4 PM</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedAvailability = '1 PM to 4 PM'"></span>
+              </span>
+            </label>
+            <label class="">
+              <input class="hidden" data-x-model="selectedAvailability" type="radio" value="4 PM to 7 PM" name="enrollment[preferred_availability]" id="enrollment_preferred_availability_4_pm_to_7_pm">
+                <span class="relative">
+                <span class="inline-flex items-center justify-center text-slate-700 border border-slate-300 rounded-md bg-slate-50 " :class="{ 'bg-sky-500': selectedAvailability == '4 PM to 7 PM' }">
+                <span class="px-4 py-2  text-sm text-slate-800" :class="{ 'text-slate-50': selectedAvailability == '4 PM to 7 PM' }">4 PM to 7 PM</span>
+                </span>
+                <span class="absolute top-0 bottom-0 left-0 right-0 cursor-pointer" @click="selectedAvailability = '4 PM to 7 PM'"></span>
+                </span>
+            </label>
+        </div>
+      </div>
+
+      <div class="flex justify-between">
+        <input type="button" class="btn-primary" @click="currentPage--" :disabled="currentPage === 1" value="PREVIOUS">
+        <input type="button" class="btn-primary" @click="currentPage++" value="NEXT">
+      </div>
+</div> -->

@@ -1,0 +1,56 @@
+<section class="bg-neutral-100">
+    <div class="flex flex-col lg:flex-row lg:items-center pt-10 lg:py-10">
+      <!--Text Section-->
+      <div class="lg:w-1/2 flex flex-col justify-center items-center pb-10" x-data="{ 'showModal': false }" @keydown.escape="showModal = false">
+        <p class="px-5 py-7 lg:px-32 text-center">Still looking for more information on pilot training?</p>
+        <h2 class="px-2 text-3xl text-center font-bold">Get Your <span class="text-ideal-blue">FREE</span> Pilot Training Guide Book!</h2>
+        <p class="px-5 py-7 lg:px-32 text-center">We have a free booklet which explains everything you need to know for your pilot certificate.</p>
+        <button class="btn-primary " @click="showModal = true">
+          DOWNLOAD THE FREE BOOK
+        </button>
+        <!-- Modal -->
+        <div class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black bg-opacity-50" x-show="showModal" style="display: none;">
+          <!-- Modal inner -->
+          <div class="w-full lg:w-1/2 px-6 py-4 mx-auto text-left bg-white rounded shadow-lg" @click.away="showModal = false" x-transition:enter="motion-safe:ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100">
+            <!-- Title / Close-->
+            <div class="flex items-center justify-between pb-5">
+              <h4 class="mr-3 text-black max-w-none"></h4>
+              <button type="button" class="z-50 cursor-pointer" @click="showModal = false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <!-- content -->
+            <div>
+              <turbo-frame class="w-full" id="frame4">
+                <form class="contents" action="/book_downloads" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Fpiazt-Ch0Y8uA0DsuGai0zgaQxolwJb3zXhjzUCdwo-uxEqqhV0-2ZhIFOmXHzBasBvDdEcBA6X-ddf2bFAww" autocomplete="off">
+  <div class="w-full">
+    <div class="mb-5">
+      <input placeholder="Name" class=" shadow text-black rounded-md border border-gray-200 focus:border-sky-500 focus:ring-sky-500 px-3 py-2 w-full" type="text" name="book_download[name]" id="book_download_name">
+    </div>
+    <div class="mb-5">
+      <input placeholder="Phone" class=" shadow text-black rounded-md border border-gray-200 focus:border-sky-500 focus:ring-sky-500 px-3 py-2 w-full" type="text" name="book_download[phone]" id="book_download_phone">
+    </div>
+    <div class="mb-5">
+      <input placeholder="Email" class=" shadow text-black rounded-md border border-gray-200 focus:border-sky-500 focus:ring-sky-500 px-3 py-2 w-full" type="email" name="book_download[email]" id="book_download_email">
+    </div>
+    <div class="confirm_email_1752242783"><style media="screen">.confirm_email_1752242783 {position:absolute!important;top:-9999px;left:-9999px;}</style><label for="book_download_confirm_email">If you are a human, ignore this field</label><input type="text" name="book_download[confirm_email]" id="book_download_confirm_email" autocomplete="off" tabindex="-1"><input type="hidden" name="spinner" value="aff489b11efeee08e822097e4e3289bc" autocomplete="off"></div>
+    <div class="inline">
+      <input type="submit" name="commit" value="Download" class="btn-primary uppercase" data-disable-with="Download">
+    </div>
+  </div>
+
+</form>
+</turbo-frame>            </div>
+          </div>
+        </div>
+      </div>
+      <!--pic section-->
+      <div class="lg:w-1/2">
+        <div class="grid place-items-center">
+          <img alt="Picture of our free how to be a pilot training guide" src="/assets/blue-skies-book-mock-up-dccc45f7a28f5071a68415fd2060c6177d7df24a28c1b73d333a2ea5229c9ea4.webp">
+        </div>
+      </div>
+    </div>
+  </section>
