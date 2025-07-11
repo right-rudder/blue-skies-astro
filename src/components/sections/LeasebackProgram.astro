@@ -1,6 +1,8 @@
 ---
 import imgProgram from "@images/blue-skies-auburn-university-student-pilot-programs.webp"
+import FormLeaseBackProgram from "../forms/FormLeaseBackProgram.astro"
 ---
+
 <section class="flex flex-col items-center">
   <div class="max-w-4xl flex flex-col py-10 px-5">
     <h3 class="text-5xl font-header uppercase font-semibold">Discover Our Leaseback Program</h3>
@@ -11,56 +13,13 @@ import imgProgram from "@images/blue-skies-auburn-university-student-pilot-progr
     </p>
   </div>
 </section>
+
 <section class="bg-gradient-to-l from-slate-200 to-blue-50 py-14" id="contact">
   <h1 class="font-bold text-4xl text-center">Join the Blue Skies Above Leaseback Program</h1>
   <div class="lg:flex lg:flex-row-reverse items-center">
-
-    <div class="mx-10 lg:px-16 lg:w-1/2">
-      <form class="contents" action="/leaseback_programs" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="3O-5UiAB4xUSXET4JnwO3jneQEttrj6T9NaYpM5h090oTv1hdbHNYpUbrqpnfkeBKqKSePlo7PewCKP9fH4grQ" autocomplete="off">
-
-  <div class="my-5">
-    <label for="leaseback_program_name">Name</label>
-    <input class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" type="text" name="leaseback_program[name]" id="leaseback_program_name">
+  <FormLeaseBackProgram />
+  <div class="mx-0 lg:w-1/2">
+    <img class="lg:pb-10 lg:pt-5 lg:pl-5" alt="Blue Skies Pair of Cessnas at Lannet Municipal Airport" src={imgProgram.src}>
   </div>
-
-  <div class="my-5">
-    <label for="leaseback_program_email">Email</label>
-    <input class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" type="text" name="leaseback_program[email]" id="leaseback_program_email">
-  </div>
-
-  <div class="my-5">
-    <label for="leaseback_program_phone">Phone</label>
-    <input class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" type="text" name="leaseback_program[phone]" id="leaseback_program_phone">
-  </div>
-
-  <div class="my-5">
-    <label for="leaseback_program_aircraft_manufacturer">Aircraft manufacturer</label>
-    <input class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" type="text" name="leaseback_program[aircraft_manufacturer]" id="leaseback_program_aircraft_manufacturer">
-  </div>
-
-  <div class="my-5">
-    <label for="leaseback_program_aircraft_model">Aircraft model</label>
-    <input class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" type="text" name="leaseback_program[aircraft_model]" id="leaseback_program_aircraft_model">
-  </div>
-
-  <div class="my-5">
-    <label for="leaseback_program_aircraft_year">Aircraft year</label>
-    <input class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" type="text" name="leaseback_program[aircraft_year]" id="leaseback_program_aircraft_year">
-  </div>
-
-  <div class="my-5">
-    <label for="leaseback_program_message">Message</label>
-    <textarea rows="4" class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" name="leaseback_program[message]" id="leaseback_program_message"></textarea>
-  </div>
-
-  <div class="inline">
-    <input type="submit" name="commit" value="APPLY" class="btn-primary mb-10 lg:mb-0" data-disable-with="APPLY">
-  </div>
-</form>   
-    </div>
-
-    <div class="mx-0 lg:w-1/2">
-      <img class="lg:pb-10 lg:pt-5 lg:pl-5" alt="Blue Skies Pair of Cessnas at Lannet Municipal Airport" src={imgProgram.src}>
-    </div>
   </div>
 </section>
