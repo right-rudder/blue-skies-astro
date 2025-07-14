@@ -59,6 +59,48 @@ export const Icons = {
     height: 48,
     viewBox: "0 -960 960 960",
   },
+  messages: {
+    paths: [
+      {
+        d: "M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4z",
+      },
+    ],
+    class:
+      "mt-2 h-6 w-6 shrink-0 fill-neutral-700 hs-tab-active:fill-picton-blue-400 dark:fill-neutral-300 dark:hs-tab-active:fill-picton-blue-300 md:h-7 md:w-7",
+    width: 20,
+    height: 20,
+    viewBox: "0 0 20 20",
+  },
+  takeoff: {
+    paths: [
+      {
+        d: "M12.57 2.26c-.65.29-1.66.85-2.8 1.5L4.31 3a2.2 2.2 0 0 0-.916.064L2.209 3.4c-.1 0-.1.1 0 .14l4.56 2c-1.54.92-2.91 1.76-3.51 2.14a.86.86 0 0 1-.726.088L1.339 7.39a.86.86 0 0 0-.586.002l-.754.308l2.52 2.1a.88.88 0 0 0 .926.128C4.649 9.39 7.819 7.93 10.179 6.7c5.24-2.78 5.82-3.26 5.82-3.7c0-.69-2-1.4-3.43-.74zM0 13h16v1H0z",
+      },
+    ],
+    class:
+      "mt-2 h-6 w-6 shrink-0 fill-neutral-700 hs-tab-active:fill-picton-blue-400 dark:fill-neutral-300 dark:hs-tab-active:fill-picton-blue-300 md:h-7 md:w-7",
+    width: 16,
+    height: 16,
+    viewBox: "0 0 16 16",
+  },
+  lesson: {
+    paths: [
+      {
+        d: "M3 3h18v4.385h-2V5H5v9h4.333v2H3z",
+      },
+      {
+        d: "M12.684 10.287C13.558 11.212 14.303 12 16 12h2a2 2 0 0 1 2 2v1a2 2 0 0 1-1 1.732V22h-3v-8c-2.617 0-3.956-1.45-4.84-2.405a14 14 0 0 0-.367-.388l1.414-1.414q.249.25.477.494",
+      },
+      {
+        d: "M19 9.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0",
+      },
+    ],
+    class:
+      "mt-2 h-6 w-6 shrink-0 fill-neutral-700 hs-tab-active:fill-picton-blue-400 dark:fill-neutral-300 dark:hs-tab-active:fill-picton-blue-300 md:h-7 md:w-7",
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+  },
   dashboard: {
     paths: [
       {
