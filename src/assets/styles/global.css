@@ -139,7 +139,7 @@
   }
 
   .btn-accent {
-    @apply text-center tracking-wide font-bold uppercase py-3 px-6 w-fit rounded-sm duration-300 bg-white text-picton-blue-700 text-xl hover:bg-picton-blue-700 hover:text-white;
+    @apply text-center tracking-wide font-bold uppercase py-3 px-6 w-fit rounded-sm duration-300 bg-picton-blue-400 text-xl text-white hover:bg-picton-blue-500 hover:text-white;
   }
 
   .btn-animate {
