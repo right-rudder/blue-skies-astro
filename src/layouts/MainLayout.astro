@@ -7,6 +7,7 @@ import { SITE } from "@data/constants";
 import "@styles/global.css";
 import ChatWidget from "@/components/forms/ChatWidget.astro";
 import Banner from "@/components/sections/navbar&footer/Banner.astro";
+import "aos/dist/aos.css";
 
 // Setting expected props
 const {
@@ -88,6 +89,10 @@ interface Props {
         scrollbar-width: none;
       }
     </style> -->
+    <script>
+      import AOS from "aos";
+      AOS.init();
+    </script>
   </body>
 </html>
 <ChatWidget />
