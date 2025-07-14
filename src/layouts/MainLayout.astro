@@ -30,7 +30,7 @@ interface Props {
 }
 ---
 
-<html lang={lang} class="scrollbar-hide lenis lenis-smooth scroll-pt-16">
+<html lang={lang} class="scrollbar-hide scroll-pt-16 scroll-smooth">
   <head>
     {/* Adding metadata to the HTML document */}
     <Meta
@@ -53,20 +53,11 @@ interface Props {
         document.documentElement.classList.remove("dark");
       }
     </script>
-    <!-- <script>
-      import "@scripts/lenisSmoothScroll.js";
-    </script> -->
   </head>
   <body
     class="selection:bg-picton-blue-400 overflow-x-hidden bg-neutral-200 selection:text-neutral-700 dark:bg-neutral-800"
   >
-    {
-      /*
-    Setting up the main structure of the page.
-    The Navbar is placed at the top, with a slot for the main content and FooterSection at the bottom.
-    */
-    }
-    <Banner />
+    <!-- <Banner /> -->
     <div class="mx-auto max-w-(--breakpoint-2xl) px-4 sm:px-6 lg:px-8">
       <Navbar />
       <main>
@@ -75,24 +66,12 @@ interface Props {
     </div>
     <FooterSection />
     <script>
-      // https://preline.co
       import "preline/preline.js";
     </script>
-    <!-- <style>
-      /* CSS rules for the page scrollbar */
-      .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-      }
-
-      .scrollbar-hide {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    </style> -->
     <script>
       import AOS from "aos";
       AOS.init();
     </script>
+    <ChatWidget />
   </body>
 </html>
-<ChatWidget />

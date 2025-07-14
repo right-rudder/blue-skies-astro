@@ -2,7 +2,7 @@
 const navBarLinks = [
   {
     name: "New to Flight Training?",
-    link: "/",
+    link: "/should-i-become-a-pilot",
     submenu: [
       {
         name: "Why Become a Pilot?",
@@ -160,7 +160,7 @@ const footerLinks = [
         link: "/professional-flight-program",
       },
       {
-        name: "Discovery Flight",
+        name: "Book a Discovery Flight",
         link: "/discovery-flights",
       },
     ],
@@ -170,43 +170,35 @@ const footerLinks = [
     links: [
       {
         name: "Private Pilot",
-        link: "/private-pilot-certificate-ppl",
+        link: "/flight-training-programs/private-pilot-certificate-ppl",
       },
       {
         name: "Instrument Rating",
-        link: "/instrument-rating-ifr",
+        link: "/flight-training-programs/instrument-rating-ifr",
       },
       {
         name: "Commercial Pilot",
-        link: "/commercial-pilot-certificate-cpl",
+        link: "/flight-training-programs/commercial-pilot-certificate-cpl",
       },
       {
         name: "Multi Engine Rating",
-        link: "/multi-engine-rating",
+        link: "/flight-training-programs/multi-engine-rating",
       },
       {
         name: "Multi Engine Instructor (MEI)",
-        link: "/multi-engine-instructor-mei",
+        link: "/flight-training-programs/multi-engine-instructor-mei",
       },
       {
         name: "CFI",
-        link: "/certified-flight-instructor-cfi",
-      },
-      {
-        name: "Multi Engine Instructor (MEI)",
-        link: "/multi-engine-rating",
-      },
-      {
-        name: "CFI",
-        link: "/certified-flight-instructor-cfi",
+        link: "/flight-training-programs/certified-flight-instructor-cfi",
       },
       {
         name: "CFII",
-        link: "/certified-flight-instructor-cfii",
+        link: "/flight-training-programs/certified-flight-instructor-instrument-cfii",
       },
       {
         name: "CFI Spin Endorsement",
-        link: "/spin-endorsement",
+        link: "/flight-training-programs/spin-endorsement",
       },
     ],
   },
@@ -255,11 +247,10 @@ const footerLinks = [
 ];
 // An object of links for social icons
 const socialLinks = {
-  facebook: "https://www.facebook.com/",
-  x: "https://twitter.com/",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
+  facebook: "https://www.facebook.com/flytheblueskies",
+  instagram: "https://www.instagram.com/flybsa/",
+  x: "https://x.com/flybsa",
+  linkedin: "https://www.linkedin.com/company/blue-skies-above/",
 };
 
 export default {
