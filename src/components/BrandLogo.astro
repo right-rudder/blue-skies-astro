@@ -3,25 +3,26 @@ import Image from "astro/components/Image.astro";
 import logo from "@images/blue-skies-logo-black-600-nobg.png";
 import whitelogo from "@images/blue-skies-logo.webp";
 ---
+
 <a href="/">
   <Image
-        src={logo}
-        alt=""
-        class="h-16 lg:h-24 w-full mx-auto object-contain duration-500 dark:hidden"
-        draggable={"false"}
-        loading={"eager"}
-        format={"avif"}
+    src={logo}
+    alt=""
+    class="mx-auto my-3 h-14 w-full object-contain duration-500 lg:h-20 dark:hidden"
+    draggable={"false"}
+    loading={"eager"}
+    format={"avif"}
   />
   <Image
-        src={whitelogo}
-        alt=""
-        class="h-16 lg:h-24 w-full mx-auto object-contain duration-500 hidden dark:block"
-        draggable={"false"}
-        loading={"eager"}
-        format={"avif"}
+    src={whitelogo}
+    alt=""
+    class="mx-auto my-3 hidden h-14 w-full object-contain duration-500 lg:h-20 dark:block"
+    draggable={"false"}
+    loading={"eager"}
+    format={"avif"}
   />
 </a>
-  
+
 <!-- <svg
   {...Astro.props}
   viewBox="0 0 521 226"

@@ -2,7 +2,7 @@
 const navBarLinks = [
   {
     name: "New to Flight Training?",
-    link: "/",
+    link: "/should-i-become-a-pilot",
     submenu: [
       {
         name: "Why Become a Pilot?",
