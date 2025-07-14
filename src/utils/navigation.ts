@@ -90,6 +90,12 @@ const navBarLinks = [
     link: "/about-us",
     submenu: [
       {
+        name: "About us ",
+        link: "/about-us",
+        description: "Meet the Blue Skies Above",
+        icon: "plane",
+      },
+      {
         name: "Our Team",
         link: "/our-team",
         description: "Meet the Blue Skies Above team",
@@ -127,7 +133,7 @@ const navBarLinks = [
         link: "/financing",
         description:
           "Learn about financing options for your flight training at Blue Skies Above",
-        icon: "arrowUp",
+        icon: "community",
       },
       {
         name: "Leaseback Program",

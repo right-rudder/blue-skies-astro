@@ -2,10 +2,25 @@
 import { SITE } from "@data/constants";
 import MainLayout from "@/layouts/MainLayout.astro";
 import FinancingComponent from "@/components/sections/FinancingComponent.astro";
+import blueskiesover from "src/assets/images/blue-skies-over-auburn.webp";
+import CTA from "@/components/sections/misc/CTA.astro";
 
-const pageTitle: string = `Page Title | ${SITE.title}`;
-const metaDescription = "Page Description";
+const pageTitle: string = `Financing Page | ${SITE.title}`;
+const metaDescription = "";
 const ogTitle = "Page Title | Blue Skies Above Flight School";
+
+
+const ctaDiscovery = {
+    isRightSection: false,
+    title: "Fly now with Blue Skies Above",
+    subTitle: "Schedule a Discovery Flight and explore the clouds!",
+    single: true,
+    img: blueskiesover,
+    imgAlt: "Flight training syllabus materials",
+    btnExists: true,
+    btnTitle: "Get Started",
+    btnURL: "/discovery-flights",
+}
 ---
 
 <MainLayout
@@ -31,4 +46,5 @@ const ogTitle = "Page Title | Blue Skies Above Flight School";
 
 <FinancingComponent />
 
+<CTA content={ctaDiscovery} />
 </MainLayout>

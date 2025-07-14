@@ -32,45 +32,45 @@ const post: Post = {
 
 const Content = `
   <p>At Blue Skies Above, we believe that great pilots are made in great aircraft. That's why we've carefully curated a fleet of modern, well-equipped Cessna 172s to support every step of your aviation journey. From your very first flight to your advanced instrument and commercial ratings, our aircraft provide a safe, reliable, and enjoyable platform for learning. Each plane is meticulously maintained to the highest standards, ensuring you can focus on what matters most: mastering the art of flight.</p>
-  <h2 id="n717g">N717G – Cessna 172N</h2>
-  <div class="h-64"> 
-    <img src=${airplane4.src} alt="N717G Cessna 172N" class="w-3/3 h-3/4 object-cover"/>
+  <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"id="n717g">N717G – Cessna 172N</h2>
+  <div class="h-64 rounded-2xl" data-aos="fade-up"> 
+    <img src=${airplane4.src} alt="N717G Cessna 172N" class="w-3/3 h-3/3 object-cover rounded-2xl"  />
   </div>
   <p><strong>Power:</strong> 160HP<br/>
      <strong>Features:</strong> Dual G5 / G530 Nav System</p>
-  <p><a href="/visit-flight-school">Like this plane? Come fly it!</a></p>
+  <p class="btn-accent"><a href="/enroll-at-blue-skies">Like this plane? Come fly it!</a></p>
 
-  <h2 id="n5378d">N5378D – Cessna 172N</h2>
+  <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"id="n5378d">N5378D – Cessna 172N</h2>
   <div class="h-64"> 
-    <img src=${airplane3.src} alt="N717G Cessna 172N" class="w-3/3 h-3/4 object-cover"/>
+    <img src=${airplane3.src} alt="N717G Cessna 172N" class="w-3/3 h-3/3 object-cover rounded-2xl"/>
   </div>
   <p><strong>Power:</strong> 180HP<br/>
      <strong>Features:</strong> Dual G5 / G430 Nav System</p>
-  <p><a href="/visit-flight-school">Like this plane? Come fly it!</a></p>
+  <p class="btn-accent"><a href="/enroll-at-blue-skies">Like this plane? Come fly it!</a></p>
 
-  <h2 id="n5225d">N5225D – Cessna 172N</h2>
+  <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"id="n5225d">N5225D – Cessna 172N</h2>
   <div class="h-64"> 
-    <img src=${airplane1.src} alt="N717G Cessna 172N" class="w-3/3 h-3/4 object-cover"/>
+    <img src=${airplane1.src} alt="N717G Cessna 172N" class="w-3/3 h-3/3 object-cover rounded-2xl"/>
   </div>
   <p><strong>Power:</strong> 180HP<br/>
      <strong>Features:</strong> Dual G5 / G430 Nav System</p>
-  <p><a href="/visit-flight-school">Like this plane? Come fly it!</a></p>
+  <p class="btn-accent"><a href="/enroll-at-blue-skies">Like this plane? Come fly it!</a></p>
 
-  <h2 id="n738sr">N738SR – Cessna 172N</h2>
+  <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"id="n738sr">N738SR – Cessna 172N</h2>
   <div class="h-64"> 
-    <img src=${airplane5.src} alt="N717G Cessna 172N" class="w-3/3 h-3/4 object-cover"/>
+    <img src=${airplane5.src} alt="N717G Cessna 172N" class="w-3/3 h-3/3 object-cover rounded-2xl"/>
   </div>
   <p><strong>Power:</strong> 160HP<br/>
      <strong>Features:</strong> Dynon Skyview / G530 Nav System</p>
-  <p><a href="/visit-flight-school">Like this plane? Come fly it!</a></p>
+  <p class="btn-accent"><a href="/enroll-at-blue-skies">Like this plane? Come fly it!</a></p>
 
-  <h2 id="n246sp">N246SP – Cessna 172N</h2>
+  <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"id="n246sp">N246SP – Cessna 172N</h2>
   <div class="h-64"> 
-    <img src=${airplane2.src} alt="N717G Cessna 172N" class="w-3/3 h-3/4 object-cover"/>
+    <img src=${airplane2.src} alt="N717G Cessna 172N" class="w-3/3 h-3/3 object-cover rounded-2xl"/>
   </div>
   <p><strong>Power:</strong> 180HP<br/>
      <strong>Features:</strong> Dual Dynon Skyview / GTN 650 Touch Screen</p>
-  <p><a href="/visit-flight-school">Like this plane? Come fly it!</a></p>
+  <p class="btn-accent"><a href="/enroll-at-blue-skies">Like this plane? Come fly it!</a></p>
 `;
 
 
@@ -114,7 +114,7 @@ const ogTitle = `${post.data.title} | Insights | ${SITE.title}`;
         <div>
           <div class="h-24 overflow-hidden rounded-lg shadow-lg md:h-80">
             <Image
-              class="h-full w-full object-cover object-center"
+              class="h-full w-full object-cover rounded-2xl rounded-2xlobject-center"
               src={post.data.cardImage}
               alt={post.data.cardImageAlt}
               draggable={"false"}
@@ -142,7 +142,7 @@ const ogTitle = `${post.data.title} | Insights | ${SITE.title}`;
         </div>
 
         <div class="md:pt-8">
-          <h1 class="mb-4 text-center text-2xl font-bold text-balance text-neutral-800 sm:text-3xl md:mb-6 md:text-left dark:text-neutral-200">
+          <h1 class="mb-4 text-center text-2xl lg:text-4xl text-picton-blue-700 dark:text-picton-blue-400 font-bold text-balance text-neutral-800 sm:text-3xl md:mb-6 md:text-left dark:text-neutral-200">
             {post.data.title}
           </h1>
 
