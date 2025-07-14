@@ -11,6 +11,8 @@ import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
 import privatePilotPass from "@images/blue-skies-private-pilot-checkride-pass-600.webp";
+import CTA from "@/components/sections/misc/CTA.astro";
+
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
@@ -29,6 +31,19 @@ const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
   "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
 ];
+
+
+const ctaDiscovery = {
+    isRightSection: false,
+    title: "Fly now with Blue Skies Above",
+    subTitle: "Schedule a Discovery Flight and explore the clouds!",
+    single: true,
+    img: construction,
+    imgAlt: "Flight training syllabus materials",
+    btnExists: true,
+    btnTitle: "Get Started",
+    btnURL: "/discovery-flights",
+}
 ---
 
 <MainLayout>
@@ -96,6 +111,7 @@ const avatarSrcs: Array<string> = [
     partners={partnersData}
   />
 
+  <CTA content={ctaDiscovery} />
 
 <TestimonialsSection
   title="Take Off With Confidence"
@@ -140,6 +156,7 @@ const avatarSrcs: Array<string> = [
   <!-- <PricingSection pricing={pricing} /> -->
 
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+
 
   <HeroSectionAlt
     title="Fly now with Blue Skies Above"

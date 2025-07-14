@@ -1,0 +1,43 @@
+---
+const FINANCE_GUIDE_DOWNLOAD_URL = import.meta.env.FINANCE_GUIDE_DOWNLOAD_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
+---
+
+
+<div class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black bg-opacity-50" x-show="showModal">
+    <!-- Modal inner -->
+    <div class="w-full lg:w-1/2 px-6 py-4 mx-auto text-left bg-white rounded shadow-lg" @click.away="showModal = false" x-transition:enter="motion-safe:ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100">
+      <!-- Title / Close-->
+      <div class="flex items-center justify-between pb-5">
+        <h4 class="mr-3 text-black max-w-none"></h4>
+        <button type="button" class="z-50 cursor-pointer" @click="showModal = false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- content -->
+      <div>
+        <turbo-frame class="w-full" id="frame4">
+          <form class="contents" action="/program_guide_downloads" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="S1m01YXB52FTKUmJEUNYOiLDb1TWyLGzDMMngY7RomCX2Dqmr-9rs5Vzs-nX5JZ4ZEmlThm_epZBRGEtku_hjA" autocomplete="off">
+  <div class="w-full">
+    <div class="mb-5">
+      <input placeholder="Name" class=" shadow text-black rounded-md border border-gray-200 focus:border-sky-500 focus:ring-sky-500 px-3 py-2 w-full" type="text" name="program_guide_download[name]" id="program_guide_download_name">
+    </div>
+    <div class="mb-5">
+      <input placeholder="Phone" class=" shadow text-black rounded-md border border-gray-200 focus:border-sky-500 focus:ring-sky-500 px-3 py-2 w-full" type="text" name="program_guide_download[phone]" id="program_guide_download_phone">
+    </div>
+    <div class="mb-5">
+      <input placeholder="Email" class=" shadow text-black rounded-md border border-gray-200 focus:border-sky-500 focus:ring-sky-500 px-3 py-2 w-full" type="email" name="program_guide_download[email]" id="program_guide_download_email">
+    </div>
+    <div class="confirm_email_1752246386"><style media="screen">.confirm_email_1752246386 {position:absolute!important;top:-9999px;left:-9999px;}</style><label for="program_guide_download_confirm_email">If you are a human, ignore this field</label><input type="text" name="program_guide_download[confirm_email]" id="program_guide_download_confirm_email" autocomplete="off" tabindex="-1"><input type="hidden" name="spinner" value="3f5d6f5f5bb8a166e03d707fa5a12fb0" autocomplete="off"></div>
+    <div class="inline">
+      <input type="submit" name="commit" value="Download" class="btn-primary uppercase" data-disable-with="Download">
+    </div>
+  </div>
+
+</form>
+</turbo-frame>      </div>
+    </div>
+  </div>

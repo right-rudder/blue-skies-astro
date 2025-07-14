@@ -1,0 +1,48 @@
+---
+
+const PRO_FLIGHT_PROGRAM_URL = import.meta.env.PRO_FLIGHT_PROGRAM_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
+---
+
+
+<!-- Professional Flight Program -->
+<div class="mx-auto max-w-xl py-20">
+    <form class="contents" action="/professional_flight_programs" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="UelRdpYynHavLxyFGTwQCA_UMifcZYbuFzKtBfIC3tc3pVcXVR1Z-yiKuqUVl9yv5OE3rBb_Ljd4RUpj3A32UA" autocomplete="off">
+
+      <div class="my-5">
+        <label for="professional_flight_program_name">Name</label>
+        <input class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" type="text" name="professional_flight_program[name]" id="professional_flight_program_name">
+      </div>
+
+      <div class="my-5">
+        <label for="professional_flight_program_email">Email</label>
+        <input class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" type="text" name="professional_flight_program[email]" id="professional_flight_program_email">
+      </div>
+
+      <div class="my-5">
+        <label for="professional_flight_program_phone">Phone</label>
+        <input class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" type="text" name="professional_flight_program[phone]" id="professional_flight_program_phone">
+      </div>
+
+      <div class="my-5">
+        <label for="professional_flight_program_start_date">Approximate date you can start training at Blue Skies Above</label>
+        <input class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" type="date" name="professional_flight_program[start_date]" id="professional_flight_program_start_date">
+      </div>
+
+      <div class="my-5">
+        <label for="professional_flight_program_target_date">Target date to complete pilot training</label>
+        <input class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" type="date" name="professional_flight_program[target_date]" id="professional_flight_program_target_date">
+      </div>
+
+      <div class="my-5">
+        <label for="professional_flight_program_message">Message</label>
+        <textarea rows="4" class="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" name="professional_flight_program[message]" id="professional_flight_program_message"></textarea>
+      </div>
+
+      <div class="inline">
+        <input type="submit" name="commit" value="SUBMIT" class="btn-primary mb-10 lg:mb-0" data-disable-with="SUBMIT">
+      </div>
+  </form>
+
+</div>

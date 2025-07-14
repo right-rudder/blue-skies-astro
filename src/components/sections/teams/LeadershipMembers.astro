@@ -5,11 +5,11 @@ const { content } = Astro.props;
 
 
 <section>
-    <div class="container px-6 py-10 mx-auto">
+    <div class="container px-6 mx-auto">
         <p class="text-picton-blue-600 uppercase">{content.upperheading && content.upperheading}</p>
-        <h2 class="text-3xl font-semibold text-center text-slate-900 capitalize lg:text-3xl dark:text-white">{content.title}</h1>
+        <h2 class="pt-20 text-3xl lg:text-5xl font-semibold text-center text-picton-blue-600 capitalize lg:text-3xl dark:text-picton-blue-400">{content.title}</h1>
 
-        <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+        <p class="max-w-2xl mx-auto my-6 text-center text-gray-600 dark:text-gray-300">
             {content.description && content.description}
         </p>
 

@@ -2,11 +2,11 @@
 const {content} = Astro.props;
 ---
 
-<div class=" py-24 sm:py-32">
+<div class=" py-12 sm:py-24">
   <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
     <div class="max-w-xl">
       <p class="text-picton-blue-600 uppercase">{content.upperheading && content.upperheading}</p>
-      <h2 class="text-3xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-sky-400 sm:text-4xl">{content.title && content.title}</h2>
+      <h2 class="text-3xl font-semibold tracking-tight text-pretty text-picton-blue-600 dark:text-picton-blue-400 sm:text-4xl">{content.title && content.title}</h2>
       <p class="mt-6 text-lg/8 text-gray-600 dark:text-slate-300">{content.description && content.description}</p>
     </div>
     <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
@@ -16,7 +16,7 @@ const {content} = Astro.props;
             <img class="size-16 rounded-full" src={teamMember.imagePath} alt={teamMember.imageAlt} />
             <div>
                 <h3 class="text-base/7 font-semibold tracking-tight text-gray-900 dark:text-white">{teamMember.name}</h3>
-                <p class="text-sm/6 font-semibold text-indigo-600 dark:text-indigo-300">{teamMember.role && teamMember.role}</p>
+                <p class="text-sm/6 font-semibold text-sky-600 dark:text-sky-300">{teamMember.role && teamMember.role}</p>
             </div>
             </div>
         </li>

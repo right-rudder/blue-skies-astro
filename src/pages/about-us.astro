@@ -5,6 +5,8 @@ import MainSection from "@components/ui/blocks/MainSection.astro";
 import LeftSection from "@components/ui/blocks/LeftSection.astro";
 import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
+import AOSInit from '@/components/utils/AOSInit.jsx';
+import CTA from "@/components/sections/misc/CTA.astro";
 
 // Import necessary images
 import blueprints from "../assets/images/blue-skies-over-auburn.webp";
@@ -95,6 +97,20 @@ const articles: Article[] = [
 const pageTitle: string = `About Us | ${SITE.title}`;
 const metaDescription = "Learn more about Blue Skies Above Flight School — your trusted partner in aviation training located in Lanett, Alabama.";
 const ogTitle = "About Blue Skies Above | Premier Flight Training in Alabama";
+
+const ctaDiscovery = {
+    isRightSection: true,
+    title: "Ready to Take the Controls?",
+    subTitle: "Book a Discovery Flight and experience the thrill of flying firsthand. You'll take the controls with an expert instructor and see the world from a whole new perspective.",
+    single: true,
+    imgOne: personWorking,
+    imgOneAlt: "Flight training syllabus materials",
+    imgTwo: beforeAfter,
+    imgTwoAlt: "Instructor with student at planning table",
+    btnExists: true,
+    btnTitle: "Book Now",
+    btnURL: "/discovery-flight",
+};
 ---
 
 <MainLayout
@@ -117,6 +133,7 @@ const ogTitle = "About Blue Skies Above | Premier Flight Training in Alabama";
     inLanguage: "en-US",
   }}
 >
+  <!-- <AOSInit is:client="load" /> -->
   <MainSection
     title="Welcome to Blue Skies Above"
     subTitle="Where aspiring pilots take flight — through efficient training, supportive mentorship, and a vibrant aviation community."
@@ -174,4 +191,6 @@ const ogTitle = "About Blue Skies Above | Premier Flight Training in Alabama";
       }
     ]}
   />
+
+  <CTA content={ctaDiscovery}  />
 </MainLayout>

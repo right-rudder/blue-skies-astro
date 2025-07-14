@@ -1,7 +1,7 @@
 ---
 import { SITE } from "@data/constants";
 import MainLayout from "@/layouts/MainLayout.astro";
-
+import FinancingComponent from "@/components/sections/FinancingComponent.astro";
 
 const pageTitle: string = `Page Title | ${SITE.title}`;
 const metaDescription = "Page Description";
@@ -28,5 +28,7 @@ const ogTitle = "Page Title | Blue Skies Above Flight School";
     inLanguage: "en-US",
   }}
 >
+
+<FinancingComponent />
 
 </MainLayout>
