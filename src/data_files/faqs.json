@@ -1,29 +1,29 @@
 {
-  "subTitle": "Learn to fly with expert instructors at Blue Skies Above, a premier flight training school based in Lanett, Alabama.",
+  "subTitle": "At Blue Skies Above in Lanett, Alabama, we provide expert-led flight training for aspiring pilots across the Alabama–Georgia region.",
   "faqs": [
     {
       "question": "Where is Blue Skies Above located?",
-      "answer": "Blue Skies Above operates out of Lanett Municipal Airport (7A3) in Lanett, Alabama, near the Alabama–Georgia border, just 30 minutes from Auburn and one hour from Columbus."
+      "answer": "We’re based at Lanett Municipal Airport (7A3) in Lanett, Alabama, right on the Alabama–Georgia border. Our flight school is just 30 minutes from Auburn and about an hour from Columbus, making us a convenient option for students throughout the region."
     },
     {
-      "question": "What flight training programs are offered?",
-      "answer": "They offer a wide range of programs including private pilot, instrument rating, commercial pilot, multi-engine rating, CFI/CFII, and spin training."
+      "question": "What flight training programs do you offer?",
+      "answer": "We offer a full range of flight training programs including Private Pilot License (PPL), Instrument Rating, Commercial Pilot License, Multi-Engine Rating, Certified Flight Instructor (CFI/CFII), and Spin Endorsement training."
     },
     {
-      "question": "Who leads the school?",
-      "answer": "The school is led by founder and chief flight instructor Matthew Bourguignon, a certified ATP, CFI, CFII, and MEI with extensive experience since 2020."
+      "question": "Who leads the flight school?",
+      "answer": "Our school is led by Matthew Bourguignon, our founder and chief flight instructor. Matthew is an ATP-certified pilot and holds CFI, CFII, and MEI credentials. Since 2020, he's been dedicated to helping future pilots achieve their aviation goals with clarity and confidence."
     },
     {
-      "question": "What aircraft are used for training?",
-      "answer": "Their fleet includes multiple Cessna 172s and a Cherokee 140, ideal for primary and advanced flight training."
+      "question": "What aircraft do you use for training?",
+      "answer": "Our fleet includes several Cessna 172s and a Cherokee 140. These aircraft are perfect for both primary flight training and advanced certifications, and they’re maintained to the highest safety standards."
     },
     {
-      "question": "What makes this school unique?",
-      "answer": "Blue Skies Above is known for its small-town hospitality, low-traffic airspace, strong safety culture, experienced instructors, and active community events like youth flight days and holiday flyovers."
+      "question": "What makes Blue Skies Above different?",
+      "answer": "We combine small-town hospitality with professional-grade aviation training. Our students benefit from low-traffic airspace, a supportive learning environment, experienced instructors, and community-focused events like youth flight days and holiday flyovers."
     },
     {
-      "question": "Are discovery flights available?",
-      "answer": "Yes! They offer discovery flights where prospective students or aviation enthusiasts can experience flying firsthand with a certified instructor."
+      "question": "Can I book a discovery flight?",
+      "answer": "Absolutely! We offer discovery flights for anyone curious about flying. You’ll get to sit in the pilot’s seat with a certified instructor and experience what it’s like to fly a real airplane, no prior experience required."
     }
   ]
 }
