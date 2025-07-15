@@ -2,11 +2,30 @@
 import { SITE } from "@data/constants";
 import MainLayout from "@/layouts/MainLayout.astro";
 import LeasebackProgramComponent from "@/components/sections/LeasebackProgram.astro";
+import CTA from "@/components/sections/misc/CTA.astro";
+import MainSection from "@/components/ui/blocks/MainSection.astro";
+import RightSection from "@/components/ui/blocks/RightSection.astro";
 
+
+import blueskiesover from "src/assets/images/blue-skies-over-auburn.webp";
+import imgRight from "../assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
+import imgRight2 from "../assets/images/blue-skies-cessna-on-grass-auburn-georgia-alabama.webp";
 
 const pageTitle: string = `Page Title | ${SITE.title}`;
 const metaDescription = "Page Description";
 const ogTitle = "Page Title | Blue Skies Above Flight School";
+
+const ctaDiscovery = {
+    isRightSection: true,
+    title: "Fly now with Blue Skies Above",
+    subTitle: "Schedule a Discovery Flight and explore the clouds!",
+    single: true,
+    imgOne: blueskiesover,
+    imgOneAlt: "Flight training syllabus materials",
+    btnExists: true,
+    btnTitle: "Get Started",
+    btnURL: "/discovery-flights",
+}
 ---
 
 <MainLayout
@@ -29,5 +48,30 @@ const ogTitle = "Page Title | Blue Skies Above Flight School";
     inLanguage: "en-US",
   }}
 >
+
+  <MainSection
+    title="Discover Our Leaseback Program"
+    subTitle="Own an aircraft, earn rental income, and support the next generation of pilots — all through Blue Skies Above’s Leaseback Program based at Lanett Regional Airport."
+    btnExists={true}
+    btnTitle="Contact Us"
+    btnURL="#contact"
+  />
+
+  <RightSection
+    title="Invest in an Aircraft and Earn Income"
+    subTitle="Our Leaseback Program offers a unique opportunity for aviation enthusiasts and investors to own an aircraft while generating passive income. When you lease your aircraft to Blue Skies Above, it becomes a valuable part of our training fleet — helping student pilots learn while offsetting your ownership costs.\n\nWe provide full support and flexible management options, ensuring your aircraft is maintained to the highest standards and used efficiently. It’s a win-win partnership: you gain the financial benefits of ownership while contributing to the future of aviation."
+    single={false}
+    imgOne={imgRight}
+    imgOneAlt="Aircraft on tarmac with owner"
+    imgTwo={imgRight2}
+    imgTwoAlt="Flight student and instructor near leased plane"
+    btnExists={false}
+    btnTitle="Learn More"
+    btnURL="/leaseback"
+  />
+
+
   <LeasebackProgramComponent />
+
+  <CTA content={ctaDiscovery} />
 </MainLayout>
