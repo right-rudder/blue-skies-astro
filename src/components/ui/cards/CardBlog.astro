@@ -18,7 +18,7 @@ interface Props {
      The data-astro-prefetch is an Astro specific Dynamic HTML feature,
      which automatically prefetches the linked page to speed up navigation. -->
 <a
-  class="group relative block rounded-xl outline-hidden ring-zinc-500 transition duration-500 focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden"
+  class="group relative block rounded-xl outline-hidden transition duration-500 focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden hover:ring-picton-blue-400 hover:ring-4"
   href={blogLocale && blogLocale !== "en"
     ? `/${blogLocale}/blog/${blogEntry.id.replace(/^fr\//, "")}/`
     : `/blog/${blogEntry.id.replace(/^en\//, "")}/`}
@@ -36,6 +36,8 @@ interface Props {
       loading={"eager"}
       format={"avif"}
     />
+     <!-- Translucent overlay -->
+    <div class="absolute inset-0 bg-neutral-900/40"></div>  
   </div>
   <!-- The container for the blog author's avatar and associated metadata (author name and publication date) -->
   <div class="absolute inset-x-0 top-0 z-10">
@@ -58,7 +60,7 @@ interface Props {
   <div class="absolute inset-x-0 bottom-0 z-10">
     <div class="flex h-full flex-col p-4 sm:p-6">
       <h3
-        class="text-balance text-lg font-bold text-neutral-50 group-hover:text-neutral-50/[.8] sm:text-3xl"
+        class="text-balance text-lg font-bold text-white group-hover:text-picton-blue-400  dark:group-hover:text-picton-blue-400 sm:text-3xl"
       >
         {blogEntry.data.title}
       </h3>
