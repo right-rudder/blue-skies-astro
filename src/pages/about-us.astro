@@ -17,6 +17,7 @@ import aerialView from "../assets/images/student-getting-his-spin-endorsement.jp
 import usingTools from "../assets/images/multi-engine-plane.webp";
 import progressBuilding from "../assets/images/blue-skies-selfie-auburn-opelika.webp";
 import underConstruction from "../assets/images/blue-skies-ppl-private-pilot-checkride-pass.webp";
+import imgOurStory from "../assets/images/matthew-founder-blue-skies-school-flying.webp";
 import { SITE } from "@data/constants";
 
 interface Article {
@@ -193,5 +194,14 @@ const ctaDiscovery = {
     ]}
   />
 
+  <LeftSection
+    title="Our Story"
+    subTitle="Blue Skies Above is a flight school born out of the mind of Chief Flight Instructor and Founder Matthew Bourguignon. Named after a catchphrase used in the past by his own flight instructor, Matthew chose to continue the tradition in his flight school. Blue Skies was a phrase used at the end of almost any conversation or call during his flight instruction and reminds Matthew of his former CFI, the biggest influence in Matthew's attraction to aviation."
+    img={imgOurStory}
+    imgAlt="{article.imgAlt}"
+    btnExists={false}
+    btnTitle="{article.btnTitle}"
+    btnURL="{article.btnURL}"
+    />
   <CTA content={ctaDiscovery}  />
 </MainLayout>
