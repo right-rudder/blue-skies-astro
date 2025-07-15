@@ -4,7 +4,7 @@ import imgPartner from "@images/parner-flight-training-finance-logo.webp"
 import { Image } from "astro:assets";
 import imgFinancing from "../../assets/images/cfi-with-student-at-blue-skies-above.webp";
 ---
-<section class="flex items-center gap-2 justify-center py-10 ">
+<section class="flex flex-col md:flex-row items-center gap-2 justify-center py-10 ">
   <div class="" data-aos="fade-left" data-aos-delay={500}>
     <Image
       class="w-full rounded-lg"
@@ -14,8 +14,8 @@ import imgFinancing from "../../assets/images/cfi-with-student-at-blue-skies-abo
     />
   </div>
   <div class="max-w-3xl flex flex-col py-10 px-5">
-    <h3 class="text-5xl font-header uppercase font-semibold text-picton-blue-700 dark:text-picton-blue-400">Financing Your Flight Training</h3>
-    <h4 class="text-2xl text-gray-800 dark:text-picton-blue-500 py-5">Accessible Financing Solutions for Your Pilot Training</h4>
+    <h2 class="text-5xl font-header uppercase font-semibold text-picton-blue-700 dark:text-picton-blue-400">Financing Your Flight Training</h2>
+    <h3 class="text-2xl text-gray-800 dark:text-picton-blue-500 py-5">Accessible Financing Solutions for Your Pilot Training</h3>
     <p class="text-lg  text-gray-700 dark:text-white ">Our mission is to provide flexible solutions that fit your financial situation, allowing you to pursue your aviation dreams without the added stress of financial constraints.</p>
     <p class="text-lg  text-gray-700 dark:text-white pt-5">
       Whether you’re looking for personalized financing solutions, flexible payment plans, or transparent terms, our partnership with Flight Training Finance ensures you have access to competitive rates and terms. Our user-friendly application process and supportive financial aid advisors make it easier for you to secure the necessary funds for your flight training.
@@ -33,14 +33,19 @@ import imgFinancing from "../../assets/images/cfi-with-student-at-blue-skies-abo
   <div class="max-w-7xl flex flex-col items-center bg-white rounded-lg p-10">
     <div class="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
       <div>
-        <h2 class="text-5xl font-semibold text-center uppercase">
+        <h2 class="text-5xl text-balance font-header font-semibold text-center uppercase">
           Finance with Flight Training Finance LLC
         </h2>
         <h3 class="pt-3 text-2xl text-center">
           Don’t let finances be the limiting factor
         </h3>
       </div>
-      <img alt="Flight Training Finance logo" class="h-12 sm:h-16 md:h-20" src={imgPartner.src}>
+      <Image
+        class="h-12 sm:h-16 md:h-20"
+        src={imgPartner}
+        alt="Flight Training Finance logo"
+        format={"webp"}
+      />
     </div>
     <div class="tracking-wider">
       <p class="pt-5">
