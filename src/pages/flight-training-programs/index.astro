@@ -6,6 +6,8 @@ import CardSmall from "@components/ui/cards/CardSmall.astro";
 import CardWide from "@components/ui/cards/CardWide.astro";
 import FeaturesStatsAlt from "@components/sections/features/FeaturesStatsAlt.astro";
 import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
+import CTA from "@/components/sections/misc/CTA.astro";
+import imgCTA from "../../assets/images/blue-skies-cessna-N1496M.webp";
 
 // Importing necessary functions from Astro
 import { getCollection } from "astro:content";
@@ -64,6 +66,20 @@ const pageTitle: string = `Programs | Blue Skies Above`;
 const metaDescription =
   "Discover flight training programs at Blue Skies Above, from Private Pilot to CFI. Learn with experienced instructors and efficient scheduling.";
 const ogTitle = "Pilot Training | Blue Skies Above";
+
+const ctaDiscovery = {
+  isRightSection: true,
+  title: "Ready to Take the Controls?",
+  subTitle: "Your aviation journey can begin today with a Discovery Flight at Blue Skies Above. Sit beside a certified instructor, take the controls, and experience the thrill of piloting an aircraft—no experience needed.\n\nIt’s more than a flight—it’s your first step into a new world of opportunity. See what it’s like to learn in our aircraft, meet our team, and explore whether becoming a pilot is the path for you.",
+  single: true,
+  imgOne: imgCTA,
+  imgOneAlt: "Flight training syllabus materials",
+  imgTwo: imgCTA,
+  imgTwoAlt: "Instructor with student at planning table",
+  btnExists: true,
+  btnTitle: "Book Now",
+  btnURL: "/discovery-flight",
+};
 ---
 
 <MainLayout
@@ -153,4 +169,6 @@ const ogTitle = "Pilot Training | Blue Skies Above";
     title="What Our Customers Say"
     testimonials={testimonials}
   />
+
+  <CTA content={ctaDiscovery} />
 </MainLayout>
