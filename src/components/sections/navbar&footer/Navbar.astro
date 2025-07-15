@@ -85,36 +85,68 @@ const homeUrl = "/";
     <!-- Contains navigation links -->
     <div
       id="navbar-collapse-with-animation"
-      class="hs-collapse hidden grow basis-full transition-all duration-300 md:block"
+      class="hs-collapse hidden grow basis-full overflow-hidden transition-all duration-300 md:block md:overflow-visible"
     >
       <!-- Navigation links container -->
       <div
-        class="relative flex flex-col gap-x-0 gap-y-3 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-x-4 md:gap-y-0 md:ps-7 lg:gap-x-7"
+        class="relative flex max-h-[70vh] flex-col gap-x-0 gap-y-3 overflow-y-auto md:mt-0 md:max-h-none md:flex-row md:items-center md:justify-end md:gap-x-4 md:gap-y-0 md:ps-7 lg:gap-x-7"
       >
         <!-- Navigation links and Authentication component -->
         {
-          strings.navBarLinks.map((link) => (
-            <div class="group relative">
-              <NavLink url={link.link} name={link.name} />
+          strings.navBarLinks.map((link, index) => (
+            <div class="hs-dropdown [--adaptive:none] [--auto-close:inside] [--is-collapse:true] [--strategy:static] md:inline-block md:[--adaptive:adaptive] md:[--is-collapse:false] md:[--strategy:fixed] md:[--trigger:hover]">
+              <a
+                id={`hs-dropdown-${index}`}
+                href={link.link}
+                class="hs-dropdown-toggle flex w-full items-center rounded-lg p-2 text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-hidden dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-label={link.name}
+                data-has-submenu={link.submenu ? "true" : "false"}
+              >
+                {link.name}
+                {link.submenu && (
+                  <svg
+                    class="hs-dropdown-open:-rotate-180 ms-auto size-4 shrink-0 duration-300 md:ms-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                )}
+              </a>
+
               {link.submenu && (
-                <ul class="border-picton-blue-100/90 bg-picton-blue-50/90 absolute left-0 z-50 mt-2 hidden min-w-[450px] flex-col rounded-lg p-4 pt-6 shadow-lg backdrop-blur-3xl group-hover:flex md:px-2 md:py-2 lg:px-2 dark:border-neutral-700/60 dark:bg-neutral-800/90 dark:backdrop-blur-3xl">
-                  {link.submenu.map((item) => (
-                    <li>
+                <div
+                  class="hs-dropdown-menu hs-dropdown-open:opacity-100 relative top-full z-10 hidden w-full opacity-0 transition-[opacity,margin] duration-[0.1ms] before:absolute before:start-0 before:-top-4 before:h-5 before:w-full md:w-80 md:rounded-lg md:bg-white md:shadow-md md:duration-[150ms] md:before:block dark:bg-neutral-800"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby={`hs-dropdown-${index}`}
+                >
+                  <div class="space-y-1 py-2 md:px-3">
+                    {link.submenu.map((item, subIndex) => (
                       <a
                         href={item.link}
-                        class="hover:bg-picton-blue-400 flex w-full items-center justify-start gap-4 px-4 py-2 text-start text-sm text-neutral-700 hover:rounded-2xl hover:text-white dark:text-neutral-200 dark:hover:bg-neutral-700"
+                        class="flex items-start gap-4 rounded-lg p-2 text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-hidden dark:text-neutral-200 dark:hover:bg-neutral-700 dark:hover:text-white dark:focus:bg-neutral-700"
                       >
                         <Icon name={item.icon} />
-                        <div class="flex flex-col gap-2">
-                          <span class="font-xl font-bold">{item.name}</span>
-                          <span class="font-sm w-full text-neutral-700 dark:text-white">
+                        <div class="flex flex-col gap-1">
+                          <span class="font-bold">{item.name}</span>
+                          <span class="text-xs text-neutral-700 dark:text-neutral-400">
                             {item.description}
                           </span>
                         </div>
                       </a>
-                    </li>
-                  ))}
-                </ul>
+                    ))}
+                  </div>
+                </div>
               )}
             </div>
           ))
@@ -139,6 +171,16 @@ const homeUrl = "/";
 
 <!-- Theme Appearance script to manage light/dark modes -->
 <script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a[data-has-submenu='true']").forEach((el) => {
+      el.addEventListener("click", (e) => {
+        const isMobile = window.matchMedia("(max-width: 767px)").matches;
+        if (isMobile) {
+          e.preventDefault();
+        }
+      });
+    });
+  });
   const HSThemeAppearance = {
     init() {
       const defaultTheme = "default";
