@@ -16,7 +16,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="given-name"
           placeholder="First Name"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
         />
       </div>
     </div>
@@ -31,7 +31,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="family-name"
           placeholder="Last Name"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
         />
       </div>
     </div>
@@ -46,7 +46,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="email"
           placeholder="Email Address"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
         />
       </div>
     </div>
@@ -66,7 +66,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="tel"
           placeholder="Phone Number"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
         />
       </div>
     </div>
@@ -85,7 +85,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           required
           id="interest-program"
           name="interest-program"
-          class="block font-extralight w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block font-extralight w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
         >
             <option value="Private Pilot Course">Private Pilot Course</option>
             <option value="Instrument Rating">Instrument Rating</option>
@@ -109,7 +109,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           required
           id="enrollment_previous_training"
           name="enrollment_previous_training"
-          class="block font-extralight w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block font-extralight w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
         >
             <option value="Never piloted an aircraft before">Never piloted an aircraft before</option>
             <option value="I've flown flight simulators or drones">I've flown flight simulators or drones</option>
@@ -131,7 +131,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           id="notes"
           rows="4"
           placeholder="Extra Information (Optional)"
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
         ></textarea>
       </div>
     </div>
@@ -161,12 +161,12 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         I agree to the <a
           href="/privacy-policy-terms-of-service"
           target="_blank"
-          class="text-primary-700 hover:text-mariner-700 font-semibold"
+          class="text-primary-700 hover:text-picton-blue-400 font-semibold"
           >Privacy Policy</a
         > and <a
           href="/privacy-policy-terms-of-service#terms-of-service"
           target="_blank"
-          class="text-primary-700 hover:text-mariner-700 font-semibold"
+          class="text-primary-700 hover:text-picton-blue-400 font-semibold"
           >Terms of Service</a
         > provided by the company. By providing my phone number, I agree to receive
         text notes from the business.
@@ -191,7 +191,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
     isChecked = !isChecked;
     hiddenInput.value = isChecked ? "yes" : "no";
     toggle.setAttribute("aria-checked", isChecked);
-    toggle.classList.toggle("bg-mariner-500", isChecked);
+    toggle.classList.toggle("bg-picton-blue-300", isChecked);
     toggle.classList.toggle("bg-gray-200", !isChecked);
     thumb.classList.toggle("translate-x-3.5", isChecked);
     thumb.classList.toggle("translate-x-0", !isChecked);
@@ -202,7 +202,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         "cursor-not-allowed",
         "bg-gray-400",
         "hover:bg-gray-400",
-        "hover:text-mariner-950",
+        "hover:text-picton-blue-700",
       );
     } else {
       submitBtn.disabled = true;
@@ -210,7 +210,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         "cursor-not-allowed",
         "bg-gray-400",
         "hover:bg-gray-400",
-        "hover:text-mariner-950",
+        "hover:text-picton-blue-700",
       );
     }
   });
@@ -219,7 +219,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
     "cursor-not-allowed",
     "bg-gray-400",
     "hover:bg-gray-400",
-    "hover:text-mariner-950",
+    "hover:text-picton-blue-700",
   );
   document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("enroll_form");
