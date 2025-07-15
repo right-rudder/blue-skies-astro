@@ -8,6 +8,20 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
 
+import CTA from "@/components/sections/misc/CTA.astro";
+import ctaImg from "../../assets/images/airplane-cockpit.webp"
+
+const ctaEnroll = {
+    isRightSection: false,
+    title: "Your Aviation Career is Cleared for Takeoff",
+    subTitle: "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
+    single: true,
+    img: ctaImg,
+    imgAlt: "Flight training syllabus materials",
+    btnExists: true,
+    btnTitle: "Enroll Now",
+    btnURL: "/enroll-at-blue-skies",
+}
 // Get all blogs post in English and sort them based on publish date
 
 const englishBlogEntries = await getCollection("blog", ({ id }) => {
@@ -122,4 +136,5 @@ const ogTitle = `The Blue Skies Blog | ${SITE.title}`;
       }
     </div>
   </section> -->
+  <CTA content={ctaEnroll} />
 </MainLayout>

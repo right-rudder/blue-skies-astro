@@ -1,4 +1,304 @@
-<div class="min-h-[400px] lg:min-h-[800px]">
+---
+const FORM_WEBHOOK_URL = import.meta.env.NEW_DISCOVERY_FLIGHT_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
+---
+
+<form class="mx-auto max-w-xl py-20" id="enroll_form">
+  <div class="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
+    <!-- First Name -->
+    <div>
+      <div class="mt-2.5">
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          autocomplete="given-name"
+          placeholder="First Name"
+          required
+          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+        />
+      </div>
+    </div>
+    
+    <!-- Last Name -->
+    <div>
+      <div class="mt-2.5">
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          autocomplete="family-name"
+          placeholder="Last Name"
+          required
+          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+        />
+      </div>
+    </div>
+    
+    <!-- Email -->
+    <div class="sm:col-span-2">
+      <div class="mt-2.5">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+          placeholder="Email Address"
+          required
+          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+        />
+      </div>
+    </div>
+    <p class="ohno">
+      <label>
+        Don't fill this out if you're human: <input name="confirm-email" />
+      </label>
+    </p>
+    
+    <!-- Phone -->
+    <div class="sm:col-span-2">
+      <div class="relative mt-2.5">
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          autocomplete="tel"
+          placeholder="Phone Number"
+          required
+          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+        />
+      </div>
+    </div>
+
+    <!-- Date and Time -->
+    <div class="sm:col-span-2">
+      <!-- Requested Date -->
+      <div class="mt-2.5">
+        <label
+          for="requested-date"
+          class="block mb-0 font-extralight text-gray-900 dark:text-white  py-2"
+        >
+          Requested Time*
+        </label>
+        <input 
+            type="date" 
+            id="requested-date"
+            name="requested-date"
+            value="2018-06-12T19:30"
+        >
+      </div>
+      <div class="mt-2.5">
+        <span class="text-red-500 font-light text-sm">PLEASE NOTE: WE ONLY ACCEPT DISCOVERY FLIGHT REQUESTS WITH 4 DAYS' NOTICE. Please do not choose a date within 4 days of today.</span>
+      </div>  
+
+      <!-- Requested Time-->
+      <div class="mt-2.5">
+        <label
+          for="request-time"
+          class="block mb-0 font-extralight text-gray-900 dark:text-white  py-2"
+        >
+          Requested Time*
+        </label>
+        <select
+          required
+          id="request-time"
+          name="request-time"
+          class="block font-extralight w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+        >
+            <option value="7A - 9AM">7A - 9AM</option>
+            <option value="9A - 11AM">9A - 11AM</option>
+            <option value="11A - 1PM">11A - 1PM</option>
+            <option value="1PM - 3PM">1PM - 3PM</option>
+        </select>
+      </div>
+      
+      <div class="mt-2.5">
+        <span class="text-red-500 font-light text-sm">This is a request, staff will contact you for confirmation on date and time.</span>
+      </div> 
+
+    </div>
+
+    <!-- Agreement -->
+    <div class="flex gap-x-4 sm:col-span-2">
+      <div class="flex h-6 items-center">
+        <button
+          type="button"
+          id="terms-toggle"
+          class="flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-primary-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 bg-gray-200"
+          role="switch"
+          aria-checked="false"
+          aria-labelledby="switch-1-label"
+        >
+          <span class="sr-only">
+            I agree to terms & conditions provided by the company.
+          </span>
+          <span
+            id="terms-thumb"
+            class="h-4 w-4 transform rounded-full bg-black shadow-sm ring-1 ring-gray-900/50 transition duration-200 ease-in-out translate-x-0"
+            aria-hidden="true"></span>
+        </button>
+        <input type="hidden" id="agree-terms" name="agree-terms" value="no" />
+      </div>
+      <label class="text-sm leading-6 text-black dark:text-white" id="switch-1-label">
+        I agree to the <a
+          href="/privacy-policy-terms-of-service"
+          target="_blank"
+          class="text-primary-700 hover:text-picton-blue-400 font-semibold"
+          >Privacy Policy</a
+        > and <a
+          href="/privacy-policy-terms-of-service#terms-of-service"
+          target="_blank"
+          class="text-primary-700 hover:text-picton-blue-400 font-semibold"
+          >Terms of Service</a
+        > provided by the company. By providing my phone number, I agree to receive
+        text notes from the business.
+      </label>
+    </div>
+
+  </div>
+  <div class="mt-10">
+    <button type="submit" id="submit-btn" class="btn-accent px-4 py-2 rounded-sm">SEND</button>
+  </div>
+</form>
+
+<script define:vars={{ FORM_WEBHOOK_URL, PORTAL_API_KEY, CP_ACCOUNT_RANDOM_ID }}>
+  const toggle = document.getElementById("terms-toggle");
+  const thumb = document.getElementById("terms-thumb");
+  const hiddenInput = document.getElementById("agree-terms");
+  const submitBtn = document.getElementById("submit-btn");
+
+  let isChecked = false;
+
+  toggle.addEventListener("click", () => {
+    isChecked = !isChecked;
+    hiddenInput.value = isChecked ? "yes" : "no";
+    toggle.setAttribute("aria-checked", isChecked);
+    toggle.classList.toggle("bg-picton-blue-400", isChecked);
+    toggle.classList.toggle("bg-gray-200", !isChecked);
+    thumb.classList.toggle("translate-x-3.5", isChecked);
+    thumb.classList.toggle("translate-x-0", !isChecked);
+
+    if (isChecked) {
+      submitBtn.disabled = false;
+      submitBtn.classList.remove(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+        "hover:text-picton-blue-700",
+      );
+    } else {
+      submitBtn.disabled = true;
+      submitBtn.classList.add(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+        "hover:text-picton-blue-700",
+      );
+    }
+  });
+  submitBtn.disabled = true;
+  submitBtn.classList.add(
+    "cursor-not-allowed",
+    "bg-gray-400",
+    "hover:bg-gray-400",
+    "hover:text-picton-blue-700",
+  );
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("enroll_form");
+    if (!form) {
+      console.error("Form element not found.");
+      return;
+    }
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+      const confirmEmail = formData.get("confirm-email")?.trim();
+      if (confirmEmail) return;
+
+      const webhookURL = FORM_WEBHOOK_URL;
+      const apiKey = PORTAL_API_KEY;
+      const cp_account_random_id = CP_ACCOUNT_RANDOM_ID;
+
+      const urlEncodedBody = new URLSearchParams(formData).toString();
+
+      const excludedFields = [
+        "first-name",
+        "last-name",
+        "email",
+        "phone",
+        "confirm-email",
+        "agree-terms",
+      ];
+
+      const metadata = {};
+
+      for (const [key, value] of formData.entries()) {
+        if (!excludedFields.includes(key)) {
+          metadata[key] = value?.trim?.() ?? value;
+        }
+      }
+
+      const jsonBody = {
+        first_name: formData.get("first-name")?.trim() || "",
+        last_name: formData.get("last-name")?.trim() || "",
+        email: formData.get("email")?.trim() || "",
+        phone: formData.get("phone")?.trim() || "",
+        campaign: "enrollment",
+        account_random_id: cp_account_random_id,
+        metadata: metadata,
+      };
+
+      try {
+        const [ghlRes, portalRes] = await Promise.all([
+          fetch(webhookURL, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: urlEncodedBody,
+          }),
+          fetch("https://portal.rightruddermarketing.com/api/leads", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+              "x-api-key": apiKey,
+            },
+            body: JSON.stringify(jsonBody),
+          }),
+        ]);
+
+        if (ghlRes.ok && portalRes.ok) {
+          window.location.href = "/contact-confirmation";
+        } else {
+          console.error("Submission failed", {
+            ghlStatus: ghlRes.status,
+            portalStatus: portalRes.status,
+          });
+        }
+      } catch (err) {
+        console.error("Submission error:", err);
+      }
+    });
+  });
+</script>
+
+<style>
+  .ohno {
+    @apply hidden;
+  }
+
+  .translate-x-3.5 {
+    transform: translateX(0.875rem); /* Tailwind's 3.5 = 14px */
+  }
+</style>
+
+
+
+<!-- <div class="min-h-[400px] lg:min-h-[800px]">
     <iframe
         src="https://msg.flightschoolcrm.com/widget/form/qgaZffMVOp7No2d3KEz1"
         style="width:100%;height:100%;border:none;border-radius:3px"
@@ -18,4 +318,4 @@
             >
     </iframe>
     <script src="https://msg.flightschoolcrm.com/js/form_embed.js"></script>
-</div>
+</div> -->

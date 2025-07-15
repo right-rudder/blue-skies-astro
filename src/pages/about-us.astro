@@ -7,6 +7,7 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 import AOSInit from '@/components/utils/AOSInit.jsx';
 import CTA from "@/components/sections/misc/CTA.astro";
+import NumbersAnimation from "@/components/sections/NumbersAnimation.astro";
 
 // Import necessary images
 import blueprints from "../assets/images/blue-skies-over-auburn.webp";
@@ -17,6 +18,7 @@ import aerialView from "../assets/images/student-getting-his-spin-endorsement.jp
 import usingTools from "../assets/images/multi-engine-plane.webp";
 import progressBuilding from "../assets/images/blue-skies-selfie-auburn-opelika.webp";
 import underConstruction from "../assets/images/blue-skies-ppl-private-pilot-checkride-pass.webp";
+import imgOurStory from "../assets/images/matthew-founder-blue-skies-school-flying.webp";
 import { SITE } from "@data/constants";
 
 interface Article {
@@ -37,61 +39,62 @@ interface Article {
 
 const articles: Article[] = [
   {
-    isRightSection: true,
-    title: "Flight Training That Works",
-    subTitle: "Blue Skies Above offers structured yet flexible programs that cater to future pilots at all levels. Our students experience a hands-on, real-world aviation environment guided by expert instructors.",
-    single: false,
-    imgOne: blueprints,
-    imgOneAlt: "Flight training syllabus materials",
-    imgTwo: personWorking,
-    imgTwoAlt: "Instructor with student at planning table",
-  },
-  {
-    isRightSection: false,
-    title: "A Legacy of Passionate Instruction",
-    subTitle: "Our team is made of career aviators who bring experience, passion, and patience to every lesson. We believe in making training effective and enjoyable.",
-    img: beforeAfter,
-    imgAlt: "Before and after images of confident pilot training",
-    btnExists: true,
-    btnTitle: "Meet the Team",
-    btnURL: "/our-team",
-  },
-  {
-    isRightSection: true,
-    title: "Strategic Location for Better Learning",
-    subTitle: "Operating from Lanett Regional (7A3) gives our students the advantage of less congested airspace, allowing for more takeoffs, landings, and meaningful flight time.",
-    single: false,
-    imgOne: constructionWorkers,
-    imgOneAlt: "Flight instructors with students near aircraft",
-    imgTwo: aerialView,
-    imgTwoAlt: "Aerial view of Lanett Regional Airport",
-    btnExists: true,
-    btnTitle: "Start training with no delay",
-    btnURL: "/discovery-flight",
-  },
-  {
-    isRightSection: false,
-    title: "Modern Fleet, Classic Values",
-    subTitle: "With Cessna 172s and Cherokee 140s, our fleet is dependable and perfectly suited for student pilots. Safety, comfort, and reliability come standard.",
-    img: usingTools,
-    imgAlt: "Student pilot using checklist inside cockpit",
-    btnExists: true,
-    btnTitle: "Meet our fleet",
-    btnURL: "/our-fleet",
-  },
-  {
-    isRightSection: true,
-    title: "From First Flight to Final Checkride",
-    subTitle: "Whether you're exploring aviation with a Discovery Flight or preparing for your checkride, we're with you every step of the way.",
-    single: false,
-    imgOne: progressBuilding,
-    imgOneAlt: "Progress bar overlay on training process",
-    imgTwo: underConstruction,
-    imgTwoAlt: "Student receiving instruction pre-flight",
-    btnExists: true,
-    btnTitle: "Start Your Training",
-    btnURL: "/enroll-at-blue-skies",
-  },
+  isRightSection: true,
+  title: "Flight Training That Works",
+  subTitle: "Blue Skies Above delivers a structured yet flexible training approach tailored to students of all experience levels. Whether you're brand new to aviation or working toward advanced ratings, our programs are designed to guide you step by step without wasting time or resources.\n\nStudents benefit from real-world flying scenarios, not just textbook theory. With a curriculum developed by seasoned instructors and an emphasis on hands-on learning, our training builds true confidence in the cockpit from the very first flight.",
+  single: false,
+  imgOne: blueprints,
+  imgOneAlt: "Flight training syllabus materials",
+  imgTwo: personWorking,
+  imgTwoAlt: "Instructor with student at planning table",
+},
+{
+  isRightSection: false,
+  title: "A Legacy of Passionate Instruction",
+  subTitle: "At Blue Skies Above, our instructors aren’t just certified—they’re committed. Many of our team members have spent their lives in aviation, and they bring that experience into every lesson with energy, patience, and purpose.\n\nWe believe effective training is built on trust, connection, and clear communication. That’s why our instructors strive to be mentors, not just teachers—helping students overcome challenges, celebrate wins, and stay motivated all the way to their final checkride.",
+  img: beforeAfter,
+  imgAlt: "Before and after images of confident pilot training",
+  btnExists: true,
+  btnTitle: "Meet the Team",
+  btnURL: "/our-team",
+},
+{
+  isRightSection: true,
+  title: "Strategic Location for Better Learning",
+  subTitle: "Our home base at Lanett Regional Airport (7A3) provides the perfect environment for accelerated learning. With minimal air traffic and wide-open skies, students enjoy more time in the air and less time on the ground waiting for clearance.\n\nThis means more takeoffs, more landings, and more opportunities to refine your skills in every lesson. The airport’s location also makes it a peaceful and focused setting for learning—ideal for both new students and time-building CFIs.",
+  single: false,
+  imgOne: constructionWorkers,
+  imgOneAlt: "Flight instructors with students near aircraft",
+  imgTwo: aerialView,
+  imgTwoAlt: "Aerial view of Lanett Regional Airport",
+  btnExists: true,
+  btnTitle: "Start training with no delay",
+  btnURL: "/discovery-flight",
+},
+{
+  isRightSection: false,
+  title: "Modern Fleet, Classic Values",
+  subTitle: "Our aircraft are selected to match both student needs and instructional goals. With dependable Cessna 172s and a classic Cherokee 140, our fleet is ideal for learning, progressing, and building real-world flying skills.\n\nEach plane is meticulously maintained to meet the highest safety standards. Paired with instructors who prioritize both technical accuracy and airmanship, your time in the cockpit is as productive as it is inspiring.",
+  img: usingTools,
+  imgAlt: "Student pilot using checklist inside cockpit",
+  btnExists: true,
+  btnTitle: "Meet our fleet",
+  btnURL: "/our-fleet",
+},
+{
+  isRightSection: true,
+  title: "From First Flight to Final Checkride",
+  subTitle: "Whether you're here for a once-in-a-lifetime Discovery Flight or a full pilot certification path, Blue Skies Above is with you from day one. We support every step of your journey, from pre-solo nerves to checkride confidence.\n\nEach milestone is a shared success. Our team celebrates your progress, adapts to your pace, and ensures you always know your next step forward. We’re not just building pilots—we’re shaping careers and lifelong memories.",
+  single: false,
+  imgOne: progressBuilding,
+  imgOneAlt: "Progress bar overlay on training process",
+  imgTwo: underConstruction,
+  imgTwoAlt: "Student receiving instruction pre-flight",
+  btnExists: true,
+  btnTitle: "Start Your Training",
+  btnURL: "/enroll-at-blue-skies",
+},
+
 ];
 
 const pageTitle: string = `About Us | ${SITE.title}`;
@@ -99,17 +102,17 @@ const metaDescription = "Learn more about Blue Skies Above Flight School — you
 const ogTitle = "About Blue Skies Above | Premier Flight Training in Alabama";
 
 const ctaDiscovery = {
-    isRightSection: true,
-    title: "Ready to Take the Controls?",
-    subTitle: "Book a Discovery Flight and experience the thrill of flying firsthand. You'll take the controls with an expert instructor and see the world from a whole new perspective.",
-    single: true,
-    imgOne: personWorking,
-    imgOneAlt: "Flight training syllabus materials",
-    imgTwo: beforeAfter,
-    imgTwoAlt: "Instructor with student at planning table",
-    btnExists: true,
-    btnTitle: "Book Now",
-    btnURL: "/discovery-flight",
+  isRightSection: true,
+  title: "Ready to Take the Controls?",
+  subTitle: "Your aviation journey can begin today with a Discovery Flight at Blue Skies Above. Sit beside a certified instructor, take the controls, and experience the thrill of piloting an aircraft—no experience needed.\n\nIt’s more than a flight—it’s your first step into a new world of opportunity. See what it’s like to learn in our aircraft, meet our team, and explore whether becoming a pilot is the path for you.",
+  single: true,
+  imgOne: personWorking,
+  imgOneAlt: "Flight training syllabus materials",
+  imgTwo: beforeAfter,
+  imgTwoAlt: "Instructor with student at planning table",
+  btnExists: true,
+  btnTitle: "Book Now",
+  btnURL: "/discovery-flight",
 };
 ---
 
@@ -191,6 +194,18 @@ const ctaDiscovery = {
       }
     ]}
   />
+  <div class="md:hidden">
+    <NumbersAnimation />
+  </div>
 
+  <LeftSection
+    title="Our Story"
+    subTitle="Blue Skies Above is a flight school born out of the mind of Chief Flight Instructor and Founder Matthew Bourguignon. Named after a catchphrase used in the past by his own flight instructor, Matthew chose to continue the tradition in his flight school. Blue Skies was a phrase used at the end of almost any conversation or call during his flight instruction and reminds Matthew of his former CFI, the biggest influence in Matthew's attraction to aviation."
+    img={imgOurStory}
+    imgAlt="{article.imgAlt}"
+    btnExists={false}
+    btnTitle="{article.btnTitle}"
+    btnURL="{article.btnURL}"
+    />
   <CTA content={ctaDiscovery}  />
 </MainLayout>

@@ -2,6 +2,8 @@
 import LeadershipMembers from "@/components/sections/teams/LeadershipMembers.astro";
 import TeamMembers from "@/components/sections/teams/TeamMembers.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
+import MainSection from "@/components/ui/blocks/MainSection.astro";
+import CTA from "@/components/sections/misc/CTA.astro";
 import { SITE } from "@data/constants";
 
 // Import Necessary imagesImages
@@ -18,7 +20,8 @@ import Jaymes from "../assets/images/cfi-jaymes.webp";
 import Connor from "../assets/images/cfi-connor.webp";
 import Sammy from "../assets/images/a&p-sammy.webp";
 import Lola from "../assets/images/lola.webp";
-
+import noPicture from "../assets/images/profile-silhouette.webp";
+import ctaImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-training.webp";
 
 const pageTitle: string = `Our Team | ${SITE.title}`;
 const metaDescription = "Meet the dedicated team of instructors and staff at Blue Skies Above Flight School in Lanett, Alabama.";
@@ -38,18 +41,30 @@ const leadershipMembers = {
     {
       name: "Kate Roberts",
       role: "Operations Supervisor",
-      description: `Kate is a Knoxville Tennessee Native who grew up passionate about aviation. Kate's father was a navigator on KC-135s, which sparked her interest in flying. She is planning to graduate from Auburn University with a degree in Aviation Management in December 2024. Kate is currently an instrument rated private pilot finishing her commercial at Blue Skies Above. In her free time she enjoys riding motorcycles, being outdoors, and hanging out with her dog "Goose".`,
+      description: `Kate Roberts is our Operations Supervisor and licensed Commercial Pilot with a degree Aviation Management from Auburn University. With a strong foundation in aviation operations, safety compliance, and coordination, Kate combines hands-on leadership with technical expertise.  Kate is passionate about operational excellence and fostering the next generation of aviation professionals.`,
       imagePath: kateR.src,
       imageAlt: "",
     },
     {
-      name: "A.J. Dorizas",
-      role: "Training Coordinator",
-      description: `A.J. is currently serving as a training coordinator at Blue Skies Above. His journey in aviation began at Auburn University, where he majored in aviation management. Over the past three years, AJ has worked as a firefighter, cultivating his leadership skills and deepening his commitment to serving his community. Additionally, as the founder and president of "Fit for Flight," he inspires fellow aviation students to prioritize their physical health and mental well-being. AJ's dedication to fostering a healthier future for aspiring aviators reflects his desire to make a meaningful impact in the aviation world.`,
-      imagePath: ajD.src,
+      name: "Joseph Neil",
+      role: "Chief Instructor",
+      description: ` Joseph “Joe” Neil serves as the Chief Pilot at our flight school, bringing over five years of experience in the aviation industry. Born and raised in Lanett, Alabama, Joe has a strong mechanical background and a hands-on approach to aviation training. His passion for flight, safety, and mentoring new pilots sets the tone for a supportive and professional learning environment. Whether you're just starting your aviation journey or advancing your skills, Joe’s knowledge and dedication make him a trusted leader and resource in the cockpit and on the ground.`,
+      imagePath: Joe.src,
       imageAlt: "",
     },
   ],
+};
+
+const ctaEnroll = {
+    isRightSection: true,
+    title: "Your Aviation Career is Cleared for Takeoff",
+    subTitle: "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
+    single: true,
+    imgOne: ctaImg,
+    imgOneAlt: "Flight training syllabus materials",
+    btnExists: true,
+    btnTitle: "Enroll Now",
+    btnURL: "/enroll-at-blue-skies",
 };
 
 const teamMembers = {
@@ -58,13 +73,33 @@ const teamMembers = {
   team: [
     { name: "Matthew", role: "Fixed Wing CFI, CFII", imagePath: matthewB.src, imageAlt: "", },
     { name: "Joe", role: "Lead Instructor - Fixed Wing CFI, CFII, MEI", imagePath: Joe.src, imageAlt: "",  },
-    { name: "Paul", role: "Fixed Wing CFI", imagePath: Paul.src, imageAlt: "", },
-    { name: "Allison", role: "Fixed Wing CFI", imagePath: Allison.src, imageAlt: "", },
-    { name: "Bailey", role: "Fixed Wing CFI", imagePath: Bailey.src, imageAlt: "", },
+    // { name: "Paul", role: "Fixed Wing CFI", imagePath: Paul.src, imageAlt: "", },
+    { name: "Allison", role: "Fixed Wing CFI, CFII", imagePath: Allison.src, imageAlt: "", },
+    { name: "Bailey", role: "Assistant Chief, Fixed Wing CFI", imagePath: Bailey.src, imageAlt: "", },
     { name: "Travasha", role: "Fixed Wing CFI", imagePath: Travasha.src, imageAlt: "", },
-    { name: "Lyle", role: "Fixed Wing CFI", imagePath: Lyle.src, imageAlt: "", },
+    // { name: "Lyle", role: "Fixed Wing CFI", imagePath: Lyle.src, imageAlt: "", },
     { name: "Jaymes", role: "Fixed Wing CFI, CFII", imagePath: Jaymes.src, imageAlt: "", },
-    { name: "Connor", role: "Fixed Wing CFI", imagePath: Connor.src, imageAlt: "", },
+    { name: "Connor", role: "Fixed Wing CFI, CFII", imagePath: Connor.src, imageAlt: "", },
+  ],
+};
+
+const officeStaffMembers = {
+  title: "Office Staff",
+  description: `Our administrative team at Blue Skies Above ensures smooth operations both on the ground and in the air. They handle everything from scheduling and logistics to customer support, creating a welcoming and efficient environment for our students and instructors.`,
+  team: [
+    {
+      name: "A.J. Dorizas",
+      role: "Training Coordinator",
+      description: `A.J. is currently serving as a training coordinator at Blue Skies Above. His journey in aviation began at Auburn University, where he majored in aviation management. Over the past three years, AJ has worked as a firefighter, cultivating his leadership skills and deepening his commitment to serving his community. Additionally, as the founder and president of "Fit for Flight," he inspires fellow aviation students to prioritize their physical health and mental well-being. AJ's dedication to fostering a healthier future for aspiring aviators reflects his desire to make a meaningful impact in the aviation world.`,
+      imagePath: ajD.src,
+      imageAlt: "",
+    },
+    {
+      name: "Lola Waldrup",
+      role: "Intern",
+      imagePath: Lola.src,
+      imageAlt: "",
+    },
   ],
 };
 
@@ -79,9 +114,9 @@ const maintenanceMembers = {
       imageAlt: "",
     },
     {
-      name: "Lola",
+      name: "Gideon Chism",
       role: "A&P Apprentice",
-      imagePath: Lola.src,
+      imagePath: noPicture.src,
       imageAlt: "",
     },
   ],
@@ -110,8 +145,16 @@ const maintenanceMembers = {
   }}
 > 
 
+  <MainSection
+    title="Meet the Blue Skies Above Team"
+    subTitle="Passionate aviators, dedicated mentors, and the hearts behind our flight school — get to know the team guiding your aviation journey."
+    btnExists={true}
+    btnTitle="Join Our Team"
+    btnURL="/join-team"
+  />
     <LeadershipMembers content={leadershipMembers} />
     <TeamMembers content={teamMembers} />
+    <TeamMembers content={officeStaffMembers} />
     <TeamMembers content={maintenanceMembers} />
-
+    <CTA content={ctaEnroll}  />
 </MainLayout>

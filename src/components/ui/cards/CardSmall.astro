@@ -22,7 +22,7 @@ const imageClass =
     ? `/${programLocale}/flight-training-programs/${program.id.replace(/^fr\//, "")}/`
     : `/flight-training-programs/${program.id.replace(/^en\//, "")}/`}
   data-astro-prefetch
-  class="group relative flex h-48 items-end overflow-hidden rounded-xl shadow-lg ring-zinc-500 outline-hidden focus-visible:ring-3 md:h-80 dark:ring-zinc-200 dark:focus:outline-hidden"
+  class="group relative flex h-48 items-end overflow-hidden rounded-xl shadow-lg outline-hidden  focus-visible:ring-3 md:h-80 dark:ring-zinc-200 dark:focus:outline-hidden hover:ring-picton-blue-300 dark:hover:ring-picton-blue-400 hover:ring-3"
 >
   <!-- The program's main image -->
   <Image
@@ -41,7 +41,10 @@ const imageClass =
   </div>
   <!-- The program's subtitle and the anchor SVG icon-->
   <span
-    class="relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
+    class="z-10 py-4 px-4 group-hover:text-picton-blue-300 dark:group-hover:text-picton-blue-400 relative mb-3 ml-4 inline-block text-sm font-bold text-neutral-50 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] group-hover:scale-110 md:ml-5 md:text-lg"
     >{program.data.title} <Icon name="openInNew" />
   </span>
+  
+  <!-- Translucent overlay -->
+  <div class="hidden group-hover:block group-hover:absolute inset-0 bg-neutral-900/40 transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)]"></div>  
 </a>

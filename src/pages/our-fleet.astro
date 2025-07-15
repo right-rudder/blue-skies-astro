@@ -8,7 +8,10 @@ import airplane2 from "../assets/images/cessna-n246sp.webp";
 import airplane3 from "../assets/images/cessna-n5225d.webp";
 import airplane4 from "../assets/images/cessna-n717g.webp";
 import airplane5 from "../assets/images/cessna-n738sr.webp";
+import ctaImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-training.webp";
+import imgLeft from "../assets/images/blue-skies-above-student-pilot-passing-cfi-checkride.webp";
 import { imageMetadata } from "astro/assets/utils";
+import CTA from "@/components/sections/misc/CTA.astro";
 
 interface Post {
   id: string;
@@ -30,53 +33,93 @@ const post: Post = {
   },
 };
 
-const Content = `
-  <p>At Blue Skies Above, we believe that great pilots are made in great aircraft. That's why we've carefully curated a fleet of modern, well-equipped Cessna 172s to support every step of your aviation journey. From your very first flight to your advanced instrument and commercial ratings, our aircraft provide a safe, reliable, and enjoyable platform for learning. Each plane is meticulously maintained to the highest standards, ensuring you can focus on what matters most: mastering the art of flight.</p>
-  <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"id="n717g">N717G – Cessna 172N</h2>
-  <div class="h-64 rounded-2xl" data-aos="fade-up"> 
-    <img src=${airplane4.src} alt="N717G Cessna 172N" class="w-3/3 h-3/3 object-cover rounded-2xl"  />
-  </div>
-  <p><strong>Power:</strong> 160HP<br/>
-     <strong>Features:</strong> Dual G5 / G530 Nav System</p>
-  <p class="btn-accent"><a href="/enroll-at-blue-skies">Like this plane? Come fly it!</a></p>
+const fleet = [
+  {
+    id: "n717g",
+    title: "N717G – Cessna 172N",
+    description: "Our most popular trainer featuring a modern G530/G5 glass cockpit upgrade. Perfect for students transitioning to advanced avionics while maintaining the legendary 172 reliability. The 160HP engine offers excellent fuel efficiency for cross-country training.",
+    power: "160HP",
+    features: "Dual G5 / G530 Nav System",
+    imagePath: airplane4.src,
+    imageAlt: "N717G Cessna 172N Skyhawk",
+    ctaLink: "/enroll-at-blue-skies",
+    ctaText: "Like this plane? Come fly it!"
+  },
+  {
+    id: "n5378d",
+    title: "N5378D – Cessna 172N",
+    description: "This high-performance 180HP Skyhawk delivers extra climb power for mountain flying and hot weather operations. The G430/G5 combo provides perfect IFR training capability at an affordable rental rate. Our go-to aircraft for commercial pilot candidates.",
+    power: "180HP",
+    features: "Dual G5 / G430 Nav System",
+    imagePath: airplane3.src,
+    imageAlt: "N5378D Cessna 172N Skyhawk with 180HP engine",
+    ctaLink: "/enroll-at-blue-skies",
+    ctaText: "Like this plane? Come fly it!"
+  },
+  {
+    id: "n5225d",
+    title: "N5225D – Cessna 172N",
+    description: "Identical to N5378D but with a different panel configuration, this 180HP warrior handles like a dream. Recently refurbished interior and the most booked aircraft in our fleet. Perfect balance of power and economy for both VFR and IFR training.",
+    power: "180HP",
+    features: "Dual G5 / G430 Nav System",
+    imagePath: airplane1.src,
+    imageAlt: "N5225D Cessna 172N with glass cockpit",
+    ctaLink: "/enroll-at-blue-skies",
+    ctaText: "Like this plane? Come fly it!"
+  },
+  {
+    id: "n738sr",
+    title: "N738SR – Cessna 172N",
+    description: "Our hybrid glass cockpit featuring the Dynon Skyview system paired with a G530. Ideal for pilots wanting large-screen situational awareness with traditional nav capabilities. The 160HP engine makes this our most economical IFR trainer.",
+    power: "160HP",
+    features: "Dynon Skyview / G530 Nav System",
+    imagePath: airplane5.src,
+    imageAlt: "N738SR Cessna 172N with Dynon Skyview",
+    ctaLink: "/enroll-at-blue-skies",
+    ctaText: "Like this plane? Come fly it!"
+  },
+  {
+    id: "n246sp",
+    title: "N246SP – Cessna 172N",
+    description: "The crown jewel of our fleet with dual Dynon Skyview HDX displays and GTN 650 touchscreen. This 180HP powerhouse combines modern glass cockpit technology with increased performance. Perfect for advanced training and transitioning to high-performance aircraft.",
+    power: "180HP",
+    features: "Dual Dynon Skyview / GTN 650 Touch Screen",
+    imagePath: airplane2.src,
+    imageAlt: "N246SP Cessna 172N with full glass panel",
+    ctaLink: "/enroll-at-blue-skies",
+    ctaText: "Like this plane? Come fly it!"
+  }
+];
 
-  <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"id="n5378d">N5378D – Cessna 172N</h2>
-  <div class="h-64"> 
-    <img src=${airplane3.src} alt="N717G Cessna 172N" class="w-3/3 h-3/3 object-cover rounded-2xl"/>
-  </div>
-  <p><strong>Power:</strong> 180HP<br/>
-     <strong>Features:</strong> Dual G5 / G430 Nav System</p>
-  <p class="btn-accent"><a href="/enroll-at-blue-skies">Like this plane? Come fly it!</a></p>
+const ContentMap = fleet.map((item) => `
+    <div class="py-2">
+      <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"id=${item.id}>${item.title}</h2>
+      <div class="h-64 rounded-2xl" data-aos="fade-up"> 
+        <img src=${item.imagePath} alt=${item.imageAlt} class="w-3/3 h-3/3 object-cover rounded-2xl"  />
+      </div>
+      <p><strong>Power:</strong> ${item.power}<br/>
+      <strong>Features:</strong> ${item.features}</p>
+      <p>${item.description}</p>
+      <p class="btn-accent"><a href="/enroll-at-blue-skies">Like this plane? Come fly it!</a></p>
+     </div>
+`);
 
-  <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"id="n5225d">N5225D – Cessna 172N</h2>
-  <div class="h-64"> 
-    <img src=${airplane1.src} alt="N717G Cessna 172N" class="w-3/3 h-3/3 object-cover rounded-2xl"/>
-  </div>
-  <p><strong>Power:</strong> 180HP<br/>
-     <strong>Features:</strong> Dual G5 / G430 Nav System</p>
-  <p class="btn-accent"><a href="/enroll-at-blue-skies">Like this plane? Come fly it!</a></p>
-
-  <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"id="n738sr">N738SR – Cessna 172N</h2>
-  <div class="h-64"> 
-    <img src=${airplane5.src} alt="N717G Cessna 172N" class="w-3/3 h-3/3 object-cover rounded-2xl"/>
-  </div>
-  <p><strong>Power:</strong> 160HP<br/>
-     <strong>Features:</strong> Dynon Skyview / G530 Nav System</p>
-  <p class="btn-accent"><a href="/enroll-at-blue-skies">Like this plane? Come fly it!</a></p>
-
-  <h2 class="mb-4 text-balance text-4xl font-extrabold tracking-tight text-neutral-800 dark:text-neutral-200"id="n246sp">N246SP – Cessna 172N</h2>
-  <div class="h-64"> 
-    <img src=${airplane2.src} alt="N717G Cessna 172N" class="w-3/3 h-3/3 object-cover rounded-2xl"/>
-  </div>
-  <p><strong>Power:</strong> 180HP<br/>
-     <strong>Features:</strong> Dual Dynon Skyview / GTN 650 Touch Screen</p>
-  <p class="btn-accent"><a href="/enroll-at-blue-skies">Like this plane? Come fly it!</a></p>
-`;
+const ctaEnroll = {
+    isRightSection: true,
+    title: "Your Aviation Career is Cleared for Takeoff",
+    subTitle: "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
+    single: true,
+    imgOne: ctaImg,
+    imgOneAlt: "Flight training syllabus materials",
+    btnExists: true,
+    btnTitle: "Enroll Now",
+    btnURL: "/enroll-at-blue-skies",
+}
 
 
 const pageTitle: string = `${post.data.title} | ${SITE.title}`;
 const metaDescription = post.data.description;
-const ogTitle = `${post.data.title} | Insights | ${SITE.title}`;
+const ogTitle = `${post.data.title} | ${SITE.title}`;
 ---
 
 
@@ -133,10 +176,20 @@ const ogTitle = `${post.data.title} | Insights | ${SITE.title}`;
               ></div>
             </div>
             <p class="text-sm text-pretty text-neutral-500">
-              Table of Contents:
+              Our aircraft:
             </p>
             <div id="toc">
               <ul class="space-y-2 text-base text-pretty text-neutral-700 transition duration-300 dark:text-neutral-400"></ul>
+            </div>
+            
+            <div class="pr-10 pt-10" data-aos="fade-down-right">
+              <Image
+                class="h-full w-full object-cover rounded-2xl rounded-2xlobject-center"
+                src={imgLeft}
+                alt={post.data.cardImageAlt}
+                draggable={"false"}
+                format={"avif"}
+              />
             </div>
           </div>
         </div>
@@ -147,11 +200,13 @@ const ogTitle = `${post.data.title} | Insights | ${SITE.title}`;
           </h1>
 
           <article class="text-lg text-pretty text-neutral-700 dark:text-neutral-300">
-            <Fragment set:html={Content} />
+            <p><p>At Blue Skies Above, we believe that great pilots are made in great aircraft. That's why we've carefully curated a fleet of modern, well-equipped Cessna 172s to support every step of your aviation journey. From your very first flight to your advanced instrument and commercial ratings, our aircraft provide a safe, reliable, and enjoyable platform for learning. Each plane is meticulously maintained to the highest standards, ensuring you can focus on what matters most: mastering the art of flight.</p></p>
+            <Fragment set:html={ContentMap} />
           </article>
         </div>
       </div>
     </div>
+    <CTA content={ctaEnroll} />
   </section>
 </MainLayout>
 
@@ -278,7 +333,7 @@ const ogTitle = `${post.data.title} | Insights | ${SITE.title}`;
   });
 
   const SVG_HTML_STRING =
-    '<svg class="w-0 h-0 flex-none" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fa5a15"><path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></svg>';
+    '<svg class="w-0 h-0 flex-none text-picton-blue-700 dark:text-picton-blue-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></svg>';
 
   function setActiveLinkById(id: string | null) {
     const listItems = document.querySelectorAll("#toc li");

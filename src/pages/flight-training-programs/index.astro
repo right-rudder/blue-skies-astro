@@ -6,6 +6,8 @@ import CardSmall from "@components/ui/cards/CardSmall.astro";
 import CardWide from "@components/ui/cards/CardWide.astro";
 import FeaturesStatsAlt from "@components/sections/features/FeaturesStatsAlt.astro";
 import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
+import CTA from "@/components/sections/misc/CTA.astro";
+import imgCTA from "../../assets/images/blue-skies-cessna-N1496M.webp";
 
 // Importing necessary functions from Astro
 import { getCollection } from "astro:content";
@@ -26,8 +28,8 @@ const program: CollectionEntry<"trainingPrograms">[] = (
 );
 
 const title: string = "Flight Training Programs";
-const subTitle: string =
-  "Explore the rewarding journey of becoming a pilot with Blue Skies Above. Whether you're flying for fun or starting your career in aviation, our programs are designed to get you in the sky quickly, safely, and confidently.";
+const subTitle: string = "Explore the rewarding journey of becoming a pilot with Blue Skies Above. Whether you're flying for fun or starting your career in aviation, our programs are designed to get you in the sky quickly, safely, and confidently.";
+const description: string = "At Blue Skies Above, we offer a range of comprehensive flight training programs tailored to your goals — from Private Pilot to Commercial and CFI certifications. Our experienced instructors, modern fleet, and efficient training environment help you progress at your own pace while maintaining the highest safety standards. Whether you're taking your first flight or preparing for a career in aviation, our structured yet flexible programs will support you every step of the way.";
 
 // Testimonial data that will be rendered in the component
 const testimonials = [
@@ -64,6 +66,20 @@ const pageTitle: string = `Programs | Blue Skies Above`;
 const metaDescription =
   "Discover flight training programs at Blue Skies Above, from Private Pilot to CFI. Learn with experienced instructors and efficient scheduling.";
 const ogTitle = "Pilot Training | Blue Skies Above";
+
+const ctaDiscovery = {
+  isRightSection: true,
+  title: "Ready to Take the Controls?",
+  subTitle: "Your aviation journey can begin today with a Discovery Flight at Blue Skies Above. Sit beside a certified instructor, take the controls, and experience the thrill of piloting an aircraft—no experience needed.\n\nIt’s more than a flight—it’s your first step into a new world of opportunity. See what it’s like to learn in our aircraft, meet our team, and explore whether becoming a pilot is the path for you.",
+  single: true,
+  imgOne: imgCTA,
+  imgOneAlt: "Flight training syllabus materials",
+  imgTwo: imgCTA,
+  imgTwoAlt: "Instructor with student at planning table",
+  btnExists: true,
+  btnTitle: "Book Now",
+  btnURL: "/discovery-flight",
+};
 ---
 
 <MainLayout
@@ -97,16 +113,36 @@ const ogTitle = "Pilot Training | Blue Skies Above";
   <div
     class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
   >
-    <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
-      <div class="flex items-center gap-12">
+    {/* Features statistics section */}
+    <FeaturesStatsAlt
+      title="Why Choose Blue Skies Above?"
+      subTitle="Whether you're dreaming of taking flight for the first time or aiming for a professional aviation career, Blue Skies Above gives you the tools, training, and confidence to soar."
+      benefits={[
+        "Efficient training in low-traffic airspace for faster learning.",
+        "Experienced and passionate instructors who make training fun and personal.",
+        "Diverse fleet including Cessna 172s and Cherokee 140 for tailored instruction.",
+        "Flexible programs for private, commercial, instrument, and instructor ratings.",
+        "Community-driven with events like youth flights, fly-ins, and holiday flyovers.",
+        "Transparent pricing and personalized flight plans to match your goals.",
+      ]}
+      btnExists={true}
+      btnTitle="Our Programs"
+      btnURL="#programs"
+    />
+    <div class="mb-4 flex flex-col items-start justify-between gap-8 sm:mb-8 md:mb-12">
+      <div class="flex flex-col items-start gap-6 pr-5">
         <h1
-          class="text-2xl font-bold tracking-tight text-balance text-neutral-800 md:text-4xl md:leading-tight dark:text-neutral-200"
+          class="text-2xl font-bold tracking-tight text-balance text-picton-blue-600 dark:text-picton-blue-400 md:text-4xl md:leading-tight dark:text-neutral-200"
         >
           {title}
-        </h1>
+        </h1>  
+        <p class="dark:text-neutral-300">{description}</p>
       </div>
-      <PrimaryCTA title="Customer Stories" url="#testimonials" noArrow={true} />
+      <div class="w-3/4">
+        <PrimaryCTA title="Customer Stories" url="#testimonials" noArrow={true} />
+      </div>
     </div>
+  
     {
       /* Displaying programs in alternating styles. Alternative program gets different card styling.
     Maps through all program entries and displays them with either CardSmall or CardWide based on their position. */
@@ -127,23 +163,12 @@ const ogTitle = "Pilot Training | Blue Skies Above";
       }
     </section>
   </div>
-  {/* Features statistics section */}
-  <FeaturesStatsAlt
-    title="Why Choose Blue Skies Above?"
-    subTitle="Whether you're dreaming of taking flight for the first time or aiming for a professional aviation career, Blue Skies Above gives you the tools, training, and confidence to soar."
-    benefits={[
-      "Efficient training in low-traffic airspace for faster learning.",
-      "Experienced and passionate instructors who make training fun and personal.",
-      "Diverse fleet including Cessna 172s and Cherokee 140 for tailored instruction.",
-      "Flexible programs for private, commercial, instrument, and instructor ratings.",
-      "Community-driven with events like youth flights, fly-ins, and holiday flyovers.",
-      "Transparent pricing and personalized flight plans to match your goals.",
-    ]}
-  />
 
   {/* Testimonials section */}
   <TestimonialsSectionAlt
     title="What Our Customers Say"
     testimonials={testimonials}
   />
+
+  <CTA content={ctaDiscovery} />
 </MainLayout>

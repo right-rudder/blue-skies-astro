@@ -1,67 +1,21 @@
 ---
+import FormJoinTeam from "../forms/FormJoinTeam.astro"
 import imgTeam from "../../assets/images/blue-skies-team-of-cfis-and-commercial-pilots.webp"
+import { Image } from "astro:assets";
 ---
-<section class="flex flex-col items-center">
-  <div class="max-w-4xl flex flex-col py-10 px-5">
-    <h3 class="text-5xl font-header uppercase font-semibold">Get Started on Your Pilot Career</h3>
-    <h4 class="text-2xl text-gray-800 py-5">Are you a CFI looking to gain experience in the aviation industry?</h4>
-    <p class="text-lg text-gray-700">Start your pilot career put your commercial certificate to good use. Start flying now and build the necessary hours to achieve your goals.  Whether that's flying in general aviation, or veering off to the Part 121, Part 135 world. Being a CFI at Blue Skies Above offers a valuable opportunity to rapidly accumulate flight experience and meet the requirements of obtaining your ATP certificate. </p>
-    <p class="text-lg text-gray-700 pt-10">
-      It is a great opportunity that allows you to apply all the knowledge and skills acquired during your own flight training. Flight instructors play a crucial role as ambassadors of the aviation community, imparting their knowledge and experience to their students. For many, it serves as their first aviation job that not only is an invaluable experience but also provides compensation.
-    </p>
-    <p class="text-lg text-gray-700 pt-10">
-      If you're interested in joining our team, please apply through our <a href="https://www.linkedin.com/company/blue-skies-above/jobs/" class="text-blue-900 underline" target="_blank">LinkedIn</a> or fill out the form below. We look forward to hearing from you!
-    </p>
-    <div class="pt-6">
-      <a href="https://www.linkedin.com/company/blue-skies-above/jobs/" target="_blank" class="btn-primary uppercase">
-        Apply Now
-      </a>
-    </div>
-  </div>
-</section>
-<section class="bg-white" id="contact">
-  <h1 class="font-bold text-4xl pt-10 text-center">Apply to Join <br class="lg:hidden">Blue Skies Above</h1>
-  <div class="lg:flex lg:flex-row-reverse items-center lg:items-start">
-  
 
-    <div class="mx-10 lg:px-16 lg:w-1/2">
-      <form class="" action="/messages" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Qgwi_Ipc2ZBCrNXW68mQat0jarCjEyHQujI8G-DlWYSyckSchAx7aDzmGPI8531nRunH-eq1uDczEvmSFSFkGw" autocomplete="off">
-
-  <div class="my-5">
-    <label class="" for="message_name">Name</label>
-    <input class="block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" type="text" name="message[name]" id="message_name">
-  </div>
-
-  <div class="my-5">
-    <label class="" for="message_email">Email</label>
-    <input class="block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" type="email" name="message[email]" id="message_email">
-  </div>
-
-  <div class="confirm_email_1750953573"><style media="screen">.confirm_email_1750953573 {position:absolute!important;top:-9999px;left:-9999px;}</style><label for="message_confirm_email">If you are a human, ignore this field</label><input type="text" name="message[confirm_email]" id="message_confirm_email" autocomplete="off" tabindex="-1"><input type="hidden" name="spinner" value="4b2923645a8f50d9fdf5bba87178b25f" autocomplete="off"></div>
-
-  <div class="my-5">
-    <label class="" for="message_phone">Phone</label>
-    <input placeholder="###-###-####" class="placeholder:text-slate-300 block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" type="text" name="message[phone]" id="message_phone">
-  </div>
-
-  <div class="my-5">
-      <span class="">Tell us about yourself and why you want to be a join the Blue Skies Above team</span>
-    <textarea rows="4" class="block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-custom-500 focus:ring-custom-500" name="message[body]" id="message_body"></textarea>
-  </div>
-
-    <input value="cfi" autocomplete="off" type="hidden" name="message[page]" id="message_page">
-
-    <!--<div class="mb-10"></div>-->
-
-  <div class="inline">
-    <input type="submit" name="commit" value="SEND MESSAGE" class="btn-primary mb-10" data-disable-with="SEND MESSAGE">
-  </div>
-</form>      
-    </div>
-
-    <div class="mx-0 lg:w-1/2">
-      <img class="lg:pb-10 lg:pt-5 lg:pl-5" alt="team photo" src={imgTeam.src}>
-    </div>
+<section class="" id="program">
+  <h1 class="font-bold text-4xl pt-10 text-center py-10 dark:text-white">Apply to Join <br class="lg:hidden">Blue Skies Above</h1>
+  <div class="lg:flex lg:flex-row-reverse items-center lg:items-center justify-baseline">
+    
+    <Image
+      class="w-1/2 rounded-xl"
+      src={imgTeam}
+      alt=""
+      draggable={"false"}
+      format={"avif"}
+    />
+    <FormJoinTeam />
 
   </div>
 </section>
