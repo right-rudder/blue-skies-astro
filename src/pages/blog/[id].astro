@@ -11,7 +11,9 @@ import { capitalize, formatDate } from "@utils/utils";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
+import CTA from "@/components/sections/misc/CTA.astro";
 
+import ctaImg from "../../assets/images/blue-skies-cessna-in-clouds.webp";
 // Update getStaticPaths for English posts
 export async function getStaticPaths() {
   const blogPosts = await getCollection("blog", ({ id }) =>
@@ -46,6 +48,20 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
 // For the meta description, use the first paragraph of content if available
 const metaDescription = post.data.contents[0]?.paragraph || `Read ${post.data.title} on ScrewFast's blog`;
 const ogTitle = `${post.data.title} | Blog | ${SITE.title}`;
+
+const ctaDiscovery = {
+    isRightSection: true,
+    title: "Ready to Take the Controls?",
+    subTitle: "Book a Discovery Flight and experience the thrill of flying firsthand. You'll take the controls with an expert instructor and see the world from a whole new perspective.",
+    single: true,
+    imgOne: ctaImg,
+    imgOneAlt: "Flight training syllabus materials",
+    imgTwo: ctaImg,
+    imgTwoAlt: "Instructor with student at planning table",
+    btnExists: true,
+    btnTitle: "Book Now",
+    btnURL: "/discovery-flight",
+};
 ---
 
 <MainLayout
@@ -175,11 +191,11 @@ const ogTitle = `${post.data.title} | Blog | ${SITE.title}`;
         </div>
       </div>
     </div>
-    <PostFeedback
+    <!-- <PostFeedback
       title="Was this post helpful?"
       firstChoice="Yes"
       secondChoice="No"
-    />
+    /> -->
   </section>
 
   {/* Related articles section */}
@@ -193,7 +209,9 @@ const ogTitle = `${post.data.title} | Blog | ${SITE.title}`;
     </div>
 
     <div class="grid grid-cols-2 gap-6">
-      {relatedPosts.map((entry) => <CardRelated blogEntry={entry} />)}
+      {relatedPosts.sort(() => 0.5 - Math.random()).slice(0, 2).map((entry) => <CardRelated blogEntry={entry} />)}
     </div>
   </section>
+  
+  <CTA content={ctaDiscovery} />
 </MainLayout>
