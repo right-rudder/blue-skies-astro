@@ -1,4 +1,4 @@
-import ogImageSrc from "@images/social.png";
+import ogImageSrc from "@images/blue-skies-logo.webp";
 import imgPartner1 from "@images/partner-blue-skies-fsana-logo.webp";
 import imgPartner2 from "@images/partner-blue-skies-gleim.webp";
 import imgPartner3 from "@images/partner-blue-skies-nafi-logo.webp";
@@ -7,9 +7,9 @@ import imgPartner5 from "@images/parner-eaa-logo.webp";
 
 export const SITE = {
   title: "Blue Skies Above | Lanett, Alabama",
-  tagline: "",
-  description: "",
-  description_short: "",
+  tagline: "Your Aviation Journey Starts Here.",
+  description: "Blue Skies Above is a premier flight school in Lanett, Alabama, offering comprehensive flight training for all levels. From your first discovery flight to advanced ratings like Commercial Pilot and CFI, our experienced instructors and modern Cessna fleet are here to help you achieve your aviation goals. Start your journey with us and experience the freedom of the skies.",
+  description_short: "Premier flight school in Lanett, AL, offering flight training from discovery flights to advanced pilot ratings.",
   url: "https://flytheblueskies.com",
   author: "",
 };
@@ -38,8 +38,8 @@ export const OG = {
   locale: "en_US",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Hardware Tools & Construction Services`,
-  description: "Equip your projects with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
+  title: SITE.title,
+  description: SITE.description_short,
   image: ogImageSrc,
 };
 
