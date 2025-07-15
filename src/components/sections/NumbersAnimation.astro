@@ -1,0 +1,52 @@
+---
+const counters = [
+  { target: 10000, suffix: '+', label: 'Hours of combined experience' },
+  { target: 95, suffix: '%', label: 'Checkride pass rate' },
+  { target: 100, suffix: '+', label: 'Students graduated from Blue Skies Above' },
+];
+---
+
+<section class=" w-full">
+  <div class="flex gap-5 w-full items-center md:items-start">
+    {
+      counters.map(counter => (
+        <div class="lg:w-1/3 hover:scale-105  transition-all duration-300 text-picton-blue-400 dark:text-picton-blue-400 rounded-lg flex flex-col items-center md:items-start">
+          
+          <div class="font-bold text-4xl counter" data-target={counter.target} data-suffix={counter.suffix}>
+            0{counter.suffix}
+          </div>
+          <p class="pb-5 text-neutral-600 dark:text-neutral-400 text-center md:text-left">{counter.label}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach((el) => {
+      const element = el as HTMLElement; // ✅ fix: cast to HTMLElement
+
+      const target = parseInt(element.dataset.target || '0');
+      const suffix = element.dataset.suffix || '';
+      let count = 0;
+      const duration = 2000;
+      const stepTime = 20;
+      const steps = duration / stepTime;
+      const increment = target / steps;
+
+      const updateCount = () => {
+        count += increment;
+        if (count >= target) {
+          count = target;
+          clearInterval(timer);
+        }
+        element.textContent = `${Math.round(count).toLocaleString()}${suffix}`;
+      };
+
+      const timer = setInterval(updateCount, stepTime);
+    });
+  });
+</script>
+

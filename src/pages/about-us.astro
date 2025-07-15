@@ -7,6 +7,7 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 import AOSInit from '@/components/utils/AOSInit.jsx';
 import CTA from "@/components/sections/misc/CTA.astro";
+import NumbersAnimation from "@/components/sections/NumbersAnimation.astro";
 
 // Import necessary images
 import blueprints from "../assets/images/blue-skies-over-auburn.webp";
@@ -193,6 +194,9 @@ const ctaDiscovery = {
       }
     ]}
   />
+  <div class="md:hidden">
+    <NumbersAnimation />
+  </div>
 
   <LeftSection
     title="Our Story"

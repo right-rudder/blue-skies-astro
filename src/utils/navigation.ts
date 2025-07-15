@@ -109,7 +109,7 @@ const navBarLinks = [
       },
       {
         name: "Why Blue Skies Above?",
-        link: "/about-us",
+        link: "/why-choose-blue-skies-above",
         description:
           "The only local flight school with a Cesna fleet. When you're here, you're family",
         icon: "community",

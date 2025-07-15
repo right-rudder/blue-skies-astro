@@ -11,6 +11,8 @@ import VerticalPricing from "@/components/VerticalPricing.astro";
 import VideoSection from "@components/ui/blocks/VideoSection.astro";
 import FormMultiEngineInterest from "@/components/forms/FormMultiEngineInterest.astro";
 import MultiEngineInterest from "@/components/sections/misc/MultiEngineInterest.astro";
+import CTA from "@/components/sections/misc/CTA.astro";
+import imgCTA from "src/assets/images/blue-skies-cessna-in-clouds.webp";
 
 // Global declaration for gsap animation library
 declare global {
@@ -39,6 +41,18 @@ const { program } = Astro.props;
 const pageTitle: string = `${program.data.title} | ${SITE.title}`;
 const metaDescription = program.data.description;
 const ogTitle = `${program.data.title} | Blue Skies Above`;
+
+const ctaDiscovery = {
+  isRightSection: false,
+  title: "Fly now with Blue Skies Above",
+  subTitle: "Take your first step into the cockpit. A Discovery Flight is your opportunity to fly a plane with an expert instructor and discover the thrill of aviation for yourself.",
+  single: true,
+  img: imgCTA,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Get Started",
+  btnURL: "/discovery-flights",
+};
 ---
 
 <MainLayout
@@ -291,6 +305,7 @@ const ogTitle = `${program.data.title} | Blue Skies Above`;
 
   {["Multi-Engine Rating", "Multi-Engine Instructor"].includes(program.data.title) && <MultiEngineInterest programTitle={program.data.title} />}
 
+  <CTA content={ctaDiscovery} />
 </MainLayout>
 
 <script>
