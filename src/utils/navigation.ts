@@ -44,13 +44,13 @@ const navBarLinks = [
         name: "Instrument Rating",
         link: "/flight-training-programs/instrument-rating-ifr",
         description: "Advance your navigation abilities and opportunities",
-        icon: "puzzle",
+        icon: "cloud",
       },
       {
         name: "Commercial Pilot",
         link: "/flight-training-programs/commercial-pilot-certificate-cpl",
         description: "Make flying your career",
-        icon: "plane",
+        icon: "money",
       },
       {
         name: "Multi Engine Rating",
@@ -62,20 +62,20 @@ const navBarLinks = [
         name: "Multi Engine Instructor (MEI)",
         link: "/flight-training-programs/multi-engine-instructor-mei",
         description: "Learn how to instruct in multi-engine aircraft",
-        icon: "plane",
+        icon: "passport",
       },
       {
         name: "CFI",
         link: "/flight-training-programs/certified-flight-instructor-cfi",
         description: "Teach what you know to the next class of pilots",
-        icon: "plane",
+        icon: "graduation",
       },
       {
         name: "CFII",
         link: "/flight-training-programs/certified-flight-instructor-instrument-cfii",
         description:
           "Bring student pilots to the next level with instrument rating",
-        icon: "puzzle",
+        icon: "cloud",
       },
       {
         name: "CFI Spin Endorsement",
@@ -92,8 +92,8 @@ const navBarLinks = [
       {
         name: "About us ",
         link: "/about-us",
-        description: "Meet the Blue Skies Above",
-        icon: "plane",
+        description: "Learn more about Blue Skies Above",
+        icon: "graduation",
       },
       {
         name: "Our Team",
@@ -133,14 +133,14 @@ const navBarLinks = [
         link: "/financing",
         description:
           "Learn about financing options for your flight training at Blue Skies Above",
-        icon: "community",
+        icon: "money",
       },
       {
         name: "Leaseback Program",
         link: "/leaseback-program",
         description:
           "Earn money while you're not flying your aircraft. Learn more about our leaseback program",
-        icon: "question",
+        icon: "plane",
       },
     ],
   },
