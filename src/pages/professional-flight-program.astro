@@ -4,10 +4,16 @@ import { SITE } from "@data/constants";
 import headerImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-training.webp";
 import CTA from "@/components/sections/misc/CTA.astro";
 import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
+import MainSection from "@/components/ui/blocks/MainSection.astro";
+import RightSection from "@/components/ui/blocks/RightSection.astro";
 // import AOSInit from "@/components/utils/AOSInit.astro";
 import FormProfessionalFlight from "@components/forms/FormProfessionalFlight.astro";
 import ProfessionalFlightProgramComponent from "@components/sections/misc/ProfessionalFlightProgram.astro"
 
+
+import blueskiesover from "src/assets/images/blue-skies-over-auburn.webp";
+import imgRight from "../assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
+import imgRight2 from "../assets/images/blue-skies-cessna-in-airport.webp";
 const pageTitle: string = `Professional Flight Program vs. University | ${SITE.title}`;
 const metaDescription = "Discover the advantages of a Part 61 flight school like Blue Skies Above over a university pro flight program. Save time, money, and expand your career options.";
 const ogTitle = "Professional Flight Program vs. University | Blue Skies Above";
@@ -69,16 +75,24 @@ const benefits = [
     }}
 > 
   <!-- <AOSInit is:client="load" /> -->
-    <HeroSectionAlt
+    <!-- <HeroSectionAlt
         title="Considering a University Professional Flight Program?"
         subTitle="Explore the benefits of completing your flight training at a Part 61 school like Blue Skies Above instead. Take control of your future, your timeline, and your budget."
         btnTitle="Get Started"
         url="/enroll-at-blue-skies"
+    /> -->
+
+    <MainSection
+        title="Considering a University Professional Flight Program?"
+        subTitle="Explore the benefits of completing your flight training at a Part 61 school like Blue Skies Above instead. Take control of your future, your timeline, and your budget."
+        btnExists={true}
+        btnTitle="Get Started"
+        btnURL="/enroll-at-blue-skies"
     />
 
-    <div class="py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl lg:text-center">
+    <div class="">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col md:flex-row items-center gap-5">
+            <div class="mx-auto max-w-2xl text-center md:text-left">
                 <p class="text-base font-semibold leading-7 text-accent-300 uppercase text-picton-blue-500">A Smarter Path to the Cockpit</p>
                 <h2 class="mt-2 text-3xl font-bold tracking-tight text-muted-700 sm:text-4xl">
                     Is a University Pro Flight Program Right for You?
@@ -104,6 +118,18 @@ const benefits = [
             </div>
         </div>
     </div>
+    <RightSection
+        title="A Smarter Path to the Cockpit"
+        subTitle="University flight programs can be costly, rigid, and limiting. At Blue Skies Above, we offer a more flexible and affordable alternative through our Part 61 training model. Earn your pilot certifications on your own schedule, for a fraction of the cost — all while pursuing a separate degree or career path for long-term stability.\n\nOur training gives you complete control over your pace, budget, and future. Avoid the overwhelming debt of university programs, and build a more resilient aviation career with the freedom and focus you deserve."
+        single={false}
+        imgOne={imgRight}
+        imgOneAlt="Flight Training Finance brochure with pen"
+        imgTwo={imgRight2}
+        imgTwoAlt="Smiling student reviewing financing documents"
+        btnExists={true}
+        btnTitle="Apply"
+        btnURL="#program"
+    />
     <ProfessionalFlightProgramComponent />
     <CTA content={ctaEnroll} />
 </MainLayout>
