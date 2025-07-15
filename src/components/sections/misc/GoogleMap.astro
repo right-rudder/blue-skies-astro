@@ -1,5 +1,7 @@
 ---
-
+import ContactIconBlock from "@components/ui/blocks/ContactIconBlock.astro";
+import Icon from "@components/ui/icons/Icon.astro";
+import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 ---
 
 <section
@@ -23,11 +25,26 @@
     >
         Our Location 
     </h2>
-    <span class="text-picton-blue-600 dark:text-picton-blue-400 uppercase">Based at Lanett Regional Airport (7A3) — Lanett, Alabama </span>
     <p
       class="mb-4 max-w-prose font-normal text-pretty text-neutral-600 sm:text-lg dark:text-neutral-400"
     >
       Blue Skies Above operates out of Lanett Regional Airport (7A3), strategically located near the Alabama–Georgia border. Our location offers an exceptional training environment with uncongested airspace, allowing students to maximize flight hours without the delays common at busier airports. Nestled between major Class C and D airports, our students gain hands-on experience with both controlled and uncontrolled airspace—ideal for building real-world radio and navigation skills. With year-round flyable weather, fast turnaround between flights, and easy access from Auburn, Columbus, and Atlanta suburbs, Lanett provides the perfect blend of convenience, safety, and focused instruction.
     </p>
+    
+    <div class="w-full flex flex-col md:flex-row gap-5 justify-between items-start md:items-center">
+      
+      <a href="https://maps.app.goo.gl/9y7f3UvVHVLp7VUD6" target="_blank" rel="noopener noreferrer">
+        <ContactIconBlock
+          heading="Visit Blue Skies Above Today"
+          content="7A3 - Lanett Municipal Airport"
+          isAddressVisible={true}
+          addressContent="4445 51st Ave SW, Lanett, Alabama 36863"
+          ><Icon name="mapPin" />
+        </ContactIconBlock>
+      </a>
+      <div>
+        <PrimaryCTA title="Come Visit Us" url="/contact" />
+      </div>
+    </div>
   </div>
 </section>

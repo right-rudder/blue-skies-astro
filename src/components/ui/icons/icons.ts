@@ -602,4 +602,60 @@ export const Icons = {
     strokeLinejoin: "round",
     stroke: "currentColor",
   },
+  cloud: {
+    paths: [
+      {
+        d:"M14.381 9.027a5.8 5.8 0 0 1 1.905-.321c.654 0 1.283.109 1.87.309m-11.04 2.594a4.4 4.4 0 0 0-.83-.08C3.919 11.53 2 13.426 2 15.765S3.919 20 6.286 20h10C19.442 20 22 17.472 22 14.353c0-2.472-1.607-4.573-3.845-5.338M7.116 11.609a5.6 5.6 0 0 1-.354-1.962C6.762 6.528 9.32 4 12.476 4c2.94 0 5.361 2.194 5.68 5.015m-11.04 2.594a4.3 4.3 0 0 1 1.55.634",
+      },
+    ],
+    class: "mt-1 size-5 shrink-0",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
+  money: {
+    paths: [
+      {
+        d:"M4 6.8V8H2.8A1.8 1.8 0 0 0 1 9.8v8.4A1.8 1.8 0 0 0 2.8 20h16.4a1.8 1.8 0 0 0 1.8-1.8V17h1.2c.992 0 1.8-.808 1.8-1.8V6.8c0-.992-.808-1.8-1.8-1.8H5.8C4.808 5 4 5.808 4 6.8M6 7v1h13.2A1.8 1.8 0 0 1 21 9.8V15h1V7zm3 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0",
+      },
+    ],
+    class: "mt-1 size-5 shrink-0",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
+  graduation: {
+    paths: [
+      {
+        d:"M12 2L0 9l12 7l10-5.833V17.5h2V9zM3.999 13.49V18a9.99 9.99 0 0 0 8 4A9.99 9.99 0 0 0 20 18v-4.509l-8 4.667z",
+      },
+    ],
+    class: "mt-1 size-5 shrink-0",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
+  passport: {
+    paths: [
+      {
+        d:"M18.5 5.5h2v18h-17v-20c8.5-1 14.75-3 14.75-3h.25zm0 0H6m10.5 9A4.5 4.5 0 0 0 12 10m4.5 4.5A4.5 4.5 0 0 1 12 19m4.5-4.5c-.5.5-2 1-4.5 1s-4-.5-4.5-1M12 10a4.5 4.5 0 0 0-4.5 4.5M12 10c.966 0 1.75 2.015 1.75 4.5S12.966 19 12 19m0-9c-.966 0-1.75 2.015-1.75 4.5S11.034 19 12 19m-4.5-4.5A4.5 4.5 0 0 0 12 19",
+      },
+    ],
+    class: "mt-1 size-5 shrink-0",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeWidth: "1.5",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    stroke: "currentColor",
+  },
 };
