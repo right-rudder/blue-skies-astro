@@ -1,15 +1,18 @@
 ---
 import { Image } from "astro:assets";
 import product5 from "../../../assets/images/blue-skies-airliner-cockpit.webp";
-
+import PrimaryCTA from "@/components/ui/buttons/PrimaryCTA.astro";
 // Define props from Astro
-const { title, subTitle, benefits } = Astro.props;
+const { title, subTitle, benefits, btnExists, btnTitle, btnURL } = Astro.props;
 
 // Define TypeScript interface for props
 interface Props {
   title: string;
   subTitle?: string;
   benefits?: Array<string>;
+  btnExists?: boolean;
+  btnTitle?: string;
+  btnURL?: string;
 }
 
 // Define SVG marker to be used in the component
@@ -54,6 +57,7 @@ const ListItemMarker: string = `<svg fill="none" viewBox="0 0 24 24" stroke-widt
             </ul>
           )
         }
+        {btnExists ? <PrimaryCTA title={btnTitle} url={btnURL} /> : null}
       </div>
     </div>
   </div>
