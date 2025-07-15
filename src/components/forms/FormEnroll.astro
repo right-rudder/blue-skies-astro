@@ -1,5 +1,5 @@
 ---
-const ENROLL_FORM_WEBHOOK_URL = import.meta.env.NEW_ENROLL_FORM_WEBHOOK_URL;
+const FORM_WEBHOOK_URL = import.meta.env.NEW_ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
 ---
@@ -179,7 +179,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
   </div>
 </form>
 
-<script define:vars={{ ENROLL_FORM_WEBHOOK_URL, PORTAL_API_KEY, CP_ACCOUNT_RANDOM_ID }}>
+<script define:vars={{ FORM_WEBHOOK_URL, PORTAL_API_KEY, CP_ACCOUNT_RANDOM_ID }}>
   const toggle = document.getElementById("terms-toggle");
   const thumb = document.getElementById("terms-thumb");
   const hiddenInput = document.getElementById("agree-terms");
@@ -235,7 +235,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
       const confirmEmail = formData.get("confirm-email")?.trim();
       if (confirmEmail) return;
 
-      const webhookURL = ENROLL_FORM_WEBHOOK_URL;
+      const webhookURL = FORM_WEBHOOK_URL;
       const apiKey = PORTAL_API_KEY;
       const cp_account_random_id = CP_ACCOUNT_RANDOM_ID;
 
