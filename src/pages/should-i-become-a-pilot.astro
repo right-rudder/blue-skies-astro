@@ -11,79 +11,106 @@ import CTA from "@/components/sections/misc/CTA.astro";
 // import AOSInit from "@/components/utils/AOSInit.astro";
 
 const pageTitle: string = `Why become a pilot | ${SITE.title}`;
-const metaDescription = "With a global pilot shortage, there's never been a better time to fly. Learn why becoming a pilot is a great career choice at Blue Skies Above Flight School.";
+const metaDescription =
+  "With a global pilot shortage, there's never been a better time to fly. Learn why becoming a pilot is a great career choice at Blue Skies Above Flight School.";
 const ogTitle = "Why become a pilot | Blue Skies Above Flight School";
 
 const ctaEnroll = {
-    isRightSection: false,
-    title: "Your Aviation Career is Cleared for Takeoff",
-    subTitle: "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
-    single: true,
-    img: headerImg,
-    imgAlt: "Flight training syllabus materials",
-    btnExists: true,
-    btnTitle: "Enroll Now",
-    btnURL: "/enroll-at-blue-skies",
-}
+  isRightSection: false,
+  title: "Your Aviation Career is Cleared for Takeoff",
+  subTitle:
+    "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
+  single: true,
+  img: headerImg,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Enroll Now",
+  btnURL: "/enroll-at-blue-skies",
+};
 
 const ctaDiscovery = {
-    isRightSection: true,
-    title: "Ready to Take the Controls?",
-    subTitle: "Book a Discovery Flight and experience the thrill of flying firsthand. You'll take the controls with an expert instructor and see the world from a whole new perspective.",
-    single: true,
-    imgOne: headerImg,
-    imgOneAlt: "Flight training syllabus materials",
-    imgTwo: headerImg,
-    imgTwoAlt: "Instructor with student at planning table",
-    btnExists: true,
-    btnTitle: "Book Now",
-    btnURL: "/discovery-flight",
+  isRightSection: true,
+  title: "Ready to Take the Controls?",
+  subTitle:
+    "Book a Discovery Flight and experience the thrill of flying firsthand. You'll take the controls with an expert instructor and see the world from a whole new perspective.",
+  single: true,
+  imgOne: headerImg,
+  imgOneAlt: "Flight training syllabus materials",
+  imgTwo: headerImg,
+  imgTwoAlt: "Instructor with student at planning table",
+  btnExists: true,
+  btnTitle: "Book Now",
+  btnURL: "/discovery-flight",
 };
 
 const videoWhyBecomePilot = {
-    title: "Why I chose aviation as a career",
-    description: "Learn what inspired Kate Roberts to pursue a career in aviation, and the passion that drives her journey. Discover how her experiences shaped her path and why she chose to turn her love for flying into a lifelong profession.",
-}
+  title: "Why I chose aviation as a career",
+  description:
+    "Learn what inspired Kate Roberts to pursue a career in aviation, and the passion that drives her journey. Discover how her experiences shaped her path and why she chose to turn her love for flying into a lifelong profession.",
+};
 ---
 
-<MainLayout 
-    title={pageTitle}
-    customDescription={metaDescription}
-    customOgTitle={ogTitle}
-    structuredData={{
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "",
-        url: "",
-        name: "About Blue Skies Above",
-        description: metaDescription,
-        isPartOf: {
-        "@type": "WebSite",
-        url: "",
-        name: SITE.title,
-        description: metaDescription,
-        },
-        inLanguage: "en-US",
-    }}
-> <!-- <AOSInit is:client="load" /> -->
-    <HeaderAlt />
-    <!-- Video -->
-    <div>
-        <div class="mx-auto flex gap-10 text-picton-blue-500 py-10 max-w-7xl px-6 lg:px-8 items-center lg:flex-row flex-col w-full">
-            <div class="lg:flex-1 flex flex-col gap-5 text-center lg:text-left">
-            <h3 class="font-bold text-3xl lg:text-5xl" data-aos="fade-left" data-aos-delay={300}>{videoWhyBecomePilot.title}</h3>
-            <h4 class="lg:text-xl text-black dark:text-white" data-aos="fade-left" data-aos-delay={500}>{videoWhyBecomePilot.description}</h4>
-            </div>
-            <div class="lg:flex-1 lg:aspect-w-full lg:aspect-h-full h-full lg:h-60" data-aos="fade-right" data-aos-delay={500}>
-                <iframe src="https://tube.rvere.com/embed?v=CYIcdKHQAUw" class="w-full h-full rounded-xl" title="Why I Chose Aviation as a Career" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-            </iframe>
-            </div>
-        </div>
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "",
+    url: "",
+    name: "About Blue Skies Above",
+    description: metaDescription,
+    isPartOf: {
+      "@type": "WebSite",
+      url: "",
+      name: SITE.title,
+      description: metaDescription,
+    },
+    inLanguage: "en-US",
+  }}
+>
+  <HeaderAlt />
+  <div>
+    <div
+      class="mx-auto grid max-w-[85rem] items-center gap-8 px-4 py-10 sm:px-6 sm:py-16 md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 lg:px-8 lg:py-14 xl:gap-16 2xl:max-w-full"
+    >
+      <div class="order-2 mt-4 md:order-1 md:mt-0">
+        <h3
+          class="mb-4 text-4xl font-extrabold tracking-tight text-balance text-neutral-800 dark:text-neutral-200"
+          data-aos="fade-left"
+        >
+          {videoWhyBecomePilot.title}
+        </h3>
+        <h4
+          class="mb-4 max-w-prose font-normal text-pretty text-neutral-600 sm:text-lg dark:text-neutral-400"
+          data-aos="fade-left"
+          data-aos-delay={100}
+        >
+          {videoWhyBecomePilot.description}
+        </h4>
+      </div>
+      <div
+        class="order-1 aspect-video flex-1 md:order-2"
+        data-aos="fade-right"
+        data-aos-delay={100}
+      >
+        <iframe
+          src="https://tube.rvere.com/embed?v=CYIcdKHQAUw"
+          class="aspect-video w-full rounded-xl"
+          title="Why I Chose Aviation as a Career"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen=""
+        >
+        </iframe>
+      </div>
     </div>
-    <CTA content={ctaEnroll} />
-    <!-- Add Why -->
-    <WhyBecomePilot />
-    <!-- Add courses -->
-    <FAQ title="Frequently<br>asked questions" faqs={faqs} />
-    <CTA content={ctaDiscovery} />
+  </div>
+  <CTA content={ctaEnroll} />
+  <!-- Add Why -->
+  <WhyBecomePilot />
+  <!-- Add courses -->
+  <FAQ title="Frequently<br>asked questions" faqs={faqs} />
+  <CTA content={ctaDiscovery} />
 </MainLayout>

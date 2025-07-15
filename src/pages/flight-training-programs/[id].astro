@@ -45,7 +45,8 @@ const ogTitle = `${program.data.title} | Blue Skies Above`;
 const ctaDiscovery = {
   isRightSection: false,
   title: "Fly now with Blue Skies Above",
-  subTitle: "Take your first step into the cockpit. A Discovery Flight is your opportunity to fly a plane with an expert instructor and discover the thrill of aviation for yourself.",
+  subTitle:
+    "Take your first step into the cockpit. A Discovery Flight is your opportunity to fly a plane with an expert instructor and discover the thrill of aviation for yourself.",
   single: true,
   img: imgCTA,
   imgAlt: "Flight training syllabus materials",
@@ -102,7 +103,7 @@ const ctaDiscovery = {
         <Image
           id="fadeInMoveRight"
           src={program.data.main.imgMain}
-          class="w-[600px]"
+          class="w-[600px] rounded-xl"
           alt={program.data.main.imgAlt}
           format={"avif"}
           loading={"eager"}
@@ -303,7 +304,11 @@ const ctaDiscovery = {
   {program.data.pricing && <HorizontalPricing data={program.data} />}
   {program.data.pricing1 && <VerticalPricing data={program.data} />}
 
-  {["Multi-Engine Rating", "Multi-Engine Instructor"].includes(program.data.title) && <MultiEngineInterest programTitle={program.data.title} />}
+  {
+    ["Multi-Engine Rating", "Multi-Engine Instructor"].includes(
+      program.data.title,
+    ) && <MultiEngineInterest programTitle={program.data.title} />
+  }
 
   <CTA content={ctaDiscovery} />
 </MainLayout>

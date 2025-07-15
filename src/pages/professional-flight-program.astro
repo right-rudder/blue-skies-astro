@@ -8,128 +8,151 @@ import MainSection from "@/components/ui/blocks/MainSection.astro";
 import RightSection from "@/components/ui/blocks/RightSection.astro";
 // import AOSInit from "@/components/utils/AOSInit.astro";
 import FormProfessionalFlight from "@components/forms/FormProfessionalFlight.astro";
-import ProfessionalFlightProgramComponent from "@components/sections/misc/ProfessionalFlightProgram.astro"
-
+import ProfessionalFlightProgramComponent from "@components/sections/misc/ProfessionalFlightProgram.astro";
 
 import blueskiesover from "src/assets/images/blue-skies-over-auburn.webp";
 import imgRight from "../assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
 import imgRight2 from "../assets/images/blue-skies-cessna-in-airport.webp";
 const pageTitle: string = `Professional Flight Program vs. University | ${SITE.title}`;
-const metaDescription = "Discover the advantages of a Part 61 flight school like Blue Skies Above over a university pro flight program. Save time, money, and expand your career options.";
+const metaDescription =
+  "Discover the advantages of a Part 61 flight school like Blue Skies Above over a university pro flight program. Save time, money, and expand your career options.";
 const ogTitle = "Professional Flight Program vs. University | Blue Skies Above";
 
 const ctaEnroll = {
-    isRightSection: false,
-    title: "Ready to Start Your Career?",
-    subTitle: "Take control of your training timeline and budget. Enroll at Blue Skies Above and get on the fast track to becoming a professional pilot.",
-    single: true,
-    img: headerImg,
-    imgAlt: "Pilot looking out of a cockpit window at the clouds",
-    btnExists: true,
-    btnTitle: "Enroll Now",
-    btnURL: "/enroll-at-blue-skies",
+  isRightSection: false,
+  title: "Ready to Start Your Career?",
+  subTitle:
+    "Take control of your training timeline and budget. Enroll at Blue Skies Above and get on the fast track to becoming a professional pilot.",
+  single: true,
+  img: headerImg,
+  imgAlt: "Pilot looking out of a cockpit window at the clouds",
+  btnExists: true,
+  btnTitle: "Enroll Now",
+  btnURL: "/enroll-at-blue-skies",
 };
 
 const benefits = [
-    {
-        title: "Recession-Proof Your Career",
-        description: "Earn a separate, non-aviation degree as a backup while completing your certifications and ratings at our Part 61 school. This gives you career flexibility that university aviation programs can't match.",
-        icon: `<svg class="h-6 w-6 text-picton-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" /></svg>`
-    },
-    {
-        title: "Save Time and Money",
-        description: "Many students in university flight programs accumulate up to $500,000 in student loans. At Blue Skies Above, you can go from zero experience to a certified professional for under $100,000.",
-        icon: `<svg class="h-6 w-6 text-picton-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.826-1.106-2.156 0-2.982l.879-.659m7.5 0a9 9 0 11-15 0 9 9 0 0115 0z" /></svg>`
-    },
-    {
-        title: "Expand Your Career Options",
-        description: "A university pro flight program often results in a degree solely in aviation. Choosing a different major while training with us provides greater stability in case of industry downturns, medical disqualifications, or furloughs.",
-        icon: `<svg class="h-6 w-6 text-picton-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6.375a.75.75 0 01.75.75v1.5a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v-1.5A.75.75 0 019 6.75zM9 12.75h6.375a.75.75 0 01.75.75v1.5a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v-1.5a.75.75 0 01.75-.75z" /></svg>`
-    },
-    {
-        title: "Flexibility and Control",
-        description: "Our Part 61 program is built around your schedule, not a rigid university calendar. Start anytime, fly as often as you like, and progress at a pace that works for you.",
-        icon: `<svg class="h-6 w-6 text-picton-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18M12 12.75h.008v.008H12v-.008z" /></svg>`
-    }
+  {
+    title: "Recession-Proof Your Career",
+    description:
+      "Earn a separate, non-aviation degree as a backup while completing your certifications and ratings at our Part 61 school. This gives you career flexibility that university aviation programs can't match.",
+    icon: `<svg class="h-6 w-6 text-picton-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" /></svg>`,
+  },
+  {
+    title: "Save Time and Money",
+    description:
+      "Many students in university flight programs accumulate up to $500,000 in student loans. At Blue Skies Above, you can go from zero experience to a certified professional for under $100,000.",
+    icon: `<svg class="h-6 w-6 text-picton-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.826-1.106-2.156 0-2.982l.879-.659m7.5 0a9 9 0 11-15 0 9 9 0 0115 0z" /></svg>`,
+  },
+  {
+    title: "Expand Your Career Options",
+    description:
+      "A university pro flight program often results in a degree solely in aviation. Choosing a different major while training with us provides greater stability in case of industry downturns, medical disqualifications, or furloughs.",
+    icon: `<svg class="h-6 w-6 text-picton-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6.375a.75.75 0 01.75.75v1.5a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v-1.5A.75.75 0 019 6.75zM9 12.75h6.375a.75.75 0 01.75.75v1.5a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v-1.5a.75.75 0 01.75-.75z" /></svg>`,
+  },
+  {
+    title: "Flexibility and Control",
+    description:
+      "Our Part 61 program is built around your schedule, not a rigid university calendar. Start anytime, fly as often as you like, and progress at a pace that works for you.",
+    icon: `<svg class="h-6 w-6 text-picton-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18M12 12.75h.008v.008H12v-.008z" /></svg>`,
+  },
 ];
 ---
 
-<MainLayout 
-    title={pageTitle}
-    customDescription={metaDescription}
-    customOgTitle={ogTitle}
-    structuredData={{
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "",
-        url: "",
-        name: "Professional Flight Program vs. University | Blue Skies Above",
-        description: metaDescription,
-        isPartOf: {
-        "@type": "WebSite",
-        url: "",
-        name: SITE.title,
-        description: metaDescription,
-        },
-        inLanguage: "en-US",
-    }}
-> 
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "",
+    url: "",
+    name: "Professional Flight Program vs. University | Blue Skies Above",
+    description: metaDescription,
+    isPartOf: {
+      "@type": "WebSite",
+      url: "",
+      name: SITE.title,
+      description: metaDescription,
+    },
+    inLanguage: "en-US",
+  }}
+>
   <!-- <AOSInit is:client="load" /> -->
-    <!-- <HeroSectionAlt
+  <!-- <HeroSectionAlt
         title="Considering a University Professional Flight Program?"
         subTitle="Explore the benefits of completing your flight training at a Part 61 school like Blue Skies Above instead. Take control of your future, your timeline, and your budget."
         btnTitle="Get Started"
         url="/enroll-at-blue-skies"
     /> -->
 
-    <MainSection
-        title="Considering a University Professional Flight Program?"
-        subTitle="Explore the benefits of completing your flight training at a Part 61 school like Blue Skies Above instead. Take control of your future, your timeline, and your budget."
-        btnExists={true}
-        btnTitle="Get Started"
-        btnURL="/enroll-at-blue-skies"
-    />
+  <MainSection
+    title="Considering a University Professional Flight Program?"
+    subTitle="Explore the benefits of completing your flight training at a Part 61 school like Blue Skies Above instead. Take control of your future, your timeline, and your budget."
+    btnExists={true}
+    btnTitle="Get Started"
+    btnURL="/enroll-at-blue-skies"
+  />
 
-    <div class="">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col md:flex-row items-center gap-5">
-            <div class="mx-auto max-w-2xl text-center md:text-left">
-                <p class="text-base font-semibold leading-7 text-accent-300 uppercase text-picton-blue-500">A Smarter Path to the Cockpit</p>
-                <h2 class="mt-2 text-3xl font-bold tracking-tight text-muted-700 sm:text-4xl dark:text-white">
-                    Is a University Pro Flight Program Right for You?
-                </h2>
-                <p class="mt-6 text-lg leading-8 text-muted-700 dark:text-white">
-                    While university programs have their place, Part 61 flight schools like Blue Skies Above offer unparalleled flexibility, personalized instruction, and cost-effective training. We help you earn your pilot certifications at your own pace, putting you in command of your career from day one.
-                </p>
-            </div>
-            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-                <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                    {benefits.map(benefit => (
-                        <div class="relative pl-16">
-                            <dt class="text-base font-semibold leading-7 text-muted-800 dark:text-white">
-                                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-400">
-                                    <Fragment set:html={benefit.icon} />
-                                </div>
-                                {benefit.title}
-                            </dt>
-                            <dd class="mt-2 text-base leading-7 text-muted-600 dark:text-white">{benefit.description}</dd>
-                        </div>
-                    ))}
-                </dl>
-            </div>
-        </div>
+  <div class="">
+    <div
+      class="mx-auto flex flex-col items-center gap-5 px-6 md:flex-row lg:px-8"
+    >
+      <div class="mx-auto max-w-2xl text-center md:text-left">
+        <p
+          class="text-accent-300 text-picton-blue-500 text-base leading-7 font-semibold uppercase"
+        >
+          A Smarter Path to the Cockpit
+        </p>
+        <h2
+          class="text-muted-700 mt-2 text-3xl font-bold tracking-tight sm:text-4xl dark:text-white"
+        >
+          Is a University Pro Flight Program Right for You?
+        </h2>
+        <p class="text-muted-700 mt-6 text-lg leading-8 dark:text-white">
+          While university programs have their place, Part 61 flight schools
+          like Blue Skies Above offer unparalleled flexibility, personalized
+          instruction, and cost-effective training. We help you earn your pilot
+          certifications at your own pace, putting you in command of your career
+          from day one.
+        </p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl
+          class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+        >
+          {
+            benefits.map((benefit) => (
+              <div class="relative pl-16">
+                <dt class="text-muted-800 text-base leading-7 font-semibold dark:text-white">
+                  <div class="bg-accent-400 absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg">
+                    <Fragment set:html={benefit.icon} />
+                  </div>
+                  {benefit.title}
+                </dt>
+                <dd class="text-muted-600 mt-2 text-base leading-7 dark:text-white">
+                  {benefit.description}
+                </dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
     </div>
-    <RightSection
-        title="A Smarter Path to the Cockpit"
-        subTitle="University flight programs can be costly, rigid, and limiting. At Blue Skies Above, we offer a more flexible and affordable alternative through our Part 61 training model. Earn your pilot certifications on your own schedule, for a fraction of the cost — all while pursuing a separate degree or career path for long-term stability.\n\nOur training gives you complete control over your pace, budget, and future. Avoid the overwhelming debt of university programs, and build a more resilient aviation career with the freedom and focus you deserve."
-        single={false}
-        imgOne={imgRight}
-        imgOneAlt="Flight Training Finance brochure with pen"
-        imgTwo={imgRight2}
-        imgTwoAlt="Smiling student reviewing financing documents"
-        btnExists={true}
-        btnTitle="Apply"
-        btnURL="#program"
-    />
-    <ProfessionalFlightProgramComponent />
-    <CTA content={ctaEnroll} />
+  </div>
+  <RightSection
+    title="A Smarter Path to the Cockpit"
+    subTitle="University flight programs can be costly, rigid, and limiting. At Blue Skies Above, we offer a more flexible and affordable alternative through our Part 61 training model. Earn your pilot certifications on your own schedule, for a fraction of the cost — all while pursuing a separate degree or career path for long-term stability.\n\nOur training gives you complete control over your pace, budget, and future. Avoid the overwhelming debt of university programs, and build a more resilient aviation career with the freedom and focus you deserve."
+    single={false}
+    imgOne={imgRight}
+    imgOneAlt="Flight Training Finance brochure with pen"
+    imgTwo={imgRight2}
+    imgTwoAlt="Smiling student reviewing financing documents"
+    btnExists={true}
+    btnTitle="Apply"
+    btnURL="#program"
+  />
+  <ProfessionalFlightProgramComponent />
+  <CTA content={ctaEnroll} />
 </MainLayout>
