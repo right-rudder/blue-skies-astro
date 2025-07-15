@@ -94,10 +94,10 @@ const benefits = [
         <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col md:flex-row items-center gap-5">
             <div class="mx-auto max-w-2xl text-center md:text-left">
                 <p class="text-base font-semibold leading-7 text-accent-300 uppercase text-picton-blue-500">A Smarter Path to the Cockpit</p>
-                <h2 class="mt-2 text-3xl font-bold tracking-tight text-muted-700 sm:text-4xl">
+                <h2 class="mt-2 text-3xl font-bold tracking-tight text-muted-700 sm:text-4xl dark:text-white">
                     Is a University Pro Flight Program Right for You?
                 </h2>
-                <p class="mt-6 text-lg leading-8 text-muted-700">
+                <p class="mt-6 text-lg leading-8 text-muted-700 dark:text-white">
                     While university programs have their place, Part 61 flight schools like Blue Skies Above offer unparalleled flexibility, personalized instruction, and cost-effective training. We help you earn your pilot certifications at your own pace, putting you in command of your career from day one.
                 </p>
             </div>
@@ -105,13 +105,13 @@ const benefits = [
                 <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                     {benefits.map(benefit => (
                         <div class="relative pl-16">
-                            <dt class="text-base font-semibold leading-7 text-muted-800">
+                            <dt class="text-base font-semibold leading-7 text-muted-800 dark:text-white">
                                 <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-400">
                                     <Fragment set:html={benefit.icon} />
                                 </div>
                                 {benefit.title}
                             </dt>
-                            <dd class="mt-2 text-base leading-7 text-muted-600">{benefit.description}</dd>
+                            <dd class="mt-2 text-base leading-7 text-muted-600 dark:text-white">{benefit.description}</dd>
                         </div>
                     ))}
                 </dl>
