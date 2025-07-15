@@ -9,8 +9,9 @@ interface ImportMetaEnv {
   readonly NEW_DISCOVERY_FLIGHT_FORM_WEBHOOK_URL: string;
   readonly NEW_PRO_FLIGHT_PROGRAM_URL: string;
   readonly NEW_LEASEBACK_PROGRAM_URL: string;
-  
-  
+  readonly NEW_MESSAGES_CFI_URL: string;
+  readonly NEW_MULTI_ENGINE_INTEREST_URL: string;
+   
 }
 
 interface ImportMeta {
