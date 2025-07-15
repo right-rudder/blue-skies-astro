@@ -2,6 +2,8 @@
 import LeadershipMembers from "@/components/sections/teams/LeadershipMembers.astro";
 import TeamMembers from "@/components/sections/teams/TeamMembers.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
+import MainSection from "@/components/ui/blocks/MainSection.astro";
+import CTA from "@/components/sections/misc/CTA.astro";
 import { SITE } from "@data/constants";
 
 // Import Necessary imagesImages
@@ -18,6 +20,7 @@ import Jaymes from "../assets/images/cfi-jaymes.webp";
 import Connor from "../assets/images/cfi-connor.webp";
 import Sammy from "../assets/images/a&p-sammy.webp";
 import Lola from "../assets/images/lola.webp";
+import ctaImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-training.webp"
 
 
 const pageTitle: string = `Our Team | ${SITE.title}`;
@@ -50,6 +53,18 @@ const leadershipMembers = {
       imageAlt: "",
     },
   ],
+};
+
+const ctaEnroll = {
+    isRightSection: true,
+    title: "Your Aviation Career is Cleared for Takeoff",
+    subTitle: "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
+    single: true,
+    imgOne: ctaImg,
+    imgOneAlt: "Flight training syllabus materials",
+    btnExists: true,
+    btnTitle: "Enroll Now",
+    btnURL: "/enroll-at-blue-skies",
 };
 
 const teamMembers = {
@@ -110,8 +125,15 @@ const maintenanceMembers = {
   }}
 > 
 
+  <MainSection
+    title="Meet the Blue Skies Above Team"
+    subTitle="Passionate aviators, dedicated mentors, and the hearts behind our flight school — get to know the team guiding your aviation journey."
+    btnExists={true}
+    btnTitle="Join Our Team"
+    btnURL="/join-team"
+  />
     <LeadershipMembers content={leadershipMembers} />
     <TeamMembers content={teamMembers} />
     <TeamMembers content={maintenanceMembers} />
-
+    <CTA content={ctaEnroll}  />
 </MainLayout>
