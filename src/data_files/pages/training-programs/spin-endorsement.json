@@ -44,7 +44,7 @@
           {
             "title": "Discovery Flight",
             "description": "Your first flight lesson. You fly the plane",
-            "url": "/discovery-flight"
+            "url": "/discovery-flights"
           }
         ]
       },
@@ -141,7 +141,7 @@
       },
       {
         "title": "Discovery Flight",
-        "url": "/discovery-flight"
+        "url": "/discovery-flights"
       },
       {
         "title": "Contact Us",
@@ -159,7 +159,7 @@
       },
       {
         "text": "Discovery Flight",
-        "url": "/discovery-flight"
+        "url": "/discovery-flights"
       }
     ]
   },
@@ -227,7 +227,7 @@
       "new_to_flying": [
         {"title": "Why Become a pilot?", "url": "/should-i-become-a-pilot"},
         {"title": "Pilot Training Process", "url": "/pilot-training-programs-and-courses"},
-        {"title": "First Flight Lesson", "url": "/discovery-flight"}
+        {"title": "First Flight Lesson", "url": "/discovery-flights"}
       ],
       "training_programs": [
         {"title": "Private Pilot", "url": "/private-pilot-certificate-ppl"},
@@ -249,7 +249,7 @@
       ],
       "quick_links": [
         {"title": "Visit School", "url": "/visit-flight-school"},
-        {"title": "Discovery Flight", "url": "/discovery-flight"},
+        {"title": "Discovery Flight", "url": "/discovery-flights"},
         {"title": "Contact Us", "url": "/contact"}
       ]
     },

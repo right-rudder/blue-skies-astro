@@ -90,7 +90,7 @@
           "description": "Also known as a discovery flight, take the controls of the aircraft and fly the plane.",
           "cta": {
             "text": "Schedule Lesson",
-            "link": "/discovery-flight"
+            "link": "/discovery-flights"
           }
         },
         {
@@ -135,7 +135,7 @@
           "image": "/assets/blue-skies-discovery-flight-a83c4b65f7542d5ee4053c02176c166a0080a3864ae521b3217d376ffbff9dbc.webp",
           "cta": {
             "text": "Schedule Flight",
-            "link": "/discovery-flight"
+            "link": "/discovery-flights"
           }
         },
         {

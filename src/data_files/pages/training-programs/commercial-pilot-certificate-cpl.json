@@ -48,7 +48,7 @@
           {
             "title": "Discovery Flight",
             "description": "Your first flight lesson. You fly the plane",
-            "url": "/discovery-flight"
+            "url": "/discovery-flights"
           }
         ]
       },
@@ -145,7 +145,7 @@
       },
       {
         "title": "Discovery Flight",
-        "url": "/discovery-flight"
+        "url": "/discovery-flights"
       },
       {
         "title": "Contact Us",
@@ -371,7 +371,7 @@
           },
           {
             "text": "First Flight Lesson",
-            "url": "/discovery-flight"
+            "url": "/discovery-flights"
           }
         ]
       },
@@ -450,7 +450,7 @@
           },
           {
             "text": "Discovery Flight",
-            "url": "/discovery-flight"
+            "url": "/discovery-flights"
           },
           {
             "text": "Contact Us",

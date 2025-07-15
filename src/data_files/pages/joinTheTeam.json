@@ -31,7 +31,7 @@
           {"title": "Why Become a Pilot?", "url": "/should-i-become-a-pilot"},
           {"title": "Pilot Training Process", "url": "/pilot-training-programs-and-courses"},
           {"title": "Considering a university for pilot training?", "url": "/professional-flight-program"},
-          {"title": "Discovery Flight", "url": "/discovery-flight"}
+          {"title": "Discovery Flight", "url": "/discovery-flights"}
         ]
       },
       {
@@ -62,7 +62,7 @@
     ],
     "cta_buttons": [
       {"text": "VISIT SCHOOL", "url": "/visit-flight-school"},
-      {"text": "DISCOVERY FLIGHT", "url": "/discovery-flight"},
+      {"text": "DISCOVERY FLIGHT", "url": "/discovery-flights"},
       {"text": "CONTACT US", "url": "/contact"}
     ]
   },
@@ -106,7 +106,7 @@
         "links": [
           {"text": "Why Become a pilot?", "url": "/should-i-become-a-pilot"},
           {"text": "Pilot Training Process", "url": "/pilot-training-programs-and-courses"},
-          {"text": "First Flight Lesson", "url": "/discovery-flight"}
+          {"text": "First Flight Lesson", "url": "/discovery-flights"}
         ]
       },
       {
@@ -137,7 +137,7 @@
         "title": "Quick Links",
         "links": [
           {"text": "Visit School", "url": "/visit-flight-school"},
-          {"text": "Discovery Flight", "url": "/discovery-flight"},
+          {"text": "Discovery Flight", "url": "/discovery-flights"},
           {"text": "Contact Us", "url": "/contact"}
         ]
       }

@@ -222,7 +222,7 @@ const footerLinks = [
       },
       {
         name: "Why Blue Skies Above?",
-        link: "/why-choose-blue-skies-above",
+        link: "/about-us",
       },
       {
         name: "Join the team",
@@ -245,9 +245,10 @@ const footerLinks = [
   {
     section: "Quick Links",
     links: [
-      { name: "Discovery Flight", link: "/discovery-flight" },
+      { name: "Discovery Flight", link: "/discovery-flights" },
       { name: "Contact us", link: "/contact" },
-      { name: "Visit School", link: "/visit-flight-school" },
+      { name: "Enroll Now", link: "/enroll-at-blue-skies" },
+      // { name: "Visit School", link: "/contact" },
     ],
   },
 ];
