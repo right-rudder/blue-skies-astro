@@ -2,11 +2,11 @@
 const navBarLinks = [
   {
     name: "New to Flight Training?",
-    link: "/should-i-become-a-pilot",
+    link: "/why-become-a-pilot",
     submenu: [
       {
         name: "Why Become a Pilot?",
-        link: "/should-i-become-a-pilot",
+        link: "/why-become-a-pilot",
         description: "Now is the best time to become a pilot",
         icon: "earth",
       },
@@ -108,13 +108,6 @@ const navBarLinks = [
         icon: "plane",
       },
       {
-        name: "Why Blue Skies Above?",
-        link: "/about-us",
-        description:
-          "The only local flight school with a Cesna fleet. When you're here, you're family",
-        icon: "community",
-      },
-      {
         name: "Join the team",
         link: "/join-team",
         description:
@@ -155,7 +148,7 @@ const footerLinks = [
     links: [
       {
         name: "Why Become a Pilot?",
-        link: "/should-i-become-a-pilot",
+        link: "/why-become-a-pilot",
       },
       {
         name: "Pilot Training Process",
@@ -213,16 +206,16 @@ const footerLinks = [
     section: "About us",
     links: [
       {
+        name: "About us",
+        link: "/about-us",
+      },
+      {
         name: "Our Team",
         link: "/about-us",
       },
       {
         name: "Our Fleet",
         link: "/our-fleet",
-      },
-      {
-        name: "Why Blue Skies Above?",
-        link: "/about-us",
       },
       {
         name: "Join the team",

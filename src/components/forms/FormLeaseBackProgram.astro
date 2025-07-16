@@ -16,11 +16,11 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="given-name"
           placeholder="First Name"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
         />
       </div>
     </div>
-    
+
     <!-- Last Name -->
     <div>
       <div class="mt-2.5">
@@ -31,11 +31,11 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="family-name"
           placeholder="Last Name"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
         />
       </div>
     </div>
-    
+
     <!-- Email -->
     <div class="sm:col-span-2">
       <div class="mt-2.5">
@@ -46,7 +46,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="email"
           placeholder="Email Address"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
         />
       </div>
     </div>
@@ -55,7 +55,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         Don't fill this out if you're human: <input name="confirm-email" />
       </label>
     </p>
-    
+
     <!-- Phone -->
     <div class="sm:col-span-2">
       <div class="relative mt-2.5">
@@ -66,7 +66,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="tel"
           placeholder="Phone Number"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
         />
       </div>
     </div>
@@ -82,11 +82,11 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
             id="aircraft-manufacture"
             placeholder="Aircraft manufacture"
             required
-            class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+            class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
           />
         </div>
       </div>
-      
+
       <!-- Model -->
       <div>
         <div class="mt-2.5">
@@ -96,11 +96,11 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
             id="aircraft-model"
             placeholder="Aircraft model"
             required
-            class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+            class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
           />
         </div>
       </div>
-      
+
       <!-- Year -->
       <div>
         <div class="mt-2.5">
@@ -109,11 +109,11 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
             name="aircraft-year"
             id="aircraft-year"
             placeholder="Aircraft year"
-            min="1900" 
-            max="2099" 
-            step="1" 
+            min="1900"
+            max="2099"
+            step="1"
             required
-            class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+            class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
           />
         </div>
       </div>
@@ -121,7 +121,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
       <div class="mt-2.5">
         <label
           for="interest-program"
-          class="block mb-0 py-2 font-extralight text-gray-900 dark:text-white "
+          class="mb-0 block py-2 font-extralight text-gray-900 dark:text-white"
         >
           Message
         </label>
@@ -130,7 +130,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           id="notes"
           rows="4"
           placeholder="Extra Information (Optional)"
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-gray-700 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none bg-white "
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
         ></textarea>
       </div>
     </div>
@@ -141,7 +141,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         <button
           type="button"
           id="terms-toggle"
-          class="flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-primary-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 bg-gray-200"
+          class="ring-primary-900/5 flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 transition-colors duration-200 ease-in-out ring-inset focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
           role="switch"
           aria-checked="false"
           aria-labelledby="switch-1-label"
@@ -151,12 +151,15 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           </span>
           <span
             id="terms-thumb"
-            class="h-4 w-4 transform rounded-full bg-black shadow-sm ring-1 ring-gray-900/50 transition duration-200 ease-in-out translate-x-0"
+            class="h-4 w-4 translate-x-0 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/50 transition duration-200 ease-in-out"
             aria-hidden="true"></span>
         </button>
         <input type="hidden" id="agree-terms" name="agree-terms" value="no" />
       </div>
-      <label class="text-sm leading-6 text-black dark:text-white" id="switch-1-label">
+      <label
+        class="text-sm leading-6 text-black dark:text-white"
+        id="switch-1-label"
+      >
         I agree to the <a
           href="/privacy-policy-terms-of-service"
           target="_blank"
@@ -171,14 +174,18 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         text notes from the business.
       </label>
     </div>
-
   </div>
   <div class="mt-10">
-    <button type="submit" id="submit-btn" class="btn-accent px-4 py-2 rounded-sm">SEND</button>
+    <button
+      type="submit"
+      id="submit-btn"
+      class="btn-accent rounded-sm px-4 py-2">SEND</button
+    >
   </div>
 </form>
 
-<script define:vars={{ FORM_WEBHOOK_URL, PORTAL_API_KEY, CP_ACCOUNT_RANDOM_ID }}>
+<script define:vars={{ FORM_WEBHOOK_URL, PORTAL_API_KEY, CP_ACCOUNT_RANDOM_ID }}
+>
   const toggle = document.getElementById("terms-toggle");
   const thumb = document.getElementById("terms-thumb");
   const hiddenInput = document.getElementById("agree-terms");

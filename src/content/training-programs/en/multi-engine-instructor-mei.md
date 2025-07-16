@@ -1,7 +1,7 @@
 ---
 title: Multi-Engine Instructor
 description: MEI
-
+siteDescription: Become a certified Multi-Engine Instructor with Blue Skies Above’s 2025 MEI program in Lanett, Alabama. Teach twin-engine pilots, boost your earning potential, and advance your aviation career. Join the waitlist today!
 main:
   id: 1
   content: |

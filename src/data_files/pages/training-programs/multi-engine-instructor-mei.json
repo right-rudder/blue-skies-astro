@@ -33,7 +33,7 @@
           "submenu": [
             {
               "title": "Why Become a Pilot?",
-              "url": "/should-i-become-a-pilot",
+              "url": "/why-become-a-pilot",
               "description": "Now is the best time to become a pilot"
             },
             {
@@ -276,7 +276,7 @@
       "newToFlying": [
         {
           "title": "Why Become a pilot?",
-          "url": "/should-i-become-a-pilot"
+          "url": "/why-become-a-pilot"
         },
         {
           "title": "Pilot Training Process",

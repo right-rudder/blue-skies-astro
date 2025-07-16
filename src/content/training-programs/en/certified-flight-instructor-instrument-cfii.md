@@ -1,7 +1,7 @@
 ---
 title: Certified Flight Instructor - Instrument
 description: CFII
-
+siteDescription: Advance your flight instructor career with CFII training at Blue Skies Above. Teach instrument flying, build expertise, and help pilots master IFR skills. Enroll now in Lanett, Alabama.
 main:
   id: 1
   content: |

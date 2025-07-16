@@ -1,7 +1,7 @@
 ---
 title: Commercial Pilot Certificate
 description: CPL
-
+siteDescription: Earn your Commercial Pilot Certificate in Lanett, Alabama with Blue Skies Above. Get hands-on training in Technically Advanced Aircraft and prepare for a rewarding career flying professionally. Financing available.
 main:
   id: 1
   content: |

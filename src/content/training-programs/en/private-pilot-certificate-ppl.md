@@ -1,6 +1,7 @@
 ---
 title: Private Pilot Certificate
 description: PPL
+siteDescription: Earn your Private Pilot Certificate at Blue Skies Above in Lanett, Alabama. Start with a Discovery Flight and train with experienced CFIs to fly confidently and legally carry passengers. Financing available.
 main:
   id: 1
   content: |
