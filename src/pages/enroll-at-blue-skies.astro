@@ -4,9 +4,11 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import Enroll from "@/components/forms/FormEnroll.astro";
 import MainSection from "@/components/ui/blocks/MainSection.astro";
 
-const pageTitle: string = `Page Title | ${SITE.title}`;
-const metaDescription = "Page Description";
-const ogTitle = "Page Title | Blue Skies Above Flight School";
+const pageTitle: string = `Enroll in Flight Training | Blue Skies Above Flight School in Alabama`;
+const metaDescription =
+  "Ready to start your aviation journey? Enroll at Blue Skies Above in Lanett, AL. Begin flight training for your Private Pilot, Commercial, or Instructor certification today.";
+const ogTitle =
+  "Enroll in Flight Training | Blue Skies Above Flight School in Alabama";
 ---
 
 <MainLayout
@@ -36,7 +38,6 @@ const ogTitle = "Page Title | Blue Skies Above Flight School";
     btnTitle="Contact Us"
     btnURL="/contact"
   />
-  
-  <Enroll />
 
+  <Enroll />
 </MainLayout>

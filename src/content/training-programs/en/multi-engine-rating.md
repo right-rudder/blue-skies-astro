@@ -1,7 +1,7 @@
 ---
 title: Multi-Engine Rating
 description: ME
-
+siteDescription: Prepare for advanced flying with Blue Skies Above’s Multi-Engine Rating program launching in 2025. Gain critical skills to fly complex twin-engine aircraft and boost your career opportunities in Alabama’s premier flight school. Join the waitlist today!
 main:
   id: 1
   content: |

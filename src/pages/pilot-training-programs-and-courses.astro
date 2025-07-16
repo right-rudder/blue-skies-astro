@@ -6,72 +6,77 @@ import CTA from "@/components/sections/misc/CTA.astro";
 import FeaturesStarting from "@/components/sections/features/FeaturesStarting.astro";
 import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
 import Courses from "@components/Courses.astro";
-import AOSInit from '@/components/utils/AOSInit.jsx';
+import AOSInit from "@/components/utils/AOSInit.jsx";
 
-const pageTitle: string = `Pilot Training Programs & Courses | ${SITE.title}`;
-const metaDescription = "Explore comprehensive pilot training programs and courses at Blue Skies Above Flight School. From Private Pilot to Commercial and beyond, start your aviation journey with us.";
-const ogTitle = "Pilot Training Programs & Courses | Blue Skies Above Flight School";
+const pageTitle: string = `How to Become a Pilot | Flight Training Made Simple at Blue Skies Above`;
+const metaDescription =
+  "Explore comprehensive pilot training programs and courses at Blue Skies Above Flight School. From Private Pilot to Commercial and beyond, start your aviation journey with us.";
+const ogTitle =
+  "Pilot Training Programs & Courses | Blue Skies Above Flight School";
 
 const ctaEnroll = {
-    isRightSection: false,
-    title: "Your Aviation Career is Cleared for Takeoff",
-    subTitle: "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
-    single: true,
-    img: headerImg,
-    imgAlt: "Flight training syllabus materials",
-    btnExists: true,
-    btnTitle: "Enroll Now",
-    btnURL: "/enroll-at-blue-skies",
-}
+  isRightSection: false,
+  title: "Your Aviation Career is Cleared for Takeoff",
+  subTitle:
+    "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
+  single: true,
+  img: headerImg,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Enroll Now",
+  btnURL: "/enroll-at-blue-skies",
+};
 
 const ctaDiscovery = {
-    isRightSection: true,
-    title: "Ready to Take the Controls?",
-    subTitle: "Book a Discovery Flight and experience the thrill of flying firsthand. You'll take the controls with an expert instructor and see the world from a whole new perspective.",
-    single: true,
-    imgOne: headerImg,
-    imgOneAlt: "Flight training syllabus materials",
-    imgTwo: headerImg,
-    imgTwoAlt: "Instructor with student at planning table",
-    btnExists: true,
-    btnTitle: "Book Now",
-    btnURL: "/discovery-flights",
+  isRightSection: true,
+  title: "Ready to Take the Controls?",
+  subTitle:
+    "Book a Discovery Flight and experience the thrill of flying firsthand. You'll take the controls with an expert instructor and see the world from a whole new perspective.",
+  single: true,
+  imgOne: headerImg,
+  imgOneAlt: "Flight training syllabus materials",
+  imgTwo: headerImg,
+  imgTwoAlt: "Instructor with student at planning table",
+  btnExists: true,
+  btnTitle: "Book Now",
+  btnURL: "/discovery-flights",
 };
 
 const videoWhyBecomePilot = {
-    title: "Why I chose aviation as a career",
-    description: "Learn what inspired Kate Roberts to pursue a career in aviation, and the passion that drives her journey. Discover how her experiences shaped her path and why she chose to turn her love for flying into a lifelong profession.",
-}
+  title: "Why I chose aviation as a career",
+  description:
+    "Learn what inspired Kate Roberts to pursue a career in aviation, and the passion that drives her journey. Discover how her experiences shaped her path and why she chose to turn her love for flying into a lifelong profession.",
+};
 ---
 
-<MainLayout 
-    title={pageTitle}
-    customDescription={metaDescription}
-    customOgTitle={ogTitle}
-    structuredData={{
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "",
-        url: "",
-        name: "About Blue Skies Above",
-        description: metaDescription,
-        isPartOf: {
-        "@type": "WebSite",
-        url: "",
-        name: SITE.title,
-        description: metaDescription,
-        },
-        inLanguage: "en-US",
-    }}
-> 
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "",
+    url: "",
+    name: "About Blue Skies Above",
+    description: metaDescription,
+    isPartOf: {
+      "@type": "WebSite",
+      url: "",
+      name: SITE.title,
+      description: metaDescription,
+    },
+    inLanguage: "en-US",
+  }}
+>
   <!-- <AOSInit is:client="load" /> -->
-    <HeroSectionAlt
-        title="How to become a pilot"
-        subTitle="No matter your experience level Blue Skies Above has a pilot program for you"
-        btnTitle="Get Started"
-        url="/discovery-flights"
-    />
-    <FeaturesStarting />
-    <Courses />
-    <CTA content={ctaDiscovery} />
+  <HeroSectionAlt
+    title="How to become a pilot"
+    subTitle="No matter your experience level Blue Skies Above has a pilot program for you"
+    btnTitle="Get Started"
+    url="/discovery-flights"
+  />
+  <FeaturesStarting />
+  <Courses />
+  <CTA content={ctaDiscovery} />
 </MainLayout>

@@ -1,7 +1,7 @@
 ---
 title: Instrument Rating
 description: IR
-
+siteDescription: Take your flying to the next level with an Instrument Rating from Blue Skies Above in Lanett, Alabama. Train to fly safely in low-visibility conditions, improve situational awareness, and open doors to commercial aviation careers. Financing available.
 main:
   id: 1
   content: |

@@ -13,6 +13,7 @@ const trainingProgramsCollection = defineCollection({
     z.object({
       title: z.string(),
       description: z.string(),
+      siteDescription: z.string(),
       main: z.object({
         id: z.number(),
         content: z.string(),
@@ -113,10 +114,12 @@ const blogCollection = defineCollection({
     z.object({
       title: z.string(),
       description: z.string(),
-      contents: z.array(z.object({
-        title: z.string().optional(),
-        paragraph: z.string(),
-      })),
+      contents: z.array(
+        z.object({
+          title: z.string().optional(),
+          paragraph: z.string(),
+        }),
+      ),
       author: z.string(),
       role: z.string().optional(),
       authorImage: image(),

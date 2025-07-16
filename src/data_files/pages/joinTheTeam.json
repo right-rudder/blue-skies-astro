@@ -28,42 +28,57 @@
       {
         "section": "New to Flying?",
         "links": [
-          {"title": "Why Become a Pilot?", "url": "/should-i-become-a-pilot"},
-          {"title": "Pilot Training Process", "url": "/pilot-training-programs-and-courses"},
-          {"title": "Considering a university for pilot training?", "url": "/professional-flight-program"},
-          {"title": "Discovery Flight", "url": "/discovery-flights"}
+          { "title": "Why Become a Pilot?", "url": "/why-become-a-pilot" },
+          {
+            "title": "Pilot Training Process",
+            "url": "/pilot-training-programs-and-courses"
+          },
+          {
+            "title": "Considering a university for pilot training?",
+            "url": "/professional-flight-program"
+          },
+          { "title": "Discovery Flight", "url": "/discovery-flights" }
         ]
       },
       {
         "section": "Training Programs",
         "links": [
-          {"title": "Private Pilot", "url": "/private-pilot-certificate-ppl"},
-          {"title": "Instrument Rating", "url": "/instrument-rating-ifr"},
-          {"title": "Commercial Pilot", "url": "/commercial-pilot-certificate-cpl"},
-          {"title": "Multi-Engine Rating", "url": "/multi-engine-rating"},
-          {"title": "Multi-Engine Instructor (MEI)", "url": "/multi-engine-instructor-mei"},
-          {"title": "CFI", "url": "/certified-flight-instructor-cfi"},
-          {"title": "CFII", "url": "/flight-instructor-instrument-cfii"},
-          {"title": "CFI Spin Endorsement", "url": "/spin-endorsement"}
+          { "title": "Private Pilot", "url": "/private-pilot-certificate-ppl" },
+          { "title": "Instrument Rating", "url": "/instrument-rating-ifr" },
+          {
+            "title": "Commercial Pilot",
+            "url": "/commercial-pilot-certificate-cpl"
+          },
+          { "title": "Multi-Engine Rating", "url": "/multi-engine-rating" },
+          {
+            "title": "Multi-Engine Instructor (MEI)",
+            "url": "/multi-engine-instructor-mei"
+          },
+          { "title": "CFI", "url": "/certified-flight-instructor-cfi" },
+          { "title": "CFII", "url": "/flight-instructor-instrument-cfii" },
+          { "title": "CFI Spin Endorsement", "url": "/spin-endorsement" }
         ]
       },
       {
         "section": "About Us",
         "links": [
-          {"title": "Our Team", "url": "/about-us"},
-          {"title": "Our Fleet", "url": "/our-fleet"},
-          {"title": "Why Blue Skies Above?", "url": "/why-choose-blue-skies-above"},
-          {"title": "Join the team", "url": "/join-team"},
-          {"title": "Blog", "url": "/blog"},
-          {"title": "Financing", "url": "/financing"},
-          {"title": "Leaseback Program", "url": "/leaseback-program"}
+          { "title": "Our Team", "url": "/about-us" },
+          { "title": "Our Fleet", "url": "/our-fleet" },
+          {
+            "title": "Why Blue Skies Above?",
+            "url": "/why-choose-blue-skies-above"
+          },
+          { "title": "Join the team", "url": "/join-team" },
+          { "title": "Blog", "url": "/blog" },
+          { "title": "Financing", "url": "/financing" },
+          { "title": "Leaseback Program", "url": "/leaseback-program" }
         ]
       }
     ],
     "cta_buttons": [
-      {"text": "VISIT SCHOOL", "url": "/visit-flight-school"},
-      {"text": "DISCOVERY FLIGHT", "url": "/discovery-flights"},
-      {"text": "CONTACT US", "url": "/contact"}
+      { "text": "VISIT SCHOOL", "url": "/visit-flight-school" },
+      { "text": "DISCOVERY FLIGHT", "url": "/discovery-flights" },
+      { "text": "CONTACT US", "url": "/contact" }
     ]
   },
   "main_content": {
@@ -85,10 +100,19 @@
     "form": {
       "action": "/messages",
       "fields": [
-        {"label": "Name", "type": "text", "name": "message[name]"},
-        {"label": "Email", "type": "email", "name": "message[email]"},
-        {"label": "Phone", "type": "text", "name": "message[phone]", "placeholder": "###-###-####"},
-        {"label": "Tell us about yourself...", "type": "textarea", "name": "message[body]"}
+        { "label": "Name", "type": "text", "name": "message[name]" },
+        { "label": "Email", "type": "email", "name": "message[email]" },
+        {
+          "label": "Phone",
+          "type": "text",
+          "name": "message[phone]",
+          "placeholder": "###-###-####"
+        },
+        {
+          "label": "Tell us about yourself...",
+          "type": "textarea",
+          "name": "message[body]"
+        }
       ],
       "submit_button": "SEND MESSAGE"
     }
@@ -104,41 +128,56 @@
       {
         "title": "New to Flying?",
         "links": [
-          {"text": "Why Become a pilot?", "url": "/should-i-become-a-pilot"},
-          {"text": "Pilot Training Process", "url": "/pilot-training-programs-and-courses"},
-          {"text": "First Flight Lesson", "url": "/discovery-flights"}
+          { "text": "Why Become a pilot?", "url": "/why-become-a-pilot" },
+          {
+            "text": "Pilot Training Process",
+            "url": "/pilot-training-programs-and-courses"
+          },
+          { "text": "First Flight Lesson", "url": "/discovery-flights" }
         ]
       },
       {
         "title": "Training Programs",
         "links": [
-          {"text": "Private Pilot", "url": "/private-pilot-certificate-ppl"},
-          {"text": "Instrument Rating", "url": "/instrument-rating-ifr"},
-          {"text": "Commercial Pilot", "url": "/commercial-pilot-certificate-cpl"},
-          {"text": "Multi-Engine Rating", "url": "/multi-engine-rating"},
-          {"text": "Multi-Engine Instructor", "url": "/multi-engine-instructor-mei"},
-          {"text": "Flight Instructor", "url": "/certified-flight-instructor-cfi"},
-          {"text": "CFI Spin Endorsement", "url": "/spin-endorsement"}
+          { "text": "Private Pilot", "url": "/private-pilot-certificate-ppl" },
+          { "text": "Instrument Rating", "url": "/instrument-rating-ifr" },
+          {
+            "text": "Commercial Pilot",
+            "url": "/commercial-pilot-certificate-cpl"
+          },
+          { "text": "Multi-Engine Rating", "url": "/multi-engine-rating" },
+          {
+            "text": "Multi-Engine Instructor",
+            "url": "/multi-engine-instructor-mei"
+          },
+          {
+            "text": "Flight Instructor",
+            "url": "/certified-flight-instructor-cfi"
+          },
+          { "text": "CFI Spin Endorsement", "url": "/spin-endorsement" }
         ]
       },
       {
         "title": "About",
         "links": [
-          {"text": "Our Team", "url": "/about-us"},
-          {"text": "Our Fleet", "url": "/our-fleet"},
-          {"text": "Why Blue Skies Above?", "url": "/why-choose-blue-skies-above"},
-          {"text": "Join the Team", "url": "/join-team"},
-          {"text": "Blog", "url": "/blog"},
-          {"text": "Financing", "url": "/financing"},
-          {"text": "Leaseback Program", "url": "/leaseback-program"}
+          { "text": "Our Team", "url": "/about-us" },
+          { "text": "Our Fleet", "url": "/our-fleet" },
+          {
+            "text": "Why Blue Skies Above?",
+            "url": "/why-choose-blue-skies-above"
+          },
+          { "text": "Join the Team", "url": "/join-team" },
+          { "text": "Blog", "url": "/blog" },
+          { "text": "Financing", "url": "/financing" },
+          { "text": "Leaseback Program", "url": "/leaseback-program" }
         ]
       },
       {
         "title": "Quick Links",
         "links": [
-          {"text": "Visit School", "url": "/visit-flight-school"},
-          {"text": "Discovery Flight", "url": "/discovery-flights"},
-          {"text": "Contact Us", "url": "/contact"}
+          { "text": "Visit School", "url": "/visit-flight-school" },
+          { "text": "Discovery Flight", "url": "/discovery-flights" },
+          { "text": "Contact Us", "url": "/contact" }
         ]
       }
     ],

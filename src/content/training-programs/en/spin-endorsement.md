@@ -1,7 +1,7 @@
 ---
 title: CFI Spin Endorsement
 description: Spin Endorsement
-
+siteDescription: Earn your FAA-required spin endorsement in just one day at Blue Skies Above. Train with expert instructors and prepare confidently for your CFI checkride in Lanett, Alabama.
 main:
   id: 1
   content: |

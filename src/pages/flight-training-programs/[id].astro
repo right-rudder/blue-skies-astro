@@ -39,7 +39,7 @@ export async function getStaticPaths() {
 const { program } = Astro.props;
 
 const pageTitle: string = `${program.data.title} | ${SITE.title}`;
-const metaDescription = program.data.description;
+const metaDescription = program.data.siteDescription;
 const ogTitle = `${program.data.title} | Blue Skies Above`;
 
 const ctaDiscovery = {

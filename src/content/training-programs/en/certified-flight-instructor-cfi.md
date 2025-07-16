@@ -1,7 +1,7 @@
 ---
 title: Certified Flight Instructor
 description: CFI
-
+siteDescription: Become a Certified Flight Instructor at Blue Skies Above in Lanett, Alabama. Build flight hours, inspire new pilots, and advance your aviation career with expert training. Enroll today!
 main:
   id: 1
   content: |

@@ -4,8 +4,6 @@ import SelectDate from "./SelectDate.astro";
 const VISIT_SCHOOL_URL = import.meta.env.NEW_VISIT_SCHOOL_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
-
-
 ---
 
 <form class="mx-auto max-w-xl py-20" id="visit_school_form">
@@ -21,7 +19,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="given-name"
           placeholder="first-name"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none"
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-black sm:text-sm sm:leading-6"
         />
       </div>
     </div>
@@ -35,7 +33,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="family-name"
           placeholder="Last Name"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none"
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-black sm:text-sm sm:leading-6"
         />
       </div>
     </div>
@@ -50,7 +48,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="email"
           placeholder="Email Address"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none"
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-black sm:text-sm sm:leading-6"
         />
       </div>
     </div>
@@ -59,7 +57,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         Don't fill this out if you're human: <input name="confirm-email" />
       </label>
     </p>
-    
+
     <!-- Phone Name -->
     <div class="sm:col-span-2">
       <div class="relative mt-2.5">
@@ -70,7 +68,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="tel"
           placeholder="Phone Number"
           required
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none"
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-black sm:text-sm sm:leading-6"
         />
       </div>
     </div>
@@ -81,7 +79,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
       <div class="mt-2.5">
         <label
           for="interest-program"
-          class="block mb-0 font-extralight text-gray-900 py-2"
+          class="mb-0 block py-2 font-extralight text-gray-900"
         >
           To which program are you interested in enrolling?
         </label>
@@ -89,14 +87,16 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           required
           id="interest-program"
           name="interest-program"
-          class="block font-extralight w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none"
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent py-2 font-extralight text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-black sm:text-sm sm:leading-6"
         >
-            <option value="Private Pilot Course">Private Pilot Course</option>
-            <option value="Instrument Rating">Instrument Rating</option>
-            <option value="Commercial Pilot Course">Commercial Pilot Course</option>
-            <option value="CFI Course">CFI Course</option>
-            <option value="CFII Course">CFII Course</option>
-            <option value="Spin Endorsement">Spin Endorsement</option>
+          <option value="Private Pilot Course">Private Pilot Course</option>
+          <option value="Instrument Rating">Instrument Rating</option>
+          <option value="Commercial Pilot Course"
+            >Commercial Pilot Course</option
+          >
+          <option value="CFI Course">CFI Course</option>
+          <option value="CFII Course">CFII Course</option>
+          <option value="Spin Endorsement">Spin Endorsement</option>
         </select>
       </div>
 
@@ -104,7 +104,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
       <div class="mt-2.5">
         <label
           for="enrollment_previous_training"
-          class="block mb-0 font-extralight text-gray-900 py-2"
+          class="mb-0 block py-2 font-extralight text-gray-900"
         >
           What pilot certifications do you hold? (Select all that apply)
         </label>
@@ -112,18 +112,20 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           required
           id="enrollment_previous_training"
           name="enrollment_previous_training"
-          class="block font-extralight w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none"
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent py-2 font-extralight text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-black sm:text-sm sm:leading-6"
         >
-            <option value="None, but I want to start flying">None, but I want to start flying</option>
-            <option value="Student Pilot">Student Pilot</option>
-            <option value="Private Pilot">Private Pilot</option>
-            <option value="Instrument">Instrument</option>
-            <option value="Multi-Engine">Multi-Engine</option>
-            <option value="Commercial">Commercial</option>
-            <option value="CFI">CFI</option>
-            <option value="ATP">ATP</option>
-            <option value="Other">Other</option>
-        </select>   
+          <option value="None, but I want to start flying"
+            >None, but I want to start flying</option
+          >
+          <option value="Student Pilot">Student Pilot</option>
+          <option value="Private Pilot">Private Pilot</option>
+          <option value="Instrument">Instrument</option>
+          <option value="Multi-Engine">Multi-Engine</option>
+          <option value="Commercial">Commercial</option>
+          <option value="CFI">CFI</option>
+          <option value="ATP">ATP</option>
+          <option value="Other">Other</option>
+        </select>
       </div>
 
       <!-- Select Date -->
@@ -133,7 +135,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
       <div class="mt-2.5">
         <label
           for="interest-program"
-          class="block mb-0 py-2 font-extralight text-gray-900"
+          class="mb-0 block py-2 font-extralight text-gray-900"
         >
           Anything Else you'd like us to know?
         </label>
@@ -142,11 +144,10 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           id="notes"
           rows="4"
           placeholder="Extra Information (Optional)"
-          class="block w-full py-2 text-gray-900 shadow-sm ring-inset ring-sky-600 placeholder:text-black bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none"
+          class="block w-full border-b-[1px] border-gray-300 bg-transparent py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-black sm:text-sm sm:leading-6"
         ></textarea>
       </div>
     </div>
-
 
     <!-- Agreement -->
     <div class="flex gap-x-4 sm:col-span-2">
@@ -154,7 +155,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         <button
           type="button"
           id="terms-toggle"
-          class="flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-primary-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 bg-gray-200"
+          class="ring-primary-900/5 flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 transition-colors duration-200 ease-in-out ring-inset focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
           role="switch"
           aria-checked="false"
           aria-labelledby="switch-1-label"
@@ -164,7 +165,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           </span>
           <span
             id="terms-thumb"
-            class="h-4 w-4 transform rounded-full bg-black shadow-sm ring-1 ring-gray-900/50 transition duration-200 ease-in-out translate-x-0"
+            class="h-4 w-4 translate-x-0 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/50 transition duration-200 ease-in-out"
             aria-hidden="true"></span>
         </button>
         <input type="hidden" id="agree-terms" name="agree-terms" value="no" />
@@ -183,17 +184,26 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         > provided by the company. By providing my phone number, I agree to receive
         text notess from the business.
       </label>
-      <span class="text-sm leading-6 text-black">This form is a request to visit Blue Skies Above. The requested or alternate dates for your visit may or may not be available depending on demand and availability.</span>
+      <span class="text-sm leading-6 text-black"
+        >This form is a request to visit Blue Skies Above. The requested or
+        alternate dates for your visit may or may not be available depending on
+        demand and availability.</span
+      >
     </div>
   </div>
 
   <!-- Submit -->
   <div class="mt-10">
-    <button type="submit" id="submit-btn" class="btn-accent px-4 py-2 rounded-sm">Enroll Now</button>
+    <button
+      type="submit"
+      id="submit-btn"
+      class="btn-accent rounded-sm px-4 py-2">Enroll Now</button
+    >
   </div>
 </form>
 
-<script define:vars={{ VISIT_SCHOOL_URL, PORTAL_API_KEY, CP_ACCOUNT_RANDOM_ID }}>
+<script define:vars={{ VISIT_SCHOOL_URL, PORTAL_API_KEY, CP_ACCOUNT_RANDOM_ID }}
+>
   const toggle = document.getElementById("terms-toggle");
   const thumb = document.getElementById("terms-thumb");
   const hiddenInput = document.getElementById("agree-terms");
