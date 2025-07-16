@@ -7,6 +7,8 @@ import frStrings from "@utils/fr/navigation.ts";
 import Icon from "@components/ui/icons/Icon.astro";
 import BrandLogo from "@components/BrandLogo.astro";
 import { SITE } from "@data/constants";
+import Image from "astro/components/Image.astro";
+import imgRRM from "../../../assets/images/RRM-R-symbol-474.webp";
 
 // Select the correct translation based on the page's lang prop:
 // const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
@@ -27,13 +29,46 @@ const crafted: string =
   <div
     class="mx-auto w-full max-w-[85rem] px-4 py-10 sm:px-6 lg:px-16 lg:pt-20 2xl:max-w-(--breakpoint-2xl)"
   >
-    <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
-      <div class="col-span-full lg:col-span-1 px-2">
+    <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-6">
+      <div class="col-span-full flex flex-col items-start lg:col-span-2">
         <!-- Brand Logo -->
         <BrandLogo class="h-auto w-32" />
-        <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400 text-justify pt-2">
-          Blue Skies Above is a flight school based at Lanett Regional Airport (7A3), offering training for private, commercial, and CFI certifications. With experienced instructors and a student-focused approach, we help future pilots launch their aviation careers with confidence. Book a Discovery Flight or visit our facility to see how we can help you take off.
+        <span
+          class="flex items-center justify-center gap-1 py-1 text-center text-xs"
+        >
+          <a
+            href="/privacy-policy-terms-of-service"
+            target="_blank"
+            class="text-primary-700 hover:text-picton-blue-400 font-semibold dark:text-white"
+          >
+            4445 51st Ave SW • Lanett, AL 36863
+          </a>
+        </span>
+        <p
+          class="py-2 text-left text-sm text-neutral-600 dark:text-neutral-400"
+        >
+          Blue Skies Above is a flight school based at Lanett Regional Airport
+          (7A3), offering training for private, commercial, and CFI
+          certifications. With experienced instructors and a student-focused
+          approach, we help future pilots launch their aviation careers with
+          confidence. Book a Discovery Flight or visit our facility to see how
+          we can help you take off.
         </p>
+        <span
+          class="flex items-center justify-center gap-1 py-1 text-center text-sm"
+        >
+          <a
+            href="/privacy-policy-terms-of-service"
+            target="_blank"
+            class="text-primary-700 hover:text-picton-blue-400 font-semibold dark:text-white"
+            >Privacy Policy
+          </a> • <a
+            href="/privacy-policy-terms-of-service#terms-of-service"
+            target="_blank"
+            class="text-primary-700 hover:text-picton-blue-400 font-semibold dark:text-white"
+            >Terms of Service</a
+          >
+        </span>
       </div>
       <!-- An array of links for Product and Company sections -->
       {
@@ -84,9 +119,30 @@ const crafted: string =
       <div class="flex items-center justify-between">
         <p class="text-sm text-neutral-600 dark:text-neutral-400">
           © <span id="current-year"></span>
-          {SITE.title}.
+          {SITE.title}. All rights reserved.
         </p>
       </div>
+
+      <span
+        class="text-accent-100 flex gap-2 text-center text-neutral-600 dark:text-neutral-400"
+      >
+        Powered by
+        <a
+          href="https://rightruddermarketing.com/"
+          target="_blank"
+          class="text-bold group hover:text-accent-100/70 flex gap-2 duration-200 hover:underline"
+        >
+          <Image
+            src={imgRRM}
+            alt=""
+            class="h-6 w-auto drop-shadow-md duration-300 group-hover:scale-105 group-hover:brightness-125"
+            draggable={"false"}
+            loading={"eager"}
+            format={"avif"}
+          />
+          More Right Rudder</a
+        >
+      </span>
 
       <!-- Social Brands -->
       <div>
