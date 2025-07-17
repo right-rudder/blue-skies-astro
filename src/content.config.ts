@@ -147,9 +147,43 @@ const insightsCollection = defineCollection({
     }),
 });
 
+const pilotTrainingCollection = defineCollection({
+  loader: glob({
+    pattern: "**/[^_]*.{md,mdx}",
+    base: "./src/content/pilot-training",
+  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      siteDescription: z.string(),
+      main: z.object({
+        id: z.number(),
+        content: z.string(),
+        imgCard: image(),
+        imgMain: image(),
+        imgAlt: z.string(),
+      }),
+      location: z
+        .object({
+          city: z.string(),
+          stateShort: z.string(),
+          stateLong: z.string(),
+          description: z.string(),
+          baseLocation: z.string(),
+          keyPlace1: z.string(),
+          keyPlace2: z.string(),
+          headerImages: z.array(z.string()),
+          headlines: z.array(z.string()),
+        })
+        .optional(),
+    }),
+});
+
 export const collections = {
   docs: defineCollection({ schema: docsSchema() }),
   trainingPrograms: trainingProgramsCollection,
   blog: blogCollection,
   insights: insightsCollection,
+  pilotTraining: pilotTrainingCollection,
 };
