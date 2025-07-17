@@ -46,6 +46,14 @@ export const OG = {
   image: ogImageSrc,
 };
 
+export const contactData = {
+  phone: "+1 (334) 449-7600",
+  addressLine1: "4445 51st Ave SW",
+  addressLine2: "Lanett, Alabama 36863",
+  email: "connect@flytheblueskies.com",
+  googleMap: "https://maps.app.goo.gl/J6yNaHPp5KZf6TTX6",
+};
+
 export const partnersData = [
   {
     icon: `<svg
