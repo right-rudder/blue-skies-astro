@@ -9,6 +9,7 @@ import BrandLogo from "@components/BrandLogo.astro";
 import { SITE } from "@data/constants";
 import Image from "astro/components/Image.astro";
 import imgRRM from "../../../assets/images/RRM-R-symbol-474.webp";
+import { contactData } from "@data/constants.ts";
 
 // Select the correct translation based on the page's lang prop:
 // const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
@@ -33,17 +34,6 @@ const crafted: string =
       <div class="col-span-full flex flex-col items-start lg:col-span-2">
         <!-- Brand Logo -->
         <BrandLogo class="h-auto w-32" />
-        <span
-          class="flex items-center justify-center gap-1 py-1 text-center text-xs"
-        >
-          <a
-            href="https://maps.app.goo.gl/hC84gdSiWAUZCAs19"
-            target="_blank"
-            class="text-primary-700 hover:text-picton-blue-400 font-semibold dark:text-white"
-          >
-            4445 51st Ave SW • Lanett, AL 36863
-          </a>
-        </span>
         <p
           class="py-2 text-left text-sm text-neutral-600 dark:text-neutral-400"
         >
@@ -55,17 +45,17 @@ const crafted: string =
           we can help you take off.
         </p>
         <span
-          class="flex items-center justify-center gap-1 py-1 text-center text-sm"
+          class="flex items-center justify-center gap-1 py-1 text-center text-sm text-neutral-500"
         >
           <a
             href="/privacy-policy-terms-of-service"
             target="_blank"
-            class="text-primary-700 hover:text-picton-blue-400 font-semibold dark:text-white"
+            class="hover:text-picton-blue-400 hover:underline"
             >Privacy Policy
           </a> • <a
             href="/privacy-policy-terms-of-service#terms-of-service"
             target="_blank"
-            class="text-primary-700 hover:text-picton-blue-400 font-semibold dark:text-white"
+            class="hover:text-picton-blue-400 hover:underline"
             >Terms of Service</a
           >
         </span>
@@ -99,22 +89,53 @@ const crafted: string =
       }
 
       <!--  Subscribe -->
-      <!-- <div class="col-span-2">
+      <div class="">
         <h3 class="font-bold text-neutral-800 dark:text-neutral-200">
-          {sectionThreeTitle}
+          Contact Us
         </h3>
 
-        <form>
-          <EmailFooterInput />
-          <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
-            {sectionThreeContent}
-          </p>
-        </form>
-      </div> -->
+        <ul
+          class="mt-3 flex flex-col gap-4 text-neutral-600 dark:text-neutral-400"
+        >
+          <li class="group flex items-center gap-2">
+            <svg
+              class="text-picton-blue-500 size-4 duration-200 group-hover:brightness-110"
+              viewBox="0 0 24 24"
+              ><path
+                fill="currentColor"
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+              ></path></svg
+            >
+            <a
+              class="duration-200 group-hover:brightness-110"
+              href=`tel:${contactData.phone}`>{contactData.phone}</a
+            >
+          </li>
+          <li class="group flex max-w-sm gap-2">
+            <svg
+              class="text-picton-blue-500 mt-1 size-4 flex-shrink-0 duration-200 group-hover:brightness-110"
+              viewBox="0 0 24 24"
+              ><path
+                fill="currentColor"
+                d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"
+              ></path></svg
+            >
+            <a
+              class="duration-200 group-hover:brightness-110"
+              href={contactData.googleMap}
+              target="_blank"
+            >
+              <span>Lanett Regional Airport 7A3</span>
+              <p>{contactData.addressLine1}</p>
+              <p>{contactData.addressLine2}</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div
-      class="mt-9 grid gap-y-2 sm:mt-12 sm:flex sm:items-center sm:justify-between sm:gap-y-0"
+      class="mt-9 grid gap-y-2 text-sm sm:mt-12 sm:flex sm:items-center sm:justify-between sm:gap-y-0"
     >
       <div class="flex items-center justify-between">
         <p class="text-sm text-neutral-600 dark:text-neutral-400">
@@ -135,7 +156,7 @@ const crafted: string =
           <Image
             src={imgRRM}
             alt=""
-            class="h-6 w-auto drop-shadow-md duration-300 group-hover:scale-105 group-hover:brightness-125"
+            class="h-4 w-auto drop-shadow-md duration-300 group-hover:scale-105 group-hover:brightness-125"
             draggable={"false"}
             loading={"eager"}
             format={"avif"}

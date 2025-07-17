@@ -16,7 +16,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="given-name"
           placeholder="First Name"
           required
-          class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
+          class="block w-full border-b-[1px] border-gray-300 bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-500 sm:text-sm sm:leading-6"
         />
       </div>
     </div>
@@ -31,7 +31,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="family-name"
           placeholder="Last Name"
           required
-          class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
+          class="block w-full border-b-[1px] border-gray-300 bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-500 sm:text-sm sm:leading-6"
         />
       </div>
     </div>
@@ -46,11 +46,11 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="email"
           placeholder="Email Address"
           required
-          class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
+          class="block w-full border-b-[1px] border-gray-300 bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-500 sm:text-sm sm:leading-6"
         />
       </div>
     </div>
-    <p class="ohno">
+    <p class="hidden">
       <label>
         Don't fill this out if you're human: <input name="confirm-email" />
       </label>
@@ -66,7 +66,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
           autocomplete="tel"
           placeholder="Phone Number"
           required
-          class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
+          class="block w-full border-b-[1px] border-gray-300 bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-500 sm:text-sm sm:leading-6"
         />
       </div>
     </div>
@@ -77,49 +77,45 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
       <div class="mt-2.5">
         <label
           for="requested-date"
-          class="mb-0 block py-2 font-extralight text-gray-900 dark:text-white"
+          class="mb-0 block py-2 text-sm text-gray-900 dark:text-white"
         >
-          Requested Time*
+          Requested Date
         </label>
         <input
+          required
           type="date"
           id="requested-date"
           name="requested-date"
           value="2018-06-12T19:30"
+          class="w-full border-b-[1px] border-gray-300 bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-500 sm:text-sm sm:leading-6"
         />
-      </div>
-      <div class="mt-2.5">
-        <span class="text-sm font-light text-red-500"
-          >PLEASE NOTE: WE ONLY ACCEPT DISCOVERY FLIGHT REQUESTS WITH 4 DAYS'
-          NOTICE. Please do not choose a date within 4 days of today.</span
-        >
       </div>
 
       <!-- Requested Time-->
       <div class="mt-2.5">
         <label
           for="request-time"
-          class="mb-0 block py-2 font-extralight text-gray-900 dark:text-white"
+          class="mb-0 block py-2 text-sm text-gray-900 dark:text-white"
         >
-          Requested Time*
+          Requested Time
         </label>
         <select
           required
           id="request-time"
           name="request-time"
-          class="block w-full border-b-[1px] border-gray-300 bg-transparent bg-white py-2 font-extralight text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-700 sm:text-sm sm:leading-6"
+          class="block w-full border-b-[1px] border-gray-300 bg-white py-2 text-gray-900 shadow-sm ring-sky-600 outline-none ring-inset placeholder:text-gray-500 sm:text-sm sm:leading-6"
         >
-          <option value="7A - 9AM">7A - 9AM</option>
-          <option value="9A - 11AM">9A - 11AM</option>
-          <option value="11A - 1PM">11A - 1PM</option>
+          <option value="7A - 9AM">7AM - 9AM</option>
+          <option value="9A - 11AM">9AM - 11AM</option>
+          <option value="11A - 1PM">11AM - 1PM</option>
           <option value="1PM - 3PM">1PM - 3PM</option>
         </select>
       </div>
 
       <div class="mt-2.5">
-        <span class="text-sm font-light text-red-500"
-          >This is a request, staff will contact you for confirmation on date
-          and time.</span
+        <span class="text-picton-blue-500 text-sm font-medium"
+          >*This is only a request, staff will contact you for confirmation on
+          date and time.</span
         >
       </div>
     </div>
@@ -130,7 +126,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         <button
           type="button"
           id="terms-toggle"
-          class="ring-primary-900/5 flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 transition-colors duration-200 ease-in-out ring-inset focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          class="ring-primary-900/5 flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 transition-colors duration-200 ease-in-out ring-inset focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-900"
           role="switch"
           aria-checked="false"
           aria-labelledby="switch-1-label"
@@ -152,12 +148,12 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         I agree to the <a
           href="/privacy-policy-terms-of-service"
           target="_blank"
-          class="text-primary-700 hover:text-picton-blue-400 font-semibold"
+          class="text-primary-700 hover:text-picton-blue-400 font-semibold hover:underline"
           >Privacy Policy</a
         > and <a
           href="/privacy-policy-terms-of-service#terms-of-service"
           target="_blank"
-          class="text-primary-700 hover:text-picton-blue-400 font-semibold"
+          class="text-primary-700 hover:text-picton-blue-400 font-semibold hover:underline"
           >Terms of Service</a
         > provided by the company. By providing my phone number, I agree to receive
         text notes from the business.
@@ -165,16 +161,29 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
     </div>
   </div>
   <div class="mt-10">
-    <button
-      type="submit"
-      id="submit-btn"
-      class="btn-accent rounded-sm px-4 py-2">SEND</button
-    >
+    <button type="submit" id="submit-btn" class="btn-accent">Submit</button>
   </div>
 </form>
 
 <script define:vars={{ FORM_WEBHOOK_URL, PORTAL_API_KEY, CP_ACCOUNT_RANDOM_ID }}
 >
+  const dateInput = document.getElementById("requested-date");
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const minDate = new Date(today);
+  minDate.setDate(today.getDate() + 5);
+
+  const formatDate = (date) => {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
+
+  dateInput.min = formatDate(minDate);
+
   const toggle = document.getElementById("terms-toggle");
   const thumb = document.getElementById("terms-thumb");
   const hiddenInput = document.getElementById("agree-terms");
@@ -297,16 +306,6 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
     });
   });
 </script>
-
-<style>
-  .ohno {
-    @apply hidden;
-  }
-
-  .translate-x-3.5 {
-    transform: translateX(0.875rem); /* Tailwind's 3.5 = 14px */
-  }
-</style>
 
 <!-- <div class="min-h-[400px] lg:min-h-[800px]">
     <iframe

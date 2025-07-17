@@ -162,6 +162,8 @@ const footerLinks = [
         name: "Book a Discovery Flight",
         link: "/discovery-flights",
       },
+      { name: "Contact us", link: "/contact" },
+      { name: "Enroll Now", link: "/enroll-at-blue-skies" },
     ],
   },
   {
@@ -233,15 +235,6 @@ const footerLinks = [
         name: "Leaseback Program",
         link: "/leaseback-program",
       },
-    ],
-  },
-  {
-    section: "Quick Links",
-    links: [
-      { name: "Discovery Flight", link: "/discovery-flights" },
-      { name: "Contact us", link: "/contact" },
-      { name: "Enroll Now", link: "/enroll-at-blue-skies" },
-      // { name: "Visit School", link: "/contact" },
     ],
   },
 ];

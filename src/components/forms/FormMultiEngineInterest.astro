@@ -47,7 +47,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
       />
     </div>
   </div>
-  <p class="ohno">
+  <p class="hidden">
     <label>
       Don't fill this out if you're human: <input name="confirm-email" />
     </label>
@@ -287,13 +287,3 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
     });
   });
 </script>
-
-<style>
-  .ohno {
-    @apply hidden;
-  }
-
-  .translate-x-3.5 {
-    transform: translateX(0.875rem); /* Tailwind's 3.5 = 14px */
-  }
-</style>

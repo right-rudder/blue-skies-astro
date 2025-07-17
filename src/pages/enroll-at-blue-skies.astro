@@ -31,13 +31,22 @@ const ogTitle =
     inLanguage: "en-US",
   }}
 >
-  <MainSection
-    title="Enroll at Blue Skies"
-    subTitle="Fill out the form below and let's start flying! A Blue Skies Above team member will get in touch with you and walk you through the next steps on getting you in the air."
-    btnExists={false}
-    btnTitle="Contact Us"
-    btnURL="/contact"
-  />
+  <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+      <div class="mb-10 text-center">
+        <h1
+          class="text-picton-blue-600 dark:text-picton-blue-400 text-2xl font-bold tracking-tight text-balance md:text-4xl md:leading-tight lg:py-6 lg:text-5xl"
+        >
+          Enroll at Blue Skies
+        </h1>
+        <p class="mt-1 text-pretty text-neutral-600 dark:text-neutral-400">
+          Fill out the form below and let's start flying! A Blue Skies Above
+          team member will get in touch with you and walk you through the next
+          steps on getting you in the air.
+        </p>
+      </div>
 
-  <Enroll />
+      <Enroll />
+    </div>
+  </section>
 </MainLayout>
