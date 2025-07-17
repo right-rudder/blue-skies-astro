@@ -132,12 +132,14 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
       text notes from the business.
     </label>
   </div>
+  <div class="mt-10">
+    <button
+      type="submit"
+      id="submit-btn"
+      class="btn-accent rounded-sm px-4 py-2">SEND Message</button
+    >
+  </div>
 </form>
-<div class="mt-10">
-  <button type="submit" id="submit-btn" class="btn-accent rounded-sm px-4 py-2"
-    >SEND Message</button
-  >
-</div>
 
 <script define:vars={{ FORM_WEBHOOK_URL, PORTAL_API_KEY, CP_ACCOUNT_RANDOM_ID }}
 >
