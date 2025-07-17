@@ -13,7 +13,7 @@ interface Props {
 ---
 
 <a
-  class="group block rounded-xl outline-hidden ring-zinc-500 transition duration-300 focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden"
+  class="group block rounded-xl ring-zinc-500 outline-hidden transition duration-300 focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden"
   href={recentBlogLocale && recentBlogLocale !== "en"
     ? `/${recentBlogLocale}/blog/${blogEntry.id.replace(/^fr\//, "")}/`
     : `/blog/${blogEntry.id.replace(/^en\//, "")}/`}
@@ -21,7 +21,7 @@ interface Props {
 >
   <div>
     <Image
-      class="aspect-video rounded-xl"
+      class="aspect-video rounded-xl object-cover"
       src={blogEntry.data.cardImage}
       alt={blogEntry.data.cardImageAlt}
       draggable={"false"}
@@ -29,7 +29,7 @@ interface Props {
     />
     <!-- The title of the blog post -->
     <h3
-      class="mt-2 text-balance text-lg font-medium text-neutral-800 group-hover:text-sky-400 dark:text-neutral-300 dark:group-hover:text-neutral-50"
+      class="text-picton-blue-600 dark:text-picton-blue-500 mt-2 text-lg font-medium text-balance group-hover:text-neutral-900 dark:group-hover:text-neutral-50"
     >
       {blogEntry.data.title}
     </h3>

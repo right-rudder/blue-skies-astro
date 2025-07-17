@@ -11,7 +11,8 @@ import ContactUsForm from "@/components/forms/FormContactUs.astro";
 
 // Define the variables that will be used in this component
 const title: string = "Contact us";
-const subTitle: string = "Have questions about our flight training programs, or just want to say hello? Reach out and we'll be happy to help you on your aviation journey.";
+const subTitle: string =
+  "Have questions about our flight training programs, or just want to say hello? Reach out and we'll be happy to help you on your aviation journey.";
 const formTitle: string = "Send us a message";
 const formSubTitle: string = "We'll get back to you in 1-2 business days.";
 ---
@@ -21,7 +22,7 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
   <div class="mx-auto max-w-2xl lg:max-w-5xl">
     <div class="text-center">
       <h1
-        class="lg:py-6 text-balance text-2xl lg:text-5xl font-bold tracking-tight text-picton-blue-600 dark:text-picton-blue-400 md:text-4xl md:leading-tight"
+        class="text-picton-blue-600 dark:text-picton-blue-400 text-2xl font-bold tracking-tight text-balance md:text-4xl md:leading-tight lg:py-6 lg:text-5xl"
       >
         {title}
       </h1>
@@ -31,7 +32,7 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
     </div>
 
     <div class="mt-12 grid items-center gap-6 lg:grid-cols-2 lg:gap-16">
-      <div class="flex flex-col rounded-xl p-4 sm:p-6 lg:p-8 h-full">
+      <div class="flex h-full flex-col rounded-xl p-4 sm:p-6 lg:p-8">
         <h2
           class="mb-8 text-xl font-bold text-neutral-700 dark:text-neutral-300"
         >
@@ -72,7 +73,7 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
             </p>
           </div>
         </form> -->
-        <ContactUsForm class="h-full"/>
+        <ContactUsForm />
       </div>
 
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
@@ -97,7 +98,11 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
           ><Icon name="chatBubble" />
         </ContactIconBlock>
 
-        <a href="https://maps.app.goo.gl/9y7f3UvVHVLp7VUD6" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://maps.app.goo.gl/9y7f3UvVHVLp7VUD6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <ContactIconBlock
             heading="Visit Blue Skies Above Today"
             content="7A3 - Lanett Municipal Airport"

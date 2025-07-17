@@ -50,7 +50,7 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
         />
       </div>
     </div>
-    <p class="ohno">
+    <p class="hidden">
       <label>
         Don't fill this out if you're human: <input name="confirm-email" />
       </label>
@@ -121,12 +121,12 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
       I agree to the <a
         href="/privacy-policy-terms-of-service"
         target="_blank"
-        class="text-primary-700 hover:text-picton-blue-400 font-semibold"
+        class="text-primary-700 hover:text-picton-blue-400 font-semibold hover:underline"
         >Privacy Policy</a
       > and <a
         href="/privacy-policy-terms-of-service#terms-of-service"
         target="_blank"
-        class="text-primary-700 hover:text-picton-blue-400 font-semibold"
+        class="text-primary-700 hover:text-picton-blue-400 font-semibold hover:underline"
         >Terms of Service</a
       > provided by the company. By providing my phone number, I agree to receive
       text notes from the business.
@@ -263,13 +263,3 @@ const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
     });
   });
 </script>
-
-<style>
-  .ohno {
-    @apply hidden;
-  }
-
-  .translate-x-3.5 {
-    transform: translateX(0.875rem); /* Tailwind's 3.5 = 14px */
-  }
-</style>
