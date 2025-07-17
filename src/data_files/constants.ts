@@ -1,4 +1,4 @@
-import ogImageSrc from "@images/blue-skies-logo.webp";
+import ogImageSrc from "@images/BSA-OG-image.png";
 import imgPartner1 from "@images/partner-blue-skies-fsana-logo.webp";
 import imgPartner2 from "@images/partner-blue-skies-gleim.webp";
 import imgPartner3 from "@images/partner-blue-skies-nafi-logo.webp";
