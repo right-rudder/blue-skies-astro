@@ -27,8 +27,8 @@ export default defineConfig({
   redirects: {
     // missing pages:
     // locations
-    //flight-training-programs
 
+    //flight-training-programs
     "/visit-flight-school": "/contact",
     "/spin-endorsement": "/flight-training-programs/spin-endorsement",
     "/private-pilot": "/flight-training-programs/private-pilot-certificate-ppl",
@@ -47,6 +47,12 @@ export default defineConfig({
     "/should-i-become-a-pilot": "/why-become-a-pilot",
     "/why-choose-blue-skies-above": "/about-us",
     //blog
+    "/posts/the-growing-demand-for-flight-instructors-start-your-aviation-career-with-blue-skies-above":
+      "/blog/the-growing-demand-for-flight-instructors-start-your-aviation-career-with-blue-skies-above",
+    "posts/from-student-to-instructor-why-becoming-a-cfi-is-the-smartest-step-toward-the-airlines":
+      "blog/from-student-to-instructor-why-becoming-a-cfi-is-the-smartest-step-toward-the-airlines",
+    "posts/factors-that-help-you-become-a-successful-student-pilot":
+      "blog/factors-that-help-you-become-a-successful-student-pilot",
     "/posts/how-airplanes-defy-gravity-the-magic-of-lift":
       "/blog/how-airplanes-defy-gravity-the-magic-of-lift",
     "/posts/flight-training-from-inception-to-blue-skies":
