@@ -77,6 +77,18 @@ export default defineConfig({
       "/blog/why-a-discovery-flight-over-alabama-can-be-the-first-step-to-your-aviation-career",
     "/posts/blue-skies-above-and-eaa-chapter-677-host-2024-04-30-chapter-flight-bag-meeting-at-columbus-airport":
       "/blog/blue-skies-above-and-eaa-chapter-677-host-2024-04-30-chapter-flight-bag-meeting-at-columbus-airport",
+    "/posts/how-to-maintain-your-pilot-skills":
+      "/blog/how-to-maintain-your-pilot-skills",
+    "/posts/mastering-flight-instruments-at-blue-skies-above":
+      "/blog/mastering-flight-instruments-at-blue-skies-above",
+    "/posts/multi-engine-training-career-advantages-with-blue-skies-above":
+      "/blog/multi-engine-training-career-advantages-with-blue-skies-above",
+    "/posts/tfrs-election-season-s-odd-flight-restriction":
+      "/blog/tfrs-election-season-s-odd-flight-restriction",
+    "/posts/understanding-r-atp-a-guide-for-aspiring-pilots":
+      "/blog/understanding-r-atp-a-guide-for-aspiring-pilots",
+    "/posts/why-blue-skies-above-uses-the-cessna-172-for-flight-training":
+      "/blog/why-blue-skies-above-uses-the-cessna-172-for-flight-training",
   },
   prefetch: true,
   integrations: [
