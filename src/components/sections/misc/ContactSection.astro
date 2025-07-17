@@ -8,6 +8,7 @@ import PhoneInput from "@components/ui/forms/input/PhoneInput.astro";
 import TextAreaInput from "@components/ui/forms/input/TextAreaInput.astro";
 import Icon from "@components/ui/icons/Icon.astro";
 import ContactUsForm from "@/components/forms/FormContactUs.astro";
+import { contactData } from "@/data_files/constants";
 
 // Define the variables that will be used in this component
 const title: string = "Contact us";
@@ -79,13 +80,13 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
         <ContactIconBlock
-          heading="Knowledgebase"
-          content="Browse through all of our knowledgebase articles."
+          heading="Call us"
+          content=`Prefer to talk? Give us a call at ${contactData.phone}`
           isLinkVisible={true}
-          linkTitle="Visit our blog"
-          linkURL="/blog"
+          linkTitle="Call now"
+          linkURL=`tel:${contactData.phone}`
           isArrowVisible={true}
-          ><Icon name="question" />
+          ><Icon name="phone" />
         </ContactIconBlock>
 
         <ContactIconBlock
