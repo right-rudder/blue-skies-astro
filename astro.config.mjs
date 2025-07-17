@@ -26,13 +26,12 @@ export default defineConfig({
 
   redirects: {
     // missing pages:
-    // https://flytheblueskies.com/time-building-package
-    // https://flytheblueskies.com/finish-up-package
-    // https://flytheblueskies.com/auburn-university-pilot
     // locations
     //flight-training-programs
+
     "/visit-flight-school": "/contact",
     "/spin-endorsement": "/flight-training-programs/spin-endorsement",
+    "/private-pilot": "/flight-training-programs/private-pilot-certificate-ppl",
     "/private-pilot-certificate-ppl":
       "/flight-training-programs/private-pilot-certificate-ppl",
     "/instrument-rating-ifr": "/flight-training-programs/instrument-rating-ifr",
