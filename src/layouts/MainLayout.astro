@@ -39,6 +39,34 @@ interface Props {
       customDescription={customDescription}
       customOgTitle={customOgTitle}
     />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DWLY484X9"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6DWLY484X9");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script is:inline>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TPZNMTN3");
+    </script>
+    <!-- End Google Tag Manager -->
+
     {/* Define the title of the page */}
     <title>{title}</title>
     <script is:inline>
@@ -57,6 +85,13 @@ interface Props {
   <body
     class="selection:bg-picton-blue-400 overflow-x-hidden bg-neutral-200 selection:text-neutral-700 dark:bg-neutral-800"
   >
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TPZNMTN3"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
     <!-- <Banner /> -->
     <div class="mx-auto max-w-(--breakpoint-2xl) px-4 sm:px-6 lg:px-8">
       <Navbar />
