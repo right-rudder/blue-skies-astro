@@ -23,6 +23,73 @@ export default defineConfig({
   //     prefixDefaultLocale: false,
   //   },
   // },
+
+  redirects: {
+    // missing pages:
+    // locations
+
+    //flight-training-programs
+    "/visit-flight-school": "/contact",
+    "/spin-endorsement": "/flight-training-programs/spin-endorsement",
+    "/private-pilot": "/flight-training-programs/private-pilot-certificate-ppl",
+    "/private-pilot-certificate-ppl":
+      "/flight-training-programs/private-pilot-certificate-ppl",
+    "/instrument-rating-ifr": "/flight-training-programs/instrument-rating-ifr",
+    "/commercial-pilot-certificate-cpl":
+      "/flight-training-programs/commercial-pilot-certificate-cpl",
+    "/multi-engine-rating": "/flight-training-programs/multi-engine-rating",
+    "/multi-engine-instructor-mei":
+      "/flight-training-programs/multi-engine-instructor-mei",
+    "/certified-flight-instructor-cfi":
+      "/flight-training-programs/certified-flight-instructor-cfi",
+    "/flight-instructor-instrument-cfii":
+      "/flight-training-programs/certified-flight-instructor-instrument-cfii",
+    "/should-i-become-a-pilot": "/why-become-a-pilot",
+    "/why-choose-blue-skies-above": "/about-us",
+    //blog
+    "/posts/the-growing-demand-for-flight-instructors-start-your-aviation-career-with-blue-skies-above":
+      "/blog/the-growing-demand-for-flight-instructors-start-your-aviation-career-with-blue-skies-above",
+    "posts/from-student-to-instructor-why-becoming-a-cfi-is-the-smartest-step-toward-the-airlines":
+      "blog/from-student-to-instructor-why-becoming-a-cfi-is-the-smartest-step-toward-the-airlines",
+    "posts/factors-that-help-you-become-a-successful-student-pilot":
+      "blog/factors-that-help-you-become-a-successful-student-pilot",
+    "/posts/how-airplanes-defy-gravity-the-magic-of-lift":
+      "/blog/how-airplanes-defy-gravity-the-magic-of-lift",
+    "/posts/flight-training-from-inception-to-blue-skies":
+      "/blog/flight-training-from-inception-to-blue-skies",
+    "/posts/blue-skies-above-acquires-a-new-taa-plane":
+      "/blog/blue-skies-above-acquires-a-new-taa-plane",
+    "/posts/celebrating-our-1-year-anniversary-with-pancakes":
+      "/blog/celebrating-our-1-year-anniversary-with-pancakes",
+    "/posts/the-importance-of-flight-simulators-in-pilot-training":
+      "/blog/the-importance-of-flight-simulators-in-pilot-training",
+    "/posts/how-to-chooose-the-right-flight-school-for-you":
+      "/blog/how-to-chooose-the-right-flight-school-for-you",
+    "/posts/what-is-the-written-exam-and-how-to-pass-it":
+      "/blog/what-is-the-written-exam-and-how-to-pass-it",
+    "/posts/what-are-the-differences-between-part-61-and-part-141-flight-schools":
+      "/blog/what-are-the-differences-between-part-61-and-part-141-flight-schools",
+    "/posts/why-local-flight-schools-might-be-your-best-bet-for-pilot-training":
+      "/blog/why-local-flight-schools-might-be-your-best-bet-for-pilot-training",
+    "/posts/why-the-blue-skies-above-leaseback-program-is-a-smart-investment-for-aircraft-owners":
+      "/blog/why-the-blue-skies-above-leaseback-program-is-a-smart-investment-for-aircraft-owners",
+    "/posts/why-a-discovery-flight-over-alabama-can-be-the-first-step-to-your-aviation-career":
+      "/blog/why-a-discovery-flight-over-alabama-can-be-the-first-step-to-your-aviation-career",
+    "/posts/blue-skies-above-and-eaa-chapter-677-host-2024-04-30-chapter-flight-bag-meeting-at-columbus-airport":
+      "/blog/blue-skies-above-and-eaa-chapter-677-host-2024-04-30-chapter-flight-bag-meeting-at-columbus-airport",
+    "/posts/how-to-maintain-your-pilot-skills":
+      "/blog/how-to-maintain-your-pilot-skills",
+    "/posts/mastering-flight-instruments-at-blue-skies-above":
+      "/blog/mastering-flight-instruments-at-blue-skies-above",
+    "/posts/multi-engine-training-career-advantages-with-blue-skies-above":
+      "/blog/multi-engine-training-career-advantages-with-blue-skies-above",
+    "/posts/tfrs-election-season-s-odd-flight-restriction":
+      "/blog/tfrs-election-season-s-odd-flight-restriction",
+    "/posts/understanding-r-atp-a-guide-for-aspiring-pilots":
+      "/blog/understanding-r-atp-a-guide-for-aspiring-pilots",
+    "/posts/why-blue-skies-above-uses-the-cessna-172-for-flight-training":
+      "/blog/why-blue-skies-above-uses-the-cessna-172-for-flight-training",
+  },
   prefetch: true,
   integrations: [
     sitemap({
