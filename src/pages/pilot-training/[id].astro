@@ -5,6 +5,34 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import { getCollection, render } from "astro:content";
 
+// import index
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
+import ClientsSection from "@components/sections/landing/ClientsSection.astro";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
+import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
+import PricingSection from "@components/sections/pricing/PricingSection.astro";
+import FAQ from "@components/sections/misc/FAQ.astro";
+import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
+import privatePilotPass from "@images/blue-skies-private-pilot-checkride-pass-600.webp";
+import CTA from "@/components/sections/misc/CTA.astro";
+
+import faqs from "@data/faqs.json";
+import features from "@data/features.json";
+import pricing from "@data/pricing.json";
+import type { CollectionEntry } from "astro:content";
+
+// Images
+import featureImage from "@images/blue-skies-private-pilot-checkride-pass-600.webp";
+import tools from "src/assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
+import construction from "src/assets/images/blue-skies-over-auburn.webp";
+import dashboard from "src/assets/images/blue-skies-auburn-university-student-pilot-programs.webp";
+
+import { partnersData } from "@/data_files/constants";
+import GoogleMap from "@/components/sections/misc/GoogleMap.astro";
+import CardRelated from "@/components/ui/cards/CardRelated.astro";
+
 // Use `getStaticPaths` to generate static routes for generated pages on build
 export async function getStaticPaths() {
   const pilotTrainingLocations = await getCollection(
@@ -25,9 +53,73 @@ const { post } = Astro.props;
 
 const { Content } = await render(post);
 
-const pageTitle: string = `${post.data.title} | ${SITE.title}`;
-const metaDescription = post.data.description;
-const ogTitle = `${post.data.title} | Pilot Training | ${SITE.title}`;
+// consts index
+const englishBlogEntries = await getCollection("blog", ({ id }) => {
+  return id.startsWith("en/");
+});
+
+const englishInsightsEntries = await getCollection("insights", ({ id }) => {
+  return id.startsWith("en/");
+});
+
+const blogPosts: CollectionEntry<"blog">[] = englishBlogEntries.sort(
+  (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
+    b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const avatarSrcs: Array<string> = [
+  "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+  "https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+  "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
+  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+];
+
+const ctaDiscovery = {
+  isRightSection: false,
+  title: "Fly now with Blue Skies Above",
+  subTitle: "Schedule a Discovery Flight and explore the clouds!",
+  single: true,
+  img: construction,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Get Started",
+  btnURL: "/discovery-flights",
+};
+
+const blogSectionTitle: string = "The Latest from Our Blog";
+const blogSectionSubTitle: string =
+  "Stay up-to-date with the latest news, tips, and stories from Blue Skies Above. Our blog features insights from our instructors, student experiences, and updates on aviation trends.";
+
+const location = post;
+const locationCity = location.data.location.city || "your area";
+const locationStateShort = location.data.location.stateShort || "your state";
+const locationStateLong = location.data.location.stateLong || "your state";
+const locationDescription =
+  location.data.description ||
+  "A great place with unique attractions and a welcoming community.";
+const locationCounty =
+  location.data.location.baseLocation ||
+  "A well-known county with rich history and local charm.";
+const locationKeyPlace1 =
+  location.data.location.keyPlace1 || "A popular landmark worth visiting.";
+const locationKeyPlace2 =
+  location.data.location.keyPlace2 || "Another must-see location in the area.";
+
+function randomItem(arr: string[]) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+const headerImage = randomItem(location.data.location.headerImages || []);
+const rawHeadline = randomItem(location.data.location.headlines || []);
+const headerH1 = rawHeadline
+  .replace("{{city}}", locationCity)
+  .replace("{{stateShort}}", locationStateShort)
+  .replace("{{baseLocation}}", locationCounty)
+  .replace("{{stateLong}}", locationStateLong);
+
+const pageTitle: string = `${locationCity}, ${locationStateLong} | Flight School for Pilot Training  | ${SITE.title}`;
+const metaDescription = `Explore the top flight school near you, we're based near ${locationCity}, ${locationStateShort}.`;
+const ogTitle = `${locationCity}, ${locationStateLong} | Pilot Training | ${SITE.title}`;
 ---
 
 <MainLayout
@@ -58,62 +150,153 @@ const ogTitle = `${post.data.title} | Pilot Training | ${SITE.title}`;
     },
   }}
 >
-  <section class="py-6 sm:py-8 lg:py-12">
-    <div class="mx-auto max-w-(--breakpoint-xl) px-4 md:px-8">
-      <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
-        <div>
-          <div class="h-64 overflow-hidden rounded-lg shadow-lg md:h-auto">
-            <Image
-              class="h-full w-full object-cover object-center"
-              src={post.data.main.imgCard}
-              alt={post.data.main.imgAlt}
-              draggable={"false"}
-              format={"avif"}
-            />
-          </div>
-          <div
-            id="progress-mobile"
-            class="from-picton-blue-400/30 to-picton-blue-400 fixed top-0 left-0 h-2 w-full bg-linear-to-r md:hidden"
-          >
-          </div>
-          <div id="pin" class="mt-10 hidden space-y-4 md:block">
-            <div
-              class="h-px w-full overflow-hidden bg-neutral-300 dark:bg-neutral-700"
-            >
-              <div
-                id="progress"
-                class="from-picton-blue-400/30 to-picton-blue-400 h-px w-full bg-linear-to-r"
-              >
-              </div>
-            </div>
-            <p class="text-sm text-pretty text-neutral-500">
-              Table of Contents:
-            </p>
-            <div id="toc" class="">
-              <ul
-                class="space-y-2 text-base text-pretty text-neutral-700 transition duration-300 dark:text-neutral-400"
-              >
-              </ul>
-            </div>
-          </div>
-        </div>
+  <AnnouncementBanner
+    btnId="dismiss-button"
+    btnTitle="Are you considering a professional flight program at a university?"
+    url="/professional-flight-program"
+  />
 
-        <div class="md:pt-8">
-          <h1
-            class="mb-4 text-center text-2xl font-bold text-balance text-neutral-800 sm:text-3xl md:mb-6 md:text-left dark:text-neutral-200"
-          >
-            {post.data.title}
-          </h1>
+  <HeroSection
+    title={headerH1}
+    subTitle=`Embark on your aviation journey with Blue Skies Above, Alabama's premier flight school. Located at Lanett Municipal Airport (7A3), we offer personalized training programs, from Private Pilot to Commercial certifications, guided by experienced instructors. Whether you're in Auburn, Columbus, or beyond, take the first step toward your pilot's license today.`
+    primaryBtn="Enroll now"
+    primaryBtnURL="/enroll-at-blue-skies"
+    secondaryBtn="Our Programs"
+    secondaryBtnURL="/flight-training-programs"
+    withReview={true}
+    avatars={avatarSrcs}
+    rating=`<span class="font-bold">5</span> / 5`
+    starCount={5}
+    reviews=`From <span class="font-bold">17</span> Reviews`
+    src={privatePilotPass}
+    alt="Private Pilot receiving Checkride Pass certificate"
+  />
+  <FeaturesNavs
+    title=`The best time to <span class="text-picton-blue-500 dark:text-picton-blue-400">start flying</span> is now`
+    tabs={[
+      {
+        heading: "Start a Conversation",
+        content:
+          "The first step in pilot training is reaching out to a flight school. Blue Skies Above welcomes you to the world of aviation.",
+        svg: "messages",
+        src: tools,
+        alt: "A pair of Cessna 172s at Lanett Municipal Airport",
+        first: true,
+      },
+      {
+        heading: "Take Your First Flight Lesson",
+        content:
+          "Also known as a discovery flight, take the controls of the aircraft and fly the plane. See if becoming a pilot is right for you.",
+        svg: "takeoff",
+        src: dashboard,
+        alt: "Auburn University student pilot program",
+        second: true,
+      },
+      {
+        heading: "Start Training",
+        content:
+          "You've got the best flight school in Lanett, AL supporting you every step of the way. We're experts in flight training.",
+        svg: "lesson",
+        src: construction,
+        alt: "Student pilot in an aircraft with instructor",
+      },
+    ]}
+  />
 
-          <article
-            class="text-lg text-pretty text-neutral-700 dark:text-neutral-300"
-          >
-            <Content />
-          </article>
-        </div>
-      </div>
+  <FeaturesGeneral
+    title="Preparing future pilots to launch their aviation careers"
+    subTitle="Discover why aspiring pilots in Auburn and throughout the Alabama area trust Blue Skies Above to turn their aviation dreams into reality. With experienced instructors and comprehensive programs, we help students build the skills and confidence needed for a successful aviation career."
+    src={featureImage}
+    alt=""
+    features={features}
+  />
+
+  <ClientsSection
+    title="Dedicated to flight training"
+    subTitle="Blue Skies Above is a proud partner of these aviation associations and companies"
+    partners={partnersData}
+  />
+
+  <CTA content={ctaDiscovery} />
+
+  <TestimonialsSection
+    title="Take Off With Confidence"
+    subTitle="At Blue Skies Above, we make your aviation dreams a reality through fun, efficient, and safety-focused flight training — right from the first flight."
+    testimonials={[
+      {
+        content:
+          "Training with Blue Skies Above was the best decision I’ve made. The instructors were knowledgeable, patient, and made every lesson engaging. I went from zero flight time to earning my private pilot license faster than I thought possible!",
+        author: "Mark Eldridge",
+        role: "Private Pilot Graduate",
+        avatarSrc:
+          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+      },
+      {
+        content:
+          "Flying out of Lanett made a huge difference. The quiet skies meant more time flying and less time waiting. The team made the learning process enjoyable from start to finish.",
+        author: "Tasha Bennett",
+        role: "Instrument Rating Student",
+        avatarSrc:
+          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+      },
+    ]}
+    statistics={[
+      {
+        count: "250+",
+        description:
+          "students trained for private, commercial, and instructor certifications",
+      },
+      {
+        count: "6",
+        description: "aircraft available for primary and advanced training",
+      },
+      {
+        count: "30%",
+        description:
+          "faster progress due to low-traffic airspace and efficient scheduling",
+      },
+      {
+        count: "99%",
+        description:
+          "student satisfaction from first solo to checkride completion",
+      },
+    ]}
+  />
+
+  <!-- <PricingSection pricing={pricing} /> -->
+
+  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+
+  <GoogleMap />
+
+  <section
+    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+  >
+    <div class="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
+      <h2
+        class="text-picton-blue-600 dark:text-picton-blue-500 text-2xl font-bold md:text-4xl md:leading-tight"
+      >
+        {blogSectionTitle}
+      </h2>
+      <p class="mt-1 text-pretty text-neutral-600 dark:text-neutral-400">
+        {blogSectionSubTitle}
+      </p>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        blogPosts
+          .slice(0, 3)
+          .map((blogEntry) => <CardRelated blogEntry={blogEntry} />)
+      }
     </div>
   </section>
+
+  <HeroSectionAlt
+    title="Fly now with Blue Skies Above"
+    subTitle="Schedule a Discovery Flight and explore the clouds!"
+    btnTitle="Get Started"
+    url="/discovery-flights"
+  />
 </MainLayout>
 
 <style is:global>
