@@ -3,41 +3,42 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import CardBlog from "@components/ui/cards/CardBlog.astro";
 import CardBlogRecent from "@components/ui/cards/CardBlogRecent.astro";
-import CardInsight from "@components/ui/cards/CardInsight.astro";
+// import CardInsight from "@components/ui/cards/CardInsight.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
 
 import CTA from "@/components/sections/misc/CTA.astro";
-import ctaImg from "../../assets/images/airplane-cockpit.webp"
+import ctaImg from "../../assets/images/airplane-cockpit.webp";
 
 const ctaEnroll = {
-    isRightSection: false,
-    title: "Your Aviation Career is Cleared for Takeoff",
-    subTitle: "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
-    single: true,
-    img: ctaImg,
-    imgAlt: "Flight training syllabus materials",
-    btnExists: true,
-    btnTitle: "Enroll Now",
-    btnURL: "/enroll-at-blue-skies",
-}
+  isRightSection: false,
+  title: "Your Aviation Career is Cleared for Takeoff",
+  subTitle:
+    "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
+  single: true,
+  img: ctaImg,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Enroll Now",
+  btnURL: "/enroll-at-blue-skies",
+};
 // Get all blogs post in English and sort them based on publish date
 
 const englishBlogEntries = await getCollection("blog", ({ id }) => {
   return id.startsWith("en/");
 });
 
-const englishInsightsEntries = await getCollection("insights", ({ id }) => {
-  return id.startsWith("en/");
-});
+// const englishInsightsEntries = await getCollection("insights", ({ id }) => {
+//   return id.startsWith("en/");
+// });
 
 const blogPosts: CollectionEntry<"blog">[] = englishBlogEntries.sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-    b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+    b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 // Get all insights posts
-const insightPosts: CollectionEntry<"insights">[] = englishInsightsEntries;
+// const insightPosts: CollectionEntry<"insights">[] = englishInsightsEntries;
 
 // Separate the most recent post from others
 const mostRecentPost: CollectionEntry<"blog"> = blogPosts[0];
