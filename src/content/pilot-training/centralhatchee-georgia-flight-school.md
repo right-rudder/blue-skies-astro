@@ -1,0 +1,35 @@
+---
+title: Centralhatchee Flight School
+description: Train to be a certified pilot in Centralhatchee, Georgia.
+siteDescription: Discover top-tier pilot training in Centralhatchee, GA.
+main:
+  id: 1
+  content: |
+    Start your flight training in the quiet town of Centralhatchee, Georgia. Learn to fly with confidence in calm skies and a focused atmosphere.
+  imgCard: "@/images/blue-skies-ifr-training-opelika.webp"
+  imgMain: "@/images/blue-skies-ifr-training-opelika.webp"
+  imgAlt: Small aircraft preparing for flight in Centralhatchee, GA
+
+location:
+  city: "Centralhatchee"
+  stateShort: "GA"
+  stateLong: "Georgia"
+  description: "Train in Centralhatchee, where peaceful airspace meets Southern hospitality."
+  baseLocation: "Centralhatchee Airstrip"
+  keyPlace1: "Centralhatchee Creek"
+  keyPlace2: "Community Park"
+
+  headerImages:
+    - "/src/assets/placeholder.webp"
+    - "/src/assets/placeholder.webp"
+    - "/src/assets/placeholder.webp"
+    - "/src/assets/placeholder.webp"
+    - "/src/assets/placeholder.webp"
+
+  headlines:
+    - "Learn to Fly in {{city}}, {{stateShort}}"
+    - "Train Over the Heart of {{stateLong}}"
+    - "Launch Your Pilot Career from {{baseLocation}}"
+    - "Flight Dreams Begin in {{city}}, {{stateShort}}"
+    - "Soar Above {{keyPlace1}} and Beyond"
+---

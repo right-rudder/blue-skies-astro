@@ -9,13 +9,13 @@ export const locations = [
   "/pilot-training/auburn-alabama-flight-school",
   "/pilot-training/lineville-alabama-flight-school",
   "/pilot-training/lumpkin-georgia-flight-school",
-  //done
   "/pilot-training/cusseta-georgia-flight-school",
-  "/pilot-training/tallassee-alabama-flight-school",
   "/pilot-training/manchester-georgia-flight-school",
-  "/pilot-training/centralhatchee-georgia-flight-school",
   "/pilot-training/hamilton-georgia-flight-school",
+  "/pilot-training/centralhatchee-georgia-flight-school",
   "/pilot-training/ashland-alabama-flight-school",
+  //done
+  "/pilot-training/tallassee-alabama-flight-school",
   "/pilot-training/franklin-georgia-flight-school",
   "/pilot-training/wedowee-alabama-flight-school",
   "/pilot-training/talbotton-georgia-flight-school",
