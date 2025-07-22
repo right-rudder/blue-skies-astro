@@ -14,7 +14,6 @@ export const locations = [
   "/pilot-training/hamilton-georgia-flight-school",
   "/pilot-training/centralhatchee-georgia-flight-school",
   "/pilot-training/ashland-alabama-flight-school",
-  //done
   "/pilot-training/tallassee-alabama-flight-school",
   "/pilot-training/franklin-georgia-flight-school",
   "/pilot-training/wedowee-alabama-flight-school",
@@ -27,7 +26,6 @@ export const locations = [
   "/pilot-training/riverside-georgia-flight-school",
   "/pilot-training/opelika-alabama-flight-school",
   "/pilot-training/greenville-georgia-flight-school",
-  "/posts/how-to-maintain-your-pilot-skills",
   "/pilot-training/camp-hill-alabama-flight-school",
   "/pilot-training/buena-vista-georgia-flight-school",
   "/pilot-training/waverly-hall-georgia-flight-school",
@@ -37,5 +35,4 @@ export const locations = [
   "/pilot-training/bibb-city-georgia-flight-school",
   "/pilot-training/woodland-hills-alabama-flight-school",
   "/pilot-training/jacksons-gap-alabama-flight-school",
-  "/posts/flight-training-from-inception-to-blue-skies",
 ];
