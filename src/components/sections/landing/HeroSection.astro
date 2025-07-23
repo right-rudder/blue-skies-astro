@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 import SecondaryCTA from "@components/ui/buttons/SecondaryCTA.astro";
 import ReviewComponent from "@components/ui/blocks/ReviewComponent.astro";
+import YoutubeVideo from "@/components/YoutubeVideo.astro";
 
 // Define props from Astro
 const {
@@ -71,7 +72,7 @@ interface Props {
     </div>
 
     <!-- Review Section: This section presents avatars, review ratings and the number of reviews -->
-    {
+    <!-- {
       withReview ? (
         <ReviewComponent
           avatars={avatars}
@@ -82,18 +83,12 @@ interface Props {
       ) : (
         ""
       )
-    }
+    } -->
   </div>
 
   <!-- Youtube -->
-  <div class="relative w-full" style="padding-top: 56.25%;">
-    <iframe
-      class="absolute inset-0 -z-10 h-full w-full rounded-xl object-cover"
-      src="https://www.youtube-nocookie.com/embed/9oI-zvCBU4Y?autoplay=1&mute=1&controls=0&loop=1&playlist=9oI-zvCBU4Y"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  <div class="flex aspect-video w-full justify-center">
+    <YoutubeVideo />
   </div>
 
   <!-- Hero Image Section -->

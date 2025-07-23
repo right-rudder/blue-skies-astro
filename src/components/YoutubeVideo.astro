@@ -6,7 +6,7 @@ const { videoId } = Astro.props;
 
 <YouTube
   id={videoId || "9oI-zvCBU4Y"}
-  class="h-auto w-3/4 object-cover"
-  params="mute=1&autoplay=1"
+  class="absolute inset-0 z-40 h-full w-full rounded-xl object-cover"
+  params="autoplay=0&mute=1&rel=0"
   posterQuality="max"
 />
