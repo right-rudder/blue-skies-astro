@@ -111,7 +111,9 @@ const headerH1 = rawHeadline
   .replace("{{city}}", locationCity)
   .replace("{{stateShort}}", locationStateShort)
   .replace("{{baseLocation}}", locationCounty)
-  .replace("{{stateLong}}", locationStateLong);
+  .replace("{{stateLong}}", locationStateLong)
+  .replace("{{keyPlace1}}", locationKeyPlace1)
+  .replace("{{keyPlace2}}", locationKeyPlace2);
 
 const pageTitle: string = `${locationCity}, ${locationStateLong} | Flight School for Pilot Training  | ${SITE.title}`;
 const metaDescription = `Explore the top flight school near you, we're based near ${locationCity}, ${locationStateShort}.`;
