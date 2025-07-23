@@ -6,6 +6,7 @@ const { src, alt } = Astro.props;
 interface Props {
   src: string;
   alt: string;
+  class?: string;
 }
 ---
 
@@ -13,6 +14,9 @@ interface Props {
   class="inline-block h-8 w-8 rounded-full ring-2 ring-neutral-50 dark:ring-zinc-800"
   src={src}
   alt={alt}
-  inferSize
-  loading={"eager"}
+  width={32}
+  height={32}
+  format="avif"
+  loading="lazy"
+  quality={80}
 />
