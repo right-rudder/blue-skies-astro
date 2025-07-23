@@ -1,7 +1,7 @@
 ---
 title: Waverly Hall Flight School
-description: Flight training in Waverly Hall, Georgia.
-siteDescription: Personalized pilot lessons in Waverly Hall, GA.
+description: Flight training near Waverly Hall, Georgia.
+siteDescription: Personalized pilot lessons near Waverly Hall, GA.
 main:
   id: 15
   content: |
@@ -14,7 +14,7 @@ location:
   city: "Waverly Hall"
   stateShort: "GA"
   stateLong: "Georgia"
-  description: "Train in a relaxed setting with easy access to Columbus."
+  description: "Train near a relaxed setting with easy access to Columbus."
   baseLocation: "Waverly Hall Airfield"
   keyPlace1: "Flat Rock Park"
   keyPlace2: "Chattahoochee River"
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight Training in {{city}}, {{stateShort}}"
+    - "Flight Training near {{city}}, {{stateShort}}"
     - "Soar Over {{keyPlace1}}"
     - "Learn at {{baseLocation}}"
     - "Small-Town Flight School"

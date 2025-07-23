@@ -1,7 +1,7 @@
 ---
 title: Talbotton Flight School
-description: Professional pilot training in Talbotton, Georgia.
-siteDescription: Master aviation in Talbotton, GA.
+description: Professional pilot training near Talbotton, Georgia.
+siteDescription: Master aviation near Talbotton, GA.
 main:
   id: 4
   content: |
@@ -14,7 +14,7 @@ location:
   city: "Talbotton"
   stateShort: "GA"
   stateLong: "Georgia"
-  description: "Train in a quiet, rural setting with wide-open skies."
+  description: "Train near a quiet, rural setting with wide-open skies."
   baseLocation: "Talbotton Airport"
   keyPlace1: "Piedmont National Wildlife Refuge"
   keyPlace2: "Downtown Talbotton"
@@ -27,9 +27,9 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight Lessons in {{city}}, {{stateShort}}"
+    - "Flight Lessons near {{city}}, {{stateShort}}"
     - "Fly Over {{keyPlace1}}"
     - "Train at {{baseLocation}}"
-    - "Become a Pilot in {{stateLong}}"
+    - "Become a Pilot near {{stateLong}}"
     - "Take Off from {{city}}"
 ---

@@ -1,7 +1,7 @@
 ---
 title: Alexander City Flight School
-description: Pilot training in Alexander City, Alabama.
-siteDescription: Lakefront flight lessons in Alexander City, AL.
+description: Pilot training near Alexander City, Alabama.
+siteDescription: Lakefront flight lessons near Alexander City, AL.
 main:
   id: 18
   content: |
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight Training in {{city}}, {{stateShort}}"
+    - "Flight Training near {{city}}, {{stateShort}}"
     - "Soar Over {{keyPlace1}}"
     - "Train at {{baseLocation}}"
     - "Alabama’s Most Scenic Flight School"

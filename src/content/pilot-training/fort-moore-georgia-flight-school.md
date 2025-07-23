@@ -1,7 +1,7 @@
 ---
 title: Fort Moore Flight School
 description: Military and civilian pilot training near Fort Moore, Georgia.
-siteDescription: Expert flight instruction for civilians and military in Fort Moore, GA.
+siteDescription: Expert flight instruction for civilians and military near Fort Moore, GA.
 main:
   id: 16
   content: |

@@ -1,7 +1,7 @@
 ---
 title: Bibb City Flight School
-description: Flight training in Bibb City, Georgia.
-siteDescription: Urban and industrial airspace training in Bibb City, GA.
+description: Flight training near Bibb City, Georgia.
+siteDescription: Urban and industrial airspace training near Bibb City, GA.
 main:
   id: 19
   content: |
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight School in {{city}}, {{stateShort}}"
+    - "Flight School near {{city}}, {{stateShort}}"
     - "Urban Airspace Experience"
     - "Train at {{baseLocation}}"
     - "Industrial and Scenic Routes"

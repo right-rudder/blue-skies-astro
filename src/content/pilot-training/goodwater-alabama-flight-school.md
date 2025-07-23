@@ -1,7 +1,7 @@
 ---
 title: Goodwater Flight School
-description: Pilot training in Goodwater, Alabama.
-siteDescription: Scenic flight lessons in Goodwater, AL.
+description: Pilot training near Goodwater, Alabama.
+siteDescription: Scenic flight lessons near Goodwater, AL.
 main:
   id: 7
   content: |
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight Lessons in {{city}}, {{stateShort}}"
+    - "Flight Lessons near {{city}}, {{stateShort}}"
     - "Fly Over {{keyPlace1}}"
     - "Begin at {{baseLocation}}"
     - "Pilot Training with a View"

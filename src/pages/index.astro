@@ -23,9 +23,9 @@ const englishBlogEntries = await getCollection("blog", ({ id }) => {
   return id.startsWith("en/");
 });
 
-const englishInsightsEntries = await getCollection("insights", ({ id }) => {
-  return id.startsWith("en/");
-});
+// const englishInsightsEntries = await getCollection("insights", ({ id }) => {
+//   return id.startsWith("en/");
+// });
 
 const blogPosts: CollectionEntry<"blog">[] = englishBlogEntries.sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>

@@ -1,7 +1,7 @@
 ---
 title: Wedowee Flight School
-description: Earn your pilot license in Wedowee, Alabama.
-siteDescription: Expert flight instruction in Wedowee, AL.
+description: Earn your pilot license near Wedowee, Alabama.
+siteDescription: Expert flight instruction near Wedowee, AL.
 main:
   id: 3
   content: |
@@ -27,9 +27,9 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight Training in {{city}}, {{stateShort}}"
+    - "Flight Training near {{city}}, {{stateShort}}"
     - "Soar Over {{keyPlace1}}"
     - "Begin Your Journey at {{baseLocation}}"
-    - "Pilot Training in {{stateLong}}’s Hidden Gem"
+    - "Pilot Training near {{stateLong}}’s Hidden Gem"
     - "Fly the Skies of {{city}}"
 ---

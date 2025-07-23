@@ -1,7 +1,7 @@
 ---
 title: Buena Vista Flight School
-description: Pilot training in Buena Vista, Georgia.
-siteDescription: Affordable flight lessons in Buena Vista, GA.
+description: Pilot training near Buena Vista, Georgia.
+siteDescription: Affordable flight lessons near Buena Vista, GA.
 main:
   id: 14
   content: |
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight School in {{city}}, {{stateShort}}"
+    - "Flight School near {{city}}, {{stateShort}}"
     - "Fly Over {{keyPlace1}}"
     - "Train at {{baseLocation}}"
     - "Low-Cost Pilot Training"

@@ -1,6 +1,6 @@
 ---
 title: Junction City Flight School
-description: Learn to fly in Junction City, Georgia.
+description: Learn to fly near Junction City, Georgia.
 siteDescription: Rural flight training with cross-country opportunities.
 main:
   id: 17
@@ -14,7 +14,7 @@ location:
   city: "Junction City"
   stateShort: "GA"
   stateLong: "Georgia"
-  description: "Train in a quiet rural hub with easy access to major routes."
+  description: "Train near a quiet rural hub with easy access to major routes."
   baseLocation: "Junction City Airfield"
   keyPlace1: "Flint River"
   keyPlace2: "Pine Mountain"
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight School in {{city}}, {{stateShort}}"
+    - "Flight School near {{city}}, {{stateShort}}"
     - "Cross-Country Training Hub"
     - "Fly Over {{keyPlace1}}"
     - "Georgia’s Central Aviation Base"

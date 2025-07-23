@@ -1,7 +1,7 @@
 ---
 title: Greenville Flight School
-description: Professional pilot training in Greenville, Georgia.
-siteDescription: Top-rated flight instruction in Greenville, GA.
+description: Professional pilot training near Greenville, Georgia.
+siteDescription: Top-rated flight instruction near Greenville, GA.
 main:
   id: 12
   content: |
@@ -14,7 +14,7 @@ location:
   city: "Greenville"
   stateShort: "GA"
   stateLong: "Georgia"
-  description: "Train in a historic town with uncrowded skies and friendly vibes."
+  description: "Train near a historic town with uncrowded skies and friendly vibes."
   baseLocation: "Greenville Municipal Airport"
   keyPlace1: "Downtown Greenville"
   keyPlace2: "Chattahoochee Hills"
@@ -27,9 +27,9 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight Training in {{city}}, {{stateShort}}"
+    - "Flight Training near {{city}}, {{stateShort}}"
     - "Soar Over {{keyPlace1}}"
     - "Train at {{baseLocation}}"
     - "Georgia’s Hidden Gem for Pilots"
-    - "Begin Your Aviation Journey in {{city}}"
+    - "Begin Your Aviation Journey near {{city}}"
 ---

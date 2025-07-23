@@ -1,7 +1,7 @@
 ---
 title: Woodland Hills Flight School
-description: Pilot training in Woodland Hills, Alabama.
-siteDescription: Forested flight training in Woodland Hills, AL.
+description: Pilot training near Woodland Hills, Alabama.
+siteDescription: Forested flight training near Woodland Hills, AL.
 main:
   id: 20
   content: |
@@ -14,7 +14,7 @@ location:
   city: "Woodland Hills"
   stateShort: "AL"
   stateLong: "Alabama"
-  description: "Train in Alabama’s backcountry with off-field landing practice."
+  description: "Train near Alabama’s backcountry with off-field landing practice."
   baseLocation: "Woodland Hills Airstrip"
   keyPlace1: "Talladega National Forest"
   keyPlace2: "Cheaha State Park"
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Advanced Flight Training in {{city}}"
+    - "Advanced Flight Training near {{city}}"
     - "Master Mountain Flying"
     - "Train at {{baseLocation}}"
     - "Alabama’s Backcountry Aviation Hub"

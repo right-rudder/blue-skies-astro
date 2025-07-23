@@ -1,6 +1,6 @@
 ---
 title: Riverside Flight School
-description: Pilot training in Riverside, Georgia.
+description: Pilot training near Riverside, Georgia.
 siteDescription: Scenic flight lessons near the Alabama border.
 main:
   id: 10
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight Training in {{city}}, {{stateShort}}"
+    - "Flight Training near {{city}}, {{stateShort}}"
     - "Fly Along the {{keyPlace1}}"
     - "Start at {{baseLocation}}"
     - "Cross-Country Adventures Await"

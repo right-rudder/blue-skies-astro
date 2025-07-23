@@ -132,20 +132,20 @@ const blogCollection = defineCollection({
     }),
 });
 
-const insightsCollection = defineCollection({
-  loader: glob({
-    pattern: "**/[^_]*.{md,mdx}",
-    base: "./src/content/insights",
-  }),
-  schema: ({ image }) =>
-    z.object({
-      title: z.string(),
-      description: z.string(),
-      // contents: z.array(z.string()),
-      cardImage: image(),
-      cardImageAlt: z.string(),
-    }),
-});
+// const insightsCollection = defineCollection({
+//   loader: glob({
+//     pattern: "**/[^_]*.{md,mdx}",
+//     base: "./src/content/insights",
+//   }),
+//   schema: ({ image }) =>
+//     z.object({
+//       title: z.string(),
+//       description: z.string(),
+//       // contents: z.array(z.string()),
+//       cardImage: image(),
+//       cardImageAlt: z.string(),
+//     }),
+// });
 
 const pilotTrainingCollection = defineCollection({
   loader: glob({
@@ -182,6 +182,6 @@ export const collections = {
   docs: defineCollection({ schema: docsSchema() }),
   trainingPrograms: trainingProgramsCollection,
   blog: blogCollection,
-  insights: insightsCollection,
+  // insights: insightsCollection,
   pilotTraining: pilotTrainingCollection,
 };

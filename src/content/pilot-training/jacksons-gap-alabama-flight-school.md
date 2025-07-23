@@ -1,7 +1,7 @@
 ---
 title: Jacksons Gap Flight School
-description: Scenic flight training in Jacksons Gap, Alabama.
-siteDescription: Lakefront pilot lessons in Jacksons Gap, AL.
+description: Scenic flight training near Jacksons Gap, Alabama.
+siteDescription: Lakefront pilot lessons near Jacksons Gap, AL.
 main:
   id: 21
   content: |
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight Training in {{city}}, {{stateShort}}"
+    - "Flight Training near {{city}}, {{stateShort}}"
     - "Seaplane and Landplane Programs"
     - "Fly Over {{keyPlace1}}"
     - "Alabama’s Most Picturesque Flight School"

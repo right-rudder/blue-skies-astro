@@ -1,6 +1,6 @@
 ---
 title: Opelika Flight School
-description: Flight training in Opelika, Alabama.
+description: Flight training near Opelika, Alabama.
 siteDescription: Expert instruction near Auburn University.
 main:
   id: 11
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight School in {{city}}, {{stateShort}}"
+    - "Flight School near {{city}}, {{stateShort}}"
     - "Train Near {{keyPlace1}}"
     - "Fly from {{baseLocation}}"
     - "Auburn-Area Pilot Training"

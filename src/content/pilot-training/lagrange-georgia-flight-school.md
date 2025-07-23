@@ -1,11 +1,11 @@
 ---
 title: title
 description: CFI
-siteDescription: Become a Certified Flight Instructor at Blue Skies Above in Lanett, Alabama. Build flight hours, inspire new pilots, and advance your aviation career with expert training. Enroll today!
+siteDescription: Become a Certified Flight Instructor at Blue Skies Above in Lannet, Alabama. Build flight hours, inspire new pilots, and advance your aviation career with expert training. Enroll today!
 main:
   id: 1
   content: |
-    Become a Certified Flight Instructor and launch your aviation teaching career at Blue Skies Above in Lanett, Alabama - training the next generation of pilots.
+    Become a Certified Flight Instructor and launch your aviation teaching career at Blue Skies Above in Lannet, Alabama - training the next generation of pilots.
   imgCard: "@/images/blue-skies-ifr-training-opelika.webp"
   imgMain: "@/images/blue-skies-ifr-training-opelika.webp"
   imgAlt: Student pilot flying over Lanett in a Cessna 172
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Train in the Skies of {{city}}, {{stateShort}}"
+    - "Train near the Skies of {{city}}, {{stateShort}}"
     - "LaGrange – Where Aviation and Community Soar"
     - "Take Off with Modern Tools and Timeless Views"
     - "LaGrange, {{stateShort}}: Elevate Your Flight Path"

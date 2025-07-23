@@ -27,9 +27,9 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Soar with the Tigers in {{city}}, {{stateShort}}"
-    - "Train Among Innovation and Tradition in Auburn"
-    - "Flight Training in the Heart of College Country"
+    - "Soar with the Tigers near {{city}}, {{stateShort}}"
+    - "Train Among Innovation and Tradition near Auburn"
+    - "Flight Training near the Heart of College Country"
     - "Rise from {{baseLocation}}, Soar Beyond"
-    - "Start Your Pilot Journey in {{city}}, {{stateShort}}"
+    - "Start Your Pilot Journey near {{city}}, {{stateShort}}"
 ---

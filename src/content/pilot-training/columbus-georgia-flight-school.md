@@ -1,7 +1,7 @@
 ---
 title: Columbus Flight School
-description: Professional pilot training in Columbus, Georgia.
-siteDescription: Urban and cross-country flight training in Columbus, GA.
+description: Professional pilot training near Columbus, Georgia.
+siteDescription: Urban and cross-country flight training near Columbus, GA.
 main:
   id: 8
   content: |
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Flight Training in {{city}}, {{stateShort}}"
+    - "Flight Training near {{city}}, {{stateShort}}"
     - "Soar Along the {{keyPlace1}}"
     - "Launch Your Career at {{baseLocation}}"
     - "Urban and Rural Flight Experience"

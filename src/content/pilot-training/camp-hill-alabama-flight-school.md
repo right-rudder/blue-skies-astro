@@ -1,7 +1,7 @@
 ---
 title: Camp Hill Flight School
-description: Earn your pilot license in Camp Hill, Alabama.
-siteDescription: Scenic flight lessons in Camp Hill, AL.
+description: Earn your pilot license near Camp Hill, Alabama.
+siteDescription: Scenic flight lessons near Camp Hill, AL.
 main:
   id: 13
   content: |
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Learn to Fly in {{city}}, {{stateShort}}"
+    - "Learn to Fly near {{city}}, {{stateShort}}"
     - "Fly Along the {{keyPlace1}}"
     - "Start at {{baseLocation}}"
     - "Small-Town Flight Training"

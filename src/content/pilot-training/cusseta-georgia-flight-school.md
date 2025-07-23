@@ -1,11 +1,11 @@
 ---
 title: Cusseta Flight School
-description: Train to be a certified pilot in peaceful Cusseta, Georgia.
-siteDescription: Discover top-tier pilot training in the quiet setting of Cusseta, GA.
+description: Train to be a certified pilot near peaceful Cusseta, Georgia.
+siteDescription: Discover top-tier pilot training near the quiet setting of Cusseta, GA.
 main:
   id: 1
   content: |
-    Launch your aviation career from the quiet fields of Cusseta, Georgia. Experience hands-on training in a focused environment perfect for aspiring pilots.
+    Launch your aviation career from the quiet fields of Cusseta, Georgia. Experience hands-on training near a focused environment perfect for aspiring pilots.
   imgCard: "@/images/blue-skies-ifr-training-opelika.webp"
   imgMain: "@/images/blue-skies-ifr-training-opelika.webp"
   imgAlt: Small aircraft ready for takeoff near Cusseta, GA
@@ -27,9 +27,9 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Quiet Skies in {{city}}, {{stateShort}}"
-    - "Fly Near Fort Benning in {{city}}, {{stateShort}}"
-    - "Train Over the Chattahoochee in {{stateLong}}"
+    - "Quiet Skies near {{city}}, {{stateShort}}"
+    - "Fly Near Fort Benning near {{city}}, {{stateShort}}"
+    - "Train Over the Chattahoochee near {{stateLong}}"
     - "Start Your Pilot Journey at {{baseLocation}}"
-    - "Focused Flight Instruction in {{city}}, {{stateShort}}"
+    - "Focused Flight Instruction near {{city}}, {{stateShort}}"
 ---

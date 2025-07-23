@@ -1,6 +1,6 @@
 ---
 title: Richland Flight School
-description: Learn to fly in Richland, Georgia.
+description: Learn to fly near Richland, Georgia.
 siteDescription: Rural flight training with personalized attention.
 main:
   id: 9
@@ -14,7 +14,7 @@ location:
   city: "Richland"
   stateShort: "GA"
   stateLong: "Georgia"
-  description: "Train in a relaxed, rural environment with low traffic."
+  description: "Train near a relaxed, rural environment with low traffic."
   baseLocation: "Richland Airport"
   keyPlace1: "Providence Canyon"
   keyPlace2: "Flint River"
@@ -27,7 +27,7 @@ location:
     - "/src/assets/placeholder.webp"
 
   headlines:
-    - "Affordable Flight Training in {{city}}"
+    - "Affordable Flight Training near {{city}}"
     - "Fly Over {{keyPlace1}}’s ‘Little Grand Canyon’"
     - "Train at {{baseLocation}}"
     - "Small-Town Flight School, Big Results"
