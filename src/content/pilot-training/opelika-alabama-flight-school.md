@@ -1,14 +1,14 @@
 ---
-title: Opelika Flight School
-description: Flight training near Opelika, Alabama.
-siteDescription: Expert instruction near Auburn University.
+title: Flight Training Opelika Alabama | Pilot School Near Auburn University
+description: Flight training near Opelika, Alabama. Private pilot license, instrument rating, commercial pilot training. Perfect for Auburn University students and East Alabama aviation enthusiasts.
+siteDescription: Expert flight instruction near Opelika and Auburn University area. Professional pilot training programs in East Alabama.
 main:
   id: 11
   content: |
-    Opelika combines college-town energy with excellent flying conditions for student pilots.
+    Professional flight training near Opelika, Alabama, serving the Auburn University area and East Alabama region. Blue Skies Above offers comprehensive pilot training programs including Private Pilot License, Instrument Rating, Commercial Pilot, and CFI training just minutes from Opelika.
   imgCard: "@/images/blue-skies-ifr-training-opelika.webp"
   imgMain: "@/images/blue-skies-ifr-training-opelika.webp"
-  imgAlt: Cessna 172 at Opelika Airport
+  imgAlt: Flight training near Opelika Alabama and Auburn University
 
 location:
   city: "Opelika"

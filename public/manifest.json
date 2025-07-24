@@ -1,0 +1,21 @@
+{
+  "name": "Blue Skies Above Flight School",
+  "short_name": "Blue Skies Above",
+  "description": "Alabama's premier flight school offering expert-led training for Private Pilot, Instrument, Commercial, and CFI certifications",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#facc15",
+  "theme_color": "#facc15",
+  "icons": [
+    {
+      "src": "/blue-skies-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/blue-skies-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

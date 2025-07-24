@@ -4,22 +4,22 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import CTA from "@/components/sections/misc/CTA.astro";
 import ctaVisitImg from "src/assets/images/blue-skies-over-auburn.webp";
 
-const pageTitle: string = `Page Title | ${SITE.title}`;
-const metaDescription = "Page Description";
-const ogTitle = "Page Title | Blue Skies Above Flight School";
+const pageTitle: string = `Enrollment Confirmation | ${SITE.title}`;
+const metaDescription =
+  "Thank you for your interest in Blue Skies Above Flight School. We've received your enrollment information and will contact you soon to begin your aviation journey.";
+const ogTitle = "Enrollment Confirmation | Blue Skies Above Flight School";
 
 const ctaVisit = {
-    isRightSection: false,
-    title: "Enroll Now Confirmation | Blue Skies",
-    subTitle: "Do you want to visit to us?",
-    single: true,
-    img: ctaVisitImg,
-    imgAlt: "F",
-    btnExists: true,
-    btnTitle: "Schedule a visit!",
-    btnURL: "/visit-school",
-}
-
+  isRightSection: false,
+  title: "Enroll Now Confirmation | Blue Skies",
+  subTitle: "Do you want to visit to us?",
+  single: true,
+  img: ctaVisitImg,
+  imgAlt: "F",
+  btnExists: true,
+  btnTitle: "Schedule a visit!",
+  btnURL: "/visit-school",
+};
 ---
 
 <MainLayout
@@ -42,7 +42,5 @@ const ctaVisit = {
     inLanguage: "en-US",
   }}
 >
-
-<CTA content={ctaVisit} />
-
+  <CTA content={ctaVisit} />
 </MainLayout>

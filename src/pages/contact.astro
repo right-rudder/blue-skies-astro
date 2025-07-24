@@ -1,38 +1,31 @@
 ---
 // Import the necessary components
-import MainLayout from "@/layouts/MainLayout.astro";
+import MainLayoutEnhanced from "@/layouts/MainLayoutEnhanced.astro";
 import ContactSection from "@components/sections/misc/ContactSection.astro";
 import ContactUsForm from "@/components/forms/FormContactUs.astro";
 import { SITE } from "@data/constants";
 
-const pageTitle: string = `Contact Blue Skies Above | Alabama Flight School at Lanett Regional Airport`;
+const pageTitle: string = `Contact Blue Skies Above | Flight School Alabama Near Auburn & Columbus`;
 const metaDescription =
-  "Have questions about flight training or ready to book your Discovery Flight? Contact Blue Skies Above in Lanett, Alabama—your path to becoming a pilot starts here.";
+  "Contact Blue Skies Above flight school in Lanett, Alabama. Questions about pilot training programs, discovery flights, or aviation careers? Serving Auburn, Columbus, Opelika & East Alabama.";
 const ogTitle =
-  "Contact Blue Skies Above | Alabama Flight School at Lanett Regional Airport";
+  "Contact Blue Skies Above Flight School | Alabama Pilot Training";
+
+// Breadcrumbs for contact page
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Contact", url: "/contact" },
+];
 ---
 
-<MainLayout
+<MainLayoutEnhanced
   title={pageTitle}
   customDescription={metaDescription}
   customOgTitle={ogTitle}
-  structuredData={{
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://screwfast.uk/contact",
-    url: "https://screwfast.uk/contact",
-    name: "Contact Blue Skies Above | Alabama Flight School at Lanett Regional Airport",
-    description:
-      "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.",
-    isPartOf: {
-      "@type": "WebSite",
-      url: "https://screwfast.uk",
-      name: "ScrewFast",
-      description:
-        "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
-    },
-    inLanguage: "en-US",
-  }}
+  pageType="contact"
+  breadcrumbs={breadcrumbs}
+  includeLocalBusiness={true}
+  lang="en"
 >
   <ContactSection />
-</MainLayout>
+</MainLayoutEnhanced>

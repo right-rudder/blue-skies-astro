@@ -1,0 +1,174 @@
+---
+// Importing necessary components
+import MetaEnhanced from "../components/MetaEnhanced.astro";
+import Navbar from "../components/sections/navbar&footer/Navbar.astro";
+import FooterSection from "../components/sections/navbar&footer/FooterSection.astro";
+import { SITE } from "../data_files/constants";
+import "../assets/styles/global.css";
+
+// Setting expected props with enhanced schema support
+const {
+  title = SITE.title,
+  meta,
+  structuredData,
+  lang = "en",
+  customDescription = null,
+  customOgTitle = null,
+  breadcrumbs = null,
+  pageType = "homepage",
+  courseData,
+  articleData,
+  faqData,
+  includeLocalBusiness = false,
+  includeWebsite = false,
+} = Astro.props;
+
+// Interface to type-check the properties
+interface Props {
+  title?: string;
+  meta?: string;
+  structuredData?: object | object[];
+  lang?: string;
+  customDescription?: string | null;
+  customOgTitle?: string | null;
+  breadcrumbs?: Array<{ name: string; url: string }> | null;
+  pageType?:
+    | "homepage"
+    | "course"
+    | "article"
+    | "faq"
+    | "service"
+    | "about"
+    | "contact";
+  courseData?: any;
+  articleData?: any;
+  faqData?: any;
+  includeLocalBusiness?: boolean;
+  includeWebsite?: boolean;
+}
+---
+
+<html lang={lang} class="scrollbar-hide scroll-pt-16 scroll-smooth">
+  <head>
+    {/* Adding enhanced metadata with comprehensive schema support */}
+    <MetaEnhanced
+      meta={meta}
+      structuredData={structuredData}
+      customDescription={customDescription}
+      customOgTitle={customOgTitle}
+      breadcrumbs={breadcrumbs || undefined}
+      pageType={pageType}
+      courseData={courseData}
+      articleData={articleData}
+      faqData={faqData}
+      includeLocalBusiness={includeLocalBusiness}
+      includeWebsite={includeWebsite}
+    />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DWLY484X9"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6DWLY484X9");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script is:inline>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P2Q5SLQT");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <script is:inline>
+      // This is purposely inlined to avoid FOUC
+      const getThemePreference = () => {
+        if (
+          typeof localStorage !== "undefined" &&
+          localStorage.getItem("theme")
+        ) {
+          return localStorage.getItem("theme");
+        }
+        return window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      };
+      const isDark = getThemePreference() === "dark";
+      document.documentElement.classList[isDark ? "add" : "remove"]("dark");
+
+      if (typeof localStorage !== "undefined") {
+        const observer = new MutationObserver(() => {
+          const isDark = document.documentElement.classList.contains("dark");
+          localStorage.setItem("theme", isDark ? "dark" : "light");
+        });
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ["class"],
+        });
+      }
+    </script>
+
+    <title>{title}</title>
+  </head>
+  <body
+    class="bg-neutral-200 text-neutral-800 antialiased dark:bg-neutral-900 dark:text-neutral-200"
+  >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P2Q5SLQT"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div
+      class="mx-auto max-w-screen-2xl bg-neutral-200 px-4 sm:px-6 lg:px-8 dark:bg-neutral-900"
+    >
+      <Navbar />
+      <main>
+        <slot />
+      </main>
+    </div>
+    <FooterSection />
+
+    <style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+
+    <script>
+      import "preline/preline.js";
+    </script>
+    <script>
+      import "aos/dist/aos.css";
+      import AOS from "aos";
+
+      AOS.init({
+        once: true,
+        disable: "phone",
+        duration: 700,
+        easing: "ease-out-cubic",
+      });
+    </script>
+  </body>
+</html>

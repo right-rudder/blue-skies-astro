@@ -1,6 +1,6 @@
 ---
 // Import necessary components and utilities
-import MainLayout from "@/layouts/MainLayout.astro";
+import MainLayoutEnhanced from "@/layouts/MainLayoutEnhanced.astro";
 import AvatarBlogLarge from "@components/ui/avatars/AvatarBlogLarge.astro";
 import CardRelated from "@components/ui/cards/CardRelated.astro";
 import Bookmark from "@components/ui/buttons/Bookmark.astro";
@@ -46,51 +46,58 @@ const relatedPosts: CollectionEntry<"blog">[] = blogPosts.filter(
 
 const pageTitle: string = `${post.data.title} | ${SITE.title}`;
 // For the meta description, use the first paragraph of content if available
-const metaDescription = post.data.contents[0]?.paragraph || `Read ${post.data.title} on ScrewFast's blog`;
+const metaDescription =
+  post.data.contents[0]?.paragraph ||
+  `Read ${post.data.title} on Blue Skies Above's blog`;
 const ogTitle = `${post.data.title} | Blog | ${SITE.title}`;
 
+// Article schema data
+const articleData = {
+  headline: post.data.title,
+  author: post.data.author || "Blue Skies Above",
+  datePublished: post.data.pubDate.toISOString(),
+  dateModified: post.data.pubDate.toISOString(),
+  image: post.data.cardImage?.src,
+  wordCount:
+    post.data.contents?.reduce(
+      (acc, content) => acc + (content.paragraph?.length || 0),
+      0
+    ) || 1000,
+  description: metaDescription,
+  url: `https://flytheblueskies.com/blog/${post.id.replace(/^en\//, "")}`,
+};
+
+// Breadcrumbs for blog post
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Blog", url: "/blog" },
+  { name: post.data.title, url: `/blog/${post.id.replace(/^en\//, "")}` },
+];
+
 const ctaDiscovery = {
-    isRightSection: true,
-    title: "Ready to Take the Controls?",
-    subTitle: "Book a Discovery Flight and experience the thrill of flying firsthand. You'll take the controls with an expert instructor and see the world from a whole new perspective.",
-    single: true,
-    imgOne: ctaImg,
-    imgOneAlt: "Flight training syllabus materials",
-    imgTwo: ctaImg,
-    imgTwoAlt: "Instructor with student at planning table",
-    btnExists: true,
-    btnTitle: "Book Now",
-    btnURL: "/discovery-flights",
+  isRightSection: true,
+  title: "Ready to Take the Controls?",
+  subTitle:
+    "Book a Discovery Flight and experience the thrill of flying firsthand. You'll take the controls with an expert instructor and see the world from a whole new perspective.",
+  single: true,
+  imgOne: ctaImg,
+  imgOneAlt: "Flight training syllabus materials",
+  imgTwo: ctaImg,
+  imgTwoAlt: "Instructor with student at planning table",
+  btnExists: true,
+  btnTitle: "Book Now",
+  btnURL: "/discovery-flights",
 };
 ---
 
-<MainLayout
+<MainLayoutEnhanced
   title={pageTitle}
   customDescription={metaDescription}
   customOgTitle={ogTitle}
-  structuredData={{
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.data.title,
-    image: post.data.cardImage.src,
-    datePublished: post.data.pubDate.toISOString(),
-    author: {
-      "@type": "Person",
-      name: post.data.author,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: SITE.title,
-      logo: {
-        "@type": "ImageObject",
-        url: "https://screwfast.uk/favicon.ico",
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://screwfast.uk/blog/${post.id.replace(/^en\//, "")}`,
-    },
-  }}
+  pageType="article"
+  articleData={articleData}
+  breadcrumbs={breadcrumbs}
+  lang="en"
 >
   <section class="mx-auto max-w-3xl px-4 pt-6 pb-12 sm:px-6 lg:px-8 lg:pt-10">
     <div class="max-w-2xl">
@@ -136,7 +143,7 @@ const ctaDiscovery = {
                 title?: string;
                 paragraph: string;
               },
-              index: number,
+              index: number
             ) => (
               <>
                 <div>
@@ -209,9 +216,14 @@ const ctaDiscovery = {
     </div>
 
     <div class="grid grid-cols-2 gap-6">
-      {relatedPosts.sort(() => 0.5 - Math.random()).slice(0, 2).map((entry) => <CardRelated blogEntry={entry} />)}
+      {
+        relatedPosts
+          .sort(() => 0.5 - Math.random())
+          .slice(0, 2)
+          .map((entry) => <CardRelated blogEntry={entry} />)
+      }
     </div>
   </section>
-  
+
   <CTA content={ctaDiscovery} />
-</MainLayout>
+</MainLayoutEnhanced>

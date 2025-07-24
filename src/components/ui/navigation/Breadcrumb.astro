@@ -1,0 +1,98 @@
+---
+// Breadcrumb component for navigation and schema markup
+
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
+interface Props {
+  items: BreadcrumbItem[];
+  currentPage?: string;
+  className?: string;
+}
+
+const { items, currentPage, className = "" } = Astro.props;
+
+// Generate structured data for breadcrumbs
+const breadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: items.map((crumb, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: crumb.name,
+    item:
+      crumb.url === "/"
+        ? "https://flytheblueskies.com"
+        : `https://flytheblueskies.com${crumb.url}`,
+  })),
+};
+---
+
+<!-- Breadcrumb Schema Markup -->
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbData)} />
+
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class={`breadcrumb-nav ${className}`}>
+  <ol
+    class="flex items-center space-x-2 text-sm text-neutral-600 dark:text-neutral-400"
+  >
+    {
+      items.map((item, index) => (
+        <li class="flex items-center">
+          {index > 0 && (
+            <svg
+              class="mx-2 h-4 w-4 text-neutral-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          )}
+          {index === items.length - 1 ? (
+            <span
+              class="font-medium text-neutral-800 dark:text-neutral-200"
+              aria-current="page"
+            >
+              {currentPage || item.name}
+            </span>
+          ) : (
+            <a
+              href={item.url}
+              class="hover:text-picton-blue-500 transition-colors duration-200"
+              data-astro-prefetch
+            >
+              {item.name}
+            </a>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>
+
+<style>
+  .breadcrumb-nav {
+    @apply mb-6 px-4 py-2;
+  }
+
+  .breadcrumb-nav ol {
+    @apply mx-auto max-w-7xl;
+  }
+
+  @media (max-width: 768px) {
+    .breadcrumb-nav {
+      @apply mb-4 px-2;
+    }
+
+    .breadcrumb-nav .flex {
+      @apply flex-wrap;
+    }
+  }
+</style>
