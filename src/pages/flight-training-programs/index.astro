@@ -23,8 +23,8 @@ const program: CollectionEntry<"trainingPrograms">[] = (
 ).sort(
   (
     a: CollectionEntry<"trainingPrograms">,
-    b: CollectionEntry<"trainingPrograms">,
-  ) => a.data.main.id - b.data.main.id,
+    b: CollectionEntry<"trainingPrograms">
+  ) => a.data.main.id - b.data.main.id
 );
 
 const title: string = "Flight Training Programs";
@@ -92,17 +92,15 @@ const ctaDiscovery = {
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/programs",
-    url: "https://screwfast.uk/programs",
-    name: "Hardware Tools | ScrewFast",
-    description:
-      "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts.",
+    "@id": "https://flytheblueskies.com/flight-training-programs",
+    url: "https://flytheblueskies.com/flight-training-programs",
+    name: "Flight Training Programs | Blue Skies Above Flight School",
+    description: metaDescription,
     isPartOf: {
       "@type": "WebSite",
-      url: "https://screwfast.uk",
-      name: "ScrewFast",
-      description:
-        "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
+      url: "https://flytheblueskies.com",
+      name: SITE.title,
+      description: SITE.description,
     },
     inLanguage: "en-US",
   }}
@@ -137,7 +135,7 @@ const ctaDiscovery = {
     >
       <div class="flex flex-col items-start gap-6 pr-5">
         <h1
-          class="text-picton-blue-600 dark:text-picton-blue-400 text-2xl font-bold tracking-tight text-balance md:text-4xl md:leading-tight dark:text-neutral-200"
+          class="text-picton-blue-600 dark:text-picton-blue-400 text-2xl font-bold tracking-tight text-balance md:text-4xl md:leading-tight"
         >
           {title}
         </h1>

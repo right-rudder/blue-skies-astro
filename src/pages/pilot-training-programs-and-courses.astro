@@ -1,5 +1,5 @@
 ---
-import MainLayout from "@/layouts/MainLayout.astro";
+import MainLayoutEnhanced from "@/layouts/MainLayoutEnhanced.astro";
 import { SITE } from "@data/constants";
 import headerImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-training.webp";
 import CTA from "@/components/sections/misc/CTA.astro";
@@ -8,17 +8,52 @@ import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
 import Courses from "@components/Courses.astro";
 import AOSInit from "@/components/utils/AOSInit.jsx";
 
-const pageTitle: string = `How to Become a Pilot | Flight Training Made Simple at Blue Skies Above`;
+const pageTitle: string = `Pilot Training Programs Alabama | Comprehensive Flight Training Courses`;
 const metaDescription =
-  "Explore comprehensive pilot training programs and courses at Blue Skies Above Flight School. From Private Pilot to Commercial and beyond, start your aviation journey with us.";
+  "Comprehensive pilot training programs in Alabama. Private pilot license, instrument rating, commercial pilot & CFI training with expert instructors, modern aircraft, and flexible scheduling at Blue Skies Above.";
 const ogTitle =
-  "Pilot Training Programs & Courses | Blue Skies Above Flight School";
+  "Pilot Training Programs Alabama | Blue Skies Above Flight School";
+
+// Breadcrumbs for training programs page
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Training Programs", url: "/pilot-training-programs-and-courses" },
+];
+
+// Service data for schema (training programs as services)
+const serviceData = {
+  name: "Professional Flight Training Programs",
+  description: metaDescription,
+  provider: {
+    name: SITE.title,
+    url: "https://flytheblueskies.com",
+  },
+  serviceType: "Flight Training",
+  areaServed: ["Alabama", "Georgia", "Auburn", "Columbus", "Opelika"],
+  hasOfferCatalog: [
+    {
+      name: "Private Pilot License (PPL)",
+      description: "Your first step into aviation",
+    },
+    {
+      name: "Instrument Rating (IR)",
+      description: "Advanced weather flying capabilities",
+    },
+    {
+      name: "Commercial Pilot License (CPL)",
+      description: "Professional pilot certification",
+    },
+    {
+      name: "Certified Flight Instructor (CFI)",
+      description: "Teaching and instructing certification",
+    },
+  ],
+};
 
 const ctaEnroll = {
   isRightSection: false,
   title: "Your Aviation Career is Cleared for Takeoff",
-  subTitle:
-    "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
+  subTitle: `The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. <a href='/blog/flight-school-alabama-complete-guide-to-pilot-training' class='text-accent-500 hover:text-accent-600 font-medium underline'>Learn everything about flight school in Alabama</a> and begin your journey to becoming a professional pilot.`,
   single: true,
   img: headerImg,
   imgAlt: "Flight training syllabus materials",
@@ -49,34 +84,23 @@ const videoWhyBecomePilot = {
 };
 ---
 
-<MainLayout
+<MainLayoutEnhanced
   title={pageTitle}
   customDescription={metaDescription}
   customOgTitle={ogTitle}
-  structuredData={{
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "",
-    url: "",
-    name: "About Blue Skies Above",
-    description: metaDescription,
-    isPartOf: {
-      "@type": "WebSite",
-      url: "",
-      name: SITE.title,
-      description: metaDescription,
-    },
-    inLanguage: "en-US",
-  }}
+  pageType="service"
+  breadcrumbs={breadcrumbs}
+  includeLocalBusiness={true}
+  lang="en"
 >
   <!-- <AOSInit is:client="load" /> -->
   <HeroSectionAlt
-    title="How to become a pilot"
-    subTitle="No matter your experience level Blue Skies Above has a pilot program for you"
+    title="Pilot Training Programs Alabama"
+    subTitle=`Comprehensive flight training programs from <a href='/blog/private-pilot-license-alabama-complete-guide' class='text-accent-500 hover:text-accent-600 font-medium underline'>Private Pilot License</a> to Commercial Pilot certification. Expert instructors, modern aircraft, and flexible scheduling for aspiring pilots. Explore our <a href='/blog/instrument-rating-training-alabama-ifr-guide' class='text-accent-500 hover:text-accent-600 font-medium underline'>Instrument Rating training</a> for advanced capabilities.`
     btnTitle="Get Started"
     url="/discovery-flights"
   />
   <FeaturesStarting />
   <Courses />
   <CTA content={ctaDiscovery} />
-</MainLayout>
+</MainLayoutEnhanced>
