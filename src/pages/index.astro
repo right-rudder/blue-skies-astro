@@ -30,7 +30,7 @@ const englishBlogEntries = await getCollection("blog", ({ id }) => {
 
 const blogPosts: CollectionEntry<"blog">[] = englishBlogEntries.sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-    b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+    b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 // Images
@@ -126,7 +126,7 @@ const breadcrumbs = [{ name: "Home", url: "/" }];
 
   <HeroSection
     title=`Launch Your Aviation Career with <span class="text-picton-blue-500 dark:text-picton-blue-400">Blue Skies Above</span>,<br> Alabama's Premier Flight School`
-    subTitle="Start your pilot training with Alabama's trusted flight school. Located at Lanett Municipal Airport (7A3), we offer comprehensive pilot training programs from Private Pilot to Commercial certifications. Serving Auburn, Columbus, Opelika, and throughout East Alabama with experienced flight instructors. <a href='/blog/flight-school-alabama-complete-guide-to-pilot-training' class='text-picton-blue-500 hover:text-picton-blue-600 font-medium underline'>Learn more about pilot training in Alabama</a>."
+    subTitle=`Start your pilot training with Alabama's trusted flight school. Located at Lanett Municipal Airport (7A3), we offer comprehensive pilot training programs from Private Pilot to Commercial certifications. Serving Auburn, Columbus, Opelika, and throughout East Alabama with experienced flight instructors. <a href='/blog/flight-school-alabama-complete-guide-to-pilot-training' class='text-picton-blue-500 hover:text-picton-blue-600 font-medium underline'>Learn more about pilot training in Alabama</a>.`
     primaryBtn="Enroll now"
     primaryBtnURL="/enroll-at-blue-skies"
     secondaryBtn="Our Programs"
