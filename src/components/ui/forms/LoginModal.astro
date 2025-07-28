@@ -19,10 +19,10 @@ const config = {
 
 <div
   id={config.id}
-  class="hs-overlay absolute start-0 top-0 z-50 hidden h-full w-full hs-overlay-backdrop-open:bg-neutral-900/90"
+  class="hs-overlay hs-overlay-backdrop-open:bg-neutral-900/90 absolute start-0 top-0 z-50 hidden h-full w-full"
 >
   <div
-    class="m-3 mt-0 opacity-0 transition-all ease-out hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:mx-auto sm:w-full sm:max-w-lg"
+    class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 m-3 mt-0 opacity-0 transition-all ease-out sm:mx-auto sm:w-full sm:max-w-lg"
   >
     <div class="mx-auto w-full max-w-md p-6">
       <div
@@ -41,7 +41,7 @@ const config = {
             <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
               {config.subTitle}
               <button
-                class="rounded-lg p-1 font-medium text-sky-400 decoration-2 outline-hidden ring-zinc-500 hover:underline focus-visible:ring-3 dark:text-sky-400 dark:ring-zinc-200 dark:focus:outline-hidden"
+                class="text-picton-blue-600 rounded-lg p-1 font-medium decoration-2 ring-zinc-500 outline-hidden hover:underline focus-visible:ring-3 dark:text-sky-400 dark:ring-zinc-200 dark:focus:outline-hidden"
                 data-hs-overlay={config.registerBtnDataHS}
               >
                 {config.registerBtn}
@@ -52,7 +52,7 @@ const config = {
             <GoogleBtn title="Sign in with Google" />
 
             <div
-              class="flex items-center py-3 text-xs uppercase text-neutral-400 before:me-6 before:flex-[1_1_0%] before:border-t before:border-neutral-200 after:ms-6 after:flex-[1_1_0%] after:border-t after:border-neutral-200 dark:text-neutral-500 dark:before:border-neutral-600 dark:after:border-neutral-600"
+              class="flex items-center py-3 text-xs text-neutral-400 uppercase before:me-6 before:flex-[1_1_0%] before:border-t before:border-neutral-200 after:ms-6 after:flex-[1_1_0%] after:border-t after:border-neutral-200 dark:text-neutral-500 dark:before:border-neutral-600 dark:after:border-neutral-600"
             >
               Or
             </div>

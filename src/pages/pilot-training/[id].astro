@@ -37,7 +37,7 @@ import CardRelated from "@/components/ui/cards/CardRelated.astro";
 export async function getStaticPaths() {
   const pilotTrainingLocations = await getCollection(
     "pilotTraining",
-    ({ id }) => id
+    ({ id }) => id,
   );
   return pilotTrainingLocations.map((post) => {
     const idWithoutLang = post.id; // Remove the "fr/" prefix
@@ -60,7 +60,7 @@ const englishBlogEntries = await getCollection("blog", ({ id }) => {
 
 const blogPosts: CollectionEntry<"blog">[] = englishBlogEntries.sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-    b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+    b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 const avatarSrcs: Array<string> = [
@@ -191,7 +191,7 @@ const courseData = {
     alt="Private Pilot receiving Checkride Pass certificate"
   />
   <FeaturesNavs
-    title=`The best time to <span class="text-picton-blue-500 dark:text-picton-blue-400">start flying</span> is now`
+    title=`The best time to <span class=" text-picton-blue-600 dark:text-picton-blue-400">start flying</span> is now`
     tabs={[
       {
         heading: "Start a Conversation",
@@ -293,7 +293,7 @@ const courseData = {
   >
     <div class="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
       <h2
-        class="text-picton-blue-600 dark:text-picton-blue-500 text-2xl font-bold md:text-4xl md:leading-tight"
+        class="text-picton-blue-600 dark: text-picton-blue-600 text-2xl font-bold md:text-4xl md:leading-tight"
       >
         {blogSectionTitle}
       </h2>
