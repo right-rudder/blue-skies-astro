@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "Train near Lake Martin with stunning water views from the cockpit."
-  baseLocation: "Goodwater Airport"
   keyPlace1: "Lake Martin"
   keyPlace2: "Coosa County"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight Lessons near {{city}}, {{stateShort}}"
     - "Fly Over {{keyPlace1}}"
-    - "Begin at {{baseLocation}}"
     - "Pilot Training with a View"
     - "Explore {{stateLong}}’s Skies"
 ---

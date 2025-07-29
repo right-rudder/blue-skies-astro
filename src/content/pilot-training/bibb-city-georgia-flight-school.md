@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near Columbus’ urban core with real-world navigation challenges."
-  baseLocation: "Columbus Airport"
   keyPlace1: "Chattahoochee River"
   keyPlace2: "Historic Bibb Mill"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight School near {{city}}, {{stateShort}}"
     - "Urban Airspace Experience"
-    - "Train at {{baseLocation}}"
     - "Industrial and Scenic Routes"
     - "Georgia’s Practical Pilot Training"
 ---

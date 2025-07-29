@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "Nestled near the Talladega National Forest, Lineville offers peaceful skies and a warm, welcoming community."
-  baseLocation: "Lineville Airstrip"
   keyPlace1: "Talladega Scenic Byway"
   keyPlace2: "Cheaha Mountain"
 
@@ -30,6 +29,5 @@ location:
     - "Peaceful Paths to the Skies near {{city}}, {{stateShort}}"
     - "Lineville, {{stateShort}}: Where Flying Feels Natural"
     - "Surrounded by Nature, Driven by Dreams"
-    - "Start from {{baseLocation}}, Soar Over {{stateLong}}"
     - "Calm Skies, Confident Pilots"
 ---

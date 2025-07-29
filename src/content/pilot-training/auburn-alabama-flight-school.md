@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "A vibrant college town home to Auburn University and an enthusiastic aviation community."
-  baseLocation: "Auburn University Regional Airport"
   keyPlace1: "Jordan-Hare Stadium"
   keyPlace2: "Downtown Auburn"
 
@@ -30,6 +29,5 @@ location:
     - "Soar with the Tigers near {{city}}, {{stateShort}}"
     - "Train Among Innovation and Tradition near Auburn"
     - "Flight Training near the Heart of College Country"
-    - "Rise from {{baseLocation}}, Soar Beyond"
     - "Start Your Pilot Journey near {{city}}, {{stateShort}}"
 ---

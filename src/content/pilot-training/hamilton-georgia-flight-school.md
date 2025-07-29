@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near Hamilton, surrounded by hills, lakes, and the charm of Callaway Gardens."
-  baseLocation: "Harris County Airport"
   keyPlace1: "FDR State Park"
   keyPlace2: "Callaway Gardens"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Learn to Fly near {{city}}, {{stateShort}}"
     - "Train Over the Heart of {{stateLong}}"
-    - "Launch Your Pilot Career from {{baseLocation}}"
     - "Flight Dreams Begin near {{city}}, {{stateShort}}"
     - "Soar Above {{keyPlace1}} and Beyond"
 ---

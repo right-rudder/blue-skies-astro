@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "Train near Lake Wedowee with stunning views and calm winds."
-  baseLocation: "Wedowee Municipal Airport"
   keyPlace1: "Lake Wedowee"
   keyPlace2: "Randolph County"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight Training near {{city}}, {{stateShort}}"
     - "Soar Over {{keyPlace1}}"
-    - "Begin Your Journey at {{baseLocation}}"
     - "Pilot Training near {{stateLong}}’s Hidden Gem"
     - "Fly the Skies of {{city}}"
 ---

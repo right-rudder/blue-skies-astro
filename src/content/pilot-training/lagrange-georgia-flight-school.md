@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "A thriving city with small-town charm, LaGrange provides modern training facilities and rich aviation history."
-  baseLocation: "LaGrange-Callaway Airport"
   keyPlace1: "Callaway Memorial Tower"
   keyPlace2: "Downtown LaGrange"
 
@@ -31,5 +30,4 @@ location:
     - "LaGrange – Where Aviation and Community Soar"
     - "Take Off with Modern Tools and Timeless Views"
     - "LaGrange, {{stateShort}}: Elevate Your Flight Path"
-    - "Depart from {{baseLocation}}, Land Anywhere"
 ---

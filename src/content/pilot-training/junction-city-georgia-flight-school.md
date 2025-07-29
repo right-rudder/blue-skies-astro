@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near a quiet rural hub with easy access to major routes."
-  baseLocation: "Junction City Airfield"
   keyPlace1: "Flint River"
   keyPlace2: "Pine Mountain"
 

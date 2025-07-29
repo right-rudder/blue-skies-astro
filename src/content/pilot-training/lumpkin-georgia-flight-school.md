@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "A quiet town steeped near Southern history, offering new pilots the freedom of open airspace and clear flying days."
-  baseLocation: "Stewart County Airfield"
   keyPlace1: "Providence Canyon State Park"
   keyPlace2: "Historic Westville"
 
@@ -31,5 +30,4 @@ location:
     - "From Canyon Views to Clear Horizons"
     - "Fly Above Georgia’s Hidden Gem"
     - "Train near the Skies of Historic {{city}}, {{stateShort}}"
-    - "Take Off from {{baseLocation}}, Touch the Future"
 ---

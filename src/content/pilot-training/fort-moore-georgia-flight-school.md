@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near military airspace with real-world navigation challenges."
-  baseLocation: "Columbus Airport"
   keyPlace1: "Fort Moore Military Base"
   keyPlace2: "Chattahoochee Riverwalk"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight Training Near {{keyPlace1}}"
     - "Civilian and Military Pilot Programs"
-    - "Train at {{baseLocation}}"
     - "Master Complex Airspace"
     - "Georgia’s Premier Defense-Area Flight School"
 ---

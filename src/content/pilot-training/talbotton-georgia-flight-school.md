@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near a quiet, rural setting with wide-open skies."
-  baseLocation: "Talbotton Airport"
   keyPlace1: "Piedmont National Wildlife Refuge"
   keyPlace2: "Downtown Talbotton"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight Lessons near {{city}}, {{stateShort}}"
     - "Fly Over {{keyPlace1}}"
-    - "Train at {{baseLocation}}"
     - "Become a Pilot near {{stateLong}}"
     - "Take Off from {{city}}"
 ---

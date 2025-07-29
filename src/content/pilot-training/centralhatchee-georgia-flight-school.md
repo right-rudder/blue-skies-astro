@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near Centralhatchee, where peaceful airspace meets Southern hospitality."
-  baseLocation: "Centralhatchee Airstrip"
   keyPlace1: "Centralhatchee Creek"
   keyPlace2: "Community Park"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Learn to Fly near {{city}}, {{stateShort}}"
     - "Train Over the Heart of {{stateLong}}"
-    - "Launch Your Pilot Career from {{baseLocation}}"
     - "Flight Dreams Begin near {{city}}, {{stateShort}}"
     - "Soar Above {{keyPlace1}} and Beyond"
 ---

@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train over Georgia’s farmland with predictable weather patterns."
-  baseLocation: "Buena Vista Airport"
   keyPlace1: "Flint River"
   keyPlace2: "Downtown Buena Vista"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight School near {{city}}, {{stateShort}}"
     - "Fly Over {{keyPlace1}}"
-    - "Train at {{baseLocation}}"
     - "Low-Cost Pilot Training"
     - "Georgia’s Rural Aviation Hub"
 ---

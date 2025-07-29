@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "A scenic town on the Chattahoochee River, offering an ideal mix of calm airspace and beautiful flying conditions."
-  baseLocation: "Quitman County Airport"
   keyPlace1: "Walter F. George Lake"
   keyPlace2: "Georgetown Historic District"
 
@@ -31,5 +30,4 @@ location:
     - "Scenic Starts near Georgetown, {{stateShort}}"
     - "From Riverbanks to Runways near {{city}}, {{stateShort}}"
     - "Pilot Training Along the Chattahoochee"
-    - "Begin at {{baseLocation}}, Fly Anywhere"
 ---

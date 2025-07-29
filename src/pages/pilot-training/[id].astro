@@ -81,9 +81,6 @@ const locationStateLong = location.data.location.stateLong || "your state";
 const locationDescription =
   location.data.description ||
   "A great place with unique attractions and a welcoming community.";
-const locationCounty =
-  location.data.location.baseLocation ||
-  "A well-known county with rich history and local charm.";
 const locationKeyPlace1 =
   location.data.location.keyPlace1 || "A popular landmark worth visiting.";
 const locationKeyPlace2 =
@@ -103,10 +100,6 @@ const headerH1 = rawHeadline
   .replace(
     "{{stateShort}}",
     `<strong class="text-picton-blue-600">${locationStateShort}</strong>`,
-  )
-  .replace(
-    "{{baseLocation}}",
-    `<strong class="text-picton-blue-600">${locationCounty}</strong>`,
   )
   .replace(
     "{{stateLong}}",
@@ -167,8 +160,8 @@ const courseData = {
 
 const ctaDiscovery = {
   isRightSection: false,
-  title: `Wanna fly near <strong class="text-picton-blue-600"> ${locationCity}, ${locationStateShort} </strong>?`,
-  subTitle: `A Discovery Flight is the perfect way to experience the thrill of flying for the first time. Join us at Blue Skies Above and take the controls under the guidance of a certified flight instructor—no experience needed!`,
+  title: `Take the controls above <strong class="text-picton-blue-600">${locationCity}, ${locationStateShort}</strong> today`,
+  subTitle: `A Discovery Flight at Blue Skies Above is your chance to experience the joy of flying firsthand. Take the controls with a certified flight instructor by your side, no experience necessary. Ready for takeoff?`,
   single: true,
   img: construction,
   imgAlt: "Flight training syllabus materials",
