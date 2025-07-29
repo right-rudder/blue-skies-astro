@@ -202,19 +202,18 @@ const ctaDiscovery = {
     alt="Private Pilot receiving Checkride Pass certificate"
   />
   <FeaturesNavs
-    title=`The best time to <span class=" text-picton-blue-600 dark:text-picton-blue-400">start flying</span> is now`
+    title=`The best time to <span class=" text-picton-blue-600 dark:text-picton-blue-400">start flying</span> near <strong class="text-picton-blue-600">${locationCity}, ${locationStateShort}</strong> is now`
     tabs={[
       {
         heading: "Start a Conversation",
-        content:
-          "The first step in pilot training is reaching out to a flight school. Blue Skies Above welcomes you to the world of aviation.",
+        content: `The first step in pilot training is reaching out to a flight school near <strong>${locationCity}, ${locationStateShort}</strong>. Blue Skies Above welcomes you to the world of aviation.`,
         svg: "messages",
         src: tools,
         alt: "A pair of Cessna 172s at Lanett Municipal Airport",
         first: true,
       },
       {
-        heading: "Take Your First Flight Lesson",
+        heading: `Take Your First Flight Lesson near <strong class="text-picton-blue-600">${locationCity}, ${locationStateShort}</strong>`,
         content:
           "Also known as a discovery flight, take the controls of the aircraft and fly the plane. See if becoming a pilot is right for you.",
         svg: "takeoff",
@@ -234,15 +233,15 @@ const ctaDiscovery = {
   />
 
   <FeaturesGeneral
-    title="Preparing future pilots to launch their aviation careers"
-    subTitle="Discover why aspiring pilots in Auburn and throughout the Alabama area trust Blue Skies Above to turn their aviation dreams into reality. With experienced instructors and comprehensive programs, we help students build the skills and confidence needed for a successful aviation career."
+    title=`Preparing future pilots to launch their aviation careers near ${locationCity}, ${locationStateShort}`
+    subTitle=`Discover why aspiring pilots in ${locationCity} and throughout the Alabama area trust Blue Skies Above to turn their aviation dreams into reality. With experienced instructors and comprehensive programs, we help students build the skills and confidence needed for a successful aviation career.`
     src={featureImage}
     alt="Blue Skies Above flight training students and instructors with aircraft"
     features={features}
   />
 
   <ClientsSection
-    title="Dedicated to flight training"
+    title=`Dedicated to flight training near ${locationCity}, ${locationStateShort}`
     subTitle="Blue Skies Above is a proud partner of these aviation associations and companies"
     partners={partnersData}
   />
