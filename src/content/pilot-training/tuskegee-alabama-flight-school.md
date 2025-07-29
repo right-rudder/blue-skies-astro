@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "Train where legends flew—rolling hills and historic airspace await."
-  baseLocation: "Moton Field Municipal Airport"
   keyPlace1: "Tuskegee Airmen National Historic Site"
   keyPlace2: "Tuskegee University"
 
@@ -28,7 +27,6 @@ location:
 
   headlines:
     - "Learn to Fly near {{city}}, Home of the Tuskegee Airmen"
-    - "Train at Historic {{baseLocation}}"
     - "Aviation Legacy Lives near {{city}}, {{stateShort}}"
     - "Soar Over {{keyPlace1}}"
     - "Pilot Training near the Heart of {{stateLong}}"

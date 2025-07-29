@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near the Chattahoochee River with access to Atlanta’s airspace."
-  baseLocation: "Columbus Airport"
   keyPlace1: "Chattahoochee Riverwalk"
   keyPlace2: "Fort Benning"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight Training near {{city}}, {{stateShort}}"
     - "Soar Along the {{keyPlace1}}"
-    - "Launch Your Career at {{baseLocation}}"
     - "Urban and Rural Flight Experience"
     - "Georgia’s Premier Pilot Training"
 ---

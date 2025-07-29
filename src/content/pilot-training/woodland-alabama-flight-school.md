@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "A quiet town surrounded by natural beauty, offering aspiring pilots a serene and focused training environment."
-  baseLocation: "Woodland Airfield"
   keyPlace1: "Cheaha State Park"
   keyPlace2: "Tallapoosa River"
 
@@ -31,5 +30,4 @@ location:
     - "Launch Your Career from Woodland, {{stateShort}}"
     - "Alabama Skies, Woodland Roots"
     - "Pilot Training near Nature’s Backyard"
-    - "Fly with Focus at {{baseLocation}}"
 ---

@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "A charming Southern town nestled between Montgomery and Auburn, offering scenic flying conditions and a supportive training environment."
-  baseLocation: "Tallassee Municipal Airport"
   keyPlace1: "Thurlow Dam"
   keyPlace2: "Historic Downtown Tallassee"
 
@@ -31,5 +30,4 @@ location:
     - "Start Your Aviation Journey with Blue Skies Above near {{city}}, {{stateShort}}"
     - "Peaceful Skies, Powerful Training near {{city}}, {{stateShort}}"
     - "Fly High with Blue Skies Above near Central {{stateLong}}"
-    - "Lift Off from {{baseLocation}}"
 ---

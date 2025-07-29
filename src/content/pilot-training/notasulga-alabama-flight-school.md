@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "A quiet and historic town known for its Southern hospitality and clear skies—ideal for new aviators."
-  baseLocation: "Notasulga Airstrip"
   keyPlace1: "Tuskegee National Forest"
   keyPlace2: "Town Center Heritage Site"
 
@@ -31,5 +30,4 @@ location:
     - "Notasulga, {{stateShort}}: Historic Roots, Future Pilots"
     - "Fly the Friendly Skies of {{city}}, {{stateShort}}"
     - "Aviation Excellence Starts near Central {{stateLong}}"
-    - "Learn to Fly from {{baseLocation}}"
 ---

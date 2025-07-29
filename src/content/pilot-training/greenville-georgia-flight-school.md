@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near a historic town with uncrowded skies and friendly vibes."
-  baseLocation: "Greenville Municipal Airport"
   keyPlace1: "Downtown Greenville"
   keyPlace2: "Chattahoochee Hills"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight Training near {{city}}, {{stateShort}}"
     - "Soar Over {{keyPlace1}}"
-    - "Train at {{baseLocation}}"
     - "Georgia’s Hidden Gem for Pilots"
     - "Begin Your Aviation Journey near {{city}}"
 ---

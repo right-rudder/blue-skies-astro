@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near the Alabama border with diverse terrain."
-  baseLocation: "Riverside Airport"
   keyPlace1: "Chattahoochee River"
   keyPlace2: "Wehadkee Creek"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight Training near {{city}}, {{stateShort}}"
     - "Fly Along the {{keyPlace1}}"
-    - "Start at {{baseLocation}}"
     - "Cross-Country Adventures Await"
     - "Georgia’s Best-Kept Aviation Secret"
 ---

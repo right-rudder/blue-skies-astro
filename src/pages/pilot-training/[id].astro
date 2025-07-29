@@ -37,7 +37,7 @@ import CardRelated from "@/components/ui/cards/CardRelated.astro";
 export async function getStaticPaths() {
   const pilotTrainingLocations = await getCollection(
     "pilotTraining",
-    ({ id }) => id
+    ({ id }) => id,
   );
   return pilotTrainingLocations.map((post) => {
     const idWithoutLang = post.id; // Remove the "fr/" prefix
@@ -60,7 +60,7 @@ const englishBlogEntries = await getCollection("blog", ({ id }) => {
 
 const blogPosts: CollectionEntry<"blog">[] = englishBlogEntries.sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-    b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+    b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 const avatarSrcs: Array<string> = [
@@ -69,18 +69,6 @@ const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
   "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
 ];
-
-const ctaDiscovery = {
-  isRightSection: false,
-  title: "Fly now with Blue Skies Above",
-  subTitle: "Schedule a Discovery Flight and explore the clouds!",
-  single: true,
-  img: construction,
-  imgAlt: "Flight training syllabus materials",
-  btnExists: true,
-  btnTitle: "Get Started",
-  btnURL: "/discovery-flights",
-};
 
 const blogSectionTitle: string = "The Latest from Our Blog";
 const blogSectionSubTitle: string =
@@ -93,9 +81,6 @@ const locationStateLong = location.data.location.stateLong || "your state";
 const locationDescription =
   location.data.description ||
   "A great place with unique attractions and a welcoming community.";
-const locationCounty =
-  location.data.location.baseLocation ||
-  "A well-known county with rich history and local charm.";
 const locationKeyPlace1 =
   location.data.location.keyPlace1 || "A popular landmark worth visiting.";
 const locationKeyPlace2 =
@@ -108,12 +93,26 @@ function randomItem(arr: string[]) {
 const headerImage = randomItem(location.data.location.headerImages || []);
 const rawHeadline = randomItem(location.data.location.headlines || []);
 const headerH1 = rawHeadline
-  .replace("{{city}}", locationCity)
-  .replace("{{stateShort}}", locationStateShort)
-  .replace("{{baseLocation}}", locationCounty)
-  .replace("{{stateLong}}", locationStateLong)
-  .replace("{{keyPlace1}}", locationKeyPlace1)
-  .replace("{{keyPlace2}}", locationKeyPlace2);
+  .replace(
+    "{{city}}",
+    `<strong class="text-picton-blue-600">${locationCity}</strong>`,
+  )
+  .replace(
+    "{{stateShort}}",
+    `<strong class="text-picton-blue-600">${locationStateShort}</strong>`,
+  )
+  .replace(
+    "{{stateLong}}",
+    `<strong class="text-picton-blue-600">${locationStateLong}</strong>`,
+  )
+  .replace(
+    "{{keyPlace1}}",
+    `<strong class="text-picton-blue-600">${locationKeyPlace1}</strong>`,
+  )
+  .replace(
+    "{{keyPlace2}}",
+    `<strong class="text-picton-blue-600">${locationKeyPlace2}</strong>`,
+  );
 
 const pageTitle: string = `${locationCity}, ${locationStateLong} | Flight School for Pilot Training  | ${SITE.title}`;
 const metaDescription = `Explore the top flight school near you, we're based near ${locationCity}, ${locationStateShort}.`;
@@ -158,6 +157,18 @@ const courseData = {
     url: `https://flytheblueskies.com/pilot-training/${post.id}`,
   },
 };
+
+const ctaDiscovery = {
+  isRightSection: false,
+  title: `Take the controls above <strong class="text-picton-blue-600">${locationCity}, ${locationStateShort}</strong> today`,
+  subTitle: `A Discovery Flight at Blue Skies Above is your chance to experience the joy of flying firsthand. Take the controls with a certified flight instructor by your side, no experience necessary. Ready for takeoff?`,
+  single: true,
+  img: construction,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Start flying today",
+  btnURL: "/discovery-flights",
+};
 ---
 
 <MainLayoutEnhanced
@@ -177,7 +188,7 @@ const courseData = {
 
   <HeroSection
     title={headerH1}
-    subTitle=`Embark on your aviation journey with Blue Skies Above, Alabama's premier flight school. Located at Lanett Municipal Airport (7A3), we offer personalized training programs, from Private Pilot to Commercial certifications, guided by experienced instructors. Whether you're in Auburn, Columbus, or beyond, take the first step toward your pilot's license today.`
+    subTitle=`Embark on your aviation journey near <strong class="text-picton-blue-600">${locationCity}, ${locationStateShort}</strong> with <strong>Blue Skies Above, Alabama’s premier flight school</strong> based at Lanett Municipal Airport (7A3). we offer comprehensive pilot training programs from Private Pilot to Commercial certifications. Serving Auburn, Columbus, Opelika, and throughout East Alabama with experienced flight instructors.`
     primaryBtn="Enroll now"
     primaryBtnURL="/enroll-at-blue-skies"
     secondaryBtn="Our Programs"
@@ -191,19 +202,18 @@ const courseData = {
     alt="Private Pilot receiving Checkride Pass certificate"
   />
   <FeaturesNavs
-    title=`The best time to <span class="text-picton-blue-500 dark:text-picton-blue-400">start flying</span> is now`
+    title=`The best time to <span class=" text-picton-blue-600 dark:text-picton-blue-400">start flying</span> near <strong class="text-picton-blue-600">${locationCity}, ${locationStateShort}</strong> is now`
     tabs={[
       {
         heading: "Start a Conversation",
-        content:
-          "The first step in pilot training is reaching out to a flight school. Blue Skies Above welcomes you to the world of aviation.",
+        content: `The first step in pilot training is reaching out to a flight school near <strong>${locationCity}, ${locationStateShort}</strong>. Blue Skies Above welcomes you to the world of aviation.`,
         svg: "messages",
         src: tools,
         alt: "A pair of Cessna 172s at Lanett Municipal Airport",
         first: true,
       },
       {
-        heading: "Take Your First Flight Lesson",
+        heading: `Take Your First Flight Lesson near <strong class="text-picton-blue-600">${locationCity}, ${locationStateShort}</strong>`,
         content:
           "Also known as a discovery flight, take the controls of the aircraft and fly the plane. See if becoming a pilot is right for you.",
         svg: "takeoff",
@@ -223,15 +233,15 @@ const courseData = {
   />
 
   <FeaturesGeneral
-    title="Preparing future pilots to launch their aviation careers"
-    subTitle="Discover why aspiring pilots in Auburn and throughout the Alabama area trust Blue Skies Above to turn their aviation dreams into reality. With experienced instructors and comprehensive programs, we help students build the skills and confidence needed for a successful aviation career."
+    title=`Preparing future pilots to launch their aviation careers near ${locationCity}, ${locationStateShort}`
+    subTitle=`Discover why aspiring pilots in ${locationCity} and throughout the Alabama area trust Blue Skies Above to turn their aviation dreams into reality. With experienced instructors and comprehensive programs, we help students build the skills and confidence needed for a successful aviation career.`
     src={featureImage}
     alt="Blue Skies Above flight training students and instructors with aircraft"
     features={features}
   />
 
   <ClientsSection
-    title="Dedicated to flight training"
+    title=`Dedicated to flight training near ${locationCity}, ${locationStateShort}`
     subTitle="Blue Skies Above is a proud partner of these aviation associations and companies"
     partners={partnersData}
   />
@@ -293,7 +303,7 @@ const courseData = {
   >
     <div class="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
       <h2
-        class="text-picton-blue-600 dark:text-picton-blue-500 text-2xl font-bold md:text-4xl md:leading-tight"
+        class="text-picton-blue-600 dark: text-picton-blue-600 text-2xl font-bold md:text-4xl md:leading-tight"
       >
         {blogSectionTitle}
       </h2>

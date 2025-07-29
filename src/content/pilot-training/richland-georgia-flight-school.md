@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near a relaxed, rural environment with low traffic."
-  baseLocation: "Richland Airport"
   keyPlace1: "Providence Canyon"
   keyPlace2: "Flint River"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Affordable Flight Training near {{city}}"
     - "Fly Over {{keyPlace1}}’s ‘Little Grand Canyon’"
-    - "Train at {{baseLocation}}"
     - "Small-Town Flight School, Big Results"
     - "Escape to {{stateLong}}’s Skies"
 ---

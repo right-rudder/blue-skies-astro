@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "Train near the Tallapoosa River with minimal air traffic."
-  baseLocation: "Camp Hill Airport"
   keyPlace1: "Tallapoosa River"
   keyPlace2: "Historic Downtown Camp Hill"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Learn to Fly near {{city}}, {{stateShort}}"
     - "Fly Along the {{keyPlace1}}"
-    - "Start at {{baseLocation}}"
     - "Small-Town Flight Training"
     - "Alabama’s Best-Kept Aviation Secret"
 ---

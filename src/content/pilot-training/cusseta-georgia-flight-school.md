@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "A peaceful town near the Chattahoochee River and Fort Benning, ideal for distraction-free pilot training."
-  baseLocation: "Cusseta Airfield"
   keyPlace1: "Fort Benning Entrance"
   keyPlace2: "Chattahoochee River Park"
 
@@ -30,6 +29,5 @@ location:
     - "Quiet Skies near {{city}}, {{stateShort}}"
     - "Fly Near Fort Benning near {{city}}, {{stateShort}}"
     - "Train Over the Chattahoochee near {{stateLong}}"
-    - "Start Your Pilot Journey at {{baseLocation}}"
     - "Focused Flight Instruction near {{city}}, {{stateShort}}"
 ---

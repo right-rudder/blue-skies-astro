@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near Franklin, where Southern charm meets excellent flying conditions."
-  baseLocation: "Franklin County Airport"
   keyPlace1: "Chattahoochee River"
   keyPlace2: "Downtown Franklin"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Learn to Fly near {{city}}, {{stateShort}}"
     - "Flight Training Over Scenic {{stateLong}}"
-    - "Take Off from {{baseLocation}}"
     - "Aviation Dreams Start near {{city}}, {{stateShort}}"
     - "Fly Above the {{keyPlace1}}"
 ---

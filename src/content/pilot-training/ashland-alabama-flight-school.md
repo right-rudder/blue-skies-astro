@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "Train near Ashland, surrounded by forests, rolling hills, and community spirit."
-  baseLocation: "Ashland Airport"
   keyPlace1: "Talladega National Forest"
   keyPlace2: "Ashland Theatre"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Learn to Fly near {{city}}, {{stateShort}}"
     - "Train Over the Heart of {{stateLong}}"
-    - "Launch Your Pilot Career from {{baseLocation}}"
     - "Flight Dreams Begin near {{city}}, {{stateShort}}"
     - "Soar Above {{keyPlace1}} and Beyond"
 ---

@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near a relaxed setting with easy access to Columbus."
-  baseLocation: "Waverly Hall Airfield"
   keyPlace1: "Flat Rock Park"
   keyPlace2: "Chattahoochee River"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight Training near {{city}}, {{stateShort}}"
     - "Soar Over {{keyPlace1}}"
-    - "Learn at {{baseLocation}}"
     - "Small-Town Flight School"
     - "Georgia’s Friendliest Skies"
 ---

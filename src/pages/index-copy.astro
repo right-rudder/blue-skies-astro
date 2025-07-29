@@ -30,7 +30,7 @@ const englishBlogEntries = await getCollection("blog", ({ id }) => {
 
 const blogPosts: CollectionEntry<"blog">[] = englishBlogEntries.sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-    b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+    b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 // Images
@@ -120,7 +120,7 @@ const breadcrumbs = [{ name: "Home", url: "/" }];
   />
 
   <HeroSection
-    title=`Launch Your Aviation Career with <span class="text-picton-blue-500 dark:text-picton-blue-400">Blue Skies Above</span>,<br> Alabama's Trusted Flight School`
+    title=`Launch Your Aviation Career with <span class=" text-picton-blue-600 dark:text-picton-blue-400">Blue Skies Above</span>,<br> Alabama's Trusted Flight School`
     subTitle="Embark on your aviation journey with Blue Skies Above, Alabama's premier flight school. Located at Lanett Municipal Airport (7A3), we offer personalized training programs, from Private Pilot to Commercial certifications, guided by experienced instructors. Whether you're in Auburn, Columbus, or beyond, take the first step toward your pilot's license today."
     primaryBtn="Enroll now"
     primaryBtnURL="/enroll-at-blue-skies"
@@ -135,7 +135,7 @@ const breadcrumbs = [{ name: "Home", url: "/" }];
     alt="Private Pilot receiving Checkride Pass certificate"
   />
   <FeaturesNavs
-    title=`The best time to <span class="text-picton-blue-500 dark:text-picton-blue-400">start flying</span> is now`
+    title=`The best time to <span class=" text-picton-blue-600 dark:text-picton-blue-400">start flying</span> is now`
     tabs={[
       {
         heading: "Start a Conversation",
@@ -237,7 +237,7 @@ const breadcrumbs = [{ name: "Home", url: "/" }];
   >
     <div class="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
       <h2
-        class="text-picton-blue-600 dark:text-picton-blue-500 text-2xl font-bold md:text-4xl md:leading-tight"
+        class="text-picton-blue-600 dark: text-picton-blue-600 text-2xl font-bold md:text-4xl md:leading-tight"
       >
         {blogSectionTitle}
       </h2>

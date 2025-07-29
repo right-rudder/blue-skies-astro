@@ -15,7 +15,6 @@ location:
   stateShort: "GA"
   stateLong: "Georgia"
   description: "Train near Manchester, a place known for its hospitality and skies ideal for learning to fly."
-  baseLocation: "Manchester Airport"
   keyPlace1: "Warm Springs"
   keyPlace2: "Historic Train Depot"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Learn to Fly near {{city}}, {{stateShort}}"
     - "Train Over the Heart of {{stateLong}}"
-    - "Launch Your Pilot Career from {{baseLocation}}"
     - "Flight Dreams Begin near {{city}}, {{stateShort}}"
     - "Soar Above {{keyPlace1}} and Beyond"
 ---

@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "Surrounded by hills and quiet landscapes, Daviston offers a distraction-free setting for flight instruction."
-  baseLocation: "Daviston Landing Strip"
   keyPlace1: "Horseshoe Bend National Military Park"
   keyPlace2: "Lake Martin Scenic Route"
 
@@ -31,5 +30,4 @@ location:
     - "Take Off near the Heart of Rural {{stateLong}}"
     - "Daviston’s Calm Airspace Is Your Flight School Advantage"
     - "Learn Above the Hills of {{city}}, {{stateShort}}"
-    - "Your Aviation Story Begins at {{baseLocation}}"
 ---

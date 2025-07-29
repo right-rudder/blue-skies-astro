@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "Home to Southern Union State Community College, Wadley offers a small-town environment ideal for immersive flight training."
-  baseLocation: "Wadley Airfield"
   keyPlace1: "Tallapoosa River"
   keyPlace2: "SUSCC Campus"
 
@@ -30,6 +29,5 @@ location:
     - "Train Among the Pines near {{city}}, {{stateShort}}"
     - "Wadley, {{stateShort}} – Quiet Skies, Clear Paths"
     - "Southern Roots, Aviation Dreams"
-    - "Step into the Sky from {{baseLocation}}"
     - "Fly Above Small-Town Serenity"
 ---

@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "Train over Alabama’s largest lake with water and mountain vistas."
-  baseLocation: "Thomas C. Russell Field"
   keyPlace1: "Lake Martin"
   keyPlace2: "Wind Creek State Park"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight Training near {{city}}, {{stateShort}}"
     - "Soar Over {{keyPlace1}}"
-    - "Train at {{baseLocation}}"
     - "Alabama’s Most Scenic Flight School"
     - "Water and Mountain Navigation"
 ---

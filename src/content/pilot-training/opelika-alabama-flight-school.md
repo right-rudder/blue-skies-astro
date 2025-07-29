@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "Train near Auburn University with access to advanced aviation resources."
-  baseLocation: "Opelika Airport"
   keyPlace1: "Chewacla State Park"
   keyPlace2: "Downtown Opelika"
 
@@ -29,7 +28,6 @@ location:
   headlines:
     - "Flight School near {{city}}, {{stateShort}}"
     - "Train Near {{keyPlace1}}"
-    - "Fly from {{baseLocation}}"
     - "Auburn-Area Pilot Training"
     - "Soar Over {{stateLong}}’s Countryside"
 ---

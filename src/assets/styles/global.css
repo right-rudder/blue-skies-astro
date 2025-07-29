@@ -143,7 +143,7 @@
   }
 
   .btn-accent {
-    @apply bg-picton-blue-400 hover:bg-picton-blue-500 active:bg-picton-blue-500 inline-flex items-center justify-center gap-x-2 rounded-lg border border-transparent px-4 py-3 text-sm font-bold text-neutral-50 ring-zinc-500 outline-hidden transition duration-300 focus-visible:ring-3 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 2xl:text-base dark:ring-zinc-200 dark:focus:outline-hidden;
+    @apply bg-picton-blue-600 hover:bg-picton-blue-600 active:bg-picton-blue-600 inline-flex items-center justify-center gap-x-2 rounded-lg border border-transparent px-4 py-3 text-sm font-bold text-neutral-50 ring-zinc-500 outline-hidden transition duration-300 focus-visible:ring-3 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 2xl:text-base dark:ring-zinc-200 dark:focus:outline-hidden;
   }
 
   .btn-animate {

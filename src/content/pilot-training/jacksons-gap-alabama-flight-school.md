@@ -15,7 +15,6 @@ location:
   stateShort: "AL"
   stateLong: "Alabama"
   description: "Train over Alabama’s premier lake with island-hopping routes."
-  baseLocation: "Jacksons Gap Airfield"
   keyPlace1: "Lake Martin"
   keyPlace2: "Wind Creek State Park"
 
