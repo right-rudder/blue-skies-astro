@@ -19,11 +19,11 @@ tags:
 contents:
   [
     {
-      paragraph: "When choosing a flight school, location matters just as much as the aircraft and instructors. At Blue Skies Above, we’re proud to call Lanett Municipal Airport (7A3) home—a place where aspiring pilots can learn faster, train smarter, and enjoy every step of their aviation journey. Here are five reasons why Lanett, Alabama is the perfect place to begin flight training.",
+      paragraph: "When choosing a flight school, location matters just as much as the aircraft and instructors. At Blue Skies Above, we’re proud to call Lanett Municipal Airport (7A3) home, a place where aspiring pilots can learn faster, train smarter, and enjoy every step of their aviation journey. Here are five reasons why Lanett, Alabama is the perfect place to begin flight training.",
     },
     {
       title: "1. More Flying, Less Waiting",
-      paragraph: "Unlike busy metropolitan airports where students spend precious time waiting for takeoff clearance, Lanett offers uncongested airspace. This means you’ll spend more of your lesson in the air building skills—not idling on the ground. Students at Blue Skies Above progress up to 30% faster thanks to efficient scheduling and lower air traffic.",
+      paragraph: "Unlike busy metropolitan airports where students spend precious time waiting for takeoff clearance, Lanett offers uncongested airspace. This means you’ll spend more of your lesson in the air building skills, not idling on the ground. Students at Blue Skies Above progress up to 30% faster thanks to efficient scheduling and lower air traffic.",
     },
     {
       title: "2. Real-World Training Environment",
@@ -39,7 +39,7 @@ contents:
     },
     {
       title: "5. A Supportive Aviation Community",
-      paragraph: "Blue Skies Above isn’t just about flying airplanes—it’s about joining a community. From discovery flights and youth aviation days to supportive instructors who treat you like family, we create an environment where learning is as fun as it is rewarding. Our students consistently report 99% satisfaction from first solo to checkride.",
+      paragraph: "Blue Skies Above isn’t just about flying airplanes, it’s about joining a community. From discovery flights and youth aviation days to supportive instructors who treat you like family, we create an environment where learning is as fun as it is rewarding. Our students consistently report 99% satisfaction from first solo to checkride.",
     },
     {
       title: "Take the Next Step",
