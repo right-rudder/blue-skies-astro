@@ -78,7 +78,6 @@ pricing:
       "40 hours of flight instruction",
       "30 hours of ground instruction",
       "Ground school kit included",
-      "Pay up front or incrementally",
     ]
   note: FAA requires 50 flight hours of cross country time to meet requirements. Additional time building may be required.
 video:
@@ -134,6 +133,5 @@ Many pilots find that getting an instrument rating enhances their enjoyment of f
 - 40 hours of flight instruction
 - 30 hours of ground instruction
 - Ground school kit included
-- Pay up front or incrementally
 
 _Note: FAA requires 50 flight hours of cross country time to meet requirements. Additional time building may be required._

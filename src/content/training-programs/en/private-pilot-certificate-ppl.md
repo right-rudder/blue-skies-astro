@@ -64,7 +64,6 @@ pricing:
       "30 hours of flight instruction",
       "30 hours of ground instruction",
       "Ground school kit included",
-      "Pay up front or incrementally",
     ]
   note: Price is based on FAA minimums.
 video:
