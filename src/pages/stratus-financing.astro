@@ -1,0 +1,153 @@
+---
+import { StratusFinancingPage } from "../data_files/pages/stratus-financing.js";
+
+import { SITE } from "@data/constants";
+import MainLayout from "@/layouts/MainLayout.astro";
+import CTA from "@/components/sections/misc/CTA.astro";
+import MainSection from "@/components/ui/blocks/MainSection.astro";
+import RightSection from "@/components/ui/blocks/RightSection.astro";
+import FAQ from "@/components/sections/misc/FAQ.astro";
+
+import blueskiesover from "src/assets/images/blue-skies-over-auburn.webp";
+import imgRight from "../assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
+import imgRight2 from "../assets/images/blue-skies-cessna-in-airport.webp";
+
+import faqs from "@data/stratus-faq.json";
+
+const pageTitle: string = `${StratusFinancingPage.pageTitle} | ${SITE.title}`;
+const metaDescription = `${StratusFinancingPage.pageDescription}`;
+const ogTitle = "Stratus Financial | Blue Skies Above Flight School";
+
+const ctaDiscovery = {
+  isRightSection: false,
+  title: "Fly now with Blue Skies Above",
+  subTitle: "Schedule a Discovery Flight and explore the clouds!",
+  single: true,
+  img: blueskiesover,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Get Started",
+  btnURL: "/discovery-flights",
+};
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "",
+    url: "",
+    name: "About Blue Skies Above",
+    description: metaDescription,
+    isPartOf: {
+      "@type": "WebSite",
+      url: "",
+      name: SITE.title,
+      description: metaDescription,
+    },
+    inLanguage: "en-US",
+  }}
+>
+  <MainSection
+    title="Financing Your Flight Training with Stratus Financial"
+    subTitle="Flight training should be about achieving your goals, not stressing over finances. That’s why Blue Skies Above offers accessible financing through Flight Training Finance, alongside scholarships and flexible payment plans — so nothing stands between you and your dreams."
+    btnExists={true}
+    btnTitle="Contact Us"
+    btnURL="/contact"
+  />
+
+  <CTA content={ctaDiscovery} />
+
+  <div class="">
+    <div
+      class="mx-auto flex flex-col items-center gap-5 px-6 md:flex-row lg:px-8"
+    >
+      <div class="mx-auto max-w-2xl text-center md:text-left">
+        <p
+          class="text-accent-300 text-picton-blue-600 text-base leading-7 font-semibold uppercase"
+        >
+          Stratus Financing
+        </p>
+        <h2
+          class="text-muted-700 mt-2 text-3xl font-bold tracking-tight sm:text-4xl dark:text-white"
+        >
+          Your Aviation Dreams Start Here
+        </h2>
+        <p class="text-muted-700 mt-6 text-lg leading-8 dark:text-white">
+          Stratus Financial was founded by FAA Certificated Flight and Ground
+          Instructors passionate about helping others achieve their aviation
+          dreams. With Stratus, the sky is no longer the limit.
+        </p>
+        <p class="text-muted-700 mt-4 text-base leading-7 dark:text-white">
+          We know it’s not just about achieving your dreams (because we looked
+          up in the sky every time we heard an airplane too!), but funding your
+          family’s dreams as well. That’s why Stratus was created — to make
+          financing your aviation career possible.
+        </p>
+      </div>
+
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl
+          class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+        >
+          {
+            [
+              {
+                title:
+                  "The best rates available to take you from zero to hero!",
+                description:
+                  "Stratus offers competitive financing designed to cover your entire training journey.",
+              },
+              {
+                title: "Full financing for your flight training and more",
+                description:
+                  "Cover tuition, materials, and additional expenses with one loan package.",
+              },
+              {
+                title: "Affordable payment options with 12-month deferment",
+                description:
+                  "Complete training and secure a job before payments begin, easing financial pressure.",
+              },
+              {
+                title: "No prepayment penalties",
+                description:
+                  "Pay off your loan any time with zero consequences or hidden fees.",
+              },
+            ].map((benefit) => (
+              <div class="relative pl-16">
+                <dt class="text-muted-800 text-base leading-7 font-semibold dark:text-white">
+                  <div class="bg-accent-400 absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg">
+                    {/* Replace with an icon if you want */}
+                    <span class="font-bold text-white">✓</span>
+                  </div>
+                  {benefit.title}
+                </dt>
+                <dd class="text-muted-600 mt-2 text-base leading-7 dark:text-white">
+                  {benefit.description}
+                </dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </div>
+  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+  <RightSection
+    title="Flexible Financing That Fits Your Future"
+    subTitle="We’ve partnered with Flight Training Finance to provide personalized payment plans, competitive terms, and a smooth, supportive application process. Whether you're just beginning or working toward advanced ratings, our financing options are designed to adapt to your unique goals and budget. Our advisors will guide you through every step, from exploring scholarships to using the Yellow Sheet calculator tool to preview your monthly payments.\n\nDon't let money hold you back from reaching new heights — apply today and take the first step toward your aviation career with clarity and confidence."
+    single={false}
+    imgOne={imgRight}
+    imgOneAlt="Flight Training Finance brochure with pen"
+    imgTwo={imgRight2}
+    imgTwoAlt="Smiling student reviewing financing documents"
+    btnExists={false}
+    btnTitle="Download Program Guide"
+    btnURL="/financing-guide"
+  />
+
+  <CTA content={ctaDiscovery} />
+</MainLayout>
