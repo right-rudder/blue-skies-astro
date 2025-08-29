@@ -72,6 +72,7 @@ const ctaStratus = {
     btnURL="/contact"
   />
 
+  <!-- Stratus Financing -->
   <div class="">
     <div
       class="mx-auto flex flex-col items-center gap-5 px-6 md:flex-row lg:px-8"
@@ -149,21 +150,35 @@ const ctaStratus = {
     </div>
   </div>
 
-  <CTA content={ctaStratus} />
-
   <RightSection
-    title="Flexible Financing That Fits Your Future"
-    subTitle="We’ve partnered with Flight Training Finance to provide personalized payment plans, competitive terms, and a smooth, supportive application process. Whether you're just beginning or working toward advanced ratings, our financing options are designed to adapt to your unique goals and budget. Our advisors will guide you through every step, from exploring scholarships to using the Yellow Sheet calculator tool to preview your monthly payments.\n\nDon't let money hold you back from reaching new heights — apply today and take the first step toward your aviation career with clarity and confidence."
+    title="Stratus Financing: Your Aviation Dreams Start Here"
+    subTitle={`<div class="py-4 flex flex-col gap-4">Stratus Financial was founded by FAA Certificated Flight and Ground Instructors passionate about helping others achieve their aviation dreams. 
+With Stratus, the sky is no longer the limit.
+
+You’re not just a number, and it shows with Stratus. We look beyond the typical FICO scores and see you as a whole aviator, setting you up for success before you even apply.
+<ul class="list-disc list-inside py-2 flex flex-col gap-2 "> 
+<h3>We offer exceptional lending packages, including: </h3>
+        <li> The best rates available to take you from zero to hero!</li>
+        <li> Full financing for your entire flight training and more</li>
+        <li> Affordable payment options, including 12-month deferment while you complete training and secure a job</li>
+        <li> Pay off your loan any time with no penalties</li>
+        <li> The best rates available to take you from zero to hero!</li>
+</ul>
+
+Stratus also supports your career with resources like counseling from instructors, resume reviews, and AMA calls with airline pilots. 
+
+Don’t let finances hold you back from the cockpit.  </div>`}
     single={false}
     imgOne={imgRight}
-    imgOneAlt="Flight Training Finance brochure with pen"
+    imgOneAlt="Stratus Financial brochure with pen"
     imgTwo={imgRight2}
-    imgTwoAlt="Smiling student reviewing financing documents"
-    btnExists={false}
-    btnTitle="Download Program Guide"
-    btnURL="/financing-guide"
+    imgTwoAlt="Smiling student reviewing Stratus financing options"
+    btnExists={true}
+    btnTitle="Apply for Stratus Financing"
+    btnURL="/stratus-financing"
   />
+
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
-  <CTA content={ctaDiscovery} />
+  <CTA content={ctaStratus} />
 </MainLayout>
