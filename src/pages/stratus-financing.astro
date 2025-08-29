@@ -29,6 +29,19 @@ const ctaDiscovery = {
   btnTitle: "Get Started",
   btnURL: "/discovery-flights",
 };
+
+const ctaStratus = {
+  isRightSection: false,
+  title: "Ready to take off with Stratus?",
+  subTitle:
+    "Contact us today to learn more about our financing options and start your journey to the skies!",
+  single: true,
+  img: blueskiesover,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Contact Us",
+  btnURL: "/contact",
+};
 ---
 
 <MainLayout
@@ -58,8 +71,6 @@ const ctaDiscovery = {
     btnTitle="Contact Us"
     btnURL="/contact"
   />
-
-  <CTA content={ctaDiscovery} />
 
   <div class="">
     <div
@@ -121,7 +132,9 @@ const ctaDiscovery = {
                 <dt class="text-muted-800 text-base leading-7 font-semibold dark:text-white">
                   <div class="bg-accent-400 absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg">
                     {/* Replace with an icon if you want */}
-                    <span class="font-bold text-white">✓</span>
+                    <span class="text-picton-blue-600 text-3xl font-bold">
+                      ✓
+                    </span>
                   </div>
                   {benefit.title}
                 </dt>
@@ -135,7 +148,9 @@ const ctaDiscovery = {
       </div>
     </div>
   </div>
-  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+
+  <CTA content={ctaStratus} />
+
   <RightSection
     title="Flexible Financing That Fits Your Future"
     subTitle="We’ve partnered with Flight Training Finance to provide personalized payment plans, competitive terms, and a smooth, supportive application process. Whether you're just beginning or working toward advanced ratings, our financing options are designed to adapt to your unique goals and budget. Our advisors will guide you through every step, from exploring scholarships to using the Yellow Sheet calculator tool to preview your monthly payments.\n\nDon't let money hold you back from reaching new heights — apply today and take the first step toward your aviation career with clarity and confidence."
@@ -148,6 +163,7 @@ const ctaDiscovery = {
     btnTitle="Download Program Guide"
     btnURL="/financing-guide"
   />
+  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <CTA content={ctaDiscovery} />
 </MainLayout>
