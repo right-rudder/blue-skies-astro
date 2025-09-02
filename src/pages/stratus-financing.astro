@@ -7,10 +7,14 @@ import CTA from "@/components/sections/misc/CTA.astro";
 import MainSection from "@/components/ui/blocks/MainSection.astro";
 import RightSection from "@/components/ui/blocks/RightSection.astro";
 import FAQ from "@/components/sections/misc/FAQ.astro";
+import PrimaryCTA from "@/components/ui/buttons/PrimaryCTA.astro";
 
-import blueskiesover from "src/assets/images/blue-skies-over-auburn.webp";
+import blueskiesover from "src/assets/images/blue-skies-above-student-pilot-passing-cfi-checkride.webp";
 import imgRight from "../assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
 import imgRight2 from "../assets/images/blue-skies-cessna-in-airport.webp";
+
+import stratusLogo from "src/assets/images/Partner Stratus Tagline Color CMYK 300 Outline.png";
+import blueSkiesLogo from "src/images/blue-skies-logo-black-600 copy.webp";
 
 import faqs from "@data/stratus-faq.json";
 
@@ -32,7 +36,7 @@ const ctaDiscovery = {
 
 const ctaStratus = {
   isRightSection: false,
-  title: "Ready to take off with Stratus?",
+  title: "Ready to become a Pilot?",
   subTitle:
     "Contact us today to learn more about our financing options and start your journey to the skies!",
   single: true,
@@ -152,7 +156,7 @@ const ctaStratus = {
 
   <RightSection
     title="Stratus Financing: Your Aviation Dreams Start Here"
-    subTitle={`<div class="py-4 flex flex-col gap-4">Stratus Financial was founded by FAA Certificated Flight and Ground Instructors passionate about helping others achieve their aviation dreams. 
+    subTitle={`<div class="py-4 flex flex-col gap-4 text-neutral-800 dark:text-neutral-200">Stratus Financial was founded by FAA Certificated Flight and Ground Instructors passionate about helping others achieve their aviation dreams. 
 With Stratus, the sky is no longer the limit.
 
 You’re not just a number, and it shows with Stratus. We look beyond the typical FICO scores and see you as a whole aviator, setting you up for success before you even apply.
@@ -169,14 +173,33 @@ Stratus also supports your career with resources like counseling from instructor
 
 Don’t let finances hold you back from the cockpit.  </div>`}
     single={false}
-    imgOne={imgRight}
+    imgOne={blueSkiesLogo}
     imgOneAlt="Stratus Financial brochure with pen"
-    imgTwo={imgRight2}
+    imgTwo={stratusLogo}
     imgTwoAlt="Smiling student reviewing Stratus financing options"
-    btnExists={true}
+    btnExists={false}
     btnTitle="Apply for Stratus Financing"
     btnURL="/stratus-financing"
   />
+  <div
+    class="mx-auto flex flex-col flex-wrap justify-center gap-4 px-4 pb-10 sm:px-6 lg:flex-row lg:justify-start lg:px-8"
+  >
+    <PrimaryCTA
+      title="Loan option examples"
+      url="/docs/Loan Option Payment Computation 202508 Blue Skies Above.pdf"
+      blank={true}
+    />
+    <PrimaryCTA
+      title="Loan documents checklist"
+      url="/docs/Stratus Financial Loan Documents Checklist Rev 0122.docx"
+      blank={true}
+    />
+    <PrimaryCTA
+      title="Enrollment confirmation form"
+      url="/docs/School Enrollment Confirmation Form_Blue Skies Above.pdf"
+      blank={true}
+    />
+  </div>
 
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
