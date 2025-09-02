@@ -1,0 +1,84 @@
+---
+import { StratusFinancingPage } from "../data_files/pages/stratus-financing.js";
+
+import { SITE } from "@data/constants";
+import MainLayout from "@/layouts/MainLayout.astro";
+import CTA from "@/components/sections/misc/CTA.astro";
+import MainSection from "@/components/ui/blocks/MainSection.astro";
+import RightSection from "@/components/ui/blocks/RightSection.astro";
+import FAQ from "@/components/sections/misc/FAQ.astro";
+
+import blueskiesover from "src/assets/images/blue-skies-above-student-pilot-passing-cfi-checkride.webp";
+import imgRight from "../assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
+import imgRight2 from "../assets/images/blue-skies-cessna-in-airport.webp";
+
+import stratusLogo from "src/assets/images/Partner Stratus Tagline Color CMYK 300 Outline.png";
+import blueSkiesLogo from "src/images/blue-skies-logo-black-600 copy.webp";
+
+import { faqData as faqs } from "@/data_files/stratus-faq.js";
+import LifeStyleFrame from "@/components/LifeStyleFrame.astro";
+
+const pageTitle: string = `${StratusFinancingPage.pageTitle} | ${SITE.title}`;
+const metaDescription = `${StratusFinancingPage.pageDescription}`;
+const ogTitle = "Stratus Financial | Blue Skies Above Flight School";
+
+const ctaDiscovery = {
+  isRightSection: false,
+  title: "Fly now with Blue Skies Above",
+  subTitle: "Schedule a Discovery Flight and explore the clouds!",
+  single: true,
+  img: blueskiesover,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Get Started",
+  btnURL: "/discovery-flights",
+};
+
+const ctaStratus = {
+  isRightSection: false,
+  title: "Ready to become a Pilot?",
+  subTitle:
+    "Contact us today to learn more about our financing options and start your journey to the skies!",
+  single: true,
+  img: blueskiesover,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Contact Us",
+  btnURL: "/contact",
+};
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "",
+    url: "",
+    name: "About Blue Skies Above",
+    description: metaDescription,
+    isPartOf: {
+      "@type": "WebSite",
+      url: "",
+      name: SITE.title,
+      description: metaDescription,
+    },
+    inLanguage: "en-US",
+  }}
+>
+  <MainSection
+    title="Financing Your Aviation Journey with LifeStyle Aviation"
+    subTitle="Owning or accessing a modern aircraft should be about flying, not financial stress. That’s why LifeStyle Aviation offers flexible options including traditional financing, leaseback programs, and the innovative DiamondShare shared ownership plan — making modern aviation more attainable than ever."
+    btnExists={true}
+    btnTitle="Contact Us"
+    btnURL="/contact"
+  />
+
+  <LifeStyleFrame />
+
+  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+
+  <CTA content={ctaStratus} />
+</MainLayout>
