@@ -5,56 +5,6 @@ import { Image } from "astro:assets";
 import imgFinancing from "../../assets/images/cfi-with-student-at-blue-skies-above.webp";
 ---
 
-<section
-  class="flex flex-col items-center justify-center gap-2 py-10 md:flex-row"
->
-  <div class="" data-aos="fade-left" data-aos-delay={500}>
-    <Image
-      class="w-full rounded-lg"
-      src={imgFinancing}
-      alt=""
-      format={"avif"}
-    />
-  </div>
-  <div class="flex max-w-3xl flex-col px-5 py-10">
-    <h2
-      class="font-header text-picton-blue-700 dark:text-picton-blue-400 text-5xl font-semibold uppercase"
-    >
-      Financing Your Flight Training
-    </h2>
-    <h3 class="dark: text-picton-blue-600 py-5 text-2xl text-gray-800">
-      Accessible Financing Solutions for Your Pilot Training
-    </h3>
-    <p class="text-lg text-gray-700 dark:text-white">
-      Our mission is to provide flexible solutions that fit your financial
-      situation, allowing you to pursue your aviation dreams without the added
-      stress of financial constraints.
-    </p>
-    <p class="pt-5 text-lg text-gray-700 dark:text-white">
-      Whether you’re looking for personalized financing solutions, flexible
-      payment plans, or transparent terms, our partnership with Flight Training
-      Finance ensures you have access to competitive rates and terms. Our
-      user-friendly application process and supportive financial aid advisors
-      make it easier for you to secure the necessary funds for your flight
-      training.
-    </p>
-    <p class="pt-5 text-lg text-gray-700 dark:text-white">
-      We also offer scholarships and grants for eligible students, providing
-      additional opportunities to support your aviation education. Our financial
-      aid advisors are here to guide you through every step, helping you explore
-      all available options so you can confidently take the first step towards
-      your aviation career.
-    </p>
-    <p class="pt-5 text-lg text-gray-700 dark:text-white">
-      Don't let financial barriers hold you back. Get in touch with us today to
-      learn more about our financing options and start your journey to becoming
-      a pilot with Blue Skies Above and Flight Training Finance.
-    </p>
-    <a class="btn-primary mt-10 w-fit text-lg" href="/pricing"
-      >View Pricing for Our Training Packages</a
-    >
-  </div>
-</section>
 <section class="flex flex-col items-center text-lg">
   <div class="flex max-w-7xl flex-col items-center rounded-lg bg-white p-10">
     <div
@@ -134,133 +84,56 @@ import imgFinancing from "../../assets/images/cfi-with-student-at-blue-skies-abo
         Don't let financial barriers hold you back from reaching new heights.
         Start your journey with Blue Skies Above and Flight Training Finance.
       </p>
-
-      <!--Text Section-->
-      <div
-        class="my-10 flex justify-center"
-        x-data="{ 'showModal': false }"
-        @keydown.escape="showModal = false"
-      >
-        <button class="btn-primary text-xl" @click="showModal = true">
-          DOWNLOAD THE PROGRAM GUIDE AND BROCHURE
-        </button>
-        <!-- Modal -->
-        <div
-          class="bg-opacity-50 fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black"
-          x-show="showModal"
-          style="display: none;"
-        >
-          <!-- Modal inner -->
-          <div
-            class="mx-auto w-full rounded bg-white px-6 py-4 text-left shadow-lg lg:w-1/2"
-            @click.away="showModal = false"
-            x-transition:enter="motion-safe:ease-out duration-300"
-            x-transition:enter-start="opacity-0 scale-90"
-            x-transition:enter-end="opacity-100 scale-100"
-          >
-            <!-- Title / Close-->
-            <div class="flex items-center justify-between pb-5">
-              <h4 class="mr-3 max-w-none text-black"></h4>
-              <button
-                type="button"
-                class="z-50 cursor-pointer"
-                @click="showModal = false"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-              </button>
-            </div>
-            <!-- content -->
-            <div>
-              <turbo-frame class="w-full" id="frame4">
-                <form
-                  class="contents"
-                  action="/program_guide_downloads"
-                  accept-charset="UTF-8"
-                  method="post"
-                >
-                  <input
-                    type="hidden"
-                    name="authenticity_token"
-                    value="fsKPbTwpr48Ct-ylaLFHihhGpUciHXd5B7x2sao3ZUOiQwEeFgcjXcTtFsWuFonIXsxvXe1qvFxKOzAdtgkmrw"
-                    autocomplete="off"
-                  />
-                  <div class="w-full">
-                    <div class="mb-5">
-                      <input
-                        placeholder="Name"
-                        class="w-full rounded-md border border-gray-200 px-3 py-2 text-black shadow focus:border-sky-500 focus:ring-sky-500"
-                        type="text"
-                        name="program_guide_download[name]"
-                        id="program_guide_download_name"
-                      />
-                    </div>
-                    <div class="mb-5">
-                      <input
-                        placeholder="Phone"
-                        class="w-full rounded-md border border-gray-200 px-3 py-2 text-black shadow focus:border-sky-500 focus:ring-sky-500"
-                        type="text"
-                        name="program_guide_download[phone]"
-                        id="program_guide_download_phone"
-                      />
-                    </div>
-                    <div class="mb-5">
-                      <input
-                        placeholder="Email"
-                        class="w-full rounded-md border border-gray-200 px-3 py-2 text-black shadow focus:border-sky-500 focus:ring-sky-500"
-                        type="email"
-                        name="program_guide_download[email]"
-                        id="program_guide_download_email"
-                      />
-                    </div>
-                    <div class="confirm_email_1750949363">
-                      <style media="screen">
-                        .confirm_email_1750949363 {
-                          display: none;
-                        }
-                      </style><label for="program_guide_download_confirm_email"
-                        >If you are a human, ignore this field</label
-                      ><input
-                        type="text"
-                        name="program_guide_download[confirm_email]"
-                        id="program_guide_download_confirm_email"
-                        autocomplete="off"
-                        tabindex="-1"
-                      /><input
-                        type="hidden"
-                        name="spinner"
-                        value="e79e56ddb64f5637a4c975d978aa1ad8"
-                        autocomplete="off"
-                      />
-                    </div>
-                    <div class="inline">
-                      <input
-                        type="submit"
-                        name="commit"
-                        value="Download"
-                        class="btn-primary uppercase"
-                        data-disable-with="Download"
-                      />
-                    </div>
-                  </div>
-                </form>
-              </turbo-frame>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
+</section>
+<section
+  class="flex flex-col items-center justify-center gap-2 py-10 md:flex-row"
+>
+  <div class="" data-aos="fade-left" data-aos-delay={500}>
+    <Image
+      class="w-full rounded-lg"
+      src={imgFinancing}
+      alt=""
+      format={"avif"}
+    />
+  </div>
+  <div class="flex max-w-3xl flex-col px-5 py-10">
+    <h2
+      class="font-header text-picton-blue-700 dark:text-picton-blue-400 text-5xl font-semibold uppercase"
+    >
+      Financing Your Flight Training
+    </h2>
+    <h3 class="dark: text-picton-blue-600 py-5 text-2xl text-gray-800">
+      Accessible Financing Solutions for Your Pilot Training
+    </h3>
+    <p class="text-lg text-gray-700 dark:text-white">
+      Our mission is to provide flexible solutions that fit your financial
+      situation, allowing you to pursue your aviation dreams without the added
+      stress of financial constraints.
+    </p>
+    <p class="pt-5 text-lg text-gray-700 dark:text-white">
+      Whether you’re looking for personalized financing solutions, flexible
+      payment plans, or transparent terms, our partnership with Flight Training
+      Finance ensures you have access to competitive rates and terms. Our
+      user-friendly application process and supportive financial aid advisors
+      make it easier for you to secure the necessary funds for your flight
+      training.
+    </p>
+    <p class="pt-5 text-lg text-gray-700 dark:text-white">
+      We also offer scholarships and grants for eligible students, providing
+      additional opportunities to support your aviation education. Our financial
+      aid advisors are here to guide you through every step, helping you explore
+      all available options so you can confidently take the first step towards
+      your aviation career.
+    </p>
+    <p class="pt-5 text-lg text-gray-700 dark:text-white">
+      Don't let financial barriers hold you back. Get in touch with us today to
+      learn more about our financing options and start your journey to becoming
+      a pilot with Blue Skies Above and Flight Training Finance.
+    </p>
+    <a class="btn-primary mt-10 w-fit text-lg" href="/pricing"
+      >View Pricing for Our Training Packages</a
+    >
   </div>
 </section>
