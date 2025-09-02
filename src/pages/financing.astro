@@ -5,11 +5,13 @@ import FinancingComponent from "@/components/sections/FinancingComponent.astro";
 import CTA from "@/components/sections/misc/CTA.astro";
 import MainSection from "@/components/ui/blocks/MainSection.astro";
 import RightSection from "@/components/ui/blocks/RightSection.astro";
+import PrimaryCTA from "@/components/ui/buttons/PrimaryCTA.astro";
+import StratusFinancingComponent from "@/components/sections/financing/StratusFinancingComponent.astro";
 
 import blueskiesover from "src/assets/images/blue-skies-over-auburn.webp";
 import imgRight from "../assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
 import imgRight2 from "../assets/images/blue-skies-cessna-in-airport.webp";
-import StratusFinancingComponent from "@/components/sections/financing/StratusFinancingComponent.astro";
+import stratusLogo from "src/assets/images/Partner Stratus Tagline Color CMYK 300 Outline.png";
 
 const pageTitle: string = `Financing Options | ${SITE.title}`;
 const metaDescription =
@@ -17,12 +19,16 @@ const metaDescription =
 const ogTitle = "Financing Options | Blue Skies Above Flight School";
 
 const ctaDiscovery = {
-  isRightSection: false,
+  isRightSection: true,
   title: "Fly now with Blue Skies Above",
   subTitle: "Schedule a Discovery Flight and explore the clouds!",
   single: true,
   img: blueskiesover,
   imgAlt: "Flight training syllabus materials",
+
+  imgOne: blueskiesover,
+  imgOneAlt: "Flight Training Finance brochure with pen",
+  alt: "Flight training syllabus materials",
   btnExists: true,
   btnTitle: "Get Started",
   btnURL: "/discovery-flights",
@@ -70,8 +76,32 @@ const ctaDiscovery = {
     btnURL="/financing-guide"
   />
 
-  <StratusFinancingComponent />
+  <div
+    class="mx-auto flex flex-col flex-wrap justify-center gap-4 px-4 pb-10 sm:px-6 lg:flex-row lg:justify-start lg:px-8"
+  >
+    <PrimaryCTA title="Stratus Financing" url="#stratus-financing" />
+    <PrimaryCTA
+      title="Flight Training Finance"
+      url="#flight-training-finance"
+    />
+  </div>
 
+  <div id="stratus-financing"></div>
+  <StratusFinancingComponent />
+  <RightSection
+    title="Your Aviation Dreams Start Here"
+    subTitle="Stratus Financial was founded by FAA Certificated Flight and Ground Instructors passionate about helping others achieve their aviation dreams. With Stratus, the sky is no longer the limit. We know it’s not just about achieving your dreams (because we looked up in the sky every time we heard an airplane too!), but funding your family’s dreams as well. That’s why Stratus was created, to make financing your aviation career possible."
+    single={true}
+    imgOne={stratusLogo}
+    imgOneAlt="Flight Training Finance brochure with pen"
+    imgTwo={imgRight2}
+    imgTwoAlt="Smiling student reviewing financing documents"
+    btnExists={true}
+    btnTitle="Stratus Finance"
+    btnURL="/stratus-financing"
+  />
+
+  <div id="flight-training-finance"></div>
   <FinancingComponent />
 
   <CTA content={ctaDiscovery} />
