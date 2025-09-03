@@ -152,7 +152,6 @@ export const partnersData = [
     imagePath: "/src/assets/images/partner-blue-skies-nafi-logo.webp",
     imageAlt: "NAFI Logo",
   },
-
   {
     icon: `<svg
       class="mx-auto h-auto w-24 py-3 sm:mx-0 md:w-32 lg:w-40 lg:py-5"
@@ -204,5 +203,21 @@ export const partnersData = [
     href: "https://fsana.com/",
     imagePath: "/src/assets/images/partner-blue-skies-fsana-logo.webp",
     imageAlt: "FSANA Logo",
+  },
+  {
+    icon: ``,
+    name: "Stratus Financial",
+    href: "",
+    imagePath:
+      "/src/assets/images/Partner Stratus Tagline Color CMYK 300 Outline.png",
+    imageAlt: "Stratus Financial Logo",
+  },
+  {
+    icon: ``,
+    name: "LifeStyle Aviation",
+    href: "",
+    imagePath:
+      "/src/assets/images/Partner LifeStyle Aviation Logo-Standard.png",
+    imageAlt: "LifeStyle Aviation Logo",
   },
 ];
