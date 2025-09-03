@@ -207,7 +207,7 @@ export const partnersData = [
   {
     icon: ``,
     name: "Stratus Financial",
-    href: "",
+    href: "/stratus-financing/",
     imagePath:
       "/src/assets/images/Partner Stratus Tagline Color CMYK 300 Outline.png",
     imageAlt: "Stratus Financial Logo",
@@ -215,7 +215,7 @@ export const partnersData = [
   {
     icon: ``,
     name: "LifeStyle Aviation",
-    href: "",
+    href: "/lifestyle-aviation/",
     imagePath:
       "/src/assets/images/Partner LifeStyle Aviation Logo-Standard.png",
     imageAlt: "LifeStyle Aviation Logo",
