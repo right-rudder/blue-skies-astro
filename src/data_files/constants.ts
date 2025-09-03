@@ -220,4 +220,11 @@ export const partnersData = [
       "/src/assets/images/Partner LifeStyle Aviation Logo-Standard.png",
     imageAlt: "LifeStyle Aviation Logo",
   },
+  {
+    icon: ``,
+    name: "DiamondShare",
+    href: "https://www.diamondshare.com",
+    imagePath: "/src/assets/images/Partner DiamondShare Logo.jpg",
+    imageAlt: "DiamondShare Logo",
+  },
 ];
