@@ -129,6 +129,12 @@ const navBarLinks = [
         icon: "money",
       },
       {
+        name: "Partners",
+        link: "/partners",
+        description: "Learn about the partners at Blue Skies Above",
+        icon: "passport",
+      },
+      {
         name: "Leaseback Program",
         link: "/leaseback-program",
         description:
