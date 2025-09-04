@@ -1,27 +1,16 @@
 ---
-import { StratusFinancingPage } from "../data_files/pages/stratus-financing.js";
+import { PartnersPage } from "../data_files/pages/partners-page.js";
 
 import { SITE } from "@data/constants";
 import MainLayout from "@/layouts/MainLayout.astro";
 import CTA from "@/components/sections/misc/CTA.astro";
 import MainSection from "@/components/ui/blocks/MainSection.astro";
-import RightSection from "@/components/ui/blocks/RightSection.astro";
-import FAQ from "@/components/sections/misc/FAQ.astro";
-import ClientsSection from "@components/sections/landing/ClientsSection.astro";
 import { partnersData } from "@/data_files/constants";
-
 import blueskiesover from "src/assets/images/blue-skies-above-student-pilot-passing-cfi-checkride.webp";
-import imgRight from "../assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
-import imgRight2 from "../assets/images/blue-skies-cessna-in-airport.webp";
-
-import stratusLogo from "src/assets/images/Partner Stratus Tagline Color CMYK 300 Outline.png";
-import blueSkiesLogo from "src/images/blue-skies-logo-black-600 copy.webp";
-
-import { faqData as faqs } from "@/data_files/lifestyle-aviation-faq.js";
 import PartnersSection from "@/components/sections/partners/PartnersSection.astro";
 
-const pageTitle: string = `${StratusFinancingPage.pageTitle} | ${SITE.title}`;
-const metaDescription = `${StratusFinancingPage.pageDescription}`;
+const pageTitle: string = `${PartnersPage.pageTitle} | ${SITE.title}`;
+const metaDescription = `${PartnersPage.pageDescription}`;
 const ogTitle = "Stratus Financial | Blue Skies Above Flight School";
 
 const ctaDiscovery = {
@@ -59,7 +48,7 @@ const ctaStratus = {
     "@type": "WebPage",
     "@id": "",
     url: "",
-    name: "About Blue Skies Above",
+    name: "About Blue Skies Above Trusted Aviation Partners",
     description: metaDescription,
     isPartOf: {
       "@type": "WebSite",
