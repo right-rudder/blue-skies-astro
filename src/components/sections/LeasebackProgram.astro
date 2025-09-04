@@ -1,9 +1,10 @@
 ---
-import imgProgram from "@images/blue-skies-auburn-university-student-pilot-programs.webp"
-import FormLeaseBackProgram from "../forms/FormLeaseBackProgram.astro"
+import imgProgram from "@images/blue-skies-auburn-university-student-pilot-programs.webp";
+import FormLeaseBackProgram from "../forms/FormLeaseBackProgram.astro";
 import { Image } from "astro:assets";
 import imgFinancing from "../../assets/images/blue-skies-cessna-on-grass-auburn-georgia-alabama.webp";
 ---
+
 <!-- 
 <section class="flex flex-col md:flex-row items-center px-10 gap-10">
   
@@ -24,20 +25,21 @@ import imgFinancing from "../../assets/images/blue-skies-cessna-on-grass-auburn-
     </p>
   </div>
 </section> -->
-
 <section class="py-14" id="program">
-  <h1 class="font-bold text-4xl text-center uppercase py-10 dark:text-white">Join the Blue Skies Above Leaseback Program</h1>
-  <div class="lg:flex lg:flex-row-reverse items-center">
-  <FormLeaseBackProgram />
-  <div class="mx-0 lg:w-1/2">
-    
-  <Image
-    class="w-full rounded-xl"
-    src={imgFinancing}
-    alt=""
-    draggable={"false"}
-    format={"avif"}
-  />
-  </div>
+  <h1 class="py-10 text-center text-4xl font-bold uppercase dark:text-white">
+    Join the Blue Skies Above Leaseback Program
+  </h1>
+
+  <div class="items-center lg:flex lg:flex-row-reverse">
+    <FormLeaseBackProgram />
+    <div class="mx-0 lg:w-1/2">
+      <Image
+        class="w-full rounded-xl"
+        src={imgFinancing}
+        alt=""
+        draggable={"false"}
+        format={"avif"}
+      />
+    </div>
   </div>
 </section>

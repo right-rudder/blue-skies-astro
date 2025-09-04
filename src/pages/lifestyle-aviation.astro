@@ -20,6 +20,7 @@ import { faqData as faqs } from "@/data_files/lifestyle-aviation-faq.js";
 import LifeStyleFrame from "@/components/LifeStyleFrame.astro";
 import PrimaryCTA from "@/components/ui/buttons/PrimaryCTA.astro";
 import CardBlog from "@/components/ui/cards/CardBlog.astro";
+import LifeStyleAviationComponent from "@/components/sections/partners/LifeStyleAviationComponent.astro";
 
 const pageTitle: string = `${LifeStyleAviationPage.pageTitle} | ${SITE.title}`;
 const metaDescription = `${LifeStyleAviationPage.pageDescription}`;
@@ -82,122 +83,7 @@ const ctaStratus = {
 
   <!-- <LifeStyleFrame /> -->
 
-  <!-- LifeStlyle  -->
-  <div class="">
-    <div
-      class="mx-auto flex flex-col items-center gap-5 px-6 md:flex-row lg:px-8"
-    >
-      <div class="mx-auto max-w-2xl text-center md:text-left">
-        <p
-          class="text-accent-300 text-picton-blue-600 text-base leading-7 font-semibold uppercase"
-        >
-          Lifestyle Aviation Partnership
-        </p>
-        <h2
-          class="text-muted-700 mt-2 text-3xl font-bold tracking-tight sm:text-4xl dark:text-white"
-        >
-          Unlock Exclusive Opportunities with Blue Skies Above
-        </h2>
-        <p class="text-muted-700 mt-6 text-lg leading-8 dark:text-white">
-          Through our partnership with LifeStyle Aviation, Blue Skies Above
-          students gain access to a nationwide network of modern Diamond
-          Aircraft, advanced technology, and ownership solutions designed for
-          future professional and recreational pilots.
-        </p>
-        <p class="text-muted-700 mt-4 text-base leading-7 dark:text-white">
-          This partnership means more than just flight training — it opens the
-          door to mentorship, fleet access, and a clear pathway to aircraft
-          ownership. Whether your dream is to fly for fun or to build hours
-          toward a career, Blue Skies Above and LifeStyle Aviation ensure that
-          your investment in training brings lasting value and unmatched
-          opportunities.
-        </p>
-      </div>
-
-      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-        <dl
-          class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
-        >
-          {
-            [
-              {
-                title:
-                  "The best rates available to take you from zero to hero!",
-                description:
-                  "Stratus offers competitive financing designed to cover your entire training journey.",
-                icon: `
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-    <path fill="currentColor" d="M19.87 6.453c.119.257.127 1.29-4.884 3.642l-4.913 2.306c-1.71.803-4.191 1.859-5.285 2.151c-.766.204-1.497-.316-1.497-.316S1.085 12.261.499 11.817s-.535-.67.215-.91c.467-.149 3.13.493 4.265.78A92 92 0 0 1 8.12 9.889c-1.396-1.033-4.008-2.962-4.841-3.55c-.799-.565.01-.768.01-.768c.368-.099 1.162-.228 1.562-.144c2.721.569 7.263 2.071 7.611 2.186a91 91 0 0 1 2.922-1.465c2.075-.974 4.327-.037 4.486.305" />
-  </svg>
-                  `,
-              },
-              {
-                title: "Full financing for your flight training and more",
-                description:
-                  "Cover tuition, materials, and additional expenses with one loan package.",
-                icon: `
-                  <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M13.5 16a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0"
-                          />
-                          <path
-                            fill="currentColor"
-                            d="m14.347.66l3.18 4.456l2.097-.715L21.538 10h.962v12h-21V10h.51v-.01l.648.006zM9.397 10h10.028l-1.037-3.033l-1.522.487zM7.839 8.417L15.55 5.79l-1.604-2.25zM5.5 12h-2v2a2 2 0 0 0 2-2m10 4a3.5 3.5 0 1 0-7 0a3.5 3.5 0 0 0 7 0m5 4v-2a2 2 0 0 0-2 2zm-2-8a2 2 0 0 0 2 2v-2zm-15 8h2a2 2 0 0 0-2-2z"
-                          />
-                        </svg>
-                  `,
-              },
-              {
-                title: "Affordable payment options with 12-month deferment",
-                description:
-                  "Complete training and secure a job before payments begin, easing financial pressure.",
-                icon: `
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-      <path d="M2 4.5h6.757a3 3 0 0 1 2.122.879L14 8.5m-9 5H2m6.5-6l2 2a1.414 1.414 0 1 1-2 2L7 10c-.86.86-2.223.957-3.197.227L3.5 10" />
-      <path d="M5 11v4.5c0 1.886 0 2.828.586 3.414S7.114 19.5 9 19.5h9c1.886 0 2.828 0 3.414-.586S22 17.386 22 15.5v-3c0-1.886 0-2.828-.586-3.414S19.886 8.5 18 8.5H9.5" />
-      <path d="M15.25 14a1.75 1.75 0 1 1-3.5 0a1.75 1.75 0 0 1 3.5 0" />
-    </g>
-  </svg>
-                  `,
-              },
-              {
-                title: "No prepayment penalties",
-                description:
-                  "Pay off your loan any time with zero consequences or hidden fees.",
-                icon: `
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z" clip-rule="evenodd" />
-  </svg>
-                  `,
-              },
-            ].map((benefit) => (
-              <div class="relative pl-16">
-                <dt class="text-muted-800 text-base leading-7 font-semibold dark:text-white">
-                  <div class="bg-accent-400 absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg">
-                    {/* Replace with an icon if you want */}
-                    <span class="text-picton-blue-500 scale-200 text-3xl">
-                      <Fragment slot="icon" set:html={benefit.icon} />
-                    </span>
-                  </div>
-                  {benefit.title}
-                </dt>
-                <dd class="text-muted-600 mt-2 text-base leading-7 dark:text-white">
-                  {benefit.description}
-                </dd>
-              </div>
-            ))
-          }
-        </dl>
-      </div>
-    </div>
-  </div>
+  <LifeStyleAviationComponent />
 
   <CTA content={ctaDiscovery} />
 

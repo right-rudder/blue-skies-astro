@@ -6,26 +6,41 @@ import CTA from "@/components/sections/misc/CTA.astro";
 import MainSection from "@/components/ui/blocks/MainSection.astro";
 import RightSection from "@/components/ui/blocks/RightSection.astro";
 
-
+import imgLifeStyle from "../assets/images/LifeStyle da40 golf course with lifestyle logo.jpg";
 import blueskiesover from "src/assets/images/blue-skies-over-auburn.webp";
 import imgRight from "../assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
 import imgRight2 from "../assets/images/blue-skies-cessna-on-grass-auburn-georgia-alabama.webp";
+import LifeStyleAviationComponent from "@/components/sections/partners/LifeStyleAviationComponent.astro";
 
 const pageTitle: string = `Aircraft Leaseback Program | ${SITE.title}`;
-const metaDescription = "Learn about the Blue Skies Above Aircraft Leaseback Program, where you can own an aircraft and earn income while supporting flight training.";
+const metaDescription =
+  "Learn about the Blue Skies Above Aircraft Leaseback Program, where you can own an aircraft and earn income while supporting flight training.";
 const ogTitle = "Aircraft Leaseback Program | Blue Skies Above Flight School";
 
+const ctaLifeStyle = {
+  isRightSection: false,
+  title: "Take Flight with LifeStyle Aviation & Blue Skies Above",
+  subTitle:
+    "Discover how modern Diamond aircraft, innovative ownership programs, and flexible financing from LifeStyle Aviation make flying more accessible. Explore our partnership and see how you can start your aviation journey today!",
+  single: true,
+  img: imgLifeStyle,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "LifeStyle Aviation",
+  btnURL: "/lifestyle-aviation",
+};
+
 const ctaDiscovery = {
-    isRightSection: true,
-    title: "Fly now with Blue Skies Above",
-    subTitle: "Schedule a Discovery Flight and explore the clouds!",
-    single: true,
-    imgOne: blueskiesover,
-    imgOneAlt: "Flight training syllabus materials",
-    btnExists: true,
-    btnTitle: "Get Started",
-    btnURL: "/discovery-flights",
-}
+  isRightSection: true,
+  title: "Fly now with Blue Skies Above",
+  subTitle: "Schedule a Discovery Flight and explore the clouds!",
+  single: true,
+  imgOne: blueskiesover,
+  imgOneAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Get Started",
+  btnURL: "/discovery-flights",
+};
 ---
 
 <MainLayout
@@ -48,7 +63,6 @@ const ctaDiscovery = {
     inLanguage: "en-US",
   }}
 >
-
   <MainSection
     title="Discover Our Leaseback Program"
     subTitle="Own an aircraft, earn rental income, and support the next generation of pilots — all through Blue Skies Above’s Leaseback Program based at Lanett Regional Airport."
@@ -56,6 +70,9 @@ const ctaDiscovery = {
     btnTitle="Join Us"
     btnURL="#program"
   />
+
+  <LifeStyleAviationComponent />
+  <CTA content={ctaLifeStyle} />
 
   <RightSection
     title="Invest in an Aircraft and Earn Income"
@@ -69,7 +86,6 @@ const ctaDiscovery = {
     btnTitle="Learn More"
     btnURL="/leaseback"
   />
-
 
   <LeasebackProgramComponent />
 
