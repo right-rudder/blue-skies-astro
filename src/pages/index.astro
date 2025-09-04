@@ -42,6 +42,7 @@ import avatar1 from "src/assets/images/avatar1.avif";
 import avatar2 from "src/assets/images/avatar2.avif";
 import avatar3 from "src/assets/images/avatar3.avif";
 import avatar4 from "src/assets/images/avatar4.avif";
+import imgLifeStyle from "../assets/images/LifeStyle da40 golf course with lifestyle logo.jpg";
 
 import { partnersData } from "@/data_files/constants";
 import GoogleMap from "@/components/sections/misc/GoogleMap.astro";
@@ -53,6 +54,19 @@ const avatarSrcs: Array<string> = [
   avatar3.src,
   avatar4.src,
 ];
+
+const ctaLifeStyle = {
+  isRightSection: false,
+  title: "Take Flight with LifeStyle Aviation & Blue Skies Above",
+  subTitle:
+    "Discover how modern Diamond aircraft, innovative ownership programs, and flexible financing from LifeStyle Aviation make flying more accessible. Explore our partnership and see how you can start your aviation journey today!",
+  single: true,
+  img: imgLifeStyle,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "LifeStyle Aviation",
+  btnURL: "/lifestyle-aviation",
+};
 
 const ctaDiscovery = {
   isRightSection: false,
@@ -180,9 +194,11 @@ const breadcrumbs = [{ name: "Home", url: "/" }];
   />
 
   <ClientsSection
-    title="Dedicated to flight training"
+    title="Our Partners"
     subTitle="Blue Skies Above is a proud partner of these aviation associations and companies"
     partners={partnersData}
+    btnTitle="Our Partners"
+    btnURL="/partners"
   />
 
   <CTA content={ctaDiscovery} />
@@ -234,6 +250,8 @@ const breadcrumbs = [{ name: "Home", url: "/" }];
   <!-- <PricingSection pricing={pricing} /> -->
 
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+
+  <CTA content={ctaLifeStyle} />
 
   <GoogleMap />
 
