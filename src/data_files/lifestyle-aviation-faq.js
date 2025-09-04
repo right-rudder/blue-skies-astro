@@ -58,5 +58,41 @@ export const faqData = {
        </p>
       `,
     },
+    // 🔹 New Questions
+    {
+      question: "What types of aircraft does LifeStyle Aviation specialize in?",
+      answer: `
+       <p class="text-neutral-800 dark:text-neutral-400">
+        LifeStyle Aviation focuses on Diamond Aircraft, known for their modern design, fuel efficiency, and advanced safety features. Models include the DA40, DA42, and DA62, which are ideal for both training and personal ownership.
+       </p>
+      `,
+    },
+    {
+      question: "Can flight schools partner with LifeStyle Aviation?",
+      answer: `
+       <p class="text-neutral-800 dark:text-neutral-400">
+        Yes! Flight schools can partner with LifeStyle Aviation to access Leaseback opportunities, expand their fleets with Diamond Aircraft, and offer students cutting-edge training experiences with advanced avionics and safer planes.
+       </p>
+      `,
+    },
+    {
+      question: "What makes Diamond Aircraft a smart investment?",
+      answer: `
+       <ul class="list-disc list-inside space-y-1 text-neutral-800 dark:text-neutral-400"> 
+        <li>Composite airframes for durability and efficiency.</li>
+        <li>Low operating costs compared to legacy aircraft.</li>
+        <li>Modern avionics with Garmin G1000 NXi.</li>
+        <li>Strong resale value due to demand in both private and training markets.</li>
+       </ul>
+      `,
+    },
+    {
+      question: "Does LifeStyle Aviation provide support after purchase?",
+      answer: `
+       <p class="text-neutral-800 dark:text-neutral-400">
+        Absolutely. LifeStyle Aviation offers post-purchase support, including transition training, mentoring, and aircraft management solutions to ensure owners maximize the value of their aircraft investment.
+       </p>
+      `,
+    },
   ],
 };
