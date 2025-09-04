@@ -2,6 +2,23 @@
 const FORM_WEBHOOK_URL = import.meta.env.NEW_ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const CP_ACCOUNT_RANDOM_ID = import.meta.env.CP_ACCOUNT_RANDOM_ID;
+
+// They want to know if they comming with them just to get that or if they are comming with they want to go all the whey though becoming a pilot
+// mean to be a carrer pilot
+// then each form should put them in the appropriate pipeline
+
+// If they are looking to get into the pilot pipeline, they are dropped in to the private pipeline
+
+// current pipelines -> Default, Onboarding, CFI Pipeline, Leaseback, Career, Private, Instrument, Commercial , CFI & CFII, Experience Builders, Employment
+const programs = [
+  "Private Pilot Course",
+  "Instrument Rating",
+  "Commercial Pilot Course",
+  "CFI Course",
+  "CFII Course",
+  "Spin Endorsement",
+  "I don't know yet, just want to get started",
+];
 ---
 
 <form class="mx-auto max-w-xl" id="enroll_form">
