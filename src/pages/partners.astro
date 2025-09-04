@@ -18,6 +18,7 @@ import stratusLogo from "src/assets/images/Partner Stratus Tagline Color CMYK 30
 import blueSkiesLogo from "src/images/blue-skies-logo-black-600 copy.webp";
 
 import { faqData as faqs } from "@/data_files/lifestyle-aviation-faq.js";
+import PartnersSection from "@/components/sections/partners/PartnersSection.astro";
 
 const pageTitle: string = `${StratusFinancingPage.pageTitle} | ${SITE.title}`;
 const metaDescription = `${StratusFinancingPage.pageDescription}`;
@@ -77,13 +78,11 @@ const ctaStratus = {
     btnURL="/contact"
   />
 
-  <ClientsSection
+  <PartnersSection
     title="Our Partners"
     subTitle="Blue Skies Above is a proud partner of these aviation associations and companies"
     partners={partnersData}
   />
-
-  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <CTA content={ctaStratus} />
 </MainLayout>
