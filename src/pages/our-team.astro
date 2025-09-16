@@ -15,11 +15,13 @@ import Travasha from "../assets/images/cfi-travasha.webp";
 import Jaymes from "../assets/images/cfi-jaymes.webp";
 import Connor from "../assets/images/cfi-connor.webp";
 import Sammy from "../assets/images/a&p-sammy.webp";
+import Katie from "../assets/images/Katie-Fricker-cropped.jpg";
 import noPicture from "../assets/images/profile-silhouette.webp";
 import ctaImg from "../assets/images/blue-skies-above-clouds-instrument-cfii-training.webp";
 
 const pageTitle: string = `Our Team | ${SITE.title}`;
-const metaDescription = "Meet the dedicated team of instructors and staff at Blue Skies Above Flight School in Lanett, Alabama.";
+const metaDescription =
+  "Meet the dedicated team of instructors and staff at Blue Skies Above Flight School in Lanett, Alabama.";
 const ogTitle = "Our Team | Blue Skies Above Flight School";
 
 const leadershipMembers = {
@@ -50,31 +52,75 @@ const leadershipMembers = {
   ],
 };
 
+const managementMembers = {
+  title: "Management Staff",
+  description: `Our management team at Blue Skies Above is dedicated to ensuring the smooth operation of our flight school. With a focus on student success and satisfaction, they work tirelessly behind the scenes to create a supportive and efficient learning environment.`,
+  team: [
+    {
+      name: "Katie-Fricker",
+      role: "Manager",
+      imagePath: Katie.src,
+      imageAlt: "",
+    },
+  ],
+};
+
 const ctaEnroll = {
-    isRightSection: true,
-    title: "Your Aviation Career is Cleared for Takeoff",
-    subTitle: "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
-    single: true,
-    imgOne: ctaImg,
-    imgOneAlt: "Flight training syllabus materials",
-    btnExists: true,
-    btnTitle: "Enroll Now",
-    btnURL: "/enroll-at-blue-skies",
+  isRightSection: true,
+  title: "Your Aviation Career is Cleared for Takeoff",
+  subTitle:
+    "The sky is not the limit; it's your new office. With a global demand for pilots, there's never been a better time to start. Enroll in our flight school and begin your journey to becoming a professional pilot.",
+  single: true,
+  imgOne: ctaImg,
+  imgOneAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Enroll Now",
+  btnURL: "/enroll-at-blue-skies",
 };
 
 const teamMembers = {
   title: "Our Instructors",
-  description: "Our experienced instructors at Blue Skies Above are committed to providing the highest quality flight training to students. With a passion for aviation and extensive knowledge, they create a supportive and safe learning environment for students to achieve their goals and become skilled pilots.",
+  description:
+    "Our experienced instructors at Blue Skies Above are committed to providing the highest quality flight training to students. With a passion for aviation and extensive knowledge, they create a supportive and safe learning environment for students to achieve their goals and become skilled pilots.",
   team: [
-    { name: "Matthew", role: "Fixed Wing CFI, CFII", imagePath: matthewB.src, imageAlt: "", },
-    { name: "Joe", role: "Chief Instructor - Fixed Wing CFI, CFII, MEI", imagePath: Joe.src, imageAlt: "",  },
-    { name: "Bailey", role: "Assistant Chief, Fixed Wing CFI", imagePath: Bailey.src, imageAlt: "", },
-    { name: "Travasha", role: "Fixed Wing CFI", imagePath: Travasha.src, imageAlt: "", },
-    { name: "Jaymes", role: "Fixed Wing CFI, CFII", imagePath: Jaymes.src, imageAlt: "", },
-    { name: "Connor", role: "Fixed Wing CFI, CFII", imagePath: Connor.src, imageAlt: "", },
+    {
+      name: "Matthew",
+      role: "Fixed Wing CFI, CFII",
+      imagePath: matthewB.src,
+      imageAlt: "",
+    },
+    {
+      name: "Joe",
+      role: "Chief Instructor - Fixed Wing CFI, CFII, MEI",
+      imagePath: Joe.src,
+      imageAlt: "",
+    },
+    {
+      name: "Bailey",
+      role: "Assistant Chief, Fixed Wing CFI",
+      imagePath: Bailey.src,
+      imageAlt: "",
+    },
+    {
+      name: "Travasha",
+      role: "Fixed Wing CFI",
+      imagePath: Travasha.src,
+      imageAlt: "",
+    },
+    {
+      name: "Jaymes",
+      role: "Fixed Wing CFI, CFII",
+      imagePath: Jaymes.src,
+      imageAlt: "",
+    },
+    {
+      name: "Connor",
+      role: "Fixed Wing CFI, CFII",
+      imagePath: Connor.src,
+      imageAlt: "",
+    },
   ],
 };
-
 
 const maintenanceMembers = {
   title: "Maintenance Staff",
@@ -100,7 +146,6 @@ const maintenanceMembers = {
     },
   ],
 };
-
 ---
 
 <MainLayout
@@ -122,8 +167,7 @@ const maintenanceMembers = {
     },
     inLanguage: "en-US",
   }}
-> 
-
+>
   <MainSection
     title="Meet the Blue Skies Above Team"
     subTitle="Passionate aviators, dedicated mentors, and the hearts behind our flight school — get to know the team guiding your aviation journey."
@@ -131,8 +175,9 @@ const maintenanceMembers = {
     btnTitle="Join Our Team"
     btnURL="/join-team"
   />
-    <LeadershipMembers content={leadershipMembers} />
-    <TeamMembers content={teamMembers} />
-    <TeamMembers content={maintenanceMembers} />
-    <CTA content={ctaEnroll}  />
+  <LeadershipMembers content={leadershipMembers} />
+  <TeamMembers content={teamMembers} />
+  <TeamMembers content={maintenanceMembers} />
+  <TeamMembers content={managementMembers} />
+  <CTA content={ctaEnroll} />
 </MainLayout>
