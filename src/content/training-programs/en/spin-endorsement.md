@@ -24,7 +24,7 @@ tabs:
 longDescription:
   title: Essential Training for CFI Candidates
   subTitle: |
-    Before you can take your checkride and earn your Certified Flight Instructor certificate, you’ll need a spin endorsement in your logbook—proof that you’re trained, competent, and confident in handling one of aviation’s most dynamic flight maneuvers. At Blue Skies Above, we make the process straightforward and stress-free with focused ground instruction and in-air practice in our 180hp Cessna 172. Whether you're preparing for your CFI or just want to strengthen your spin recovery skills, our experienced instructors will guide you every step of the way. Enroll today and earn your spin endorsement in as little as one day.
+    Before you can take your checkride and earn your Certified Flight Instructor certificate, you’ll need a spin endorsement in your logbook , proof that you’re trained, competent, and confident in handling one of aviation’s most dynamic flight maneuvers. At Blue Skies Above, we make the process straightforward and stress-free with focused ground instruction and in-air practice in our 180hp Cessna 172. Whether you're preparing for your CFI or just want to strengthen your spin recovery skills, our experienced instructors will guide you every step of the way. Enroll today and earn your spin endorsement in as little as one day.
   btnTitle: Enroll Today
   btnURL: "/contact"
 descriptionList:
@@ -39,7 +39,7 @@ specificationsLeft:
   - title: Complete Ground Instruction
     subTitle: Learn the aerodynamics of spins, stall progression, causes of unintentional spins, and FAA requirements for spin training.
   - title: Fly With a Qualified Instructor
-    subTitle: Conduct spin training flights with a certified instructor in a spin-approved aircraft—practicing safe entry, sustained spins, and proper recovery techniques.
+    subTitle: Conduct spin training flights with a certified instructor in a spin-approved aircraft , practicing safe entry, sustained spins, and proper recovery techniques.
   - title: Demonstrate Spin Recovery Proficiency
     subTitle: You must clearly demonstrate safe, consistent recovery from spins and an understanding of how to teach spin awareness to others.
   - title: Receive Your Logbook Endorsement

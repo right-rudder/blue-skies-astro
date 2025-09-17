@@ -14,7 +14,7 @@ location:
   city: "Tuskegee"
   stateShort: "AL"
   stateLong: "Alabama"
-  description: "Train where legends flew—rolling hills and historic airspace await."
+  description: "Train where legends flew , rolling hills and historic airspace await."
   keyPlace1: "Tuskegee Airmen National Historic Site"
   keyPlace2: "Tuskegee University"
 

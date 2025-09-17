@@ -17,7 +17,7 @@ contents:
     },
     {
       title: "Why Multi-Engine Training Matters",
-      paragraph: "Multi-engine aircraft dominate commercial aviation. In multi-engine training, you’ll learn critical skills such as handling engine failures, managing weight and balance, and mastering complex systems. The training challenges pilots to think systematically about performance and decision-making under pressure—skills essential for real-world aviation.",
+      paragraph: "Multi-engine aircraft dominate commercial aviation. In multi-engine training, you’ll learn critical skills such as handling engine failures, managing weight and balance, and mastering complex systems. The training challenges pilots to think systematically about performance and decision-making under pressure , skills essential for real-world aviation.",
     },
     {
       title: "Career Advantages of Multi-Engine Certification",
@@ -33,7 +33,7 @@ contents:
     },
     {
       title: "Cost-Effective Professional Development",
-      paragraph: "You don’t need to spend half a million dollars for professional flight training. Blue Skies Above offers a zero-to-hero path—including multi-engine certification—for under $100K, without sacrificing safety, quality, or real-world readiness.",
+      paragraph: "You don’t need to spend half a million dollars for professional flight training. Blue Skies Above offers a zero-to-hero path , including multi-engine certification , for under $100K, without sacrificing safety, quality, or real-world readiness.",
     },
     {
       title: "Integration with Professional Programs",
@@ -41,7 +41,7 @@ contents:
     },
     {
       title: "Beyond the Rating: Building Professional Skills",
-      paragraph: "Certification is just the beginning. Our multi-engine curriculum builds decision-making, confidence, and real-world competence—qualities airlines and employers look for. You're not just earning a rating—you’re becoming a safer, smarter, more capable aviator.",
+      paragraph: "Certification is just the beginning. Our multi-engine curriculum builds decision-making, confidence, and real-world competence , qualities airlines and employers look for. You're not just earning a rating , you’re becoming a safer, smarter, more capable aviator.",
     },
     {
       title: "Your Next Steps",

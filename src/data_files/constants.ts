@@ -5,7 +5,7 @@ export const SITE = {
     "Blue Skies Above | Alabama’s Top Flight School for Private & Commercial Pilot Training",
   tagline: "Your Aviation Journey Starts Here.",
   description:
-    "Launch your aviation career with Blue Skies Above, a premier flight school in Lanett, Alabama. We offer expert-led training for Private Pilot, Instrument, Commercial, and CFI certifications—just 30 minutes from Auburn and Columbus. Schedule your Discovery Flight today!",
+    "Launch your aviation career with Blue Skies Above, a premier flight school in Lanett, Alabama. We offer expert-led training for Private Pilot, Instrument, Commercial, and CFI certifications , just 30 minutes from Auburn and Columbus. Schedule your Discovery Flight today!",
   description_short:
     "Start your pilot journey with Blue Skies Above, Alabama’s trusted flight school offering expert-led training in a fun, focused, and supportive environment.",
   url: "https://flytheblueskies.com",
@@ -89,7 +89,7 @@ export const partnersData = [
     imageAlt: "Flight Training Finance Logo",
     subTitle: "Flexible financing designed specifically for flight training.",
     description:
-      "Our collaboration with Flight Training Finance makes becoming a pilot financially achievable. Students gain access to specialized loan programs built specifically for aviation training — with flexible terms that fit your schedule and allow you to focus on flying rather than finances.",
+      "Our collaboration with Flight Training Finance makes becoming a pilot financially achievable. Students gain access to specialized loan programs built specifically for aviation training  ,  with flexible terms that fit your schedule and allow you to focus on flying rather than finances.",
   },
   {
     icon: ``,
@@ -131,6 +131,6 @@ export const partnersData = [
     imageAlt: "DiamondShare Logo",
     subTitle: "Affordable access to modern aircraft after training.",
     description:
-      "The DiamondShare partnership means our graduates can step seamlessly from training into affordable aircraft access. This program eliminates the barriers of full ownership, offering pilots the ability to fly new Diamond Aircraft at a fraction of the cost — a perfect bridge between training and building real-world flying experience.",
+      "The DiamondShare partnership means our graduates can step seamlessly from training into affordable aircraft access. This program eliminates the barriers of full ownership, offering pilots the ability to fly new Diamond Aircraft at a fraction of the cost  ,  a perfect bridge between training and building real-world flying experience.",
   },
 ];

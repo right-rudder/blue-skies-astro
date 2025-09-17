@@ -31,7 +31,7 @@ descriptionList:
   - title: Fly for Hire
     subTitle: Earning your Commercial Pilot Certificate means you can finally get paid to fly. This opens up exciting aviation career paths such as flight instructing, aerial surveying, skydiving operations, banner towing, and more. It’s your next big step toward making aviation your profession.
   - title: Structured, Career-Focused Training
-    subTitle: Our program is designed to not only help you pass the test but prepare you for a career in aviation. With a proven syllabus, experienced instructors, and dedicated career support, we’ll guide you every step of the way—whether you're pursuing a job as a CFI or working toward the airlines
+    subTitle: Our program is designed to not only help you pass the test but prepare you for a career in aviation. With a proven syllabus, experienced instructors, and dedicated career support, we’ll guide you every step of the way , whether you're pursuing a job as a CFI or working toward the airlines
   - title: Sharpen Your Precision
     subTitle: Commercial training is all about flying with accuracy and control. You'll master advanced maneuvers, refine your stick-and-rudder skills, and build confidence flying to strict FAA standards. We’ll help you develop the professionalism and decision-making ability that employers look for.
   - title: Fly Technically Advanced Aircraft

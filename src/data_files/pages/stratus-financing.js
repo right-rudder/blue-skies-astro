@@ -13,7 +13,7 @@ export const StratusFinancingPage = {
       "Stratus Financial was founded by FAA Certificated Flight and Ground Instructors passionate about helping others achieve their aviation dreams. With Stratus, the sky is no longer the limit.",
   },
 
-  intro: `We know it’s not just about achieving your dreams (because we looked up in the sky every time we heard an airplane too!), but funding your family’s dreams as well. That’s why Stratus was created — to make financing your aviation career possible.`,
+  intro: `We know it’s not just about achieving your dreams (because we looked up in the sky every time we heard an airplane too!), but funding your family’s dreams as well. That’s why Stratus was created  ,  to make financing your aviation career possible.`,
 
   benefits: {
     title: "Why Choose Stratus?",
@@ -32,7 +32,7 @@ export const StratusFinancingPage = {
     items: [
       "Counseling with flight and ground instructors to support you through training, check rides, and airline interviews.",
       "Resume reviewing, editing, and building.",
-      "AMA phone calls with pilots in the 121 and 135 industry — what it’s like, how they got their job, and more.",
+      "AMA phone calls with pilots in the 121 and 135 industry  ,  what it’s like, how they got their job, and more.",
     ],
   },
 

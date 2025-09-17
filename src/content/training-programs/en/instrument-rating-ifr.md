@@ -24,7 +24,7 @@ tabs:
 longDescription:
   title: Master Instrument Flying
   subTitle: |
-    Flying through clear skies is only part of the journey—true skill shines when the weather turns. An Instrument Rating takes you beyond the limits of fair-weather flying and prepares you to navigate safely through clouds, low visibility, and complex airspace using only your instruments. It’s a vital step in becoming a more capable, confident, and career-ready pilot. Whether you're aiming to fly more reliably or take the next step toward commercial aviation, this training sharpens your precision and opens new possibilities. Ready to level up your flying? Enroll today and start your instrument training with Blue Skies Above.
+    Flying through clear skies is only part of the journey , true skill shines when the weather turns. An Instrument Rating takes you beyond the limits of fair-weather flying and prepares you to navigate safely through clouds, low visibility, and complex airspace using only your instruments. It’s a vital step in becoming a more capable, confident, and career-ready pilot. Whether you're aiming to fly more reliably or take the next step toward commercial aviation, this training sharpens your precision and opens new possibilities. Ready to level up your flying? Enroll today and start your instrument training with Blue Skies Above.
   btnTitle: Enroll Today
   btnURL: /enrollment
 descriptionList:

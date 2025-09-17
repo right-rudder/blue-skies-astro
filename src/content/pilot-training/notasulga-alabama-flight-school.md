@@ -14,7 +14,7 @@ location:
   city: "Notasulga"
   stateShort: "AL"
   stateLong: "Alabama"
-  description: "A quiet and historic town known for its Southern hospitality and clear skies—ideal for new aviators."
+  description: "A quiet and historic town known for its Southern hospitality and clear skies , ideal for new aviators."
   keyPlace1: "Tuskegee National Forest"
   keyPlace2: "Town Center Heritage Site"
 

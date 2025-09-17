@@ -39,7 +39,7 @@ contents:
     },
     {
       title: "5. The Best Time to Start Is Now",
-      paragraph: "The pilot shortage won’t last forever—airlines will eventually catch up. Students who begin training today are positioned to enter the job market at the peak of opportunity. Waiting a few years could mean more competition and fewer incentives. Starting now ensures you’re part of the wave benefiting from today’s demand.",
+      paragraph: "The pilot shortage won’t last forever , airlines will eventually catch up. Students who begin training today are positioned to enter the job market at the peak of opportunity. Waiting a few years could mean more competition and fewer incentives. Starting now ensures you’re part of the wave benefiting from today’s demand.",
     },
     {
       title: "Take the Next Step",

@@ -24,12 +24,12 @@ tabs:
 longDescription:
   title: Launch Your Instruction Career
   subTitle: |
-    If you’re passionate about aviation and ready to share that passion with others, becoming a Certified Flight Instructor is one of the most rewarding steps you can take. Whether you're building hours toward the airlines or pursuing a long-term career in aviation education, earning your CFI allows you to make a lasting impact on the next generation of pilots. At Blue Skies Above, we don’t just train instructors—we shape mentors, leaders, and safety-first aviators. With personalized guidance, expert instructors, and a supportive training environment at Lanett Municipal Airport, you’ll gain the skills, confidence, and experience to thrive. Take the next step in your aviation journey—enroll today and start your CFI training with Blue Skies Above.
+    If you’re passionate about aviation and ready to share that passion with others, becoming a Certified Flight Instructor is one of the most rewarding steps you can take. Whether you're building hours toward the airlines or pursuing a long-term career in aviation education, earning your CFI allows you to make a lasting impact on the next generation of pilots. At Blue Skies Above, we don’t just train instructors , we shape mentors, leaders, and safety-first aviators. With personalized guidance, expert instructors, and a supportive training environment at Lanett Municipal Airport, you’ll gain the skills, confidence, and experience to thrive. Take the next step in your aviation journey , enroll today and start your CFI training with Blue Skies Above.
   btnTitle: Enroll Today
   btnURL: "/enroll-at-blue-skies"
 descriptionList:
   - title: Build Experience While Making a Difference
-    subTitle: Becoming a CFI isn’t just a way to log flight hours—it’s an opportunity to guide and inspire the next generation of pilots. You'll gain hands-on teaching experience, sharpen your own flying skills, and play a key role in shaping safer, more confident aviators. It’s a fulfilling path that combines personal growth with professional progress.
+    subTitle: Becoming a CFI isn’t just a way to log flight hours , it’s an opportunity to guide and inspire the next generation of pilots. You'll gain hands-on teaching experience, sharpen your own flying skills, and play a key role in shaping safer, more confident aviators. It’s a fulfilling path that combines personal growth with professional progress.
   - title: Professional-Grade Training Environment
     subTitle: At Blue Skies Above, you’ll train at Lanett Municipal Airport (7A3) with access to a fleet of Cessna aircraft, dedicated instructors, and a proven curriculum. Our structured program emphasizes real-world instructional techniques, deep knowledge of FAA standards, and strong mentorship to ensure you’re fully prepared for your checkride and your future students.
   - title: Launchpad for Your Aviation Career

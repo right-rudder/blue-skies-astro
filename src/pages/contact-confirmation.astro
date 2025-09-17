@@ -9,23 +9,22 @@ import blueskiesover from "src/assets/images/blue-skies-over-auburn.webp";
 import imgRight from "../assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
 import imgRight2 from "../assets/images/blue-skies-cessna-in-airport.webp";
 
-
 const pageTitle: string = `Contact Confirmation | ${SITE.title}`;
-const metaDescription = "Thank you for contacting Blue Skies Above. We have received your message and will be in touch soon.";
+const metaDescription =
+  "Thank you for contacting Blue Skies Above. We have received your message and will be in touch soon.";
 const ogTitle = "Contact Confirmation | Blue Skies Above Flight School";
 
-
 const ctaDiscovery = {
-    isRightSection: false,
-    title: "Fly now with Blue Skies Above",
-    subTitle: "Schedule a Discovery Flight and explore the clouds!",
-    single: true,
-    img: blueskiesover,
-    imgAlt: "Flight training syllabus materials",
-    btnExists: true,
-    btnTitle: "Get Started",
-    btnURL: "/discovery-flights",
-}
+  isRightSection: false,
+  title: "Fly now with Blue Skies Above",
+  subTitle: "Schedule a Discovery Flight and explore the clouds!",
+  single: true,
+  img: blueskiesover,
+  imgAlt: "Flight training syllabus materials",
+  btnExists: true,
+  btnTitle: "Get Started",
+  btnURL: "/discovery-flights",
+};
 ---
 
 <MainLayout
@@ -48,28 +47,26 @@ const ctaDiscovery = {
     inLanguage: "en-US",
   }}
 >
+  <MainSection
+    title="Thank You for Reaching Out!"
+    subTitle="We've received your message and one of our team members will get back to you shortly. Whether you’re asking about flight training, enrollment, or anything else  ,  we’re excited to connect and help you take the next step in your aviation journey."
+    btnExists={true}
+    btnTitle="Return to Home"
+    btnURL="/"
+  />
 
- <MainSection 
-  title="Thank You for Reaching Out!"
-  subTitle="We've received your message and one of our team members will get back to you shortly. Whether you’re asking about flight training, enrollment, or anything else — we’re excited to connect and help you take the next step in your aviation journey."
-  btnExists={true}
-  btnTitle="Return to Home"
-  btnURL="/"
-/>
-
-<RightSection
-  title="You're One Step Closer to the Sky"
-  subTitle="We appreciate your interest in Blue Skies Above. Our team typically responds within one business day. In the meantime, feel free to explore more about our programs, instructors, and fleet — or schedule a Visit to our school."
-  single={false}
-  imgOne={imgRight}
-  imgOneAlt="Instructor welcoming new student"
-  imgTwo={imgRight2}
-  imgTwoAlt="Happy student at Blue Skies Above"
-  btnExists={true}
-  btnTitle="Schedule a visit"
-  btnURL="/contact"
-/>
-
+  <RightSection
+    title="You're One Step Closer to the Sky"
+    subTitle="We appreciate your interest in Blue Skies Above. Our team typically responds within one business day. In the meantime, feel free to explore more about our programs, instructors, and fleet  ,  or schedule a Visit to our school."
+    single={false}
+    imgOne={imgRight}
+    imgOneAlt="Instructor welcoming new student"
+    imgTwo={imgRight2}
+    imgTwoAlt="Happy student at Blue Skies Above"
+    btnExists={true}
+    btnTitle="Schedule a visit"
+    btnURL="/contact"
+  />
 
   <CTA content={ctaDiscovery} />
 </MainLayout>

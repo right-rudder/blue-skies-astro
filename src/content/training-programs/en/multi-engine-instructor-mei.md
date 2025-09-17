@@ -24,7 +24,7 @@ tabs:
 longDescription:
   title: Elevate Your Instruction Career
   subTitle: |
-    If you're ready to lead from the right seat and stand out in the flight training world, becoming a Multi-Engine Instructor (MEI) is your next big move. This advanced certification allows you to teach complex twin-engine operations, opening new doors for both professional growth and earning potential. At Blue Skies Above, our MEI Training Program—launching in 2025—is built to help you master the intricacies of multi-engine instruction with confidence and precision. Spaces will be limited, so join the waitlist today and take the next step toward becoming a high-demand aviation educator.
+    If you're ready to lead from the right seat and stand out in the flight training world, becoming a Multi-Engine Instructor (MEI) is your next big move. This advanced certification allows you to teach complex twin-engine operations, opening new doors for both professional growth and earning potential. At Blue Skies Above, our MEI Training Program , launching in 2025 , is built to help you master the intricacies of multi-engine instruction with confidence and precision. Spaces will be limited, so join the waitlist today and take the next step toward becoming a high-demand aviation educator.
   btnTitle: Join Waitlist Now
   btnURL: "/multi-engine-form"
 descriptionList:
