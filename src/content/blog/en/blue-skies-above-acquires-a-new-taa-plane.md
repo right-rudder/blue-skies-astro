@@ -1,6 +1,6 @@
 ---
 title: "Blue Skies Above Adds New TAA to Fleet"
-description: "Blue Skies Above Flight School announces the addition of a new Technically Advanced Aircraft (TAA)—a Cessna 172—to enhance advanced pilot training opportunities."
+description: "Blue Skies Above Flight School announces the addition of a new Technically Advanced Aircraft (TAA) , a Cessna 172 , to enhance advanced pilot training opportunities."
 author: "Matthew Bourguignon"
 authorImage: "@/images/blue-skies-matt-300.webp"
 authorImageAlt: "Headshot of aviation author Matthew Bourguignon"

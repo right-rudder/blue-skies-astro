@@ -24,7 +24,7 @@ tabs:
 longDescription:
   title: Start Your Flight Training Journey
   subTitle: |
-    If you've ever looked up and wondered what it feels like to take the controls and navigate through the open sky, the Private Pilot Program at Blue Skies Above is your chance to turn that dream into reality. This program is designed for aspiring aviators who want the freedom to fly for personal travel or pure adventure. With our supportive team, experienced Certified Flight Instructors (CFIs), and a proven training structure, you'll be equipped with the skills and knowledge to become a confident, capable pilot. Whether your goal is weekend getaways or building a future in aviation, it all starts with one unforgettable step—schedule your discovery flight today and experience what it’s like to fly an aircraft for yourself.
+    If you've ever looked up and wondered what it feels like to take the controls and navigate through the open sky, the Private Pilot Program at Blue Skies Above is your chance to turn that dream into reality. This program is designed for aspiring aviators who want the freedom to fly for personal travel or pure adventure. With our supportive team, experienced Certified Flight Instructors (CFIs), and a proven training structure, you'll be equipped with the skills and knowledge to become a confident, capable pilot. Whether your goal is weekend getaways or building a future in aviation, it all starts with one unforgettable step , schedule your discovery flight today and experience what it’s like to fly an aircraft for yourself.
   btnTitle: Start with your Discovery Flight
   btnURL: /discovery-flight
 descriptionList:
@@ -42,7 +42,7 @@ specificationsLeft:
   - title: Build a Consistent Flight Schedule
     subTitle: Early on, you’ll work with your instructor to set a training schedule. We recommend flying 2–3 times per week to build strong retention and steady progress. More frequent lessons help reinforce key concepts and reduce the need for review.
   - title: Learn the Fundamentals
-    subTitle: Your training begins with ground instruction, where you’ll study essential topics like aerodynamics, navigation, and aircraft systems. This foundation prepares you for hands-on flight lessons that start with the basics—flying straight and level, takeoffs, and landings.
+    subTitle: Your training begins with ground instruction, where you’ll study essential topics like aerodynamics, navigation, and aircraft systems. This foundation prepares you for hands-on flight lessons that start with the basics , flying straight and level, takeoffs, and landings.
   - title: Develop Skills & Confidence
     subTitle: Each lesson builds on the last with increasing complexity. You'll practice handling in-flight scenarios, improve your decision-making, and gain confidence in the cockpit. Staying consistent, studying regularly, and asking questions are the keys to your success.
 tableData:
