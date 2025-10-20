@@ -61,17 +61,17 @@ interface Props {
         />
       </div>
     ) : (
-      <div class="mt-8 grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-delay={500}>
+      <div class="flex flex-col gap-8" data-aos="fade-left" data-aos-delay={500}>
         <!-- First image in a two-image layout -->
         <Image
-          class={`w-full rounded-xl`}
+          class={`w-full`}
           src={imgOne}
           alt={imgOneAlt}
           draggable={"false"}
         />
         <!-- Second image in a two-image layout -->
         <Image
-          class={`w-full rounded-xl`}
+          class={`w-full`}
           src={imgTwo}
           alt={imgTwoAlt}
           draggable={"false"}
