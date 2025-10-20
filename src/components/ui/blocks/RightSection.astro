@@ -58,7 +58,6 @@ interface Props {
           class="w-full rounded-lg"
           src={imgOne}
           alt={imgOneAlt}
-          format={"avif"}
         />
       </div>
     ) : (
@@ -69,15 +68,13 @@ interface Props {
           src={imgOne}
           alt={imgOneAlt}
           draggable={"false"}
-          format={"avif"}
         />
         <!-- Second image in a two-image layout -->
         <Image
-          class="mt-4 w-full rounded-xl lg:mt-10"
+          class={`w-full rounded-xl`}
           src={imgTwo}
           alt={imgTwoAlt}
           draggable={"false"}
-          format={"avif"}
         />
       </div>
     )
