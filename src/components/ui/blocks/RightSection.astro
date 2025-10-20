@@ -58,26 +58,23 @@ interface Props {
           class="w-full rounded-lg"
           src={imgOne}
           alt={imgOneAlt}
-          format={"avif"}
         />
       </div>
     ) : (
-      <div class="mt-8 grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-delay={500}>
+      <div class="h-full w-full flex flex-col gap-8 justify-around items-center" data-aos="fade-left" data-aos-delay={500}>
         <!-- First image in a two-image layout -->
         <Image
-          class={`w-full rounded-xl`}
+          class={`w-2/3`}
           src={imgOne}
           alt={imgOneAlt}
           draggable={"false"}
-          format={"avif"}
         />
         <!-- Second image in a two-image layout -->
         <Image
-          class="mt-4 w-full rounded-xl lg:mt-10"
+          class={`w-2/3`}
           src={imgTwo}
           alt={imgTwoAlt}
           draggable={"false"}
-          format={"avif"}
         />
       </div>
     )
