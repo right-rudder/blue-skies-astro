@@ -1,0 +1,65 @@
+---
+const table = [
+  [
+    "Financing Option",
+    "Eligibility Criteria",
+    "Program Coverage",
+    "Time to Complete",
+    "Co-borrower",
+    "Repayment Start",
+    "Funding Disbursement",
+    "Interest",
+  ],
+  [
+    "Stratus Financial",
+    "Can apply with a co-borrower from the start; caters to various stages of flight training",
+    "Various stages from private pilot to CFI; tailored to individual training needs",
+    "Flexible, adapts to individual training pace",
+    "From the beginning; enhances loan options",
+    "Flexible, based on individual agreement",
+    "Flexible, based on student needs and school involvement",
+    "Varies, competitive options tailored to the borrower's circumstances",
+  ],
+  [
+    "Flight Training Finance",
+    "Focus on FICO score for financing; best suited for hobbyists",
+    "Only PPL or IFR",
+    "Not specified",
+    "Not applicable",
+    "Immediately; does not defer during training; terms range from 18 to 72 months",
+    "Paid directly to school after each lesson; loan grows with each lesson",
+    "Rates vary between 12% to 18%; repayment does not defer during training",
+  ],
+];
+---
+
+<!-- <section class="flex w-full flex-col items-center overflow-hidden bg-white"> -->
+<section class="flex flex-col items-center rounded-lg bg-white px-10 py-20">
+  <div class="w-full">
+    <h2 class="text-center text-5xl font-semibold tracking-tight">Financing Options Comparison</h2>
+    <p class="pt-3 text-center text-2xl">
+      Compare the different financing options available to you for flight training.<br/>
+      Each option has unique features to suit various needs and circumstances.
+    </p>
+    <div class="mt-10 w-full overflow-auto">
+      <table class="min-w-[75rem] border-collapse">
+        <thead>
+          <tr>
+            {table[0].map((th) => <th class="border border-gray-500 px-3 py-2">{th}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {
+            table.slice(1, 3).map((tr) => (
+              <tr>
+                {tr.map((td, index) => (
+                  <td class={`border border-gray-500 px-3 py-2 ${index === 0 ? "font-semibold" : ""}`}>{td}</td>
+                ))}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
