@@ -9,11 +9,18 @@ const {
   btnExists,
   btnTitle,
   btnURL,
+  btnTwoExists,
+  btnTwoTitle,
+  btnTwoURL,
   single,
   imgOne,
   imgOneAlt,
+  imgOneDark,
+  imgOneDarkAlt,
   imgTwo,
   imgTwoAlt,
+  imgTwoDark,
+  imgTwoDarkAlt,
 } = Astro.props;
 // Define TypeScript interface for the properties
 interface Props {
@@ -22,11 +29,18 @@ interface Props {
   btnExists?: boolean;
   btnTitle?: string;
   btnURL?: string;
+  btnTwoExists?: boolean;
+  btnTwoTitle?: string;
+  btnTwoURL?: string;
   single?: boolean;
   imgOne?: any;
   imgOneAlt?: any;
+  imgOneDark?: any;
+  imgOneDarkAlt?: any;
   imgTwo?: any;
   imgTwoAlt?: any;
+  imgTwoDark?: any;
+  imgTwoDarkAlt?: any;
 }
 ---
 <!-- Root section of the component -->
@@ -47,7 +61,10 @@ interface Props {
       <Fragment set:html={subTitle} />
     </p>
     <!-- Conditional rendering of the Primary Call-To-Action button if 'btnExists' is true -->
-    {btnExists ? <PrimaryCTA title={btnTitle} url={btnURL} /> : null}
+    <div class="flex flex-wrap gap-4 flex-row justify-start mb-8">
+      {btnExists && <PrimaryCTA title={btnTitle} url={btnURL} />}
+      {btnTwoExists && <PrimaryCTA title={btnTwoTitle} url={btnTwoURL} />}
+    </div>
   </div>
   <!-- Conditionally render one or two images based on 'single' property -->
   {
@@ -59,23 +76,54 @@ interface Props {
           src={imgOne}
           alt={imgOneAlt}
         />
+
+        <!-- Single image for dark theme -->
+        {
+          imgOneDark &&
+            <Image
+              class={`w-full rounded-lg hidden dark:block`}
+              src={imgOneDark}
+              alt={imgOneDarkAlt}
+            />
+        }
       </div>
     ) : (
       <div class="h-full w-full flex flex-col gap-8 justify-around items-center" data-aos="fade-left" data-aos-delay={500}>
         <!-- First image in a two-image layout -->
         <Image
-          class={`w-2/3`}
+          class={`w-2/3 dark:hidden`}
           src={imgOne}
           alt={imgOneAlt}
           draggable={"false"}
         />
         <!-- Second image in a two-image layout -->
         <Image
-          class={`w-2/3`}
+          class={`w-2/3 dark:hidden`}
           src={imgTwo}
           alt={imgTwoAlt}
           draggable={"false"}
         />
+
+        <!-- First image for dark theme in a two-image layout -->
+        {
+          imgOneDark &&
+            <Image
+              class={`w-2/3 hidden dark:block`}
+              src={imgOneDark}
+              alt={imgOneDarkAlt}
+              draggable={"false"}
+            />
+        }
+        <!-- Second image for dark theme in a two-image layout -->
+        {
+          imgTwoDark &&
+            <Image
+              class={`w-2/3 hidden dark:block`}
+              src={imgTwoDark}
+              alt={imgTwoDarkAlt}
+              draggable={"false"}
+            />
+        }
       </div>
     )
   }
