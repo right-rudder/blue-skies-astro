@@ -55,7 +55,7 @@ blueprints:
 pricing:
   subTitle: FAA Minimums
   duration: 13 weeks
-  fullPrice: "11,400"
+  fullPrice: "12k to $12.5k"
   monthlyPrice: "309"
   details:
     [
