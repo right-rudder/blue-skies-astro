@@ -1,12 +1,12 @@
 ---
+import ImageComp from "@/components/utils/ImageComp.astro";
+
 const { content } = Astro.props;
 ---
 
 <div class="">
   <div class="w-full px-60 py-12">
-    <hr
-      class="border-picton-blue-400 my-2 h-[1px] w-full border border-t-1 py-0"
-    />
+    <hr class="border-picton-blue-400 my-2 h-[1px] w-full border border-t-1 py-0" />
   </div>
   <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
     <div class="max-w-xl">
@@ -22,10 +22,7 @@ const { content } = Astro.props;
         {content.description && content.description}
       </p>
     </div>
-    <ul
-      role="list"
-      class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
-    >
+    <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
       {
         content.team &&
           content.team.map(
@@ -34,14 +31,24 @@ const { content } = Astro.props;
               role: string;
               imagePath: string;
               imageAlt: string;
+              icon: { src: string; alt: string };
             }) => (
               <li>
                 <div class="flex items-center gap-x-6">
-                  <img
-                    class="aspect-auto size-16 rounded-full object-cover"
-                    src={teamMember.imagePath}
-                    alt={`${teamMember.name}, ${teamMember.role} at Blue Skies Above`}
-                  />
+                  <div class="relative">
+                    <img
+                      class="aspect-auto size-16 rounded-full object-cover"
+                      src={teamMember.imagePath}
+                      alt={`${teamMember.name}, ${teamMember.role} at Blue Skies Above`}
+                    />
+                    {teamMember.icon && (
+                      <ImageComp
+                        imagePath={teamMember.icon.src}
+                        imageAlt={teamMember.icon.alt}
+                        styles="rounded-full object-cover size-12 absolute -bottom-6 -right-4 bg-white"
+                      />
+                    )}
+                  </div>
                   <div>
                     <h3 class="text-base/7 font-semibold tracking-tight text-gray-900 dark:text-white">
                       {teamMember.name}
@@ -52,7 +59,7 @@ const { content } = Astro.props;
                   </div>
                 </div>
               </li>
-            ),
+            )
           )
       }
 
