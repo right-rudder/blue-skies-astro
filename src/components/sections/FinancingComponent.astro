@@ -3,6 +3,7 @@ import imgPartner from "@images/parner-flight-training-finance-logo.webp";
 
 import { Image } from "astro:assets";
 import imgFinancing from "../../assets/images/cfi-with-student-at-blue-skies-above.webp";
+import PrimaryCTA from "../ui/buttons/PrimaryCTA.astro";
 ---
 
 <section class="flex flex-col items-center text-lg">
@@ -61,18 +62,6 @@ import imgFinancing from "../../assets/images/cfi-with-student-at-blue-skies-abo
           agreement, providing peace of mind as you pursue your dreams.
         </li>
       </ul>
-      <p class="pt-5">
-        If you are interested in getting started, please click
-        <a
-          href="https://www.flighttrainingfinancellc.com/apply-for-financing/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="font-semibold text-blue-600 hover:text-blue-800 hover:underline"
-        >
-          here
-        </a>
-        to apply now.
-      </p>
       <p class="pt-10 text-xl font-semibold">Partnering for Success</p>
       <p class="pt-5">
         Blue Skies Above and Flight Training Finance have come together to
@@ -84,6 +73,9 @@ import imgFinancing from "../../assets/images/cfi-with-student-at-blue-skies-abo
         Don't let financial barriers hold you back from reaching new heights.
         Start your journey with Blue Skies Above and Flight Training Finance.
       </p>
+      <div class="mt-5">
+        <PrimaryCTA title="Apply Now" url="https://www.flighttrainingfinancellc.com/apply-for-financing/" blank={true} />
+      </div>
     </div>
   </div>
 </section>

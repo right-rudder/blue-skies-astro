@@ -9,10 +9,11 @@ import PrimaryCTA from "@/components/ui/buttons/PrimaryCTA.astro";
 import StratusFinancingComponent from "@/components/sections/partners/StratusFinancingComponent.astro";
 
 import blueskiesover from "src/assets/images/blue-skies-over-auburn.webp";
-import imgRight from "../assets/images/blue-skies-pair-of-cessnas-7a3-lanett-municipal-airport.webp";
-import imgRight2 from "../assets/images/blue-skies-cessna-in-airport.webp";
 import stratusLogo from "src/assets/images/Partner Stratus Tagline Color CMYK 300 Outline.png";
+import srtatusLogoWhite from "/src/assets/images/Partner Stratus Tagline White CMYK 300 Outline.png"
 import flightFinancingLogo from "src/assets/images/parner-flight-training-finance-logo.webp";
+import flightFinancingLogoWhite from "src/assets/images/partner-flight-training-finance-logo-white-blue-skies-alabama.webp";
+import FinancingComparison from "@/components/sections/FinancingComparison.astro";
 
 const pageTitle: string = `Financing Options | ${SITE.title}`;
 const metaDescription =
@@ -58,7 +59,7 @@ const ctaDiscovery = {
 >
   <MainSection
     title="Financing Your Flight Training"
-    subTitle="Flight training should be about achieving your goals, not stressing over finances. That’s why Blue Skies Above offers accessible financing through Flight Training Finance, alongside scholarships and flexible payment plans  ,  so nothing stands between you and your dreams."
+    subTitle="Flight training should be about achieving your goals, not stressing over finances. That’s why Blue Skies Above offers accessible financing through Stratus Financial and Flight Training Finance, alongside scholarships and flexible payment plans, so nothing stands between you and your dreams."
     btnExists={true}
     btnTitle="Contact Us"
     btnURL="/contact"
@@ -66,41 +67,28 @@ const ctaDiscovery = {
 
   <RightSection
     title="Flexible Financing That Fits Your Future"
-    subTitle="We’ve partnered with Flight Training Finance to provide personalized payment plans, competitive terms, and a smooth, supportive application process. Whether you're just beginning or working toward advanced ratings, our financing options are designed to adapt to your unique goals and budget. Our advisors will guide you through every step, from exploring scholarships to using the Yellow Sheet calculator tool to preview your monthly payments.\n\nDon't let money hold you back from reaching new heights  ,  apply today and take the first step toward your aviation career with clarity and confidence."
+    subTitle="We've partnered with Stratus Financial and Flight Training Finance to provide personalized payment plans, competitive terms, and a smooth, supportive application process. Whether you're just beginning or working toward advanced ratings, our financing options are designed to adapt to your unique goals and budget. Our advisors will guide you through every step, from exploring scholarships to using the Yellow Sheet calculator tool to preview your monthly payments.\n\nDon't let money hold you back from reaching new heights, apply today and take the first step toward your aviation career with clarity and confidence."
     single={false}
     imgOne={stratusLogo}
-    imgOneAlt="Status logo"
+    imgOneAlt="Stratus Financial logo"
+    imgOneDark={srtatusLogoWhite}
+    imgOneDarkAlt="Stratus Financial logo"
     imgTwo={flightFinancingLogo}
     imgTwoAlt="Flight Training Finance logo"
-    btnExists={false}
-    btnTitle="Download Program Guide"
-    btnURL="/financing-guide"
+    imgTwoDark={flightFinancingLogoWhite}
+    imgTwoDarkAlt="Flight Training Finance logo"
+    btnExists={true}
+    btnTitle="Stratus Financing"
+    btnURL="#stratus-financing"
+    btnTwoExists={true}
+    btnTwoTitle="Flight Training Finance"
+    btnTwoURL="#flight-training-finance"
   />
 
-  <div
-    class="mx-auto flex flex-col flex-wrap justify-center gap-4 px-4 pb-10 sm:px-6 lg:flex-row lg:justify-start lg:px-8"
-  >
-    <PrimaryCTA title="Stratus Financing" url="#stratus-financing" />
-    <PrimaryCTA
-      title="Flight Training Finance"
-      url="#flight-training-finance"
-    />
-  </div>
+  <FinancingComparison />
 
   <div id="stratus-financing"></div>
   <StratusFinancingComponent />
-  <RightSection
-    title="Your Aviation Dreams Start Here"
-    subTitle="Stratus Financial was founded by FAA Certificated Flight and Ground Instructors passionate about helping others achieve their aviation dreams. With Stratus, the sky is no longer the limit. We know it’s not just about achieving your dreams (because we looked up in the sky every time we heard an airplane too!), but funding your family’s dreams as well. That’s why Stratus was created, to make financing your aviation career possible."
-    single={true}
-    imgOne={stratusLogo}
-    imgOneAlt="Flight Training Finance brochure with pen"
-    imgTwo={imgRight2}
-    imgTwoAlt="Smiling student reviewing financing documents"
-    btnExists={true}
-    btnTitle="Stratus Finance"
-    btnURL="/stratus-financing"
-  />
 
   <div id="flight-training-finance"></div>
   <FinancingComponent />
