@@ -28,6 +28,9 @@ const ctaLifeStyle = {
   btnExists: true,
   btnTitle: "LifeStyle Aviation",
   btnURL: "/lifestyle-aviation",
+  btnTwoExists: true,
+  btnTwoTitle: "View Available Aircraft",
+  btnTwoURL: "/lifestyle-aviation#available-aircraft",
 };
 
 const ctaDiscovery = {
@@ -71,7 +74,11 @@ const ctaDiscovery = {
     btnURL="#program"
   />
 
-  <LifeStyleAviationComponent />
+  <LifeStyleAviationComponent
+    btnExists={true}
+    btnTitle="Explore LifeStyle Aviation"
+    btnURL= "/lifestyle-aviation"/>
+
   <CTA content={ctaLifeStyle} />
 
   <RightSection
@@ -87,7 +94,7 @@ const ctaDiscovery = {
     btnURL="/leaseback"
   />
 
-  <LeasebackProgramComponent />
+  <LeasebackProgramComponent/>
 
   <CTA content={ctaDiscovery} />
 </MainLayout>
