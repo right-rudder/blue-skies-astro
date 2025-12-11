@@ -10,6 +10,9 @@ interface CTA {
   btnExists?: boolean;
   btnTitle?: string;
   btnURL?: string;
+  btnTwoExists?: boolean;
+  btnTwoTitle?: string;
+  btnTwoURL?: string;
   single?: boolean;
   img?: any;
   imgAlt?: string;
@@ -38,6 +41,9 @@ const { content } = Astro.props;
       btnExists={content.btnExists}
       btnTitle={content.btnTitle}
       btnURL={content.btnURL}
+      btnTwoExists={content.btnTwoExists}
+      btnTwoTitle={content.btnTwoTitle}
+      btnTwoURL={content.btnTwoURL}
     />
   ) : (
     <LeftSection
@@ -48,6 +54,9 @@ const { content } = Astro.props;
       btnExists={content.btnExists}
       btnTitle={content.btnTitle}
       btnURL={content.btnURL}
+      btnTwoExists={content.btnTwoExists}
+      btnTwoTitle={content.btnTwoTitle}
+      btnTwoURL={content.btnTwoURL}
     />
   )
 }

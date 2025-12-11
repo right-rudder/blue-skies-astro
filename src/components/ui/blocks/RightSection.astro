@@ -63,7 +63,7 @@ interface Props {
     <!-- Conditional rendering of the Primary Call-To-Action button if 'btnExists' is true -->
     <div class="flex flex-wrap gap-4 flex-row justify-start mb-8">
       {btnExists && <PrimaryCTA title={btnTitle} url={btnURL} />}
-      {btnTwoExists && <PrimaryCTA title={btnTwoTitle} url={btnTwoURL} />}
+      {btnTwoExists && <PrimaryCTA title={btnTwoTitle} url={btnTwoURL} />} 
     </div>
   </div>
   <!-- Conditionally render one or two images based on 'single' property -->

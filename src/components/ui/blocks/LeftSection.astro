@@ -3,7 +3,7 @@
 import { Image } from "astro:assets";
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 // Destructure the props passed to the Astro component
-const { title, subTitle, btnExists, btnTitle, btnURL, img, imgAlt } =
+const { title, subTitle, btnExists, btnTitle, btnURL, btnTwoExists, btnTwoTitle, btnTwoURL, img, imgAlt } =
   Astro.props;
 // Define TypeScript interface for props
 interface Props {
@@ -12,6 +12,9 @@ interface Props {
   btnExists?: boolean;
   btnTitle?: string;
   btnURL?: string;
+  btnTwoExists?: boolean;
+  btnTwoTitle?: string;
+  btnTwoURL?: string;
   img: any;
   imgAlt: any;
 }
@@ -44,6 +47,9 @@ interface Props {
       <Fragment set:html={subTitle} />
     </p>
     <!-- Conditionally render the Primary CTA button if btnExists is true -->
-    {btnExists ? <PrimaryCTA title={btnTitle} url={btnURL} /> : null}
+    <div class="flex flex-col md:flex-row gap-4">
+        {btnExists ? <PrimaryCTA title={btnTitle} url={btnURL} /> : null}
+        {btnTwoExists ? <PrimaryCTA title={btnTwoTitle} url={btnTwoURL} /> : null}
+    </div>
   </div>
 </section>
